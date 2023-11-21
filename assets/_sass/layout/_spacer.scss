@@ -1,0 +1,34 @@
+@charset 'UTF-8';
+@use '../global' as *;
+/*
+spacer
+-----------------------------------------------------*/
+.l-spacer {
+  &.-large {
+  }
+  &.-medium {
+    padding-top: size(full, 80px, wsp, 50px);
+    
+    &.-both {
+      padding-bottom: size(full, 80px, wsp, 50px);
+    }
+  }
+  
+  &.-small {
+    padding-top: size(full, 30px, wsp, 20px);
+    &.-both {
+      padding-bottom: size(full, 30px, wsp, 20px);
+    }
+  }
+
+  &.-em1 {
+    margin-top: 1em;
+  }
+  &.-em2 {
+    margin-top: 2em;
+  }
+  &.-em3 {
+    margin-top: 3em;
+  }
+}
+

@@ -1,0 +1,247 @@
+@charset 'UTF-8';
+@use '../global' as *;
+/*
+ header
+-----------------------------------------------------*/
+.l-header {
+  width: 100%;
+  margin: auto;
+  background: #FFF;
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  left: 0; right: 0; margin: auto;
+  height: size(tab, 70px, sp, 54px);
+  @include mq(tab) {
+    height: auto;
+  }
+  
+  &__top {
+    padding: size(full, 30px, sp, 10px) size(full, 50px, sp, 16px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: #FFF;
+    
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    margin: auto;
+    z-index: 99;
+    
+    @include mq(tab) {
+      position: relative;
+      z-index: 98;
+    }
+    
+  }
+}
+
+.l-header-logo {
+  display: flex;
+  flex-direction: column;
+  @include mq(tab) {
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  &__ja {
+    display: block;
+    width: size(full, 215px, sp, 128px);
+    margin-right: 1em;
+  }
+  &__en {
+    display: block;
+    width: size(full, 129px, sp, 122px);
+    margin-top: 5px;
+    @include mq(tab) {
+      margin-top: 0;
+    }
+  }
+}
+
+.l-header.-open {
+  display: block;
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  margin: auto;
+  height: auto;
+  max-height: 100%;
+  overflow-y: scroll;
+  background: #FFF;
+  z-index: 99;
+  
+  @include mq(tab) {
+    height: auto;
+    max-height: 100%;
+    overflow: auto;
+  }
+  
+  .l-header__top {
+    position: relative;
+  }
+  .l-header-menu {
+    position: relative;
+    top: auto;
+  }
+}
+  
+
+
+.l-header-menu {
+  background: $theme-color-lightyellow;
+  display: flex;
+  flex-direction: column-reverse;
+  
+  position: absolute;
+  top: 100%; left: 0;right: 0;
+  margin: auto;
+  width: 100%;
+  
+  
+  @include mq(tab) {
+    position: relative;
+    z-index: 99;
+  }
+  @include mq(lap) {
+    flex-direction: row;
+    align-items: center;
+    padding: size(full, 10px, sp, 5px);
+  }
+  
+  &.-fixed {
+    @include mq(tab) {
+      position: fixed;
+      top: 0; left: 0; right: 0; 
+      margin: auto;
+    }
+    
+  }
+  
+  
+  &__primary {
+    display: none;
+    @include mq(lap) {
+      display: flex;
+      justify-content: space-around;
+      width: 50%;
+    }
+  }
+  &__secondary {
+    padding: size(full, 10px, sp, 5px);
+    font-size: sizeRem(full, 16px, sp, 14px);
+    @include mq(tab) {
+      padding-left: 1em;
+    }
+    @include mq(lap) {
+      width: 50%;
+      position: relative;
+      padding: 0 0 0 1em;
+      
+      &::before {
+        content: '';
+        width: 1px;
+        height: 2em;
+        background: $theme-color-yellow;
+        display: block;
+        position: absolute;
+        left: 0; top: 0; bottom: 0; margin: auto;
+        box-shadow: 0 0 0 1px #FFF;
+      }
+    }
+    @include mq(desk) {
+      padding-left: 2em;
+    }
+  }
+  &__tertiary {
+    display: none;
+    
+    @include mq(tab) {
+      display: flex;
+    }
+  }
+}
+
+.l-header-drawer {
+  display: none;
+}
+
+.l-header-submenu {
+  border-bottom: 1px solid $theme-color-yellow;
+  
+  
+  @include mq(tab) {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid $theme-color-yellow;
+  }
+  
+  &__infomenu {
+    background: $theme-color-lightyellow;
+    @include mq(tab) {
+      background: none;
+      width: calc(100% / 3 * 2);
+      border-bottom: 1px solid $theme-color-yellow;
+    }
+    @include mq(desk) {
+      width: calc(100% / 3);
+      border-bottom: none;
+    }
+    @include mq(vr) {
+      width: 50%;
+    }
+  }
+  
+  &__today {
+    background: $theme-color-lightyellow;
+    border-bottom: 1px solid $theme-color-yellow;
+    @include mq(tab) {
+      width: calc(100% / 3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: none;
+      border-left: 1px solid $theme-color-yellow;
+    }
+    @include mq(desk) {
+      background: none;
+      width: calc(100% / 6);
+      border-bottom: none;
+    }
+    @include mq(desk) {
+      width: calc(100% / 6);
+    }
+  }
+  
+  &__othermenu {
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    @include mq(tab) {
+      padding: 2rem 4rem;
+      display: table;
+      width: 100%;
+    }
+    @include mq(desk) {
+      width: 50%;
+      border-left: 1px solid $theme-color-yellow;
+    }
+    @include mq(vr) {
+      padding: 2rem;
+      width: calc(100% / 3);
+    }
+    @include mq(wide) {
+      padding: 2rem 3%;
+    }
+  }
+  
+  &__lang {
+    margin-bottom: 3rem;
+    @include mq(tab) {
+      display: none;
+    }
+  }
+}

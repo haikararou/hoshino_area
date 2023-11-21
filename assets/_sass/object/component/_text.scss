@@ -1,0 +1,30 @@
+@charset 'UTF-8';
+@use '../../global' as *;
+/*
+text
+-----------------------------------------------------*/
+.c-text-right {
+  text-align: right;
+}
+
+.c-text-darkyellow {
+  color: $theme-color-darkyellow;
+}
+.c-text-gold {
+  color: $theme-color-gold;
+}
+
+.c-text-underline {
+  text-decoration: underline;
+}
+
+.c-text-icon {
+  .icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: .5em;
+    width: 1.5em;
+    height: 1.5em;
+    object-fit: contain;
+  }
+}

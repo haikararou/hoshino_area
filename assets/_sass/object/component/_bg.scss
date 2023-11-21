@@ -1,0 +1,11 @@
+@charset 'UTF-8';
+@use '../../global' as *;
+/*
+bg
+-----------------------------------------------------*/
+.c-bg-white {
+  background: #FFF;
+}
+.c-bg-yellow {
+  background: $theme-color-lightyellow;
+}

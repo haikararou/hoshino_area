@@ -1,0 +1,41 @@
+@charset 'UTF-8';
+@use '../../global' as *;
+/*
+title
+-----------------------------------------------------*/
+.c-title-ex-large {
+  font-size: sizeRem(full, 40px, sp, 24px);
+  margin-bottom: 1em;
+}
+.c-title-large {
+  font-size: sizeRem(full, 32px, sp, 20px);
+  margin-bottom: 1em;
+  
+  &.-vertical {
+    @include mq(tab) {
+      white-space: nowrap;
+      writing-mode: vertical-rl;
+      font-feature-settings: initial;
+    }
+  }
+}
+.c-title-medium {
+  font-size: sizeRem(full, 24px, sp, 17px);
+  margin-bottom: 1em;
+}
+.c-title-small {
+  margin-bottom: 1em;
+}
+
+.c-title-icon {
+  padding-left: 1.5em;
+  .icon {
+    width: 1em;
+    height: 1em;
+    margin-left: -1.5em;
+    margin-right: .5em;
+    vertical-align: middle;
+    direction: inline-block;
+    object-fit: contain;
+  }
+}

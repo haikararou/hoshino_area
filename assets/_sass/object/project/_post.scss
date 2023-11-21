@@ -1,0 +1,83 @@
+@charset 'UTF-8';
+@use '../../global' as *;
+/*
+post
+-----------------------------------------------------*/
+.p-post-list {
+  display: grid;
+  gap: size(full, 32px, sp, 16px);
+  
+  @include mq(lap) {
+    grid-template-columns: repeat(3, minmax(0,1fr));
+  }
+  
+  &__item {
+    
+  }
+}
+
+.p-post-card {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  
+  @include mq(lap) {
+    flex-direction: column;
+  }
+  
+  
+  &__img {
+    width: 45%;
+    @include mq(lap) {
+      width: 100%;
+    }
+    
+    img {
+      width: 100%;
+      aspect-ratio: 3 / 2;
+      object-fit: cover;
+    }
+    
+  }
+  &__text {
+    width: 50%;
+    @include mq(lap) {
+      width: 100%;
+      margin-top: .5em;
+    }
+  }
+  
+  &__cat {
+    font-size: sizeRem(full, 14px, sp, 12px);
+    background: $theme-color-gold;
+    padding: .2em .5em;
+    line-height: 1.3;
+    color: #FFF;
+    width: fit-content;
+    
+    @include mq(lap) {
+      max-width: 90%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      margin: auto;
+      padding: 0 1em .5em 0;
+      color: $theme-color-gold;
+      background: #FFF;
+      z-index: 2;
+    }
+  }
+  &__date {
+    font-size: sizeRem(full, 14px, sp, 12px);
+  }
+  &__title {
+    font-size: sizeRem(full, 16px, sp, 13px);
+    line-height: 1.7;
+    margin-bottom: .5em;
+  }
+  &__info {
+    font-size: sizeRem(full, 14px, sp, 12px);
+    color: $theme-color-gold;
+  }
+  
+}
