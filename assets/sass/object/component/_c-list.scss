@@ -1,0 +1,115 @@
+@charset 'UTF-8';
+@use "../../inc/" as inc;
+/*
+list
+-----------------------------------------------------*/
+.c-list-std {
+  &__item:not(:last-child) {
+    margin-bottom: .5em;
+  }
+}
+.c-list-dot {
+  padding-left: 1em;
+  &__item {
+    &::before {
+      content: '・';
+      margin-left: -1em;
+    }
+    
+    &:not(:last-child) {
+      margin-bottom: .5em;
+    }
+  }
+}
+
+.c-list-num {
+  padding-left: 1.5em;
+  counter-reset: listnum;
+  &__item {
+    counter-increment: listnum;
+    &::before {
+      content: counter(listnum)'.';
+      margin-left: -1.5em;
+      display: inline-block;
+      width: 1.5em;
+    }
+    
+    &:not(:last-child) {
+      margin-bottom: .5em;
+    }
+  }
+}
+
+.c-list-dl {
+  border-top: 1px solid inc.$theme-color-yellow;
+  @include inc.sizingRem(font-size, full, 16px, wsp, 14px);
+  
+  @include inc.mq(tab) {
+    display: grid;
+    grid-template-columns: 200px minmax(0, 1fr);
+  }
+  
+  
+  > dt {
+    padding-top: 1em;
+    @include inc.mq(tab) {
+      padding: 1em 1em 1em 0;
+    border-bottom: 1px solid inc.$theme-color-yellow;
+    }
+  }
+  
+  > dd {
+    border-bottom: 1px solid inc.$theme-color-yellow;
+    padding: .5em 0 1em;
+    @include inc.mq(tab) {
+      padding: 1em 0;
+    }
+  }
+}
+
+
+.c-list-news {
+  &__item {
+    
+    & + & {
+      margin-top: 1em;
+    }
+    
+    @include inc.mq(tab) {
+      display: grid;
+      grid-template-columns: 125px minmax(0,1fr);
+    }
+  }
+  
+  &__date {
+    @include inc.sizingRem(font-size, full, 14px, sp, 12px);
+  }
+  &__conts {
+    @include inc.sizingRem(font-size, full, 16px, sp, 14px);
+  }
+  
+  a {
+    text-decoration: underline;
+  }
+}
+
+.c-list-time {
+  color: inc.$theme-color-gold;
+  display: grid;
+  grid-template-columns: 6em  minmax(0,1fr);
+  line-height: 1.5;
+  gap: 0 1em;
+
+  dt {
+    display: flex;
+    align-items: center;
+    &::after {
+      content: '';
+      height: 1px;
+      flex-grow: 1;
+      margin-left: 1em;
+      background : linear-gradient(to right, currentColor, currentColor 1px, transparent 1px, transparent 4px) repeat-x left top / 4px 1px;
+      display: block;
+    }
+  }
+}

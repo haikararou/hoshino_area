@@ -188,16 +188,24 @@ $(function() {
   //スライダー
   if($('.js-gallery-slider').length > 0) {
     gallerySlider = new Swiper('.js-gallery-slider', {
-      speed: 1000,
+      speed: 12000,
       slidesPerView: "auto",
-      spaceBetween: 20,
-       
-       breakpoints: {
+      //centeredSlides: true,
+      loop: true,
+      spaceBetween: 16,
+      slidesPerView: 1.3,
+      autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
         1024 : {
-          spaceBetween: 30
+          spaceBetween: 32,
+    			slidesPerView: 2.4,
         }
       }
     });
   }
   
 });
+

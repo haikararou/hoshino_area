@@ -28,10 +28,13 @@
           <div class="l-contents-2column__block -w-1_2--right">
             <h3 class="c-title-small">コンテンツ見出し小</h3>
             <p>テキストエリアテキストエリアテキストエリアテキストエリアテキストエリアテキストエリアテキストエリアテキストエリアテキストエリアテキストエリアテキストエリアテキストリンクテキストエリアテキストエリアテキストエリアテキストエリアテキストエリアテキストエリアテキスト</p>
-            
-            <a href="#"><span class="c-button-arrow c-text-underline">リンク</span></a><br>
-            <a href="#"><span class="c-button-arrow c-button-outerlink c-text-underline">外部サイトへ</span></a><br>
-            <a href="#"><span class="c-button-block -lightyellow -arrow">ボタンリンク</span></a>
+            <p>
+              <a href="#"><span class="c-button-arrow c-text-underline">リンク</span></a><br>
+              <a href="#"><span class="c-button-arrow c-button-outerlink c-text-underline">外部サイトへ</span></a>
+            </p>
+            <p>
+              <a href="#"><span class="c-button-block -lightyellow -arrow">ボタンリンク</span></a>
+            </p>
           </div>
           
         </div>

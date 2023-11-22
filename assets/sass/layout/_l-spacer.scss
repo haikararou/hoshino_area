@@ -1,0 +1,34 @@
+@charset 'UTF-8';
+@use "../inc/" as inc;
+/*
+spacer
+-----------------------------------------------------*/
+.l-spacer {
+  &.-large {
+  }
+  &.-medium {
+    @include inc.sizing(padding-top, full, 80px, wsp, 50px);
+    
+    &.-both {
+      @include inc.sizing(padding-bottom, full, 80px, wsp, 50px);
+    }
+  }
+  
+  &.-small {
+    @include inc.sizing(padding-top, full, 30px, wsp, 20px);
+    &.-both {
+      @include inc.sizing(padding-bottom, full, 30px, wsp, 20px);
+    }
+  }
+
+  &.-em1 {
+    margin-top: 1em;
+  }
+  &.-em2 {
+    margin-top: 2em;
+  }
+  &.-em3 {
+    margin-top: 3em;
+  }
+}
+

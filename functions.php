@@ -28,7 +28,7 @@ function register_files() {
   wp_register_style( 'fontawesome', 'https://use.fontawesome.com/releases/v6.4.2/css/all.css');
   wp_register_style( 'theme-font', 'https://fonts.googleapis.com/css2?family=Poppins:wght@300:600&display=swap');
   wp_register_style( 'swiper', get_template_directory_uri().'/assets/css/swiper.min.css');
-  
+  wp_register_style( 'wpadminbar', get_template_directory_uri().'/assets/css/wpadminbar.css', array(), filemtime( get_template_directory().'/assets/css/wpadminbar.css') );
   wp_register_style( 'theme-common', get_template_directory_uri().'/assets/css/common.css', array(), filemtime( get_template_directory().'/assets/css/common.css') );
 
 	wp_deregister_script('jquery');
@@ -44,6 +44,7 @@ function my_enqueue_files() {
 		wp_enqueue_style( 'fontawesome' );
 		wp_enqueue_style( 'theme-font' );
 		wp_enqueue_style( 'swiper' );
+		wp_enqueue_style( 'wpadminbar' );
 		wp_enqueue_style( 'theme-common' );
     
 		wp_enqueue_script( 'swiper' );
