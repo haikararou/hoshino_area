@@ -33,7 +33,7 @@
               <a href="#"><span class="c-button-arrow c-button-outerlink c-text-underline">外部サイトへ</span></a>
             </p>
             <p>
-              <a href="#"><span class="c-button-block -lightyellow -arrow">ボタンリンク</span></a>
+              <a href="#" class="c-button-block -lightyellow -arrow"><span>ボタンリンク</span></a>
             </p>
           </div>
           
@@ -95,8 +95,8 @@
             </a>
           </li>
         </ul>
-        <div class="l-spacer -em3">
-          <p><a href="#"><span class="c-button-block -lightyellow -arrow -more">もっと見る</span></a></p>
+        <div class="l-spacer -em3 p-post-list__item__more">
+          <p><a href="#" class="c-button-block -lightyellow -arrow -more"><span>もっと見る</span></a></p>
         </div>
       </div>
     </article>
@@ -316,7 +316,7 @@
                 テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
               </p>
               <p>
-                <a href="#"><span class="c-button-arrow c-text-underline">詳細はこちら</span></a><br>
+                <a href="#" class="c-button-arrow c-text-underline"><span>詳細はこちら</span></a><br>
               </p>
             </dt>
           </div>
@@ -390,9 +390,7 @@
                       <dt>ディナー</dt><dd>17:30-22:00 (L.O.21:00)</dd>
                     </dl>
                   </div> -->
-                  <a href="">
-                    <p class="c-button-block -yellow -arrow -more p-restaurant-card__more">詳細</p>
-                  </a>
+                  <a href="" class="c-button-block -yellow -arrow -more p-restaurant-card__more"><span>詳細</span></a>
                 </div>
               </div>
             </div>
@@ -413,9 +411,7 @@
                       <dt>ディナー</dt><dd>17:30-22:00 (L.O.21:00)</dd>
                     </dl>
                   </div> -->
-                  <a href="">
-                    <p class="c-button-block -yellow -arrow -more p-restaurant-card__more">詳細</p>
-                  </a>
+                  <a href="" class="c-button-block -yellow -arrow -more p-restaurant-card__more"><span>詳細</span></a>
                 </div>
               </div>
             </div>
@@ -437,9 +433,7 @@
                       <dt>ディナー</dt><dd>17:30-22:00 (L.O.21:00)</dd>
                     </dl>
                   </div> -->
-                  <a href="">
-                    <p class="c-button-block -yellow -arrow -more p-restaurant-card__more">詳細</p>
-                  </a>
+                  <a href="" class="c-button-block -yellow -arrow -more p-restaurant-card__more"><span>詳細</span></a>
                 </div>
               </div>
             </div>
@@ -460,9 +454,7 @@
                       <dt>ディナー</dt><dd>17:30-22:00 (L.O.21:00)</dd>
                     </dl>
                   </div> -->
-                  <a href="">
-                    <p class="c-button-block -yellow -arrow -more p-restaurant-card__more">詳細</p>
-                  </a>
+                  <a href="" class="c-button-block -yellow -arrow -more p-restaurant-card__more"><span>詳細</span></a>
                 </div>
               </div>
             </div>

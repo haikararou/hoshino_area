@@ -11,7 +11,6 @@
       <section class="l-footer-map l-footer-buttonlink">
         <h2 class="l-footer-buttonlink__title"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/ttl-area-map.svg" alt="軽井沢 星野エリアマップ" width="172" height="133"></h2>
         <p class="l-footer-map__text">Karuizawa Hoshino Area Map</p>
-
         <button class="c-button-block -white -arrow l-footer-buttonlink__button">施設を探す</button>
       </section>
     </a>
@@ -44,7 +43,9 @@
           </div>
         </dl>
       </div>
-      <a href="" class="c-button-block -lightyellow -arrow -more l-footer-important-news__more">もっと見る</a>
+      <div class="l-footer-important-news__more">
+        <a href="#" class="c-button-block -lightyellow -arrow -more"><span>もっと見る</span></a>
+      </div>
     </div>
   </div>
 

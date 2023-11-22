@@ -4,11 +4,18 @@
 list
 -----------------------------------------------------*/
 .c-list-std {
+  column-count: 2;
+  @include inc.mq(tab) {
+    column-count: 1;
+  }
   &__item {
     line-height: 1.6;
   }
   &__item:not(:last-child) {
-    margin-bottom: 1.2rem;
+    margin-bottom: 0.8rem;
+    @include inc.mq(tab) {
+      margin-bottom: 1.2rem;
+    }
   }
 }
 .c-list-dot {

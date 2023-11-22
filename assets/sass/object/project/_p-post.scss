@@ -12,7 +12,15 @@ post
   }
   
   &__item {
-    
+    &__more {
+      //margin-top: 2em;
+      display: block;
+      @include inc.mq(tab) {
+        //margin-top: 0;
+        display: flex;
+        justify-content: end;
+      }
+    }
   }
 }
 

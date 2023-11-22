@@ -6,8 +6,9 @@ restaurant
 .p-restaurant-list {
   display: grid;
   gap: 30px;
-  
+  @include inc.sizing(padding-top, tab, 64px, sps, 32px);
   @include inc.mq(tab) {
+    padding-top: 0;
     grid-template-columns: repeat(2, minmax(0,1fr));
   }
 }
@@ -41,8 +42,11 @@ restaurant
   
   &__logo {
     position: absolute;
-    @include inc.sizing(top, full, -30px, sp, -7px);
-    right: 0;
+    @include inc.sizing(top, full, -30px, sp, -17px);
+    right: -8px;
+    @include inc.mq(lap) {
+      right: 0;
+    }
     margin: auto;
     @include inc.sizing(width, full, 100px, sp, 70px);
     @include inc.sizing(height, full, 100px, sp, 70px);
@@ -56,8 +60,16 @@ restaurant
   }
   
   &__info {
-    display: grid;
+    //display: grid;
+    display: flex;
+    justify-content: end;
     gap: 1em;
+    a {
+      width: 100%;
+      @include inc.mq(lap) {
+        width: auto;
+      }
+    }
     
     // @include inc.mq(lap) {
     //   grid-template-columns: minmax(0,1fr) 8em;

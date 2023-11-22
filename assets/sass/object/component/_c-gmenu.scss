@@ -76,7 +76,7 @@ gmenu
     @include inc.mq(tab) {
       margin: 0;
       @include inc.sizing(margin-left, full, 10px, sp, 5px);
-      height: 2.75em;
+      //height: 2.75em;
       //@include inc.sizing(margin-bottom, full, 10px, sp, 5px);
     }
   }

@@ -189,23 +189,20 @@ $(function() {
   if($('.js-gallery-slider').length > 0) {
     gallerySlider = new Swiper('.js-gallery-slider', {
       speed: 12000,
-      slidesPerView: "auto",
-      //centeredSlides: true,
       loop: true,
-      spaceBetween: 2,
+      spaceBetween: 12,
       slidesPerView:1.6,
       autoplay: {
         delay: 0,
         disableOnInteraction: false,
       },
       breakpoints: {
-        1024 : {
+        768 : {
           spaceBetween: 32,
     			slidesPerView: 2.4,
         }
       }
     });
   }
-  
 });
 

@@ -63,9 +63,13 @@ footer
       width: 100%
     }
   }
-  &__button {
+  &__button.c-button-block {
     width: 270px;
     margin-top: auto;
+    @include inc.sizing(padding-top, full, 15px, sp, 12px);
+    @include inc.sizing(padding-bottom, full, 15px, sp, 12px);
+    padding-left: 3rem;
+    padding-right: 3em;
   }
 }
 
@@ -133,8 +137,11 @@ footer
   
   &__more {
     margin-top: 2em;
+    display: block;
     @include inc.mq(tab) {
       margin-top: 0;
+      display: flex;
+      justify-content: end;
     }
   }
 }
