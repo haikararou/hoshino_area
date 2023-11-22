@@ -3,3 +3,6 @@
 /*
 main
 -----------------------------------------------------*/
+main {
+    @include inc.sizing(padding-top, full, 140px, sp, 90px);
+}

@@ -368,25 +368,25 @@ a[href^="tel:"] {
 spacer
 -----------------------------------------------------*/
 .l-spacer.-medium {
-  padding-top: clamp(50px, 2.7vw + 36px, 80px);
+  padding-top: clamp(32px, 3.66vw + 20.3px, 80px);
 }
 .l-spacer.-medium.-both {
-  padding-bottom: clamp(50px, 2.7vw + 36px, 80px);
+  padding-bottom: clamp(32px, 3.66vw + 20.3px, 80px);
 }
 .l-spacer.-small {
-  padding-top: clamp(20px, 0.9vw + 15.3px, 30px);
+  padding-top: clamp(16px, 1.07vw + 12.6px, 30px);
 }
 .l-spacer.-small.-both {
-  padding-bottom: clamp(20px, 0.9vw + 15.3px, 30px);
+  padding-bottom: clamp(16px, 1.07vw + 12.6px, 30px);
 }
 .l-spacer.-em1 {
-  margin-top: 1em;
+  margin-top: 1rem;
 }
 .l-spacer.-em2 {
-  margin-top: 2em;
+  margin-top: 2rem;
 }
 .l-spacer.-em3 {
-  margin-top: 3em;
+  margin-top: 3rem;
 }
 
 /*
@@ -536,7 +536,9 @@ spacer
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: clamp(5px, 0.4vw + 3.5px, 10px);
+    height: 4.125em;
+    padding-left: clamp(5px, 0.4vw + 3.5px, 10px);
+    padding-right: clamp(5px, 0.4vw + 3.5px, 10px);
   }
 }
 @media screen and (min-width: 768px) {
@@ -768,7 +770,7 @@ footer
   }
 }
 .l-footer__copyright {
-  font-size: rem(11);
+  font-size: 0.6875rem;
   text-align: center;
   margin-left: auto;
   margin-top: 2em;
@@ -888,7 +890,7 @@ footer
   margin-right: 0.5em;
 }
 .l-footer-important-news__news {
-  width: calc(100% - sizeRem(full, 24px, sp, 17px) * 3);
+  width: calc(100% - clamp(17px, 0.56vw + 14.9px, 24px) * 3);
   margin: 0 auto;
 }
 .l-footer-important-news__more {
@@ -918,7 +920,7 @@ footer
   }
 }
 .l-footer-pickup__title {
-  font-size: rem(12);
+  font-size: 0.75rem;
   background: #E8E8D8;
   border-radius: 2em;
   font-family: "Poppins", sans-serif;
@@ -927,7 +929,7 @@ footer
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto 1em;
-  padding: 0 2em;
+  padding: 0.4em 2em;
 }
 @media screen and (min-width: 960px) {
   .l-footer-pickup__title {
@@ -936,6 +938,7 @@ footer
 }
 .l-footer-pickup__conts {
   text-decoration: underline;
+  text-underline-offset: 0.2em;
 }
 
 /*
@@ -1076,13 +1079,17 @@ footer
 }
 
 .l-contents-block + .l-contents-block, .l-contents-block__spacer {
-  margin-top: size(full, 50px, wsp, 16px);
+  margin-top: clamp(16px, 3.06vw + 0.1px, 50px);
 }
 .l-contents-block__wrap {
-  padding: size(full, 50px, wsp, 16px);
+  padding-top: clamp(16px, 3.06vw + 0.1px, 50px);
+  padding-bottom: clamp(16px, 3.06vw + 0.1px, 50px);
+  padding-left: clamp(16px, 3.06vw + 0.1px, 50px);
+  padding-right: clamp(16px, 3.06vw + 0.1px, 50px);
 }
 .l-contents-block__inner {
-  padding: size(full, 100px, wsp, 10px) 0;
+  padding-top: clamp(16px, 3.06vw + 0.1px, 50px);
+  padding-bottom: clamp(16px, 3.06vw + 0.1px, 50px);
 }
 
 @media screen and (min-width: 960px) {
@@ -1135,6 +1142,10 @@ footer
 /*
 main
 -----------------------------------------------------*/
+main {
+  padding-top: clamp(90px, 3.98vw + 75.1px, 140px);
+}
+
 /*
 title
 -----------------------------------------------------*/
@@ -1179,6 +1190,14 @@ title
   direction: inline-block;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.c-title-gothic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: clamp(0.875rem, 0.16vw + 0.8375rem, 1rem);
+  margin-bottom: clamp(8px, 0.64vw + 5.6px, 16px);
+  display: block;
 }
 
 /*
@@ -1232,6 +1251,7 @@ text
 
 .c-text-underline {
   text-decoration: underline;
+  text-underline-offset: 0.2em;
 }
 
 .c-text-icon .icon {
@@ -1248,9 +1268,10 @@ text
 button
 -----------------------------------------------------*/
 .c-button-block {
-  border-radius: size(full, 10px, sp, 5px);
-  padding: 0.5em 3em;
+  border-radius: clamp(5px, 0.4vw + 3.5px, 10px);
+  padding: 0.25em 3em;
   display: inline-block;
+  cursor: pointer;
 }
 .c-button-block.-arrow {
   position: relative;
@@ -1282,7 +1303,7 @@ button
 }
 @media screen and (min-width: 1280px) {
   .c-button-block.-icon {
-    padding: 0.5em 2em;
+    padding: 0.6em 2em;
   }
 }
 .c-button-block.-icon i,
@@ -1305,13 +1326,24 @@ button
 }
 .c-button-block.-more {
   width: 100%;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
 }
 @media screen and (min-width: 768px) {
   .c-button-block.-more {
     width: auto;
-    display: table;
     margin-left: auto;
   }
 }
@@ -1348,13 +1380,13 @@ button
   display: block;
   background: #000;
   position: relative;
-  border-radius: size(full, 10px, sp, 5px);
-  width: size(full, 105px, sp, 65px);
-  height: size(tab, 47px, sp, 43px);
+  border-radius: clamp(5px, 0.4vw + 3.5px, 10px);
+  width: clamp(65px, 3.19vw + 53px, 105px);
+  height: clamp(43px, 1.02vw + 39.2px, 47px);
   position: fixed;
   z-index: 999;
-  top: size(full, 30px, sp, 5px);
-  right: size(tab, 10px, sp, 5px);
+  top: clamp(5px, 1.99vw - 2.4px, 30px);
+  right: clamp(5px, 1.27vw + 0.2px, 10px);
   margin: auto;
   text-indent: 100%;
   overflow: hidden;
@@ -1422,26 +1454,34 @@ button
 .c-button-areamap__text {
   color: #B5B583;
   font-family: "Poppins", sans-serif;
-  font-size: rem(11);
+  font-size: 0.6875rem;
   font-weight: 600;
 }
 
 /*
 list
 -----------------------------------------------------*/
+.c-list-std__item {
+  line-height: 1.6;
+}
 .c-list-std__item:not(:last-child) {
-  margin-bottom: 0.5em;
+  margin-bottom: 1.2rem;
 }
 
 .c-list-dot {
-  padding-left: 1em;
+  padding-left: 1.5em;
+  position: relative;
+}
+.c-list-dot__item {
+  line-height: 1.6;
 }
 .c-list-dot__item::before {
   content: "・";
-  margin-left: -1em;
+  position: absolute;
+  left: 0.1em;
 }
 .c-list-dot__item:not(:last-child) {
-  margin-bottom: 0.5em;
+  margin-bottom: 1.2em;
 }
 
 .c-list-num {
@@ -1449,6 +1489,7 @@ list
   counter-reset: listnum;
 }
 .c-list-num__item {
+  line-height: 1.6;
   counter-increment: listnum;
 }
 .c-list-num__item::before {
@@ -1458,7 +1499,7 @@ list
   width: 1.5em;
 }
 .c-list-num__item:not(:last-child) {
-  margin-bottom: 0.5em;
+  margin-bottom: 1.2em;
 }
 
 .c-list-dl {
@@ -1475,6 +1516,7 @@ list
 }
 .c-list-dl > dt {
   padding-top: 1em;
+  line-height: 1.4;
 }
 @media screen and (min-width: 768px) {
   .c-list-dl > dt {
@@ -1483,6 +1525,7 @@ list
   }
 }
 .c-list-dl > dd {
+  line-height: 1.4;
   border-bottom: 1px solid #E8E8D8;
   padding: 0.5em 0 1em;
 }
@@ -1493,7 +1536,7 @@ list
 }
 
 .c-list-news__item + .c-list-news__item {
-  margin-top: 1em;
+  margin-top: 2.4em;
 }
 @media screen and (min-width: 768px) {
   .c-list-news__item {
@@ -1590,9 +1633,9 @@ gmenu
 .c-gmenu-secondary {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: minmax(0, 1fr) size(full, 10px, sp, 5px) minmax(0, 1fr) size(full, 10px, sp, 5px) minmax(0, 1fr);
+  -ms-grid-columns: minmax(0, 1fr) clamp(5px, 0.4vw + 3.5px, 10px) minmax(0, 1fr) clamp(5px, 0.4vw + 3.5px, 10px) minmax(0, 1fr);
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: size(full, 10px, sp, 5px);
+  gap: clamp(5px, 0.4vw + 3.5px, 10px);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1622,12 +1665,16 @@ gmenu
   .c-gmenu-secondary__blockbtn {
     max-width: 10em;
     margin-left: clamp(5px, 0.4vw + 3.5px, 10px);
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    height: 2.75em;
   }
 }
 @media screen and (min-width: 768px) {
   .c-gmenu-secondary__hamburger {
     margin: 0;
-    margin-bottom: clamp(5px, 0.4vw + 3.5px, 10px);
+    margin-left: clamp(5px, 0.4vw + 3.5px, 10px);
+    height: 2.75em;
   }
 }
 
@@ -1795,7 +1842,7 @@ menu
   line-height: 1.7;
   padding: 1em 0.5em;
   background: #E8E8D8;
-  border-radius: size(full, 10px, sp, 7px) size(full, 10px, sp, 7px) 0 0;
+  border-radius: clamp(7px, 0.24vw + 6.1px, 10px) clamp(7px, 0.24vw + 6.1px, 10px) 0 0;
   cursor: pointer;
   font-size: clamp(0.875rem, 0.48vw + 0.7625rem, 1.25rem);
 }
@@ -1857,6 +1904,7 @@ breadcrumb
 }
 .c-breadcrumb a {
   text-decoration: underline;
+  text-underline-offset: 0.2em;
 }
 
 /*
@@ -1899,7 +1947,7 @@ today
 language
 -----------------------------------------------------*/
 .c-lang {
-  font-size: rem(14);
+  font-size: 0.875rem;
 }
 .c-lang.-header {
   display: -webkit-box;
@@ -1972,6 +2020,46 @@ language
 }
 .c-lang .gt-current-lang {
   text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+/*
+button
+-----------------------------------------------------*/
+.c-color-wht {
+  color: #FFF;
+}
+
+.c-color-blk {
+  color: #000;
+}
+
+.c-color-gry {
+  color: #999999;
+}
+
+.c-color-ylw {
+  color: #E8E8D8;
+}
+
+.c-color-Lylw {
+  color: #F8F8F0;
+}
+
+.c-color-Dylw {
+  color: #B5B583;
+}
+
+.c-color-gld {
+  color: #93936A;
+}
+
+.c-color-Dgrn {
+  color: #192203;
+}
+
+.c-color-Dgrn {
+  color: #192203;
 }
 
 /*
@@ -2053,6 +2141,9 @@ post
 }
 .p-post-card__date {
   font-size: clamp(0.75rem, 0.16vw + 0.7125rem, 0.875rem);
+  display: block;
+  margin: 8px 0;
+  line-height: 1;
 }
 .p-post-card__title {
   font-size: clamp(0.8125rem, 0.24vw + 0.75625rem, 1rem);
@@ -2131,11 +2222,12 @@ faq
 @media screen and (min-width: 960px) {
   .p-faq-list__question::before {
     left: 2em;
-    top: 1.8em;
+    top: 1.5em;
   }
 }
 .p-faq-list__answer {
   font-size: clamp(0.875rem, 0.16vw + 0.8375rem, 1rem);
+  line-height: 1.6;
   padding: 0 1em 1em 3em;
   position: relative;
   display: none;
@@ -2205,6 +2297,7 @@ restaurant
 .p-restaurant-card__cat {
   display: block;
   font-size: clamp(0.875rem, 0.16vw + 0.8375rem, 1rem);
+  margin-bottom: clamp(6px, 0.32vw + 4.8px, 10px);
 }
 .p-restaurant-card__name {
   font-size: clamp(1.0625rem, 0.56vw + 0.93125rem, 1.5rem);
@@ -2231,29 +2324,8 @@ restaurant
   gap: 1em;
 }
 @media screen and (min-width: 960px) {
-  .p-restaurant-card__info {
-    -ms-grid-columns: minmax(0, 1fr) 8em;
-    grid-template-columns: minmax(0, 1fr) 8em;
-  }
-}
-.p-restaurant-card__time {
-  padding-left: 2em;
-  position: relative;
-}
-.p-restaurant-card__time::before {
-  content: "";
-  width: 1rem;
-  height: 1rem;
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0.5em;
-  margin: auto;
-  background: url(../img/common/icon-clock-gold.svg) no-repeat center center/contain;
-}
-@media screen and (min-width: 960px) {
   .p-restaurant-card__more {
-    padding: 0.5em 1.5em 0.5em 2em;
+    padding: 0.5em 1.9em 0.5em 2.4em;
   }
 }
 .p-restaurant-card__wi-fi {
@@ -2289,10 +2361,11 @@ gallery
 }
 .p-gallery-slider__img {
   width: auto;
-  height: size(full, 380px, sp, 176px);
+  height: clamp(176px, 16.25vw + 115.1px, 380px);
 }
 .p-gallery-slider__caption {
-  margin-top: 1em;
+  margin-top: clamp(6px, 0.48vw + 4.2px, 12px);
+  font-size: clamp(0.875rem, 0.16vw + 0.8375rem, 1rem);
 }
 
 .swiper-wrapper {

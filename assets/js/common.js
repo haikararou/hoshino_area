@@ -192,8 +192,8 @@ $(function() {
       slidesPerView: "auto",
       //centeredSlides: true,
       loop: true,
-      spaceBetween: 16,
-      slidesPerView: 1.3,
+      spaceBetween: 2,
+      slidesPerView:1.6,
       autoplay: {
         delay: 0,
         disableOnInteraction: false,

@@ -62,12 +62,13 @@ faq
       line-height: 1;
       @include inc.mq(lap) {
         left: 2em;
-        top: 1.8em;
+        top: 1.5em;
       }
     }
   }
   &__answer {
     @include inc.sizingRem(font-size, full, 16px, sp, 14px);
+    line-height: 1.6;
     padding: 0 1em 1em 3em;
     position: relative;
     display: none;

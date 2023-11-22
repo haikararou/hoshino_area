@@ -96,7 +96,7 @@
           </li>
         </ul>
         <div class="l-spacer -em3">
-          <a href="" class="c-button-block -lightyellow -arrow -more">もっと見る</a>
+          <p><a href="#"><span class="c-button-block -lightyellow -arrow -more">もっと見る</span></a></p>
         </div>
       </div>
     </article>
@@ -203,7 +203,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dummy/food1.jpg">
           </div>
           <div class="l-contents-2column__block -w-1_2--left2">
-            <h3 class="c-title-medium">鶏の白レバーペースト</h3>
+            <h3 class="c-title-medium"><span class="c-title-gothic c-color-Dylw">Best 1</span>鶏の白レバーペースト</h3>
             <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
           </div>
         </section>
@@ -213,7 +213,7 @@
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dummy/food2.jpg">
             </div>
             <div class="l-contents-2column__block -w-1_2--left2">
-              <h3 class="c-title-medium">鶏の白レバーペースト</h3>
+              <h3 class="c-title-medium"><span class="c-title-gothic c-color-Dylw">Best 2</span>鶏の白レバーペースト</h3>
               <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
             </div>
           </section>
@@ -311,15 +311,30 @@
         <dl class="p-faq-list">
           <div class="p-faq-list__item">
             <dt class="p-faq-list__question">コインロッカーはありますか？</dt>
-            <dd class="p-faq-list__answer">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dt>
+            <dd class="p-faq-list__answer">
+              <p>
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+              </p>
+              <p>
+                <a href="#"><span class="c-button-arrow c-text-underline">詳細はこちら</span></a><br>
+              </p>
+            </dt>
           </div>
           <div class="p-faq-list__item">
             <dt class="p-faq-list__question">犬と一緒に利用できますか？</dt>
-            <dd class="p-faq-list__answer">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dt>
+            <dd class="p-faq-list__answer">
+              <p>
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+              </p>
+            </dt>
           </div>
           <div class="p-faq-list__item">
             <dt class="p-faq-list__question">犬と一緒に利用できますか？</dt>
-            <dd class="p-faq-list__answer">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dt>
+            <dd class="p-faq-list__answer">
+              <p>
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+              </p>
+              </dt>
           </div>
         </dl>
       </div>
@@ -351,7 +366,7 @@
             <span class="c-text-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-pet-outside.svg" width="40" height="40" class="icon">テラス席ペット可</span>
           </li>
         </ul>
-        <div class="l-spacer -em1">
+        <div class="l-spacer -em2">
           <a href="" class="c-button-block -yellow -icon"><img class="icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-clock.svg" width="16" height="16">営業時間一覧</a>
         </div>
       </div>
@@ -369,12 +384,12 @@
                   <div class="p-restaurant-card__logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/dummy/restaurant-logo1.jpg" alt=""></div>
                 </div>
                 <div class="p-restaurant-card__info">
-                  <div class="p-restaurant-card__time">
+                  <!-- <div class="p-restaurant-card__time">
                     <dl class="c-list-time">
                       <dt>ランチ</dt><dd>11:00-15:00 (L.O.14:30)</dd>
                       <dt>ディナー</dt><dd>17:30-22:00 (L.O.21:00)</dd>
                     </dl>
-                  </div>
+                  </div> -->
                   <a href="">
                     <p class="c-button-block -yellow -arrow -more p-restaurant-card__more">詳細</p>
                   </a>
@@ -392,12 +407,12 @@
                   <div class="p-restaurant-card__logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/dummy/restaurant-logo2.jpg" alt=""></div>
                 </div>
                 <div class="p-restaurant-card__info">
-                  <div class="p-restaurant-card__time">
+                  <!-- <div class="p-restaurant-card__time">
                     <dl class="c-list-time">
                       <dt>ランチ</dt><dd>11:00-15:00 (L.O.14:30)</dd>
                       <dt>ディナー</dt><dd>17:30-22:00 (L.O.21:00)</dd>
                     </dl>
-                  </div>
+                  </div> -->
                   <a href="">
                     <p class="c-button-block -yellow -arrow -more p-restaurant-card__more">詳細</p>
                   </a>
@@ -416,12 +431,12 @@
                   <div class="p-restaurant-card__logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/dummy/restaurant-logo1.jpg" alt=""></div>
                 </div>
                 <div class="p-restaurant-card__info">
-                  <div class="p-restaurant-card__time">
+                  <!-- <div class="p-restaurant-card__time">
                     <dl class="c-list-time">
                       <dt>ランチ</dt><dd>11:00-15:00 (L.O.14:30)</dd>
                       <dt>ディナー</dt><dd>17:30-22:00 (L.O.21:00)</dd>
                     </dl>
-                  </div>
+                  </div> -->
                   <a href="">
                     <p class="c-button-block -yellow -arrow -more p-restaurant-card__more">詳細</p>
                   </a>
@@ -439,12 +454,12 @@
                   <div class="p-restaurant-card__logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/dummy/restaurant-logo2.jpg" alt=""></div>
                 </div>
                 <div class="p-restaurant-card__info">
-                  <div class="p-restaurant-card__time">
+                  <!-- <div class="p-restaurant-card__time">
                     <dl class="c-list-time">
                       <dt>ランチ</dt><dd>11:00-15:00 (L.O.14:30)</dd>
                       <dt>ディナー</dt><dd>17:30-22:00 (L.O.21:00)</dd>
                     </dl>
-                  </div>
+                  </div> -->
                   <a href="">
                     <p class="c-button-block -yellow -arrow -more p-restaurant-card__more">詳細</p>
                   </a>
@@ -470,13 +485,13 @@
             <h3 class="c-title-medium">UL,OLリスト</h3>
             <ul class="c-list-dot">
               <li class="c-list-dot__item">リストリストリストリストリストリスト</li>
-              <li class="c-list-dot__item">リストリストリストリストリストリストリストリストリストリストリストリスト</li>
+              <li class="c-list-dot__item">リストリストリストリストリストリストリストリストリストリストリストリストリストリストリストリストリストリスト</li>
               <li class="c-list-dot__item">リストリストリストリストリストリスト</li>
             </ul>
 
-            <ol class="c-list-num">
+            <ol class="c-list-num l-spacer -em2">
               <li class="c-list-num__item">番号リストリストリストリストリストリスト</li>
-              <li class="c-list-num__item">番号リストリストリストリストリストリストリストリストリストリストリストリスト</li>
+              <li class="c-list-num__item">番号リストリストリストリストリストリストリストリストリストリストリストリストリストリストリストリストリストリスト</li>
               <li class="c-list-num__item">番号リストリストリストリストリストリスト</li>
             </ol>
           </div>

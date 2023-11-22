@@ -33,6 +33,7 @@ restaurant
   &__cat {
     display: block;
     @include inc.sizingRem(font-size, full, 16px, sp, 14px);
+    @include inc.sizing(margin-bottom, full, 10px, sp, 6px);
   }
   &__name {
     @include inc.sizingRem(font-size, full, 24px, sp, 17px);
@@ -58,30 +59,30 @@ restaurant
     display: grid;
     gap: 1em;
     
-    @include inc.mq(lap) {
-      grid-template-columns: minmax(0,1fr) 8em;
-    }
+    // @include inc.mq(lap) {
+    //   grid-template-columns: minmax(0,1fr) 8em;
+    // }
   }
-  &__time {
-    padding-left: 2em;
-    position: relative;
+  // &__time {
+  //   padding-left: 2em;
+  //   position: relative;
     
-    &::before {
-      content: '';
-      width: 1rem;
-      height: 1rem;
-      display: block;
-      position: absolute;
-      left: 0;
-      top: .5em;
-      margin: auto;
-      background: url(../img/common/icon-clock-gold.svg) no-repeat center center / contain;
-    }
-  }
+  //   &::before {
+  //     content: '';
+  //     width: 1rem;
+  //     height: 1rem;
+  //     display: block;
+  //     position: absolute;
+  //     left: 0;
+  //     top: .5em;
+  //     margin: auto;
+  //     background: url(../img/common/icon-clock-gold.svg) no-repeat center center / contain;
+  //   }
+  // }
   
   &__more {
     @include inc.mq(lap) {
-      padding: .5em 1.5em .5em 2em;
+      padding: .5em 1.9em .5em 2.4em;
     }
   }
   

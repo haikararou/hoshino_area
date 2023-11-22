@@ -4,7 +4,7 @@
 language
 -----------------------------------------------------*/
 .c-lang {
-   font-size: rem(14);
+   font-size: inc.rem(14);
   
   &.-header {  
     display: flex;
@@ -81,5 +81,6 @@ language
 
   .gt-current-lang {
     text-decoration: underline;
+    text-underline-offset: 0.2em;
   }
 }

@@ -65,15 +65,19 @@
   
   & + &,
   &__spacer {
-    margin-top: size(full, 50px, wsp, 16px);
+    @include inc.sizing(margin-top, full, 50px, wsp, 16px);
   }
   
   &__wrap {
-    padding: size(full, 50px, wsp, 16px);
+    @include inc.sizing(padding-top, full, 50px, wsp, 16px);
+    @include inc.sizing(padding-bottom, full, 50px, wsp, 16px);
+    @include inc.sizing(padding-left, full, 50px, wsp, 16px);
+    @include inc.sizing(padding-right, full, 50px, wsp, 16px);
   }
   
   &__inner {
-    padding: size(full, 100px, wsp, 10px) 0;
+    @include inc.sizing(padding-top, full, 50px, wsp, 16px);
+    @include inc.sizing(padding-bottom, full, 50px, wsp, 16px);
   }
 }
 

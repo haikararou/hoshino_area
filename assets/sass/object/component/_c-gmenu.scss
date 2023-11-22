@@ -45,7 +45,7 @@ gmenu
 .c-gmenu-secondary {
   display: grid;
   grid-template-columns: repeat(3, minmax(0,1fr));
-  gap: size(full, 10px, sp, 5px);
+  gap: inc.size(full, 10px, sp, 5px);
   align-items: center;
   
   @include inc.mq(tab) {
@@ -65,13 +65,19 @@ gmenu
     @include inc.mq(tab) {
       max-width: 10em;
       @include inc.sizing(margin-left, full, 10px, sp, 5px);
+      padding-top: 0!important;
+      padding-bottom: 0!important;
+      //height: 46px;
+      height: 2.75em;
     }
   }
   
   &__hamburger {
     @include inc.mq(tab) {
       margin: 0;
-      @include inc.sizing(margin-bottom, full, 10px, sp, 5px);
+      @include inc.sizing(margin-left, full, 10px, sp, 5px);
+      height: 2.75em;
+      //@include inc.sizing(margin-bottom, full, 10px, sp, 5px);
     }
   }
 }

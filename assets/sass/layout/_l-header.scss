@@ -112,7 +112,12 @@
   @include inc.mq(lap) {
     flex-direction: row;
     align-items: center;
-    @include inc.sizing(padding, full, 10px, sp, 5px);
+    height: 4.125em;
+    //height: 66px;
+    // padding-top: 6px;
+    // padding-bottom: 6px;
+    @include inc.sizing(padding-left, full, 10px, sp, 5px);
+    @include inc.sizing(padding-right, full, 10px, sp, 5px);
   }
   
   &.-fixed {

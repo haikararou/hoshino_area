@@ -4,9 +4,12 @@
 button
 -----------------------------------------------------*/
 .c-button-block {
-  border-radius: size(full, 10px, sp, 5px);
-  padding: .5em 3em;
+  border-radius: inc.size(full, 10px, sp, 5px);
+  //padding: .6em 3em;
+  padding: .25em 3em;
+  //height: 2.5em;
   display: inline-block;
+  cursor: pointer;
   
   &.-arrow {
     position: relative;
@@ -33,7 +36,7 @@ button
     align-items: center;
     text-align: center;
    @include inc.mq(desk) {
-      padding: .5em 2em;
+      padding: .6em 2em;
     }
     
     i,
@@ -58,12 +61,13 @@ button
   
   &.-more {
     width: 100%;
-    display: block;
+    //display: block;
+    display:flex; flex-direction:column; justify-content:center; align-items:center;
     text-align: center;
     
    @include inc.mq(tab) {
       width: auto;
-      display: table;
+      //display: table;
       margin-left: auto;
     }
   }
@@ -106,14 +110,14 @@ button
   display: block;
   background: inc.$theme-color-black;
   position: relative;
-  border-radius: size(full, 10px, sp, 5px);
-  width: size(full, 105px, sp, 65px);
-  height: size(tab, 47px, sp, 43px);
+  border-radius: inc.size(full, 10px, sp, 5px);
+  width: inc.size(full, 105px, sp, 65px);
+  height: inc.size(tab, 47px, sp, 43px);
   
   position: fixed;
   z-index: 999;
-  top: size(full, 30px, sp, 5px);
-  right: size(tab, 10px, sp, 5px);
+  top: inc.size(full, 30px, sp, 5px);
+  right: inc.size(tab, 10px, sp, 5px);
   margin: auto;
   text-indent: 100%;
   overflow: hidden;
@@ -175,7 +179,7 @@ button
   &__text {
     color: inc.$theme-color-darkyellow;
     font-family: inc.$font-set-en;
-    font-size: rem(11);
+    font-size: inc.rem(11);
     font-weight: 600;
   }
 }
