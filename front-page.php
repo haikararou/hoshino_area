@@ -3,60 +3,91 @@
  * トップページのテンプレート
  */
 get_header(); ?>
-  <main class="l-main">
-      <div class="c-title-page-main">
-        <h2 class="c-title-page-main__title">Informationの記事一覧</h2>
-        <p class="c-title-page">表示中のテンプレート：front-page.php</p>
-      </div>
-    
-    <div class="l-container -primary">
-      <div class="l-spacer -small">
-          <?php
-          // カスタム投稿の記事（最新3件）を表示
-          $args = array(
-            'post_type'      => 'information',
-            'posts_per_page' => 3
-          );
-          $the_query = new WP_Query( $args );
-          if ( $the_query->have_posts() ) :
-          ?>
-          <ul class="p-news-list">
-          <?php //ループ
-            while ( $the_query->have_posts() ) : $the_query->the_post();
-          ?>
-            <li class="p-news-list__item">
-              <a href="<?php the_permalink(); ?>">
-                <div class="p-news-card">
-                <img src="<?php echo get_my_post_thumbnail_url(); ?>" class="p-news-card__thumbnail">
 
-                 <h3 class="p-news-card__title"><?php the_title(); ?></h3>
-                 <p class="p-news-card__date"><?php the_time('Y年m月d日'); ?></p>
-                 <div class=""><?php echo get_custom_excerpt(120); ?>
+<p><br></p>
+<p><br></p>
 
-                 <div class="p-news-card__info">
-                   <p>リンク有カテゴリ：<?php echo get_post_category_with_link('information_cat'); ?></p>
-                   <p>リンク無カテゴリ：<?php echo get_post_category_without_link('information_cat'); ?></p>
-                   </p>
-                   <p>この記事の投稿タイプは「<?php echo get_current_post_type_label(); ?> (slug: <?php echo get_current_post_type_slug(); ?>)」です。</p>
-                 </div>
-                </div>
-              </a>
-            </li>
-           <?php endwhile; ?>
-           </ul>
+<?
+$today = date_i18n('Ymd');
+$today2 = date_i18n('Ymd-H:i:s');
+?>
+現在時刻：<?php echo $today2;?>
 
-           <div class="p-news-card__bottom-links c-button--more">
-             <a href="<?php echo get_post_type_archive_link('information'); ?>">もっと見る</a>
-           </div>
+<p><br></p>
+<p><br></p>
 
-           <?php else: ?>
-           <p>記事はありません</p>
-         <?php endif;
-         // 投稿データをリセット
-          wp_reset_postdata();
-        ?>
-     </div>
-    </div>
-  </main>
+    <?php
+    $args = array(
+      'post_type'=> 'event',
+      'meta_key' => 'event_start', //ACFのフィールド名
+      'meta_query' => array( // 判定条件…(開始日 >= 今日)or(終了日 >= 今日)
+          'relation' => 'AND',
+          array(
+          'key'     => 'event_start',
+          'value'   => $today,
+          'type'    => 'date',
+          'compare' => '<=',
+          ),
+          array(
+          'key' => 'event_end',
+          'value' => $today,
+          'type'    => 'date',
+          'compare' => '>',
+          ),
+      ),
+      'posts_per_page' => 3,
+    );
+    $wp_query = new WP_Query( $args );
+    ?>
+    <dl>
+      <?php if ( $wp_query->have_posts() ): ?>
+        <?php while ( $wp_query->have_posts() ): $wp_query->the_post(); $loopcounter++; ?>
+          <div>
+            <dt>投稿日：<?php the_time('Y年m月d日'); ?></dt>
+            <dd>
+              <?php if(get_field('event_start')): ?>イベント開始日：<?php the_field('event_start'); ?><br><?php endif; ?>
+              <?php if(get_field('event_end')): ?>イベント終了日：<?php the_field('event_end'); ?><br><?php endif; ?>
+              <a href="<?php the_permalink(); ?>">期間中 : <?php the_title(); ?></a>
+            </dd>
+          </div>
+        <?php endwhile; ?>
+      <?php else : ?>
+        <p>記事が見つかりませんでした。</p>
+      <?php endif; ?>
+      <?php wp_reset_query(); ?>
+      <?php
+        $counter = (3 - $loopcounter);
+      ;?>
+      <?php
+        $args = array(
+          'post_type' => 'event',
+          'post_status' => 'publish',
+          'meta_value'    => $today,// dateで現在の日時を取得
+          'meta_key'      => 'event_start',
+          'meta_compare'  => '>',// meta_valueとmeta_keyを比較して過去の場合のみ表示
+          'posts_per_page' => $counter,
+        );
+        $wp_query = new WP_Query( $args );
+      ?>
+      <?php if ( $wp_query->have_posts() ): ?>
+        <?php while ( $wp_query->have_posts() ): $wp_query->the_post(); ?>
+          <div>
+            <dt>投稿日：<?php the_time('Y年m月d日'); ?></dt>
+            <dd>
+              <?php if(get_field('event_start')): ?>イベント開始日：<?php the_field('event_start'); ?><br><?php endif; ?>
+              <?php if(get_field('event_end')): ?>イベント終了日：<?php the_field('event_end'); ?><br><?php endif; ?>
+              <a href="<?php the_permalink(); ?>">開催前 : <?php the_title(); ?></a>
+            </dd>
+          </div>
+        <?php endwhile; ?>
+      <?php else : ?>
+        <p>記事が見つかりませんでした。</p>
+      <?php endif; ?>
+      <?php wp_reset_query(); ?>
+    </dl>
+<?php /*postSingle：END*/ ?>
+
+<p><br></p>
+<p><br></p>
 
 <?php get_footer(); ?>

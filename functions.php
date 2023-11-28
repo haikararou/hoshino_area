@@ -24,35 +24,75 @@ remove_action( 'template_redirect', 'wp_redirect_admin_locations', 1000 );
 CSS・JSを登録する
 -------------------------------------------------------------------------*/
 function register_files() {
-  
-  wp_register_style( 'fontawesome', 'https://use.fontawesome.com/releases/v6.4.2/css/all.css');
-  wp_register_style( 'theme-font', 'https://fonts.googleapis.com/css2?family=Poppins:wght@300:600&display=swap');
-  wp_register_style( 'swiper', get_template_directory_uri().'/assets/css/swiper.min.css');
-  wp_register_style( 'wpadminbar', get_template_directory_uri().'/assets/css/wpadminbar.css', array(), filemtime( get_template_directory().'/assets/css/wpadminbar.css') );
-  wp_register_style( 'theme-common', get_template_directory_uri().'/assets/css/common.css', array(), filemtime( get_template_directory().'/assets/css/common.css') );
+	wp_register_style( 'fontawesome', 'https://use.fontawesome.com/releases/v6.4.2/css/all.css');
+	wp_register_style( 'theme-font', 'https://fonts.googleapis.com/css2?family=Poppins:wght@300:600&display=swap');
+	wp_register_style( 'swiper', get_template_directory_uri().'/assets/css/swiper.min.css');
+	wp_register_style( 'wpadminbar', get_template_directory_uri().'/assets/css/wpadminbar.css', array(), filemtime( get_template_directory().'/assets/css/wpadminbar.css') );
+	wp_register_style( 'theme-common', get_template_directory_uri().'/assets/css/common.css', array(), filemtime( get_template_directory().'/assets/css/common.css') );
 
 	wp_deregister_script('jquery');
 	wp_enqueue_script( 'jquery', '//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js');
 	wp_register_script( 'swiper', get_template_directory_uri() . '/assets/js/swiper.min.js');
 	wp_register_script( 'function', get_template_directory_uri() . '/assets/js/common.js', array(), filemtime( get_template_directory().'/assets/js/common.js') );
 	wp_register_script( 'weather', get_template_directory_uri() . '/assets/js/weather.js');
-
-
 }
 function my_enqueue_files() {
     register_files();
-		wp_enqueue_style( 'fontawesome' );
-		wp_enqueue_style( 'theme-font' );
-		wp_enqueue_style( 'swiper' );
-		wp_enqueue_style( 'wpadminbar' );
-		wp_enqueue_style( 'theme-common' );
-    
-		wp_enqueue_script( 'swiper' );
-		wp_enqueue_script( 'function' );
-		wp_enqueue_script( 'weather' );
-  }
-
+	wp_enqueue_style( 'fontawesome' );
+	wp_enqueue_style( 'theme-font' );
+	wp_enqueue_style( 'swiper' );
+	wp_enqueue_style( 'wpadminbar' );
+	wp_enqueue_style( 'theme-common' );
+	wp_enqueue_script( 'swiper' );
+	wp_enqueue_script( 'function' );
+	wp_enqueue_script( 'weather' );
+}
 add_action( 'wp_enqueue_scripts', 'my_enqueue_files' );
+
+
+/*--------------------------------------
+適用テンプレートのパスを変更
+--------------------------------------*/
+function get_custom_template( $page_template ) {
+	global $wp_query;
+
+	//single
+	if(is_singular('news')) {
+	$page_template = dirname( __FILE__ ) . "/news/single.php";
+	}
+	else if(is_singular('event')) {
+	$page_template = dirname( __FILE__ ) . "/event/single.php";
+	}
+	else if(is_singular('opening')) {
+	$page_template = dirname( __FILE__ ) . "/opening/single.php";
+	}
+
+	//archive
+	else if(is_post_type_archive('news')){
+	$page_template = dirname( __FILE__ ) . "/news/archive.php";
+	}
+	else if(is_post_type_archive('event')){
+	$page_template = dirname( __FILE__ ) . "/event/archive.php";
+	}
+	else if(is_post_type_archive('opening')){
+	$page_template = dirname( __FILE__ ) . "/opening/archive.php";
+	}
+
+	//taxonomy
+	else if(is_tax('news_cat')){
+	$page_template = dirname( __FILE__ ) . "/news/taxonomy.php";
+	}
+	else if(is_tax('event_cat')){
+	$page_template = dirname( __FILE__ ) . "/event/taxonomy.php";
+	}
+	else if(is_tax('opening_cat')){
+	$page_template = dirname( __FILE__ ) . "/opening/taxonomy.php";
+	}
+
+	return $page_template;
+	}
+	add_filter('single_template', 'get_custom_template');
+	add_filter('archive_template', 'get_custom_template');
 
 
 /* ---------------------------------------------------------------------
@@ -63,7 +103,7 @@ add_action( 'wp_enqueue_scripts', 'my_enqueue_files' );
 include_once( get_template_directory().'/functions/initial-setting.php' );
 
 /*メタタグ類の設定*/
-include_once( get_template_directory().'/functions/meta-setting.php' );
+//include_once( get_template_directory().'/functions/meta-setting.php' );
 
 /*カスタム投稿タイプを追加*/
 include_once( get_template_directory().'/functions/custompost.php' );
@@ -73,3 +113,5 @@ include_once( get_template_directory().'/functions/custompost.php' );
 
 /*ダッシュボードのカスタマイズ*/
 //include_once( get_template_directory().'/functions/dashboard.php' );
+
+

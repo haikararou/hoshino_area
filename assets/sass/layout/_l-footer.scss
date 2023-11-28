@@ -70,6 +70,7 @@ footer
     @include inc.sizing(padding-bottom, full, 15px, sp, 12px);
     padding-left: 3rem;
     padding-right: 3em;
+    line-height: 0;
   }
 }
 
