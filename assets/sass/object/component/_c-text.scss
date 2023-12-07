@@ -6,6 +6,9 @@ text
 .c-text-right {
   text-align: right;
 }
+.c-text-center {
+  text-align: center;
+}
 
 .c-text-darkyellow {
   color: inc.$theme-color-darkyellow;
@@ -13,7 +16,9 @@ text
 .c-text-gold {
   color: inc.$theme-color-gold;
 }
-
+.c-text-small {
+  @include inc.sizingRem(font-size, full, 14px, sp, 12px);
+}
 .c-text-underline {
   text-decoration: underline;
   text-underline-offset: 0.2em;

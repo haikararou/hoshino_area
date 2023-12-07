@@ -20,10 +20,11 @@ title
   }
 }
 .c-title-medium {
-  @include inc.sizingRem(font-size, full, 24px, sp, 17px);
+  @include inc.sizingRem(font-size, full, 24px, sp, 18px);
   margin-bottom: 1em;
 }
 .c-title-small {
+  @include inc.sizingRem(font-size, full, 20px, sp, 16px);
   margin-bottom: 1em;
 }
 
@@ -46,4 +47,11 @@ title
   @include inc.sizingRem(font-size, full, 16px, sp, 14px);
   @include inc.sizing(margin-bottom, full, 16px, sp, 8px);
   display: block;
+}
+
+.c-title-sub {
+ color: inc.$theme-color-gold;
+ @include inc.sizingRem(font-size, full, 14px, sp, 12px);
+ display: block;
+ margin-bottom: 12px;
 }

@@ -10,7 +10,54 @@
     max-width: 90%;
     margin: 0 auto;
   }
-  
+  &--primary-l {
+    @include inc.sizing(width, tab, 1170px, sp, 330px);
+    max-width: 90%;
+    @include inc.mq(tab) {
+      width: 1170px;
+    }
+    margin: 0 auto;
+  }
+  &--primary-ls {
+    @include inc.sizing(width, tab, 1070px, sp, 330px);
+    //max-width: 90%;
+    @include inc.mq(tab) {
+      width: 1070px;
+    }
+    margin: 0 auto;
+  }
+  &--primary-m {
+    @include inc.sizing(width, tab, 970px, sp, 330px);
+    max-width: 90%;
+    @include inc.mq(tab) {
+      width: 970px;
+    }
+    margin: 0 auto;
+  }
+  &--primary-ms {
+    @include inc.sizing(width, tab, 870px, sp, 330px);
+    max-width: 90%;
+    @include inc.mq(tab) {
+      width: 870px;
+    }
+    margin: 0 auto;
+  }
+  &--primary-s {
+    @include inc.sizing(width, tab, 670px, sp, 330px);
+    max-width: 90%;
+    @include inc.mq(tab) {
+      width: 670px;
+    }
+    margin: 0 auto;
+  }
+  &--primary-ss {
+    @include inc.sizing(width, tab, 470px, sp, 330px);
+    max-width: 90%;
+    @include inc.mq(tab) {
+      width: 470px;
+    }
+    margin: 0 auto;
+  }
   &--primary-scroll {
     width: 100%;
     margin: 0;
@@ -21,7 +68,7 @@
     &__inner {
     }
   }
-  
+
   &--secondary {
     width: 85%;
     max-width: 1200px;

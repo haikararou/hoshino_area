@@ -45,6 +45,7 @@
 @use "object/component/c-language";
 @use "object/component/c-color";
 @use "object/component/c-position";
+@use "object/component/c-display";
 
 /*
   3.2 - Project
@@ -53,7 +54,8 @@
 @use "object/project/p-faq";
 @use "object/project/p-restaurant";
 @use "object/project/p-gallery";
-
+@use "object/project/p-recruit";
+@use "object/project/p-news";
 
 /*
   3.3 - Utility

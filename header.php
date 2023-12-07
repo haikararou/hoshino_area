@@ -70,17 +70,17 @@
     </div>
     <div class="l-header-menu" id="js-fixed-header-pc">
       <ul class="c-gmenu-primary l-header-menu__primary" id="js-header-menu-primary">
-        <li class="c-gmenu-primary__item"><a href="" class="c-gmenu-primary__link">温泉</a></li>
-        <li class="c-gmenu-primary__item"><a href="" class="c-gmenu-primary__link">ショップ&amp;レストラン</a></li>
-        <li class="c-gmenu-primary__item"><a href="" class="c-gmenu-primary__link">アクティビティ</a></li>
-        <li class="c-gmenu-primary__item"><a href="" class="c-gmenu-primary__link">教会</a></li>
-        <li class="c-gmenu-primary__item"><a href="" class="c-gmenu-primary__link">ホテル</a></li>
+        <li class="c-gmenu-primary__item"><a href="<?php echo home_url('/tonbo'); ?>" class="c-gmenu-primary__link">温泉</a></li>
+        <li class="c-gmenu-primary__item"><a href="<?php echo home_url('/shop'); ?>" class="c-gmenu-primary__link">ショップ&amp;レストラン</a></li>
+        <li class="c-gmenu-primary__item"><a href="<?php echo home_url('/activity'); ?>" class="c-gmenu-primary__link">アクティビティ</a></li>
+        <li class="c-gmenu-primary__item"><a href="<?php echo home_url('/church'); ?>" class="c-gmenu-primary__link">教会</a></li>
+        <li class="c-gmenu-primary__item"><a href="<?php echo home_url('/staying'); ?>" class="c-gmenu-primary__link">ホテル</a></li>
       </ul>
       
       <div class="c-gmenu-secondary l-header-menu__secondary">
         <a href="" class="c-button-arrow c-gmenu-secondary__textbtn">施設を探す</a>
-        <a href="" class="c-button-block -white -icon c-gmenu-secondary__blockbtn"><i class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-access.svg"></i>アクセス</a>
-        <a href="" class="c-button-block -white -icon c-gmenu-secondary__blockbtn"><i class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-parking.svg"></i>駐車場</a>
+        <a href="<?php echo home_url('/access'); ?>" class="c-button-block -white -icon c-gmenu-secondary__blockbtn"><i class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-access.svg"></i>アクセス</a>
+        <a href="<?php echo home_url('/parking'); ?>" class="c-button-block -white -icon c-gmenu-secondary__blockbtn"><i class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-parking.svg"></i>駐車場</a>
         </ul>
         <button class="c-button-hamburger c-gmenu-secondary__hamburger" id="js-hamburger">メニュー</button>
       </div>

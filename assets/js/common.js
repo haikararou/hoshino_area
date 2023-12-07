@@ -184,7 +184,19 @@ $(function() {
       $(this).find('.p-faq-list__answer').slideUp();
     }
   });
-  
+
+  // RECRUIT
+  $('.p-recruit-list__item').on('click', function() {
+    $(this).toggleClass('-open');
+
+    if($(this).hasClass('-open')) {
+      $(this).find('.p-recruit-list__txt').slideDown();
+    } else {
+      $(this).find('.p-recruit-list__txt').slideUp();
+    }
+  });
+
+
   //スライダー
   if($('.js-gallery-slider').length > 0) {
     gallerySlider = new Swiper('.js-gallery-slider', {
@@ -199,7 +211,7 @@ $(function() {
       breakpoints: {
         768 : {
           spaceBetween: 32,
-    			slidesPerView: 2.4,
+          slidesPerView: 2.4,
         }
       }
     });

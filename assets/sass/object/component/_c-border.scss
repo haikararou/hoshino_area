@@ -3,6 +3,9 @@
 /*
 border
 -----------------------------------------------------*/
+.c-border {
+  border: 1px solid inc.$theme-color-darkyellow;
+}
 .c-border-t {
   border-top: 1px solid inc.$theme-color-yellow;
 }
