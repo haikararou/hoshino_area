@@ -182,4 +182,32 @@ list
       padding: 0.65em 1rem;
     }
   }
+  &.tab-traffic-report {
+    .traffic-report {
+      background: inc.$theme-color-gold;
+      color: inc.$base-color!important;
+    }
+  }
+  &.tab-communitybase {
+    .communitybase {
+      background: inc.$theme-color-gold;
+      color: inc.$base-color!important;
+    }
+  }
+  &.tab-shopinfo {
+    .shopinfo {
+      background: inc.$theme-color-gold;
+      color: inc.$base-color!important;
+    }
+  }
+  &.tab-topics {
+    .topics {
+      background: inc.$theme-color-gold;
+      color: inc.$base-color!important;
+    }
+  }
 }
+
+
+
+

@@ -4,40 +4,59 @@
  */
 get_header(); ?>
 
-<main class="l-main">
-	<section class="l-wrapper">
-		<div class="p-breadcrumb">
-			<ul class="p-breadcrumb__container">
-				<li class="p-breadcrumb__item"><a href="../">Home</a></li>
-				<li class="p-breadcrumb__item"><a href="./">お知らせ</a></li>
-				<li class="p-breadcrumb__item"><?php the_title(); ?></li>
+<div class="l-spacer">
+	<div class="l-container--wide">
+		<?php get_template_part('assets/inc/breadcrumb'); ?>
+	</div>
+</div>
+
+<section class="l-spacer -medium -both">
+	<div class="l-container--primary c-display-flex -between">
+		<h1 class="c-title-ex-large">
+			<span class="c-title-sub">
+			<?php
+			if ($terms = get_the_terms($post->ID, 'news_cat')) {
+			foreach ( $terms as $term ):
+			if($term->parent) echo esc_html($term->name);
+			endforeach;
+			} ?>
+			</span>
+			<?php the_title(); ?>
+		</h1>
+		<div class="p-news-date">
+			<div><?php the_time('Y.m.d') ?></div>
+			<ul class="c-list-category -newsDate">
+				<?php
+				$terms = get_the_terms($post->ID, 'news_cat');
+				foreach($terms as $term){
+				$term_name = $term->name;
+				echo '<li><a href="./category/'. $term-> slug .'" class="c-list-category__item -act">';
+				echo $term_name;
+				echo '</a></li>';
+				break; };
+				?>
 			</ul>
 		</div>
-	</section>
-	<section class="l-wrapper4">
-		<h1 class="c-text--h1 news-title"><?php the_title(); ?><span><?php the_time('Y年m月d日'); ?></span></h1>
-		<?php the_content(); ?>
-		<div class="p-text-box"></div>
-		<div class="p-text-box">
-			<div class="wp-pager">
-				<ul>
-					<?php
-					$prev = get_adjacent_post(false,'',true);
-					if($prev) {
-						echo '<li class="prev"><a rel="prev" aria-label="前のページ" href="'.get_permalink($prev).'" class="underline"><span>前へ</span></a></li>';
-					}
-					?>
-					<li class="center"><a href="<?php echo home_url('/news'); ?>" class="underline">一覧を見る</a></li>
-					<?php
-					$next = get_adjacent_post(false,'',false);
-					if($next) {
-						echo '<li class="next"><a rel="next" aria-label="次のページ" href="'.get_permalink($next).'" class="underline"><span>次へ</span></a></li>';
-					}
-					?>
-				</ul>
-			</div>
-		</div>
-	</section>
+	</div>
+</section>
+
+<?php if(has_post_thumbnail()) : ?>
+<section class="l-spacer">
+  <div class="l-container--primary">
+    <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post_id)); ?>" alt="<?php the_title(); ?>" />
+  </div>
+</section>
+<?php endif; ?>
+
+<?php the_content(); ?>
+
+<section class="l-spacer -medium -both">
+  <div class="l-container--primary-s c-text-center">
+    <a href="<?php echo home_url('/news'); ?>" class="c-button-block -lightyellow -arrow"><span>ニュース一覧</span></a>
+  </div>
+</section>
+
+<?php get_template_part('news/list-3'); ?>
 
 <?php get_footer(); ?>
 

@@ -3,54 +3,76 @@
 ?>
 <?php get_header(); ?>
 
-<p><br></p>
-<p><br></p>
-
 <?
 $today = date('Ymd');
 $today2 = date('Ymd-H:i:s');
 ?>
-現在時刻：<?php echo $today2;?>
 
-<p><br></p>
+<div class="l-spacer">
+    <div class="l-container--wide">
+        <?php get_template_part('inc/breadcrumb'); ?>
+    </div>
+</div>
 
-<h2>終了済</h2><br>
-<?php /*postSingle：START*/ ?>
-    <?php
-        $args = array(
-            'paged' => $paged,
-            'post_type' => 'event',
-            'post_status' => 'publish',
-            'meta_value'    => date('Ymd'),// dateで現在の日時を取得
-            'meta_key'      => 'event_end',
-            'meta_compare'  => '<',// meta_valueとmeta_keyを比較して過去の場合のみ表示
-            'posts_per_page' => 10,
-        );
-        $wp_query = new WP_Query( $args );
-    ?>
-    <dl>
-        <?php if ( $wp_query->have_posts() ): ?>
-            <?php while ( $wp_query->have_posts() ): $wp_query->the_post(); ?>
-                <div>
-                    <dt>投稿日：<?php the_time('Y年m月d日'); ?></dt>
-                    <dd>
-                        <?php if(get_field('event_start')): ?>イベント開始日：<?php the_field('event_start'); ?><br><?php endif; ?>
-                        <?php if(get_field('event_end')): ?>イベント終了日：<?php the_field('event_end'); ?><br><?php endif; ?>
-                        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                    </dd>
-                </div>
-            <?php endwhile; ?>
-            <?php wp_pagenavi(); ?>
-        <?php else : ?>
-            <p>記事が見つかりませんでした。</p>
-        <!-- ?php endif; ? -->
-        <?php endif; wp_reset_postdata(); ?>
+<section class="l-spacer -medium -both">
+	<div class="l-container--primary">
+		<h1 class="c-title-ex-large">イベント情報</h1>
+        <?php $class= isset($args['class']) ? $args['class'] : ''; ?>
+        <div><?php get_template_part('inc/today'); ?></div>
+	</div>
+</section>
 
-        <?php wp_reset_query(); ?>
-    </dl>
-<?php /*postSingle：END*/ ?>
+<?php
+$args = array(
+    'paged' => $paged,
+    'post_type' => 'event',
+    'post_status' => 'publish',
+    'meta_value'    => $today,// dateで現在の日時を取得
+    'meta_key'      => 'event_end',
+    'meta_compare'  => '<',// meta_valueとmeta_keyを比較して過去の場合のみ表示
+    'posts_per_page' => 12,
+);
+$wp_query = new WP_Query( $args );
+?>
+<section class="l-spacer -medium -both">
+    <div class="l-container--primary">
+        <article class="l-contents--left-title">
+            <h2 class="c-title-large -vertical l-contents--left-title__title">開催終了したイベント</h2>
+            <div class="l-contents--left-title__conts">
+                <?php if ( $wp_query->have_posts() ): ?>
+                <ul class="p-post-list">
+                <?php while ( $wp_query->have_posts() ): $wp_query->the_post(); ?>
+                    <li class="p-post-list__item">
+                        <a href="<?php the_permalink(); ?>">
+                            <article class="p-post-card">
+                                <div class="p-post-card__img">
+                                <?php if(has_post_thumbnail()) : ?>
+                                    <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post_id)); ?>" alt="<?php the_title(); ?>" />
+                                <?php endif; ?>
+                                </div>
+                                <div class="p-post-card__text">
+                                    <p class="p-post-card__cat"><?php $terms = get_the_terms($post->ID,'event_cat'); if($terms){echo $terms[0]->name;} ?></p>
+                                    <time class="p-post-card__date"><?php the_time('Y.m.d') ?></time>
+                                    <h3 class="p-post-card__title"><?php the_title(); ?></h3>
+                                    <?php if(get_field('event_period')): ?><p class="p-post-card__info">終了　<span><?php the_field('event_period'); ?></span></p><?php endif; ?>
+                                </div>
+                            </article>
+                        </a>
+                    </li>
+                <?php endwhile; ?>
+                </ul>
 
-<p><br></p>
-<p><br></p>
+                <section class="l-spacer -medium -both">
+                    <?php wp_pagenavi(); ?>
+                </section>
+
+                <?php else : ?>
+                <p>記事が見つかりませんでした。</p>
+                <?php endif; ?>
+                <?php wp_reset_query(); ?>
+            </div>
+        </article>
+    </div>
+</section>
 
 <?php get_footer(); ?>

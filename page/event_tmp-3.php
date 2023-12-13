@@ -9,19 +9,31 @@
 </div>
 
 <section class="l-spacer -medium -both">
-	<div class="l-container--primary">
-		<article class="l-contents">
-			<p class="p-post-card__cat">ハルニレテラス</p>
+	<div class="l-container--primary c-display-flex -between">
+		<div>
+			<h1 class="c-title-ex-large">
+				<span class="c-title-sub">ハルニレテラス</span>
+				【軽井沢アンブレラスカイ】雨の日も楽しくなる傘と長靴<br>
+				<span class="p-post-card__info">開催期間：2023年6月2日〜7月9日</span>
+			</h1>
+		</div>
+		<div class="p-news-date">
 			<time class="p-post-card__date">2023.08.21</time>
-			<h1 class="c-title-ex-large">【軽井沢アンブレラスカイ】雨の日も楽しくなる傘と長靴</h1>
-			<p class="p-post-card__info">開催期間：2023年6月2日〜7月9日</p>
-			<div class="">
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/dummy/black1.jpg">
-			</div>
-			<div class="">
-				<p>「軽井沢アンブレラスカイ2023」の開催にあわせて、色とりどりのドリンクが揃いました。</p>
-			</div>
-		</article>
+		</div>
+	</div>
+</section>
+
+<section class="l-spacer">
+	<div class="l-container--primary">
+		<img src="<?php echo get_template_directory_uri(); ?>/assets/img/dummy/news.png" width="100%" height="auto">
+	</div>
+</section>
+
+<section class="l-spacer -small -both">
+	<div class="l-container--primary-s">
+		<div class="l-spacer -small">
+			<p>「軽井沢アンブレラスカイ2023」の開催にあわせて、色とりどりのドリンクが揃いました。</p>
+		</div>
 	</div>
 </section>
 
@@ -35,16 +47,16 @@
 					</div>
 					<div class="l-contents-2column__block -w-1_2">
 						<h3 class="c-title-ex-large">Miuttのハルニレテラス限定モデルの傘</h3>
-						<p>Miuttらしい明るく楽しいカラフルな傘は、周りを笑顔にしてくれるアイテムです。大阪の職人と作り上げた、傘骨からハンドルまでオリジナルの特別な傘です。</p>
-						<ul class="c-list-dot">
+						<p class="l-spacer -small">Miuttらしい明るく楽しいカラフルな傘は、周りを笑顔にしてくれるアイテムです。大阪の職人と作り上げた、傘骨からハンドルまでオリジナルの特別な傘です。</p>
+						<ul class="c-list-dot l-spacer -small">
 							<li class="c-list-dot__item">Miutt日傘 19,250円</li>
 							<li class="c-list-dot__item">Miutt晴雨兼用折りたたみ傘 16,500円</li>
 							<li class="c-list-dot__item">Miutt雨傘 17,600円</li>
 						</ul>
-						<p>
+						<p class="l-spacer -small">
 							<a href="#" class="c-button-block -lightyellow -arrow"><span>取り扱いショップ</span></a>
 						</p>
-						<p>販売ショップ：ハルニレテラス「NATUR TERRACE」</p>
+						<p class="l-spacer -small">販売ショップ：ハルニレテラス「NATUR TERRACE」</p>
 					</div>
 				</div>
 			</div>
@@ -59,16 +71,16 @@
 				<div class="l-contents-2column">
 					<div class="l-contents-2column__block -w-1_2">
 						<h3 class="c-title-ex-large">Miuttのハルニレテラス限定モデルの傘</h3>
-						<p>Miuttらしい明るく楽しいカラフルな傘は、周りを笑顔にしてくれるアイテムです。大阪の職人と作り上げた、傘骨からハンドルまでオリジナルの特別な傘です。</p>
-						<ul class="c-list-dot">
+						<p class="l-spacer -small">Miuttらしい明るく楽しいカラフルな傘は、周りを笑顔にしてくれるアイテムです。大阪の職人と作り上げた、傘骨からハンドルまでオリジナルの特別な傘です。</p>
+						<ul class="c-list-dot l-spacer -small">
 							<li class="c-list-dot__item">Miutt日傘 19,250円</li>
 							<li class="c-list-dot__item">Miutt晴雨兼用折りたたみ傘 16,500円</li>
 							<li class="c-list-dot__item">Miutt雨傘 17,600円</li>
 						</ul>
-						<p>
+						<p class="l-spacer -small">
 							<a href="#" class="c-button-block -lightyellow -arrow"><span>取り扱いショップ</span></a>
 						</p>
-						<p>販売ショップ：ハルニレテラス「NATUR TERRACE」</p>
+						<p class="l-spacer -small">販売ショップ：ハルニレテラス「NATUR TERRACE」</p>
 					</div>
 					<div class="l-contents-2column__block -w-1_2">
 						<img src="https://test.ultra-l.net/a/hoshino-area/cms/wp-content/themes/hoshino-area/assets/img/dummy/black1.jpg">
@@ -86,32 +98,9 @@
 				<div class="l-contents-2column">
 					<div class="l-contents-2column__block -w-1_2">
 						<h3 class="c-title-ex-large">軽井沢アンブレラスカイ<br>限定ドリンク</h3>
-						<p>Miuttらしい明るく楽しいカラフルな傘は、周りを笑顔にしてくれるアイテムです。大阪の職人と作り上げた、傘骨からハンドルまでオリジナルの特別な傘です。</p>
-						<ul class="c-list-dot">
-							<li class="c-list-dot__item">Miutt日傘 19,250円</li>
-							<li class="c-list-dot__item">Miutt晴雨兼用折りたたみ傘 16,500円</li>
-							<li class="c-list-dot__item">Miutt雨傘 17,600円</li>
-						</ul>
-						<p>
-							<a href="#" class="c-button-block -lightyellow -arrow"><span>取り扱いショップ</span></a>
-						</p>
-						<p>販売ショップ：ハルニレテラス「NATUR TERRACE」</p>
 					</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-<section class="c-bg-yellow l-contents-block__wrap">
-	<div class="l-contents-block c-bg-white">
-		<div class="l-contents-block__inner">
-			<div class="l-container--primary">
-				<div class="l-contents-2column">
 					<div class="l-contents-2column__block -w-1_2">
-					<div class="l-contents-2column__block -w-1_2">
-						<dl class="">
+						<dl class="c-list-dl -noBorder">
 							<dt>期間</dt>
 							<dd>2023年6月2日～7月9日<br>＊数量限定<br>＊詳細は各店舗にお問合せください。</dd>
 						</dl>

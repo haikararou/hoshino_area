@@ -22,32 +22,8 @@
       </section>
     </a>
   </div>
-  
-  <div class="l-footer-important-news">
-    <div class="l-container--primary">
-      <div class="l-footer-important-news__inner">
-        <h2 class="l-footer-important-news__title">重要なお知らせ</h2>
 
-        <dl class="c-list-news l-footer-important-news__news">
-          <div class="c-list-news__item">
-            <dt class="c-list-news__date">2023.08.21</dt>
-            <dt class="c-list-news__conts"><a href="">23年お盆期間の混雑予想</a></dt>
-          </div>
-          <div class="c-list-news__item">
-            <dt class="c-list-news__date">2023.08.21</dt>
-            <dt class="c-list-news__conts"><a href="">23年お盆期間の混雑予想</a></dt>
-          </div>
-          <div class="c-list-news__item">
-            <dt class="c-list-news__date">2023.08.21</dt>
-            <dt class="c-list-news__conts"><a href="">23年お盆期間の混雑予想</a></dt>
-          </div>
-        </dl>
-      </div>
-      <div class="l-footer-important-news__more">
-        <a href="#" class="c-button-block -lightyellow -arrow -more"><span>もっと見る</span></a>
-      </div>
-    </div>
-  </div>
+  <?php get_template_part('news/list-important'); ?>
 
   <div class="l-footer-information">
     <?php get_template_part('inc/today'); ?>

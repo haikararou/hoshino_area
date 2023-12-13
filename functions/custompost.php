@@ -183,11 +183,9 @@ add_rewrite_rule('opening/category/([^/]+)/page/([0-9]+)/?$', 'index.php?opening
 add_action('pre_get_posts', 'my_pre_get_posts');
 function my_pre_get_posts($query) {
 	if(!is_admin() && $query->is_main_query()) {
-	/*
-		if (is_tax('works_cat') || is_post_type_archive('works')) {
-			$query->set('posts_per_page', '15');
-		}
-	*/
+		// if (is_tax('news_cat') || is_post_type_archive('news')) {
+		// 	$query->set('posts_per_page', '12');
+		// }
 	}
 }
 
