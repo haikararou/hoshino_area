@@ -7,7 +7,7 @@
 
 <footer class="l-footer">
   <div class="l-footer__outline">
-    <a href="" class="u-transparent">
+    <a href="<?php echo home_url('/facility'); ?>" class="u-transparent">
       <section class="l-footer-map l-footer-buttonlink">
         <h2 class="l-footer-buttonlink__title"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/ttl-area-map.svg" alt="軽井沢 星野エリアマップ" width="172" height="133"></h2>
         <p class="l-footer-map__text">Karuizawa Hoshino Area Map</p>

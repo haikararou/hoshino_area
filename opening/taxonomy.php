@@ -1,108 +1,66 @@
 <?php get_header(); ?>
 
-<p><br></p>
-<p><br></p>
-
-<style>
-.wrapper {
-    padding: 0 5vw;
-}
-.flxA {
-    display: flex;
-    flex-wrap: wrap;
-    border-left: 1px solid #ccc;
-}
-.flxA:last-child .flxC,
-.flxA:last-child .flx01 {
-    border-bottom: 1px solid #ccc;
-}
-.flxB {
-    display: flex;
-    flex-wrap: wrap;
-    border-top: 1px solid #ccc;
-}
-.flxC {
-    display:flex;
-    flex-direction:column;
-    border-right: 1px solid #ccc;
-}
-.flx01 {
-    width: 160px;
-    border-top: 1px solid #ccc;
-    padding: 0.8rem;
-}
-.flx02 {
-    width: 160px;
-    border-left: 1px solid #ccc;
-    padding: 0.8rem;
-    line-height: 1.6;
-}
-.flx03 {
-    width: 400px;
-    border-left: 1px solid #ccc;
-    padding: 0.8rem;
-    line-height: 1.6;
-}
-.flx03 span {
-    display: block;
-    font-size: 14px;
-}
-.navi {
-    margin: 0 0 40px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-}
-</style>
-
-<div class="wrapper">
-
-    <div class="navi">
-    <a href="https://test.ultra-l.net/a/hoshino-area/cms/opening">全期間</a>
-    <?php
-    $terms = get_terms('opening_cat');
-    foreach ( $terms as $term ) {
-    echo '<a href="'.get_term_link($term).'">'.$term->name.'</a>';
-    }
-    ?>
+<div class="l-spacer">
+    <div class="l-container--wide">
+        <?php get_template_part('inc/breadcrumb'); ?>
     </div>
-    <div class="flxA">
-        <div class="flx01"></div>
-        <div class="flxC">
-            <div class="flxB">
-                <div class="flx02">期間</div>
-            <?php if (have_posts()) : ?>
-                <?php while (have_posts()) : the_post(); ?>
-                <div class="flx03">
-                    <?php
-                        if ( have_rows( 'opening_restaurant' ) ) :
-                            while ( have_rows( 'opening_restaurant' ) ) : the_row();
-                                if ( have_rows( 'ilsogno' ) ) :
-                                    while ( have_rows( 'ilsogno' ) ) : the_row();
-                                        $content = get_sub_field( 'time' );
-                                        $style = get_sub_field( 'comment' );
+</div>
+
+<?php
+echo '<style>';
+echo '.cat-';
+echo get_queried_object()->slug;
+echo '{background: #93936A; color: #FFF !important;}';
+echo '</style>';
+?>
+<section class="l-spacer -medium -both">
+	<div class="l-container--primary">
+		<h1 class="c-title-ex-large">営業時間</h1>
+        <nav>
+            <ul class="c-list-category">
+                <li><a href="<?php echo home_url(); ?>/opening/" class="c-list-category__item">全期間</a></li>
+                <?php
+                $terms = get_terms('opening_cat');
+                foreach ( $terms as $term ) {
+                echo '<li><a class="c-list-category__item cat-'.$term-> slug.'" href="'.get_term_link( $term ).'">'.$term->name.'</a></li>';
+                }
+                ?>
+            </ul>
+        </nav>
+	</div>
+</section>
+
+<section class="l-spacer -medium -both">
+	<div class="l-container--primary">
+        <div class="p-opening--scroll">
+        <table class="p-opening--table">
+            <tr>
+                <th class="p-opening--fixed01" colspan="2">期間</th>
+                <?php if (have_posts()) : ?>
+                        <?php while (have_posts()) : the_post(); ?>
+                        <td class="p-opening--fixed04">
+                            <?php
+                                if ( have_rows( 'opening_restaurant' ) ) :
+                                    while ( have_rows( 'opening_restaurant' ) ) : the_row();
+                                        if ( have_rows( 'ilsogno' ) ) :
+                                            while ( have_rows( 'ilsogno' ) ) : the_row();
+                                                $content = get_sub_field( 'time' );
+                                                $style = get_sub_field( 'comment' );
+                                            endwhile;
+                                        endif;
                                     endwhile;
                                 endif;
-                            endwhile;
-                        endif;
-                    ?>
-                    <!-- <?php the_title(); ?><br> -->
-                    <?php if(get_field('opening_start')): ?><?php the_field('opening_start'); ?><?php endif; ?>
-                    <?php if(get_field('opening_end')): ?>〜<?php the_field('opening_end'); ?><?php endif; ?>
-                </div>
-                <?php endwhile; ?>
-            <?php endif; ?>
-            </div>
-        </div>
-    </div>
-
-    <div class="flxA">
-        <div class="flx flx01">
-            レストラン
-        </div>
-        <div class="flxC">
-            <div class="flxB">
-                <div class="flx02">イル・ソーニョ</div>
+                            ?>
+                            <!-- <?php the_title(); ?><br> -->
+                            <?php if(get_field('opening_start')): ?><?php the_field('opening_start'); ?><?php endif; ?>
+                            <?php if(get_field('opening_end')): ?>〜<?php the_field('opening_end'); ?><?php endif; ?>
+                        </td>
+                        <?php endwhile; ?>
+                    <?php endif; ?>
+            </tr>
+            <tr>
+                <th class="p-opening--fixed02" rowspan="4">レストラン</th>
+                <th class="p-opening--fixed03">イル・ソーニョ</th>
                 <?php if (have_posts()) : ?>
                 <?php while (have_posts()) : the_post(); ?>
                     <?php
@@ -117,14 +75,14 @@
                             endwhile;
                         endif;
                     ?>
-                    <div class="flx03">
+                    <td>
                         <?php echo $content; ?><span><?php echo $style; ?></span>
-                    </div>
+                    </td>
                 <?php endwhile; ?>
                 <?php endif; ?>
-            </div>
-            <div class="flxB">
-                <div class="flx02">希須林</div>
+            </tr>
+            <tr>
+                <th class="p-opening--fixed03">希須林</th>
                 <?php if (have_posts()) : ?>
                 <?php while (have_posts()) : the_post(); ?>
                     <?php
@@ -139,14 +97,14 @@
                             endwhile;
                         endif;
                     ?>
-                    <div class="flx03">
+                    <td>
                         <?php echo $content; ?><span><?php echo $style; ?></span>
-                    </div>
+                    </td>
                 <?php endwhile; ?>
                 <?php endif; ?>
-            </div>
-            <div class="flxB">
-                <div class="flx02">川上庵</div>
+            </tr>
+            <tr>
+                <th class="p-opening--fixed03">川上庵</th>
                 <?php if (have_posts()) : ?>
                 <?php while (have_posts()) : the_post(); ?>
                     <?php
@@ -161,14 +119,14 @@
                             endwhile;
                         endif;
                     ?>
-                    <div class="flx03">
+                    <td>
                         <?php echo $content; ?><span><?php echo $style; ?></span>
-                    </div>
+                    </td>
                 <?php endwhile; ?>
                 <?php endif; ?>
-            </div>
-            <div class="flxB">
-                <div class="flx02">サジロカフェ</div>
+            </tr>
+            <tr>
+                <th class="p-opening--fixed03">サジロカフェ</th>
                 <?php if (have_posts()) : ?>
                 <?php while (have_posts()) : the_post(); ?>
                     <?php
@@ -183,22 +141,15 @@
                             endwhile;
                         endif;
                     ?>
-                    <div class="flx03">
+                    <td>
                         <?php echo $content; ?><span><?php echo $style; ?></span>
-                    </div>
+                    </td>
                 <?php endwhile; ?>
                 <?php endif; ?>
-            </div>
-        </div>
-    </div>
-
-    <div class="flxA">
-        <div class="flx flx01">
-            カフェ＆スイーツ
-        </div>
-        <div class="flxC">
-            <div class="flxB">
-                <div class="flx02">丸山珈琲</div>
+            </tr>
+            <tr>
+                <th class="p-opening--fixed02" rowspan="4">カフェ＆スイーツ</th>
+                <th class="p-opening--fixed03">丸山珈琲</th>
                 <?php if (have_posts()) : ?>
                 <?php while (have_posts()) : the_post(); ?>
                     <?php
@@ -213,14 +164,14 @@
                             endwhile;
                         endif;
                     ?>
-                    <div class="flx03">
+                    <td>
                         <?php echo $content; ?><span><?php echo $style; ?></span>
-                    </div>
+                    </td>
                 <?php endwhile; ?>
                 <?php endif; ?>
-            </div>
-            <div class="flxB">
-                <div class="flx02">ナガイファーム</div>
+            </tr>
+            <tr>
+                <th class="p-opening--fixed03">ナガイファーム</th>
                 <?php if (have_posts()) : ?>
                 <?php while (have_posts()) : the_post(); ?>
                     <?php
@@ -235,17 +186,15 @@
                             endwhile;
                         endif;
                     ?>
-                    <div class="flx03">
+                    <td>
                         <?php echo $content; ?><span><?php echo $style; ?></span>
-                    </div>
+                    </td>
                 <?php endwhile; ?>
                 <?php endif; ?>
-            </div>
+            </tr>
+        </table>
         </div>
     </div>
-</div>
-
-<p><br></p>
-<p><br></p>
+</section>
 
 <?php get_footer(); ?>

@@ -4,6 +4,13 @@
 /*
 post
 -----------------------------------------------------*/
-.p-news-date {
-  text-align: right;
+.p-news {
+  &-date {
+    text-align: right;
+  }
+  &-hero {
+    img {
+      width: 100%;
+    }
+  }
 }

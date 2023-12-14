@@ -1,3 +1,12 @@
+<!-- ?php
+if(!is_home()):
+    if(is_post_type_archive('opening') || is_singular('opening') || is_tax('opening_cat')):
+        $userArray = array("elle" => "qwerasdf"
+      );
+      basic_auth($userArray);
+    endif;
+endif;
+? -->
 <?php
 /**
  * ヘッダーテンプレート
@@ -57,8 +66,8 @@
     
       <div class="l-header-menu__tertiary">
         <ul class="c-gmenu-tertiary">
-          <li class="c-gmenu-tertiary__item"><a href="" class="c-button-arrow">イベント情報</a></li>
-          <li class="c-gmenu-tertiary__item"><a href="" class="c-button-arrow">ニュース</a></li>
+          <li class="c-gmenu-tertiary__item"><a href="<?php echo home_url('/event'); ?>" class="c-button-arrow">イベント情報</a></li>
+          <li class="c-gmenu-tertiary__item"><a href="<?php echo home_url('/news'); ?>" class="c-button-arrow">ニュース</a></li>
         </ul>
 
         <div class="l-header-menu__lang">

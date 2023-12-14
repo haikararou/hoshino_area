@@ -16,6 +16,61 @@ $today2 = date_i18n('Ymd-H:i:s');
 <p><br></p>
 <p><br></p>
 
+営業日（個別取得テスト）
+<?php
+$args = array(
+  'post_type'=> 'opening',
+  'meta_key' => 'opening_start', //ACFのフィールド名
+  'meta_query' => array( // 判定条件…(開始日 >= 今日)or(終了日 >= 今日)
+    'relation' => 'AND',
+    array(
+    'key'     => 'opening_start',
+    'value'   => $today,
+    'type'    => 'date',
+    'compare' => '<=',
+    ),
+    array(
+    'key' => 'opening_end',
+    'value' => $today,
+    'type'    => 'date',
+    'compare' => '>=',
+    ),
+  ),
+  'posts_per_page' => 1,
+);
+$wp_query = new WP_Query( $args );
+?>
+<section class="l-spacer -medium -both">
+  <div class="l-container--primary">
+  <?php if ( $wp_query->have_posts() ): ?>
+    <?php while ( $wp_query->have_posts() ): $wp_query->the_post(); ?>
+      <?php
+        if ( have_rows( 'opening_restaurant' ) ) :
+          while ( have_rows( 'opening_restaurant' ) ) : the_row();
+            if ( have_rows( 'ilsogno' ) ) :
+              while ( have_rows( 'ilsogno' ) ) : the_row();
+                $content = get_sub_field( 'time' );
+                $style = get_sub_field( 'comment' );
+              endwhile;
+            endif;
+          endwhile;
+        endif;
+      ?>
+      <?php echo $content; ?><span><?php echo $style; ?></span>
+    <?php endwhile; ?>
+    <?php endif; ?>
+    <?php wp_reset_query(); ?>
+  </div>
+</section>
+
+<p><br></p>
+<p><br></p>
+
+
+
+<p><br></p>
+<p><br></p>
+
     <?php
     $args = array(
       'post_type'=> 'event',

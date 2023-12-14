@@ -1,7 +1,9 @@
 <?php
+$current_post_id = get_the_ID(); // 現在表示中の記事IDを取得
 $args = array(
     'post_type' => 'news',
     'posts_per_page' => 3,
+    "post__not_in" => [$current_post_id], // 除外する記事のIDを指定
     //'order' => 'DESC',
     'tax_query' => array(
         array(
