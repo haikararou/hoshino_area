@@ -21,24 +21,23 @@ endif;
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<?php wp_head(); ?>
 
-  <?php /*
-	<meta name="description" content="<?php print_description(); ?>">
+<?php if ( is_page('contact') ) : ?>
+  <script type="text/javascript" src="https://ajaxzip3.github.io/ajaxzip3.js"></script>
+  <script type="text/javascript">
+  $(function(){
+    $('#zip').keyup(function(event){
+      AjaxZip3.zip2addr(this,'','addr','addr');
+    })
+  })
+  </script>
+  <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/js/autoKana.js"></script>
+  <script type="text/javascript">
+  $(function() {
+    $.fn.autoKana('input[name="your-name"]', 'input[name="your-kana"]');
+  });
+  </script>
+<?php endif; ?>
 
-  <!-- OGP -->
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="ja_JP">
-	<meta property="og:title" content="<?php echo print_ogp_title(); ?>">
-	<meta property="og:description" content="<?php print_description(); ?>">
-	<meta property="og:url" content="<?php print_url(); ?>">
-	<meta property="og:image" content="<?php echo get_ogpimg_url(); ?>">
-  
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="<?php print_ogp_title(); ?>">
-  <meta name="twitter:description" content="<?php print_description(); ?>">
-  <meta name="twitter:image:src" content="<?php echo get_ogpimg_url(); ?>">
-  
-  */ ?>
-  
   <!--google Analytics -->
   <!--google Analyticsのタグをここに張り付ける -->
   <!-- adobe font -->

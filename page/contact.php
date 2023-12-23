@@ -17,66 +17,17 @@
 <section class="l-spacer -medium -both">
 	<div class="l-container--primary-s">
 		<article class="l-contents">
-			<p class="">各施設へのお問い合わせは以下よりお願いいたします。</p>
+			<p class="">下記の入力フォームに必要事項をご入力のうえ、お問い合わせください。<br>
+			なお、お問い合わせをいただいてから、ご連絡までにお時間をいただく場合がございます。ご了承ください。</p>
+			<ul class="c-list-kome">
+				<li class="c-list-kome__item">ご宿泊に関するお問い合わせは、各施設の公式サイトに掲載のお電話までお申し付けください。
+				<li class="c-list-kome__item">団体バスでのご利用について：</li>
+				<li class="c-list-kome__item">採用についてのお問合せ：</li>
+				<li class="c-list-kome__item">ポップアップショップやイベントの出店のご希望は現在承っておりません。</li>
+
+			</ul>
 			<div class="l-spacer -medium">
-				<h3 class="c-title-medium">ご宿泊</h3>
-				<dl class="c-list-dl">
-
-					<dt>軽井沢ホテルブレストンコート</dt>
-					<dd><a href="mailto:info@blestoncourt.com">info@blestoncourt.com</a></dd>
-
-					<dt>星のや軽井沢</dt>
-					<dd><a href="mailto:info@hoshinoya.com">info@hoshinoya.com</a></dd>
-
-					<dt>BEB5軽井沢</dt>
-					<dd><a href="mailto:karuizawa@beb-hotels.com">karuizawa@beb-hotels.com</a></dd>
-
-				</dl>
-			</div>
-			<div class="l-spacer -large">
-				<h2 class="c-title-ex-large">電話番号</h2>
-				<dl class="c-list-dl">
-					<dt>星野エリア・ハルニレテラス</dt>
-					<dd>
-						<p>
-							<a href="tel:05035373553">050-3537-3553</a><br>
-							※ハルニレテラス各店舗の営業時間や予約については、各店舗へ直接お問い合わせください。<br>
-							<a href="#" class="c-button-arrow c-text-underline"><span>詳細はこちら</span></a>
-						</p>
-					</dd>
-
-					<dt>星野温泉トンボの湯</dt>
-					<dd>
-						<p>
-							<a href="tel:0267443580">0267-44-3580</a><span class="c-text-small c-display-block">（申し訳ございませんが、お席のご予約は承っておりません）</span>
-						</p>
-					</dd>
-
-					<dt>村民食堂</dt>
-					<dd><a href="tel:0267443571">0267-44-3571</a></dd>
-
-					<dt>ピッキオ</dt>
-					<dd><a href="tel:0267457777">0267-45-7777</a></dd>
-
-					<dt>軽井沢 別荘Navi</dt>
-					<dd><a href="tel:0267455228">0267-45-5228</a></dd>
-
-				</dl>
-			</div>
-
-			<div class="l-spacer -medium">
-				<h3 class="c-title-medium">ご宿泊</h3>
-				<dl class="c-list-dl">
-					<dt>軽井沢ホテルブレストンコート</dt>
-					<dd><a href="tel:0267466200">0267-46-6200</a></dd>
-
-					<dt>星のや軽井沢</dt>
-					<dd><a href="tel:05031348091">050-3134-8091</a></dd>
-
-					<dt>BEB5軽井沢</dt>
-					<dd><a href="tel:05031348094">050-3134-8094</a></dd>
-
-				</dl>
+				<?php echo do_shortcode('[contact-form-7 id="198a905" title="お問い合わせ"]'); ?>
 			</div>
 		</article>
 	</div>

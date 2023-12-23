@@ -9,8 +9,8 @@ $args = array(
         array(
         'taxonomy' => 'news_cat',
         'field' => 'slug',
-        'terms' => 'important-news',
-        'operator' => 'NOT IN',
+        //'terms' => 'important-news',
+        //'operator' => 'NOT IN',
         ),
     ),
 );

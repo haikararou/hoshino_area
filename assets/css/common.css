@@ -1512,6 +1512,24 @@ button
       -ms-flex-align: center;
           align-items: center;
 }
+.c-button-block.-submit {
+  background: #93936A;
+  height: 66px;
+  width: 100%;
+  border: none;
+  color: #FFF;
+  font-size: clamp(1.125rem, 0.48vw + 1.0125rem, 1.5rem);
+  font-family: fot-tsukumin-pr6n, sans-serif;
+}
+.c-button-block.-submit.-back {
+  width: 48%;
+  background: #F8F8F0;
+  color: #000;
+}
+.c-button-block.-submit.-submit2 {
+  width: 48%;
+  margin-left: 4%;
+}
 
 .wp-pagenavi {
   width: 100%;
@@ -1706,6 +1724,24 @@ list
   margin-bottom: 1.2em;
 }
 
+.c-list-kome {
+  padding-left: 1.5em;
+  counter-reset: listnum;
+}
+.c-list-kome__item {
+  line-height: 1.6;
+  counter-increment: listnum;
+}
+.c-list-kome__item::before {
+  content: "※";
+  margin-left: -1.5em;
+  display: inline-block;
+  width: 1.5em;
+}
+.c-list-kome__item:not(:last-child) {
+  margin-bottom: 1.2em;
+}
+
 .c-list-dl {
   border-top: 1px solid #E8E8D8;
   font-size: clamp(0.875rem, 0.18vw + 0.81875rem, 1rem);
@@ -1866,6 +1902,16 @@ list
 .c-list-category.tab-topics .topics {
   background: #93936A;
   color: #FFF !important;
+}
+
+.c-list-form {
+  font-size: clamp(0.875rem, 0.18vw + 0.81875rem, 1rem);
+}
+.c-list-form > dt {
+  margin-bottom: 0.5rem;
+}
+.c-list-form > dd + dt {
+  margin-top: 40px;
 }
 
 /*
@@ -3091,6 +3137,41 @@ opening
     border: 1px solid #000;
   }
 }
+/*
+contact
+-----------------------------------------------------*/
+.p-form-select {
+  width: 100%;
+  padding: 1rem;
+  font-size: clamp(0.875rem, 0.16vw + 0.8375rem, 1rem);
+  font-family: fot-tsukumin-pr6n, sans-serif;
+  border: 1px solid #E8E8D8;
+  border-radius: 0.2rem;
+}
+.p-form-txt {
+  width: 100%;
+  padding: 0.6rem 1rem;
+  font-size: clamp(0.875rem, 0.16vw + 0.8375rem, 1rem);
+  font-family: fot-tsukumin-pr6n, sans-serif;
+  border: 1px solid #E8E8D8;
+  border-radius: 0.2rem;
+}
+.p-form-zip {
+  padding: 0.6rem 1rem;
+  font-size: clamp(0.875rem, 0.16vw + 0.8375rem, 1rem);
+  font-family: fot-tsukumin-pr6n, sans-serif;
+  border: 1px solid #E8E8D8;
+  border-radius: 0.2rem;
+}
+.p-form-txt2 {
+  width: 100%;
+  padding: 0.6rem 1rem;
+  font-size: clamp(0.875rem, 0.16vw + 0.8375rem, 1rem);
+  font-family: fot-tsukumin-pr6n, sans-serif;
+  border: 1px solid #E8E8D8;
+  border-radius: 0.2rem;
+}
+
 /*
 common
 -----------------------------------------------------*/

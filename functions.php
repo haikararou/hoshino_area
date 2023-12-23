@@ -128,3 +128,4 @@ function basic_auth($auth_list,$realm="Restricted Area",$failed_text="認証に�
     header('Content-type: text/html; charset='.mb_internal_encoding());
     die($failed_text);
 }
+

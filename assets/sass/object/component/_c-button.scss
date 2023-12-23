@@ -91,6 +91,24 @@ button
     justify-content:center;
     align-items:center;
   }
+  &.-submit {
+    background: inc.$theme-color-gold;
+    height: 66px;
+    width: 100%;
+    border: none;
+    color: inc.$base-color;
+    @include inc.sizingRem(font-size, full, 24px, sp, 18px);
+    font-family: fot-tsukumin-pr6n, sans-serif;
+    &.-back {
+      width: 48%;
+      background: inc.$theme-color-lightyellow;
+      color: inc.$theme-color-black;
+    }
+    &.-submit2 {
+      width: 48%;
+      margin-left: 4%;
+    }
+  }
 }
 
 .wp-pagenavi {
@@ -109,75 +127,6 @@ button
     right: 0;
   }
 }
-// .c-button-block {
-//   border-radius: inc.size(full, 10px, sp, 5px);
-//   padding: .25em 3em;
-//   display: inline-block;
-//   cursor: pointer;
-  
-//   &.-arrow {
-//     position: relative;
-//     &::before {
-//       content: '';
-//       width: .4em;
-//       height: .4em;
-//       display: block;
-//       position: absolute;
-//       left: 1em;
-//       top: 0;
-//       bottom: 0;
-//       margin: auto;
-//       transform: rotate(45deg);
-//       border-top: 1px solid currentColor;
-//       border-right: 1px solid currentColor;
-      
-//     }
-//   }
-  
-//   &.-icon {
-//     padding: .75em 1em;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     text-align: center;
-//    @include inc.mq(desk) {
-//     justify-content: flex-start;
-//       padding: .75em 2em;
-//     }
-    
-//     i,
-//     .icon {
-//       width: 1em;
-//       margin-right: .7em;
-      
-//       img { display: block;}
-//     }
-//   }
-  
-//   &.-white {
-//     background: #FFF;
-//   }
-  
-//   &.-lightyellow {
-//     background: inc.$theme-color-lightyellow;
-//   }
-//   &.-yellow {
-//     background: inc.$theme-color-yellow;
-//   }
-  
-//   &.-more {
-//     width: 100%;
-//     //display: block;
-//     display:flex; flex-direction:column; justify-content:center; align-items:center;
-//     text-align: center;
-//    @include inc.mq(tab) {
-//       width: auto;
-//       display: inline-block;
-//       //display: table;
-//       margin-left: auto;
-//     }
-//   }
-// }
 
 .c-button-arrow {
   padding-left: 1em;
@@ -209,8 +158,6 @@ button
     background: url(../img/common/icon-outer.svg) no-repeat center center / contain;
   }
 }
-
-
 
 .c-button-hamburger {
   display: block;

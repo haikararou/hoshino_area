@@ -53,6 +53,24 @@ list
   }
 }
 
+.c-list-kome {
+  padding-left: 1.5em;
+  counter-reset: listnum;
+  &__item {
+    line-height: 1.6;
+    counter-increment: listnum;
+    &::before {
+      content: '※';
+      margin-left: -1.5em;
+      display: inline-block;
+      width: 1.5em;
+    }
+    &:not(:last-child) {
+      margin-bottom: 1.2em;
+    }
+  }
+}
+
 .c-list-dl {
   border-top: 1px solid inc.$theme-color-yellow;
   @include inc.sizingRem(font-size, full, 16px, wsp, 14px);
@@ -209,5 +227,15 @@ list
 }
 
 
-
+.c-list-form {
+  @include inc.sizingRem(font-size, full, 16px, wsp, 14px);
+  > dt {
+    margin-bottom: .5rem;
+  }
+  > dd {
+  }
+  > dd + dt {
+    margin-top: 40px;
+  }
+}
 
