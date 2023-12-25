@@ -66,6 +66,9 @@ function get_custom_template( $page_template ) {
 	else if(is_singular('opening')) {
 	$page_template = dirname( __FILE__ ) . "/opening/single.php";
 	}
+	else if(is_singular('shop')) {
+	$page_template = dirname( __FILE__ ) . "/shop/single.php";
+	}
 
 	//archive
 	else if(is_post_type_archive('news')){
@@ -77,6 +80,9 @@ function get_custom_template( $page_template ) {
 	else if(is_post_type_archive('opening')){
 	$page_template = dirname( __FILE__ ) . "/opening/archive.php";
 	}
+	else if(is_post_type_archive('shop')){
+	$page_template = dirname( __FILE__ ) . "/shop/archive.php";
+	}
 
 	//taxonomy
 	else if(is_tax('news_cat')){
@@ -87,6 +93,9 @@ function get_custom_template( $page_template ) {
 	}
 	else if(is_tax('opening_cat')){
 	$page_template = dirname( __FILE__ ) . "/opening/taxonomy.php";
+	}
+	else if(is_tax('shop_cat')){
+	$page_template = dirname( __FILE__ ) . "/shop/taxonomy.php";
 	}
 
 	return $page_template;
@@ -117,7 +126,7 @@ include_once( get_template_directory().'/functions/custompost.php' );
 
 
 /*カスタム投稿ページのみベーシック認証をかける*/
-function basic_auth($auth_list,$realm="Restricted Area",$failed_text="認証に失敗しました"){ 
+function basic_auth($auth_list,$realm="Restricted Area",$failed_text="認証に失敗しました"){
     if (isset($_SERVER['PHP_AUTH_USER']) and isset($auth_list[$_SERVER['PHP_AUTH_USER']])){
         if ($auth_list[$_SERVER['PHP_AUTH_USER']] == $_SERVER['PHP_AUTH_PW']){
             return $_SERVER['PHP_AUTH_USER'];
@@ -129,3 +138,14 @@ function basic_auth($auth_list,$realm="Restricted Area",$failed_text="認証に�
     die($failed_text);
 }
 
+
+/* ---------------------------------------------------------------------
+スラッグの日本語禁止
+-------------------------------------------------------------------------*/
+function auto_post_slug( $slug, $post_ID, $post_status, $post_type ) {
+if ( preg_match( '/(%[0-9a-f]{2})+/', $slug ) ) {
+$slug = utf8_uri_encode( $post_type ) . '-' . $post_ID;
+}
+return $slug;
+}
+add_filter( 'wp_unique_post_slug', 'auto_post_slug', 10, 4 );

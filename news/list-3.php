@@ -5,14 +5,14 @@ $args = array(
     'posts_per_page' => 3,
     "post__not_in" => [$current_post_id], // 除外する記事のIDを指定
     //'order' => 'DESC',
-    'tax_query' => array(
-        array(
-        'taxonomy' => 'news_cat',
-        'field' => 'slug',
-        //'terms' => 'important-news',
-        //'operator' => 'NOT IN',
-        ),
-    ),
+    // 'tax_query' => array(
+    //     array(
+    //     'taxonomy' => 'news_cat',
+    //     'field' => 'slug',
+    //     //'terms' => 'important-news',
+    //     //'operator' => 'NOT IN',
+    //     ),
+    // ),
 );
 $the_query = new WP_Query( $args );
 ?>
@@ -66,3 +66,18 @@ $the_query = new WP_Query( $args );
 		</article>
 	</div>
 </section>
+
+
+<?php $news_posts = get_posts('post_type=news&posts_per_page=3'); if ( !empty($news_posts) ): ?>
+<div>
+    <dl>
+    <?php foreach ( $news_posts as $post ): setup_postdata($post); ?>
+        <div>
+            <dt><?php the_time('Y.m.d') ?><span><?php $terms = get_the_terms($post->ID,'news_cat'); if($terms){echo $terms[0]->name;} ?></span></dt>
+            <dd><a href="<?php the_permalink();?>"><?php the_title(); ?></a></dd>
+        </div>
+    <?php endforeach; wp_reset_postdata(); ?>
+    </dl>
+    <?php endif; ?>
+    <div class="more_block"><a href="<?php echo home_url(); ?>/news/" class="more"><span>MORE</span></a></div>
+</div>

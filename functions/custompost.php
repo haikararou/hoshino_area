@@ -121,6 +121,45 @@ function create_post_type() {
 			)
 		)
 	);
+
+		//カスタム投稿タイプを追加
+		register_post_type( 'shop', // 投稿タイプ名(スラッグ)
+		array(
+			'labels' => array(
+			'name' => __( 'ショップ＆レストラン' ), // 投稿タイプ名(表示名)
+			'singular_name' => __( 'ショップ＆レストラン' )// 投稿タイプ名(表示名)
+		),
+		'menu_icon' => 'dashicons-clipboard',
+		'public' => true,
+		'menu_position' =>5,
+		'supports' => array('title', 'editor', 'thumbnail'), // この投稿タイプでサポートする機能。
+		'has_archive' => true,
+		'show_in_rest' => true,
+		'rewrite' => array(
+			'slug' => 'shop',//投稿タイプ名(スラッグ) アーカイブページのURLになります
+			'with_front' => false
+		)
+	)
+	);
+	register_taxonomy(
+		'shop_cat', //タクソノミー名
+		'shop', //カスタム投稿タイプ
+		array(
+			'hierarchical' => true,
+			'update_count_callback' => '_update_post_term_count',
+			'label' => 'ショップ＆レストランのカテゴリ',// タクソノミー名（表示名）
+			'singular_label' => 'ショップ＆レストランのカテゴリ',// タクソノミー名（表示名）
+			'public' => true,
+			'show_ui' => true,
+			'show_in_rest' => true,
+			'rewrite' => array(
+				'slug' => 'shop/category', //書き換え後のスラッグ
+				//'with_front' => false //通常投稿のパーマリンク構造を引き継ぐかどうか (true/false)
+				'hierarchical' => true //階層化したURLを使用可能にする
+			)
+		)
+	);
+
 }
 
 //URLに「/archives/」が含まれていたら、取り除いてリダイレクト
@@ -137,15 +176,15 @@ if(preg_match("/\/archives\//s",$now_addr)){
 /*-----------------------------------------------------------------------------------
 カスタム投稿タイプのURLを数字ベースにする
 -----------------------------------------------------------------------------------*/
-add_filter( 'post_type_link', 'my_post_type_link', 1, 2 );
-function my_post_type_link( $link, $post ){
-	if (('news' === $post->post_type ) || ('event' === $post->post_type ) || ('opening' === $post->post_type ) ) { //カスタム投稿タイプをここで指定
-		return home_url( '/'.$post->post_type.'/'. $post->ID );
-	}
-	else {
-		return $link;
-	}
-}
+// add_filter( 'post_type_link', 'my_post_type_link', 1, 2 );
+// function my_post_type_link( $link, $post ){
+// 	if (('news' === $post->post_type ) || ('event' === $post->post_type ) || ('opening' === $post->post_type ) || ('shop' === $post->post_type ) ) { //カスタム投稿タイプをここで指定
+// 		return home_url( '/'.$post->post_type.'/'. $post->ID );
+// 	}
+// 	else {
+// 		return $link;
+// 	}
+// }
 
 add_filter( 'rewrite_rules_array', 'my_rewrite_rules_array' );
 function my_rewrite_rules_array( $rules ) {
@@ -156,7 +195,8 @@ function my_rewrite_rules_array( $rules ) {
 	$new_rules = array(
 		'news/([0-9]+)/?$' => 'index.php?post_type=news&p=$matches[1]' ,
 		'event/([0-9]+)/?$' => 'index.php?post_type=event&p=$matches[1]',
-		'opening/([0-9]+)/?$' => 'index.php?post_type=opening&p=$matches[1]'
+		'opening/([0-9]+)/?$' => 'index.php?post_type=opening&p=$matches[1]',
+		'shop/([0-9]+)/?$' => 'index.php?post_type=shop&p=$matches[1]'
 	);
 	return $new_rules + $rules;
 }
@@ -175,7 +215,8 @@ add_rewrite_rule('event/category/([^/]+)/page/([0-9]+)/?$', 'index.php?event_cat
 add_rewrite_rule('opening/category/([^/]+)/?$', 'index.php?opening_cat=$matches[1]', 'top');
 add_rewrite_rule('opening/category/([^/]+)/page/([0-9]+)/?$', 'index.php?opening_cat=$matches[1]&paged=$matches[2]', 'top');
 
-
+add_rewrite_rule('shop/category/([^/]+)/?$', 'index.php?shop_cat=$matches[1]', 'top');
+add_rewrite_rule('shop/category/([^/]+)/page/([0-9]+)/?$', 'index.php?shop_cat=$matches[1]&paged=$matches[2]', 'top');
 
 /*-----------------------------------------------------------------------------------
 	カスタム投稿のアーカイブページの記事数を設定する。
