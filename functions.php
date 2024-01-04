@@ -126,17 +126,17 @@ include_once( get_template_directory().'/functions/custompost.php' );
 
 
 /*カスタム投稿ページのみベーシック認証をかける*/
-function basic_auth($auth_list,$realm="Restricted Area",$failed_text="認証に失敗しました"){
-    if (isset($_SERVER['PHP_AUTH_USER']) and isset($auth_list[$_SERVER['PHP_AUTH_USER']])){
-        if ($auth_list[$_SERVER['PHP_AUTH_USER']] == $_SERVER['PHP_AUTH_PW']){
-            return $_SERVER['PHP_AUTH_USER'];
-        }
-    }
-    header('WWW-Authenticate: Basic realm="'.$realm.'"');
-    header('HTTP/1.0 401 Unauthorized');
-    header('Content-type: text/html; charset='.mb_internal_encoding());
-    die($failed_text);
-}
+// function basic_auth($auth_list,$realm="Restricted Area",$failed_text="認証に失敗しました"){
+//     if (isset($_SERVER['PHP_AUTH_USER']) and isset($auth_list[$_SERVER['PHP_AUTH_USER']])){
+//         if ($auth_list[$_SERVER['PHP_AUTH_USER']] == $_SERVER['PHP_AUTH_PW']){
+//             return $_SERVER['PHP_AUTH_USER'];
+//         }
+//     }
+//     header('WWW-Authenticate: Basic realm="'.$realm.'"');
+//     header('HTTP/1.0 401 Unauthorized');
+//     header('Content-type: text/html; charset='.mb_internal_encoding());
+//     die($failed_text);
+// }
 
 
 /* ---------------------------------------------------------------------
@@ -149,3 +149,56 @@ $slug = utf8_uri_encode( $post_type ) . '-' . $post_ID;
 return $slug;
 }
 add_filter( 'wp_unique_post_slug', 'auto_post_slug', 10, 4 );
+
+
+/* ---------------------------------------------------------------------
+Lazy Blocksで勝手に出力されるdivをまとめて消す
+-------------------------------------------------------------------------*/
+add_filter( 'lzb/block_render/allow_wrapper', '__return_false' );
+
+
+
+add_action('acf/init', 'my_acf_init_block_types');
+function my_acf_init_block_types() {
+    // Check function exists.
+    if( function_exists('acf_register_block_type') ) {
+        // register a dl block.
+        acf_register_block_type(array(
+            'name'              => 'dl',
+            'title'             => __('定義リスト'),
+            'description'       => __('A custom dl block.'),
+            'render_template'   => 'blocks/dl.php',
+            'category'          => 'my-category',
+            'icon'              => 'editor-ul',
+            'keywords'          => array( 'dl', 'quote' ),
+            'enqueue_style'     => get_template_directory_uri() . '/blocks/acf.css',
+            'mode' => 'auto',
+        ));
+
+		acf_register_block_type(array(
+            'name'              => 'ul',
+            'title'             => __('リスト'),
+            'description'       => __('A custom ul block.'),
+            'render_template'   => 'blocks/ul.php',
+            'category'          => 'my-category',
+            'icon'              => 'editor-ul',
+            'keywords'          => array( 'ul', 'quote' ),
+            'enqueue_style'     => get_template_directory_uri() . '/blocks/acf.css',
+            'mode' => 'auto',
+        ));
+
+		acf_register_block_type(array(
+            'name'              => 'pickup',
+            'title'             => __('Pick up'),
+            'description'       => __('A custom pick up block.'),
+            'render_template'   => 'blocks/pickup.php',
+            'category'          => 'my-category',
+            'icon'              => 'editor-ul',
+            'keywords'          => array( 'pick up' ),
+            'enqueue_style'     => get_template_directory_uri() . '/blocks/acf.css',
+            'mode' => 'auto',
+        ));
+    }
+}
+
+

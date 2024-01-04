@@ -6,13 +6,26 @@ title
 .c-title-ex-large {
   @include inc.sizingRem(font-size, full, 40px, sp, 24px);
   margin-bottom: 1em;
+  line-height: 1.4;
+  span {
+    display: block;
+    color: inc.$theme-color-gold;
+    @include inc.sizingRem(font-size, full, 14px, sp, 12px);
+    margin-bottom: .5rem;
+  }
 }
 .c-title-large {
   @include inc.sizingRem(font-size, full, 32px, sp, 20px);
   margin-bottom: 1em;
-  
+  line-height: 1.4;
+  span {
+    display: block;
+    color: inc.$theme-color-gold;
+    @include inc.sizingRem(font-size, full, 14px, sp, 12px);
+    margin-bottom: .5rem;
+  }
   &.-vertical {
-   @include inc.mq(tab) {
+    @include inc.mq(tab) {
       white-space: nowrap;
       writing-mode: vertical-rl;
       font-feature-settings: initial;
@@ -22,14 +35,29 @@ title
 .c-title-medium {
   @include inc.sizingRem(font-size, full, 24px, sp, 18px);
   margin-bottom: 1em;
+  line-height: 1.4;
+  span {
+    display: block;
+    color: inc.$theme-color-gold;
+    @include inc.sizingRem(font-size, full, 14px, sp, 12px);
+    margin-bottom: .5rem;
+  }
 }
 .c-title-small {
   @include inc.sizingRem(font-size, full, 20px, sp, 16px);
   margin-bottom: 1em;
+  line-height: 1.4;
+  span {
+    display: block;
+    color: inc.$theme-color-gold;
+    @include inc.sizingRem(font-size, full, 13px, sp, 11px);
+    margin-bottom: .5rem;
+  }
 }
-
 .c-title-icon {
   padding-left: 1.5em;
+  display: flex;
+  line-height: 1;
   .icon {
     width: 1em;
     height: 1em;
@@ -50,8 +78,8 @@ title
 }
 
 .c-title-sub {
- color: inc.$theme-color-gold;
- @include inc.sizingRem(font-size, full, 14px, sp, 12px);
- display: block;
- margin-bottom: 12px;
+  color: inc.$theme-color-gold;
+  @include inc.sizingRem(font-size, full, 14px, sp, 12px);
+  display: block;
+  margin-bottom: 12px;
 }

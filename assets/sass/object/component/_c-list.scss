@@ -122,9 +122,17 @@ list
     border: none;
     > dt {
       border: none;
+      padding-top: .5em;
+      @include inc.mq(tab) {
+        padding: .5em 1em .5em 0;
+      }
     }
     > dd {
       border: none;
+      padding-top: .5em;
+      @include inc.mq(tab) {
+        padding: .5em 1em .5em 0;
+      }
     }
   }
 }

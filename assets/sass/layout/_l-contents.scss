@@ -92,7 +92,11 @@
       flex-direction: row-reverse;
     }
   }
-  
+  &.reverse {
+    @include inc.mq(lap) {
+      flex-direction: row-reverse;
+    }
+  }
   &__block {
     @include inc.mq(lap) {
       &.-w-1_2 {

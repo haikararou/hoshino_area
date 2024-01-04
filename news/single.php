@@ -48,7 +48,9 @@ get_header(); ?>
 </section>
 <?php endif; ?>
 
+<div class="p-entry">
 <?php the_content(); ?>
+</div>
 
 <section class="l-spacer -medium -both">
   <div class="l-container--primary-s c-text-center">
