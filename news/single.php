@@ -40,14 +40,6 @@ get_header(); ?>
 	</div>
 </section>
 
-<?php if(has_post_thumbnail()) : ?>
-<section class="l-spacer">
-  <div class="l-container--primary p-news-hero">
-    <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post_id)); ?>" alt="<?php the_title(); ?>" />
-  </div>
-</section>
-<?php endif; ?>
-
 <div class="p-entry">
 <?php the_content(); ?>
 </div>

@@ -36,7 +36,6 @@ function edit_document_title($title){
 	}
 	return $title;
 }
- 
 add_filter('document_title_parts','edit_document_title');
 
 

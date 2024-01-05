@@ -20,7 +20,7 @@
   }
   &--primary-ls {
     @include inc.sizing(width, tab, 1070px, sp, 330px);
-    //max-width: 90%;
+    max-width: 90%;
     @include inc.mq(tab) {
       width: 1070px;
     }
@@ -93,7 +93,39 @@
     margin: 0 auto;
   }
 }
-
+.c-border {
+  max-width: 100%;
+  .l-container {
+    &--primary {
+      padding: 2.5rem 0;
+      max-width: 80%;
+    }
+    &--primary-l {
+      padding: 2.5rem 0;
+      max-width: 80%;
+    }
+    &--primary-ls {
+      padding: 2rem 0;
+      max-width: 80%;
+    }
+    &--primary-m {
+      padding: 2rem 0;
+      max-width: 80%;
+    }
+    &--primary-ms {
+      padding: 2rem 0;
+      max-width: 80%;
+    }
+    &--primary-s {
+      padding: 1.6rem 0;
+      max-width: 80%;
+    }
+    &--primary-ss {
+      padding: 1.6rem 0;
+      max-width: 80%;
+    }
+  }
+}
 
 .l-body {
   

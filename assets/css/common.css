@@ -127,6 +127,7 @@ img {
 }
 
 img {
+  width: 100%;
   max-width: 100%; /* 1 */
   height: auto; /* 1 */
   vertical-align: middle; /* 2 */
@@ -1002,6 +1003,7 @@ footer
 }
 .l-container--primary-ls {
   width: clamp(330px, 188.3vw - 376.1px, 1070px);
+  max-width: 90%;
   margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
@@ -1079,6 +1081,38 @@ footer
   width: 85%;
   max-width: 900px;
   margin: 0 auto;
+}
+
+.c-border {
+  max-width: 100%;
+}
+.c-border .l-container--primary {
+  padding: 2.5rem 0;
+  max-width: 80%;
+}
+.c-border .l-container--primary-l {
+  padding: 2.5rem 0;
+  max-width: 80%;
+}
+.c-border .l-container--primary-ls {
+  padding: 2rem 0;
+  max-width: 80%;
+}
+.c-border .l-container--primary-m {
+  padding: 2rem 0;
+  max-width: 80%;
+}
+.c-border .l-container--primary-ms {
+  padding: 2rem 0;
+  max-width: 80%;
+}
+.c-border .l-container--primary-s {
+  padding: 1.6rem 0;
+  max-width: 80%;
+}
+.c-border .l-container--primary-ss {
+  padding: 1.6rem 0;
+  max-width: 80%;
 }
 
 @media screen and (min-width: 768px) {
