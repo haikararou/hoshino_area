@@ -6,30 +6,232 @@
 post
 -----------------------------------------------------*/
 .p-entry {
-  p + p {
-    margin-top: 1.5rem;
+  .p-news-hero {
+    margin-bottom: 5rem;
   }
-  p + ul {
-    margin-top: 1.5rem;
+  .c-border-t {
+    margin-top: 6rem;
   }
-  ul + p {
-    margin-top: 1.5rem;
+  .c-border-t + .c-border-t {
+    padding-top: 0;
+    margin-top: 0rem;
+    border-top: none;
   }
-  p + dl {
-    margin-top: 1.5rem;
+  margin: 0 auto;
+  h2.wp-block-heading {
+    @include inc.sizingRem(font-size, full, 32px, sp, 20px);
+    line-height: 1.4;
+    @include inc.sizing(width, tab, 670px, sp, 330px);
+    //max-width: 90%;
+    @include inc.mq(tab) {
+      max-width: 670px;
+      width: 100%;
+    }
+    margin-left: auto;
+    margin-right: auto;
   }
-  dl + p {
-    margin-top: 1.5rem;
+  h3.wp-block-heading {
+    @include inc.sizingRem(font-size, full, 24px, sp, 18px);
+    line-height: 1.4;
+    @include inc.sizing(width, tab, 670px, sp, 330px);
+    //max-width: 90%;
+    @include inc.mq(tab) {
+      max-width: 670px;
+      width: 100%;
+    }
+    margin-left: auto;
+    margin-right: auto;
   }
-  ul + dl {
-    margin-top: 1.5rem;
+  h4.wp-block-heading {
+    @include inc.sizingRem(font-size, full, 20px, sp, 16px);
+    line-height: 1.4;
+    @include inc.sizing(width, tab, 670px, sp, 330px);
+    //max-width: 90%;
+    @include inc.mq(tab) {
+      max-width: 670px;
+      width: 100%;
+    }
+    margin-left: auto;
+    margin-right: auto;
   }
-  dl + ul {
-    margin-top: 1.5rem;
+  .wp-block-image {
+    @include inc.sizing(width, tab, 970px, sp, 330px);
+    //max-width: 90%;
+    @include inc.mq(tab) {
+      width: 970px;
+    }
+    figure {
+      width: auto;
+      height: auto;
+    }
+    margin-left: auto;
+    margin-right: auto;
+  }
+  p {
+    @include inc.sizing(width, tab, 670px, sp, 330px);
+    //max-width: 90%;
+    @include inc.mq(tab) {
+      max-width: 670px;
+      width: 100%;
+    }
+    margin-left: auto;
+    margin-right: auto;
+  }
+  ul {
+    padding-left: 1.3em;
+    @include inc.sizing(width, tab, 670px, sp, 330px);
+    //max-width: 90%;
+    @include inc.mq(tab) {
+      max-width: 670px;
+      width: 100%;
+    }
+    margin-left: auto;
+    margin-right: auto;
+    li {
+      list-style-type: disc;
+      line-height: 1.4;
+    }
+    li + li {
+      margin-top: .9rem;
+    }
+  }
+  ol {
+    padding-left: 1.5em;
+    @include inc.sizing(width, tab, 670px, sp, 330px);
+    //max-width: 90%;
+    @include inc.mq(tab) {
+      max-width: 670px;
+      width: 100%;
+    }
+    margin-left: auto;
+    margin-right: auto;
+    li {
+      list-style-type: decimal;
+      line-height: 1.4;
+    }
+    li + li {
+      margin-top: .9rem;
+    }
+  }
+  dl {
+    @include inc.sizing(width, tab, 670px, sp, 330px);
+    //max-width: 90%;
+    @include inc.mq(tab) {
+      max-width: 670px;
+      width: 100%;
+    }
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .c-border {
+    @include inc.sizing(width, tab, 670px, sp, 330px);
+    padding: 1.5rem 3rem;
+    //max-width: 90%;
+    @include inc.mq(tab) {
+      max-width: 670px;
+      width: 100%;
+      padding: 2.5rem 4rem;
+    }
+    margin-left: auto;
+    margin-right: auto;
+  }
+  p + h2,
+  dl + h2,
+  ul + h2,
+  ol + h2,
+  .c-border + h2,
+  .wp-block-image + h2 {
+    margin-top: 4rem;
+  }
+  h2 + h3,
+  h2 + h4,
+  h2 + p,
+  h2 + dl,
+  h2 + ul,
+  h2 + ol,
+  h2 + .c-border,
+  h2 + .wp-block-image {
+    margin-top: 2.5rem;
+  }
+
+  h3 + h4,
+  h3 + p,
+  h3 + dl,
+  h3 + ul,
+  h3 + ol,
+  h3 + .c-border,
+  h3 + .wp-block-image {
+    margin-top: 2.5rem;
+  }
+
+  h4 + p,
+  h4 + dl,
+  h4 + ul,
+  h4 + ol,
+  h4 + .c-border,
+  h4 + .wp-block-image {
+    margin-top: 2.5rem;
+  }
+
+  p + p,
+  p + dl,
+  p + ul,
+  p + ol,
+  p + .c-border,
+  p + .wp-block-image {
+    margin-top: 2rem;
+  }
+
+  dl + p,
+  dl + dl,
+  dl + ul,
+  dl + ol,
+  dl + .c-border,
+  dl + .wp-block-image,
+
+  ul + p,
+  ul + dl,
+  ul + ul,
+  ul + ol,
+  ul + .c-border,
+  ul + .wp-block-image,
+
+  ol + p,
+  ol + dl,
+  ol + ul,
+  ol + ol,
+  ol + .c-border,
+  ol + .wp-block-image,
+
+  .c-border + p,
+  .c-border + dl,
+  .c-border + ul,
+  .c-border + ol,
+  .c-border + .wp-block-image,
+
+  .wp-block-image + p,
+  .wp-block-image + dl,
+  .wp-block-image + ul,
+  .wp-block-image + ol,
+  .wp-block-image + .wp-block-image {
+    margin-top: 2rem;
   }
   .and-border + .and-border {
     border-top: 1px solid inc.$theme-color-darkyellow;
     margin-top: 3rem;
     padding-top: 3rem;
   }
+
+// &--primary-m {
+//   padding: 2rem 0;
+//   max-width: 80%;
+// }
+// &--primary-ms {
+//   padding: 2rem 0;
+//   max-width: 80%;
+// }
+// &--primary-s {
+//   padding: 1.6rem 0;
+//   max-width: 80%;
+// }
 }

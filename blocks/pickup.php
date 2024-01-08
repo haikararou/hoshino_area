@@ -16,7 +16,7 @@ if( !empty($block['align']) ) {
 <div class="l-contents-block c-bg-white">
 <div class="l-contents-block__inner">
 <div class="l-container--primary">
-<h2 class="c-title-large"><span></span>Pick up</h2>
+<h2 class="c-title-large"><?php the_field('pickup_title'); ?></h2>
 <?php if(have_rows('pickup')): ?>
 <?php while(have_rows('pickup')): the_row(); ?>
 <?php

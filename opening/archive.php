@@ -23,6 +23,21 @@
 	</div>
 </section>
 
+
+
+<section class="l-spacer -medium -both">
+	<div class="l-container--primary">
+        <div class="p-opening--scroll">
+            <table class="p-opening--table">
+                <tr>
+                    <th class="p-opening--fixed01" colspan="2">期間</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+</section>
+
+
 <section class="l-spacer -medium -both">
 	<div class="l-container--primary">
         <div class="p-opening--scroll">

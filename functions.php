@@ -165,24 +165,12 @@ function my_acf_init_block_types() {
         // register a dl block.
         acf_register_block_type(array(
             'name'              => 'dl',
-            'title'             => __('定義リスト'),
+            'title'             => __('見出し付きリスト'),
             'description'       => __('A custom dl block.'),
             'render_template'   => 'blocks/dl.php',
             'category'          => 'my-category',
-            'icon'              => 'editor-ul',
+            'icon'              => 'list-view',
             'keywords'          => array( 'dl', 'quote' ),
-            'enqueue_style'     => get_template_directory_uri() . '/blocks/acf.css',
-            'mode' => 'auto',
-        ));
-
-		acf_register_block_type(array(
-            'name'              => 'ul',
-            'title'             => __('リスト'),
-            'description'       => __('A custom ul block.'),
-            'render_template'   => 'blocks/ul.php',
-            'category'          => 'my-category',
-            'icon'              => 'editor-ul',
-            'keywords'          => array( 'ul', 'quote' ),
             'enqueue_style'     => get_template_directory_uri() . '/blocks/acf.css',
             'mode' => 'auto',
         ));
@@ -193,7 +181,7 @@ function my_acf_init_block_types() {
             'description'       => __('A custom pick up block.'),
             'render_template'   => 'blocks/pickup.php',
             'category'          => 'my-category',
-            'icon'              => 'editor-ul',
+            'icon'              => 'awards',
             'keywords'          => array( 'pick up' ),
             'enqueue_style'     => get_template_directory_uri() . '/blocks/acf.css',
             'mode' => 'auto',

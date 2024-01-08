@@ -3361,26 +3361,218 @@ post
 /*
 post
 -----------------------------------------------------*/
-.p-entry p + p {
-  margin-top: 1.5rem;
+.p-entry {
+  margin: 0 auto;
 }
-.p-entry p + ul {
-  margin-top: 1.5rem;
+.p-entry .p-news-hero {
+  margin-bottom: 5rem;
 }
-.p-entry ul + p {
-  margin-top: 1.5rem;
+.p-entry .c-border-t {
+  margin-top: 6rem;
 }
-.p-entry p + dl {
-  margin-top: 1.5rem;
+.p-entry .c-border-t + .c-border-t {
+  padding-top: 0;
+  margin-top: 0rem;
+  border-top: none;
 }
-.p-entry dl + p {
-  margin-top: 1.5rem;
+.p-entry h2.wp-block-heading {
+  font-size: clamp(1.25rem, 0.96vw + 1.025rem, 2rem);
+  line-height: 1.4;
+  width: clamp(330px, 86.51vw + 5.6px, 670px);
+  margin-left: auto;
+  margin-right: auto;
 }
-.p-entry ul + dl {
-  margin-top: 1.5rem;
+@media screen and (min-width: 768px) {
+  .p-entry h2.wp-block-heading {
+    max-width: 670px;
+    width: 100%;
+  }
 }
-.p-entry dl + ul {
-  margin-top: 1.5rem;
+.p-entry h3.wp-block-heading {
+  font-size: clamp(1.125rem, 0.48vw + 1.0125rem, 1.5rem);
+  line-height: 1.4;
+  width: clamp(330px, 86.51vw + 5.6px, 670px);
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .p-entry h3.wp-block-heading {
+    max-width: 670px;
+    width: 100%;
+  }
+}
+.p-entry h4.wp-block-heading {
+  font-size: clamp(1rem, 0.32vw + 0.925rem, 1.25rem);
+  line-height: 1.4;
+  width: clamp(330px, 86.51vw + 5.6px, 670px);
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .p-entry h4.wp-block-heading {
+    max-width: 670px;
+    width: 100%;
+  }
+}
+.p-entry .wp-block-image {
+  width: clamp(330px, 162.85vw - 280.7px, 970px);
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .p-entry .wp-block-image {
+    width: 970px;
+  }
+}
+.p-entry .wp-block-image figure {
+  width: auto;
+  height: auto;
+}
+.p-entry p {
+  width: clamp(330px, 86.51vw + 5.6px, 670px);
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .p-entry p {
+    max-width: 670px;
+    width: 100%;
+  }
+}
+.p-entry ul {
+  padding-left: 1.3em;
+  width: clamp(330px, 86.51vw + 5.6px, 670px);
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .p-entry ul {
+    max-width: 670px;
+    width: 100%;
+  }
+}
+.p-entry ul li {
+  list-style-type: disc;
+  line-height: 1.4;
+}
+.p-entry ul li + li {
+  margin-top: 0.9rem;
+}
+.p-entry ol {
+  padding-left: 1.5em;
+  width: clamp(330px, 86.51vw + 5.6px, 670px);
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .p-entry ol {
+    max-width: 670px;
+    width: 100%;
+  }
+}
+.p-entry ol li {
+  list-style-type: decimal;
+  line-height: 1.4;
+}
+.p-entry ol li + li {
+  margin-top: 0.9rem;
+}
+.p-entry dl {
+  width: clamp(330px, 86.51vw + 5.6px, 670px);
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .p-entry dl {
+    max-width: 670px;
+    width: 100%;
+  }
+}
+.p-entry .c-border {
+  width: clamp(330px, 86.51vw + 5.6px, 670px);
+  padding: 1.5rem 3rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .p-entry .c-border {
+    max-width: 670px;
+    width: 100%;
+    padding: 2.5rem 4rem;
+  }
+}
+.p-entry p + h2,
+.p-entry dl + h2,
+.p-entry ul + h2,
+.p-entry ol + h2,
+.p-entry .c-border + h2,
+.p-entry .wp-block-image + h2 {
+  margin-top: 4rem;
+}
+.p-entry h2 + h3,
+.p-entry h2 + h4,
+.p-entry h2 + p,
+.p-entry h2 + dl,
+.p-entry h2 + ul,
+.p-entry h2 + ol,
+.p-entry h2 + .c-border,
+.p-entry h2 + .wp-block-image {
+  margin-top: 2.5rem;
+}
+.p-entry h3 + h4,
+.p-entry h3 + p,
+.p-entry h3 + dl,
+.p-entry h3 + ul,
+.p-entry h3 + ol,
+.p-entry h3 + .c-border,
+.p-entry h3 + .wp-block-image {
+  margin-top: 2.5rem;
+}
+.p-entry h4 + p,
+.p-entry h4 + dl,
+.p-entry h4 + ul,
+.p-entry h4 + ol,
+.p-entry h4 + .c-border,
+.p-entry h4 + .wp-block-image {
+  margin-top: 2.5rem;
+}
+.p-entry p + p,
+.p-entry p + dl,
+.p-entry p + ul,
+.p-entry p + ol,
+.p-entry p + .c-border,
+.p-entry p + .wp-block-image {
+  margin-top: 2rem;
+}
+.p-entry dl + p,
+.p-entry dl + dl,
+.p-entry dl + ul,
+.p-entry dl + ol,
+.p-entry dl + .c-border,
+.p-entry dl + .wp-block-image,
+.p-entry ul + p,
+.p-entry ul + dl,
+.p-entry ul + ul,
+.p-entry ul + ol,
+.p-entry ul + .c-border,
+.p-entry ul + .wp-block-image,
+.p-entry ol + p,
+.p-entry ol + dl,
+.p-entry ol + ul,
+.p-entry ol + ol,
+.p-entry ol + .c-border,
+.p-entry ol + .wp-block-image,
+.p-entry .c-border + p,
+.p-entry .c-border + dl,
+.p-entry .c-border + ul,
+.p-entry .c-border + ol,
+.p-entry .c-border + .wp-block-image,
+.p-entry .wp-block-image + p,
+.p-entry .wp-block-image + dl,
+.p-entry .wp-block-image + ul,
+.p-entry .wp-block-image + ol,
+.p-entry .wp-block-image + .wp-block-image {
+  margin-top: 2rem;
 }
 .p-entry .and-border + .and-border {
   border-top: 1px solid #B5B583;
