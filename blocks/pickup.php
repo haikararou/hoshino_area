@@ -20,7 +20,7 @@ if( !empty($block['align']) ) {
 <?php if(have_rows('pickup')): ?>
 <?php while(have_rows('pickup')): the_row(); ?>
 <?php
-echo '<div class="l-contents-2column and-border">';
+echo '<div class="l-contents-2column and-border pickup">';
 echo '<div class="l-contents-2column__block -w-1_2">';
 echo '<img decoding="async" src="';
 ?>
@@ -28,17 +28,18 @@ echo '<img decoding="async" src="';
 <?php
 echo '" alt=""></div>';
 echo '<div class="l-contents-2column__block -w-1_2">';
-echo '<h2 class="c-title-medium">';
+echo '<h2 class="c-title-medium"><span>';
 ?>
+<?php the_sub_field('campaign'); ?>
+<?php echo '</span>'; ?>
 <?php the_sub_field('title'); ?>
-<?php
-echo '</h2>';
-echo '<p>';
-?>
+<?php echo '</h2>'; ?>
+<?php echo '<h3>'; ?>
+<?php the_sub_field('sub'); ?>
+<?php echo '</h3>'; ?>
+<?php echo '<p>'; ?>
 <?php the_sub_field('txt'); ?>
-<?php
-echo '</p>';
-?>
+<?php echo '</p>'; ?>
 <?php if(have_rows('info')): ?>
 <?php
 echo '<dl class="c-list-dl -noBorder">';
@@ -61,14 +62,20 @@ echo '</dd>';
 <?php
 echo '</dl>';
 ?>
+
+
 <?php
 $link = get_sub_field('link');
+if($link['link_url']) {
 echo '<p><a href="';
 echo $link['link_url'];
 echo '" class="c-button-block -lightyellow -arrow"><span>';
 echo $link['link_txt'];
 echo '</span></a></p>';
+}
 ?>
+
+
 <?php
 echo '</div></div>';
 ?>

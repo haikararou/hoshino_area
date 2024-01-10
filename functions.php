@@ -177,7 +177,7 @@ function my_acf_init_block_types() {
 
 		acf_register_block_type(array(
             'name'              => 'pickup',
-            'title'             => __('Pick up'),
+            'title'             => __('一覧エリア'),
             'description'       => __('A custom pick up block.'),
             'render_template'   => 'blocks/pickup.php',
             'category'          => 'my-category',

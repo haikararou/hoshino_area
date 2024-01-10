@@ -3379,6 +3379,7 @@ post
   font-size: clamp(1.25rem, 0.96vw + 1.025rem, 2rem);
   line-height: 1.4;
   width: clamp(330px, 86.51vw + 5.6px, 670px);
+  font-weight: bold;
   margin-left: auto;
   margin-right: auto;
 }
@@ -3392,6 +3393,7 @@ post
   font-size: clamp(1.125rem, 0.48vw + 1.0125rem, 1.5rem);
   line-height: 1.4;
   width: clamp(330px, 86.51vw + 5.6px, 670px);
+  font-weight: bold;
   margin-left: auto;
   margin-right: auto;
 }
@@ -3405,6 +3407,7 @@ post
   font-size: clamp(1rem, 0.32vw + 0.925rem, 1.25rem);
   line-height: 1.4;
   width: clamp(330px, 86.51vw + 5.6px, 670px);
+  font-weight: bold;
   margin-left: auto;
   margin-right: auto;
 }
@@ -3421,7 +3424,8 @@ post
 }
 @media screen and (min-width: 768px) {
   .p-entry .wp-block-image {
-    width: 970px;
+    max-width: 670px;
+    width: 100%;
   }
 }
 .p-entry .wp-block-image figure {
@@ -3578,6 +3582,13 @@ post
   border-top: 1px solid #B5B583;
   margin-top: 3rem;
   padding-top: 3rem;
+}
+.p-entry .pickup h3 {
+  font-size: clamp(0.875rem, 0.32vw + 0.8rem, 1.125rem);
+  line-height: 1.4;
+}
+.p-entry .pickup h2 + h3 {
+  margin-top: -0.8rem;
 }
 
 /*

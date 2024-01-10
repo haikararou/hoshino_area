@@ -27,6 +27,7 @@ post
       max-width: 670px;
       width: 100%;
     }
+    font-weight: bold;
     margin-left: auto;
     margin-right: auto;
   }
@@ -39,6 +40,7 @@ post
       max-width: 670px;
       width: 100%;
     }
+    font-weight: bold;
     margin-left: auto;
     margin-right: auto;
   }
@@ -51,14 +53,19 @@ post
       max-width: 670px;
       width: 100%;
     }
+    font-weight: bold;
     margin-left: auto;
     margin-right: auto;
   }
   .wp-block-image {
     @include inc.sizing(width, tab, 970px, sp, 330px);
     //max-width: 90%;
+    // @include inc.mq(tab) {
+    //   width: 970px;
+    // }
     @include inc.mq(tab) {
-      width: 970px;
+      max-width: 670px;
+      width: 100%;
     }
     figure {
       width: auto;
@@ -220,6 +227,15 @@ post
     border-top: 1px solid inc.$theme-color-darkyellow;
     margin-top: 3rem;
     padding-top: 3rem;
+  }
+  .pickup {
+    h3 {
+      @include inc.sizingRem(font-size, full, 18px, sp, 14px);
+      line-height: 1.4;
+    }
+    h2 + h3 {
+      margin-top: -.8rem;
+    }
   }
 
 // &--primary-m {
