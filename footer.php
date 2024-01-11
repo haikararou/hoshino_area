@@ -16,9 +16,9 @@
     </a>
     <a href="" class="u-transparent">
       <section class="l-footer-concept l-footer-buttonlink">
-        <h2 class="l-footer-buttonlink__title"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/txt-copy-white.svg" alt="森と、ひとつになる一日。" width="168" height="159"></h2>
+        <h2 class="l-footer-buttonlink__title"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/txt-copy-white.svg" alt="森が、居場所になる一日。" width="168" height="159"></h2>
         <p class="l-footer-concept__text">ゆれる木漏れ日、川のせせらぎ、鳥のさえずり。豊かな自然に包まれて、暮らすように一日を。</p>
-        <button class="c-button-block -white -arrow l-footer-buttonlink__button">星野の森を歩く</button>
+        <button class="c-button-block -white -arrow l-footer-buttonlink__button">星野エリアで過ごす</button>
       </section>
     </a>
   </div>

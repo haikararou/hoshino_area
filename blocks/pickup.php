@@ -63,7 +63,6 @@ echo '</dd>';
 echo '</dl>';
 ?>
 
-
 <?php
 $link = get_sub_field('link');
 if($link['link_url']) {
@@ -74,7 +73,6 @@ echo $link['link_txt'];
 echo '</span></a></p>';
 }
 ?>
-
 
 <?php
 echo '</div></div>';
