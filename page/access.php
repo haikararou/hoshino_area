@@ -10,258 +10,45 @@
 
 <section class="l-spacer -medium -both">
   <div class="l-container--primary">
-    <h1 class="c-title-ex-large">タイトル大大　レイアウト</h1>
-    <p>リード文リード文リード文リード文リード文リード文リード文リード文リード文リード文リード文リード文リード文リード文リード文60</p>
+    <h1 class="c-title-ex-large">アクセス</h1>
   </div>
 </section>
-
-<section class="l-spacer -medium -both">
-  <div class="l-container--primary">
-    <article class="l-contents--left-title">
-      <h2 class="c-title-large -vertical l-contents--left-title__title">見出し大縦</h2>
-      <div class="l-contents--left-title__conts">
-        <h3 class="c-title-medium">コンテンツ見出し中</h3>
-        <div class="l-contents-2column">
-          <div class="l-contents-2column__block -w-1_2--left">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dummy/layout1.jpg">
-          </div>
-          <div class="l-contents-2column__block -w-1_2--right">
-            <h3 class="c-title-small">コンテンツ見出し小</h3>
-            <p>テキストエリアテキストエリアテキストエリアテキストエリアテキストエリアテキストエリアテキストエリアテキストエリアテキストエリアテキストエリアテキストエリアテキストリンクテキストエリアテキストエリアテキストエリアテキストエリアテキストエリアテキストエリアテキスト</p>
-            <p>
-              <a href="#"><span class="c-button-arrow c-text-underline">リンク</span></a><br>
-              <a href="#"><span class="c-button-arrow c-button-outerlink c-text-underline">外部サイトへ</span></a>
-            </p>
-            <p>
-              <a href="#" class="c-button-block -lightyellow -arrow"><span>ボタンリンク</span></a>
-            </p>
-          </div>
-          
-        </div>
-      </div>
-    </article>
-  </div>
-</section>
-    
-<section class="l-spacer -medium -both">
-  <div class="l-container--primary">
-    <article class="l-contents--left-title">
-      <h2 class="c-title-large -vertical l-contents--left-title__title">見出し大縦</h2>
-      <div class="l-contents--left-title__conts">
-        <ul class="p-post-list">
-          <li class="p-post-list__item">
-            <a href="">
-              <article class="p-post-card">
-                <div class="p-post-card__img">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dummy/article1.jpg">
-                </div>
-                <div class="p-post-card__text">
-                  <p class="p-post-card__cat">ギャラリー樹環</p>
-                  <time class="p-post-card__date">2023.08.21</time>
-                  <h3 class="p-post-card__title">夏のこもれびワークショップを開催</h3>
-                  <p class="p-post-card__info">期間 : 2023.10.15</p>
-                </div>
-              </article>
-            </a>
-          </li>
-          <li class="p-post-list__item">
-            <a href="">
-              <article class="p-post-card">
-                <div class="p-post-card__img">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dummy/article2.jpg">
-                </div>
-                <div class="p-post-card__text">
-                  <p class="p-post-card__cat">カフェ ハングリースポット</p>
-                  <time class="p-post-card__date">2023.08.21</time>
-                  <h3 class="p-post-card__title">夏のおすすめドリンク</h3>
-                  <p class="p-post-card__info">期間 : 2023.10.15</p>
-                </div>
-              </article>
-            </a>
-          </li>
-          <li class="p-post-list__item">
-            <a href="">
-              <article class="p-post-card">
-                <div class="p-post-card__img">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dummy/article3.jpg">
-                </div>
-                <div class="p-post-card__text">
-                  <p class="p-post-card__cat">ピッキオ</p>
-                  <time class="p-post-card__date">2023.08.21</time>
-                  <h3 class="p-post-card__title">小学生の為の日帰りサマーキャンプ「ピッキオこども冒険クラブ」</h3>
-                  <p class="p-post-card__info">期間 : 2023.10.15</p>
-                </div>
-              </article>
-            </a>
-          </li>
-        </ul>
-        <div class="l-spacer -em3 p-post-list__item__more">
-          <p><a href="#" class="c-button-block -lightyellow -arrow -more"><span>もっと見る</span></a></p>
-        </div>
-      </div>
-    </article>
-  </div>
-</section>
-
 
 <section class="l-spacer -medium -both c-border-t">
   <div class="l-container--primary">
-      <h2 class="c-title-large">見出し大縦</h2>
-    <article class="l-contents-2column">
-      <div class="l-contents-2column__block -w-2_3">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dummy/layout2.jpg">
+    <article class="l-contents">
+      <div class="l-contents__block">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3212.9792666866465!2d138.58612247700245!3d36.361281092316624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601dd3a1cc80e7f1%3A0x98ae4e19525e1b0c!2z6Lu95LqV5rKi5pif6YeO44Ko44Oq44Ki!5e0!3m2!1sja!2sjp!4v1701934750676!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-      <div class="l-contents-2column__block -w-1_3">
-        <div class="l-spacer -small -both c-border-t c-border-b">
-          <h3 class="c-title-small c-title-icon c-text-gold"><img class="icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-clock-gold.svg">本日の営業時間</h3>
-          <dl class="c-list-time">
-            <dt>ランチ</dt><dd>11:00-15:00 (L.O.14:30)</dd>
-            <dt>ディナー</dt><dd>17:30-22:00 (L.O.21:00)</dd>
-          </dl>
+      <div class="l-contents-2column -pc-lr">
+        <div class="l-contents-2column__block -w-1_2">
+          <h3 class="c-title-small">軽井沢星野エリア</h3>
         </div>
-        <div class="l-spacer -em2">
-          <p>ソムリエとフレンチシェフのレストラン＆デリとワインショップ。従来のデリが持つ手軽さと、一流レストランにもひけをとらない美味しさ・高級さを巧くミックスし、ちょっと贅沢をしたい日やお客様をおもてなしする日のテーブルに彩りを添えるのに強い味方になれる食とワインを取り揃えています。</p>
+        <div class="l-contents-2column__block -w-1_3">
+          <a href="" class="c-button-block -yellow -arrow -parking"><span>駐車場</span></a>
+          <a href="" class="c-button-block -yellow -arrow -more"><span>Google Map</span></a>
         </div>
       </div>
     </article>
-    
-    <div class="l-spacer -medium">
-      <article class="l-contents-2column -pc-rl">
-        <div class="l-contents-2column__block -w-1_2">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dummy/layout3.jpg">
-        </div>
-        <div class="l-contents-2column__block -w-1_2 c-block-conts-center">
-          <div class="c-block-conts-center__inner">
-            <h3 class="c-title-medium">源泉かけ流し</h3>
-            <p>トンボの湯の全ての浴槽は、源泉かけ流しです。循環・加水をせず、毎日換水しています。湯舟には星野温泉の源泉が良質なまま溢れ、その軟らかいお湯は「美肌の湯」といわれています。星野リゾートの中で唯一飲泉ができるのも、新鮮な温泉である証。「飲む温泉」として、蛇口から飲むこともできます。</p>
-          </div>
-        </div>
-      </article>
-    </div>
-    
-    <div class="l-spacer -medium">
-      <article class="l-contents-2column">
-        <div class="l-contents-2column__block -w-1_2">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dummy/layout4.jpg">
-        </div>
-        <div class="l-contents-2column__block -w-1_2 c-block-conts-center">
-          <div class="c-block-conts-center__inner">
-            <h3 class="c-title-medium">自然に溶け込む環境</h3>
-            <p>内湯と露天は、樹林に向かって池を囲うように配置されています。池は移りゆく自然の景色を映し出し、広い露天風呂とつながるような一体感を生んでいます。源泉の掛け流される音、葉擦れに感じる風、湯面に反射する光…自然の存在を、開放的に感じられる空間です。<br>
-    高い天井を持つ広い内湯も、外の景色とつながっています。深い湯船で肩までゆったりと浸かり、自然と溶け合うようにおくつろぎいただけます。</p>
-          </div>
-        </div>
-      </article>
-    </div>
   </div>
 </section>
 
 <section class="l-spacer -medium -both">
-  <div class="l-container--primary-scroll">
-    <div class="swiper p-gallery-slider js-gallery-slider l-container--primary-scroll__inner">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide p-gallery-slider__slide">
-          <img class="p-gallery-slider__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/dummy/gallery1.jpg">
-          <p class="p-gallery-slider__caption">短いキャプションが入ります。</p>
-        </div>
-        <div class="swiper-slide p-gallery-slider__slide">
-          <img  class="p-gallery-slider__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/dummy/gallery2.jpg">
-          <p class="p-gallery-slider__caption">短いキャプションが入ります。</p>
-        </div>
-        <div class="swiper-slide p-gallery-slider__slide">
-          <img  class="p-gallery-slider__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/dummy/gallery3.jpg">
-          <p class="p-gallery-slider__caption">短いキャプションが入ります。</p>
-        </div>
-        <div class="swiper-slide p-gallery-slider__slide">
-          <img class="p-gallery-slider__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/dummy/gallery1.jpg">
-          <p class="p-gallery-slider__caption">短いキャプションが入ります。</p>
-        </div>
-        <div class="swiper-slide p-gallery-slider__slide">
-          <img  class="p-gallery-slider__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/dummy/gallery2.jpg">
-          <p class="p-gallery-slider__caption">短いキャプションが入ります。</p>
-        </div>
-        <div class="swiper-slide p-gallery-slider__slide">
-          <img  class="p-gallery-slider__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/dummy/gallery3.jpg">
-          <p class="p-gallery-slider__caption">短いキャプションが入ります。</p>
-        </div>
-      </div>
-    </div>
-  </div>
 </section>
 
-
-
-<section class="l-spacer -medium -both c-border-t l-contents--ribbon-title">
+<section class="c-bg-yellow l-contents-block__wrap">
   <div class="l-container--primary">
-    <article class="l-contents--left-title -ribbon">
-      <div class="l-contents--left-title__title">
-        <h2 class="c-title-large -vertical l-contents--ribbon-title__ribbon">定番イチ推しベスト３</h2>
-      </div>
-      <div class="l-contents--left-title__conts">
-        <section class="l-contents-2column -pc-rl">
-          <div class="l-contents-2column__block -w-1_2--right2">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dummy/food1.jpg">
-          </div>
-          <div class="l-contents-2column__block -w-1_2--left2">
-            <h3 class="c-title-medium"><span class="c-title-gothic c-color-Dylw">Best 1</span>鶏の白レバーペースト</h3>
-            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-          </div>
-        </section>
-        <div class="l-spacer -medium">
-          <section class="l-contents-2column -pc-rl">
-            <div class="l-contents-2column__block -w-1_2--right2">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dummy/food2.jpg">
-            </div>
-            <div class="l-contents-2column__block -w-1_2--left2">
-              <h3 class="c-title-medium"><span class="c-title-gothic c-color-Dylw">Best 2</span>鶏の白レバーペースト</h3>
-              <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-            </div>
-          </section>
+    <article class="l-contents--left-title">
+      <h2 class="c-title-large -vertical l-contents--left-title__title">アクセス</h2>
+
+      <div class="l-contents-2column__block -w-1_3">
+        <div class="l-spacer">
+          <p>星野エリアにお越しいただく方法は、以下の4つがあります。土日や連休は道路・駐車場が大変混雑いたしますので、公共機関のご利用をおすすめいたします。</p>
         </div>
       </div>
     </article>
   </div>
-</section>
 
-<section class="c-bg-yellow l-contents-block__wrap">
-  <div class="l-contents-block c-bg-white">
-    <div class="l-contents-block__inner">
-      <div class="l-container--primary">
-        <div class="l-contents-2column">
-          <div class="l-contents-2column__block -w-1_2">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dummy/black1.jpg">
-          </div>
-          <div class="l-contents-2column__block -w-1_2">
-            <h2 class="c-title-large">タイトル</h2>
-            <p>リード文リード文リード文リード文リード文リード文リード文リード文リード文リード文リード文リード文リード文リード文リード文60</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="l-contents-block c-bg-white">
-    <div class="l-contents-block__inner">
-      <div class="l-container--primary">
-
-        <article class="l-contents--left-title">
-          <h2 class="c-title-large -vertical l-contents--left-title__title">タイトル</h2>
-
-          <div class="l-contents-2column">
-            <div class="l-contents-2column__block -w-1_2--left">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dummy/black1.jpg">
-            </div>
-            <div class="l-contents-2column__block -w-1_2--right">
-              <h2 class="c-title-large">タイトル</h2>
-              <p>リード文リード文リード文リード文リード文リード文リード文リード文リード文リード文リード文リード文リード文リード文リード文60</p>
-            </div>
-          </div>
-        </article>
-      </div>
-    </div>
-  </div>
-  
-  
-  
   <div class="l-contents-block">
     <article class="js-tab-parent">
       <div class="c-tab-control">
@@ -273,28 +60,200 @@
       <div class="l-contents-block__inner c-bg-white">
 
         <div class="l-container--primary">
-          <div class="c-tab-contents -active" id="tab-car">
+          <div class="c-tab-contents -active" id="tab-car"><!--車-->
+            <div class="">
+              <p>カーナビ入力設定は、「長野県北佐久郡軽井沢町長倉2148」、<br>もしくは「星野温泉トンボの湯」で検索ください。</p>
+            </div>
+            <div class="">
+              <h3 class="c-title-small">近隣のICからのアクセス</h3>
+            </div>
+            <div class="">
+<style>
+.parent1 {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(11, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  justify-content: center;
+}
+.div1-1 { grid-area: 1 / 1 / 3 / 2; }
+.div1-2 { grid-area: 1 / 2 / 2 / 3; }
+.div1-3 { grid-area: 4 / 1 / 6 / 2; }
+.div1-4 { grid-area: 4 / 2 / 5 / 3; }
+.div1-5 { grid-area: 7 / 1 / 9 / 2; }
+.div1-6 { grid-area: 7 / 2 / 8 / 3; }
+.div1-7 { grid-area: 10 / 1 / 12 / 2; }
+.div1-8 { grid-area: 10 / 2 / 11 / 3; }
+.div1-9 { grid-area: 1 / 3 / 12 / 4; }
+
+.div1-1,
+.div1-3,
+.div1-5,
+.div1-7,
+.div1-9 { border: 1px solid black; padding: 1em; }
+.div1-2,
+.div1-4,
+.div1-6,
+.div1-8 { border-bottom: 1px solid black; padding: 1em; }
+</style>
+<div class="parent1">
+  <div class="div1-1"><span>関越自動車道</span>碓氷軽井沢IC</div>
+  <div class="div1-2"><span>平均約25分</span></div>
+  <div class="div1-3"><span>関越自動車道</span>小諸IC</div>
+  <div class="div1-4"><span>平均約30分</span></div>
+  <div class="div1-5"><span>関越自動車道</span>佐久IC</div>
+  <div class="div1-6"><span>平均約20分</span></div>
+  <div class="div1-7"><span>関越自動車道</span>佐久平スマートIC（ETC専用）</div>
+  <div class="div1-8"><span>平均約20分</span></div>
+  <div class="div1-9">軽井沢星野エリア<br><a href="" class="c-button-block -yellow -arrow -more"><span>駐車場</span></a></div>
+</div>
+            </div>
+            <div class="">
+              <h2 class="c-title-small">冬用タイヤの装着について</h2>
+              <p>冬期（おおむね12月中旬～3月中旬）に車で軽井沢にお越しの際は、冬用タイヤまたはタイヤチェーンをご準備ください。最高気温が零下となる日も多く、少量の降雪や融雪でも路面が凍結します。安全のため、ノーマルタイヤでの運転は控えていただくようお願いいたします。</p>
+            </div>
+          </div>
+
+          <div class="c-tab-contents" id="tab-bus"><!--バス-->
+            <div class="">
+              <h2 class="c-title-small"><span>バス</span>軽井沢駅から西武観光バス（路線バス）で星野エリアまで20分</h2>
+            </div>
+            <div class="">
+<style>
+.parent2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.div2-1 { grid-area: 1 / 1 / 3 / 2; }
+.div2-2 { grid-area: 1 / 2 / 2 / 3; }
+.div2-3 { grid-area: 1 / 3 / 3 / 4; }
+
+.div2-1,
+.div2-3 { border: 1px solid black; padding: 1em; }
+.div2-2 { border-bottom: 1px solid black; padding: 1em; }
+</style>
+<div class="parent2">
+  <div class="div2-1">JR軽井沢駅<span>軽井沢駅北口乗り場</span></div>
+  <div class="div2-2"><span>約20分</span></div>
+  <div class="div2-3">軽井沢星野エリア<span>西武観光バス降り場</span></div>
+</div>
+            </div>
+            <div class="">
+              <h3 class="c-title-small">近隣のICからのアクセス</h3>
+            </div>
+            <div class="l-contents-2column">
+              <div class="l-contents-2column__block -w-1_2">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dummy/black1.jpg">
+                <a href="#">乗り場をGoogle Mapで見る</a>
+              </div>
+              <div class="l-contents-2column__block -w-1_2">
+                <h3 class="c-title-small">JR軽井沢駅北口 1番のり場</h3>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <a href="" class="c-button-block -yellow -arrow -more"><span>西武観光バスの時刻表はこちら</span></a>
+                <ul class="">
+                  <li><a href="">バスおりば<span>拡大して表示</span></a></li>
+                  <li><a href="">バスのりば<span>拡大して表示</span></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="l-contents-2column">
+              <div class="l-contents-2column__block -w-1_2">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dummy/black1.jpg">
+                <a href="#">乗り場をGoogle Mapで見る</a>
+              </div>
+              <div class="l-contents-2column__block -w-1_2">
+                <h3 class="c-title-small">星野エリア 西武観光バス停</h3>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <a href="" class="c-button-block -yellow -arrow -more"><span>西武観光バスの時刻表はこちら</span></a>
+                <ul class="">
+                  <li><a href="">バスおりば<span>拡大して表示</span></a></li>
+                  <li><a href="">バスのりば<span>拡大して表示</span></a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="l-contents-2column c-border-t">
+              <div class="l-contents-2column__block -w-1_2">
+                <h3 class="c-title-small">宿泊者専用のバスのご案内</h3>
+                <p>「星のや軽井沢」「ホテルブレストンコート」ご宿泊のお客様はご宿泊者専用のバスがございます。</p>
+              </div>
+              <div class="l-contents-2column__block -w-1_2">
+                <h3 class="c-title-small">星野エリア 西武観光バス停</h3>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <a href="" class="c-button-block -yellow -arrow -more"><span>西武観光バスの時刻表はこちら</span></a>
+                <ul class="">
+                  <li><a href="">星のや軽井沢にご宿泊の方</a></li>
+                  <li><a href="">ブレストンコートにご宿泊の方</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="c-tab-contents" id="tab-train"><!--電車・タクシー-->
+            <div class="">
+<style>
+.parent3 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.div3-1 { grid-area: 1 / 1 / 9 / 2; }
+.div3-2 { grid-area: 3 / 2 / 4 / 3; }
+.div3-3 { grid-area: 1 / 3 / 6 / 4; }
+.div3-4 { grid-area: 1 / 4 / 2 / 5; }
+.div3-5 { grid-area: 4 / 4 / 5 / 5; }
+.div3-6 { grid-area: 1 / 5 / 9 / 6; }
+.div3-7 { grid-area: 7 / 2 / 8 / 5; }
+
+.div3-1,
+.div3-3,
+.div3-6 { border: 1px solid black; padding: 1em; }
+.div3-2,
+.div3-4,
+.div3-5,
+.div3-7 { border-bottom: 1px solid black; padding: 1em; }
+</style>
+<div class="parent3">
+  <div class="div3-1"><span>JR</span>軽井沢駅</div>
+  <div class="div3-2">しなの鉄道<br>約5分</div>
+  <div class="div3-3"><span>しなの鉄道</span>中軽井沢駅</div>
+  <div class="div3-4">タクシー<br>約5分</div>
+  <div class="div3-5">徒歩<br>約17分</div>
+  <div class="div3-6">軽井沢星野エリア</div>
+  <div class="div3-7">タクシー<br>約15分</div>
+</div>
+            </div>
+            <div class="l-contents-2column">
+              <div class="l-contents-2column__block -w-1_2">
+                <h2 class="c-title-small"><span>電車</span>JR軽井沢駅から1駅の中軽井沢駅下車。</h2>
+                <p>軽井沢駅から1駅の中軽井沢駅（約5分）にて下車ください。</p>
+                <a href="">しなの鉄道時刻表</a>
+              </div>
+              <div class="l-contents-2column__block -w-1_2">
+                <h2 class="c-title-small"><span>タクシー</span>近隣のタクシー会社に直接ご連絡いただきご予約ください。</h2>
+                <p>ますや交通（ TEL:<a href="tel:+81-267455223">0267-45-5223 ）<br>軽井沢観光タクシー（ TEL:<a href="tel:+81-267455408">0267-45-5408</a> ）<br>浅間観光タクシー（ TEL:<a href="tel:+81-267455264">0267-45-5264</a> ）</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="c-tab-contents" id="tab-bike"><!--バイク・自転車-->
             <div class="l-contents-2column">
               <div class="l-contents-2column__block -w-1_2">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dummy/black1.jpg">
               </div>
               <div class="l-contents-2column__block -w-1_2">
-                <h2 class="c-title-large">タブ：車</h2>
-                <p>タブのIDを指定してアンカリンクで遷移できるようにしてあります。<br>
-                <a href="<?php echo home_url(); ?>/template#tab-bus" target="_blank"><span class="c-text-underline">バスのタブ</span></a><br>
-                <a href="<?php echo home_url(); ?>/template#tab-train" target="_blank"><span class="c-text-underline">電車のタブ</span></a><br>
-                <a href="<?php echo home_url(); ?>/template#tab-bike" target="_blank"><span class="c-text-underline">バイクのタブ</span></a></p>
+                <p>駐輪場　P1、P2、P3（無料）</p>
               </div>
             </div>
-          </div>
-          <div class="c-tab-contents" id="tab-bus">
-            バスの内容
-          </div>
-          <div class="c-tab-contents" id="tab-train">
-            電車の内容
-          </div>
-          <div class="c-tab-contents" id="tab-bike">
-            バイクの内容
           </div>
         </div>
       </div>
@@ -305,7 +264,7 @@
 <section class="l-spacer -medium -both">
   <div class="l-container--primary">
     <article class="l-contents--left-title -title-large">
-      <h2 class="c-title-large -vertical l-contents--left-title__title">よくある質問</h2>
+      <h2 class="c-title-large -vertical l-contents--left-title__title"><span>アクセス</span>よくある質問</h2>
       <div class="l-contents--left-title__conts">
 
         <dl class="p-faq-list">
@@ -337,174 +296,6 @@
               </dt>
           </div>
         </dl>
-      </div>
-    </article>
-  </div>
-</section>
-
-
-<section class="l-spacer -medium -both c-border-t">
-  <div class="l-container--primary">
-    <article class="l-contents--left-title -title-large">
-      <div class="l-contents--left-title__title">
-        <h2 class="c-title-large -vertical">ショップリスト</h2>
-        
-        <ul class="c-list-std">
-          <li class="c-list-std__item">
-            <span class="c-text-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-restaurant.svg" width="40" height="40" class="icon">レストラン</span>
-          </li>
-          <li class="c-list-std__item">
-            <span class="c-text-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-cafe.svg" width="40" height="40" class="icon">カフェ</span>
-          </li>
-          <li class="c-list-std__item">
-            <span class="c-text-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-shop.svg" width="40" height="40" class="icon">ショップ</span>
-          </li>
-          <li class="c-list-std__item">
-            <span class="c-text-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-pet.svg" width="40" height="40" class="icon">ペット同伴可</span>
-          </li>
-          <li class="c-list-std__item">
-            <span class="c-text-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-pet-outside.svg" width="40" height="40" class="icon">テラス席ペット可</span>
-          </li>
-        </ul>
-        <div class="l-spacer -em2">
-          <a href="" class="c-button-block -yellow -icon"><img class="icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-clock.svg" width="16" height="16">営業時間一覧</a>
-        </div>
-      </div>
-      <div class="l-contents--left-title__conts">
-
-        <ul class="p-restaurant-list">
-          <li>
-            <div class="p-restaurant-card">
-              <div class="p-restaurant-card__wi-fi"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-wi-fi.svg" alt="Wi-fiあり" width="28" height="28"></div>
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dummy/restaurant1.jpg" alt="">
-              
-              <div class="p-restaurant-card__text">
-                <div class="p-restaurant-card__title">
-                  <h3 class="p-restaurant-card__name"><span class="p-restaurant-card__cat">イタリアンレストラン</span>イル・ソーニョ</h3>
-                  <div class="p-restaurant-card__logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/dummy/restaurant-logo1.jpg" alt=""></div>
-                </div>
-                <div class="p-restaurant-card__info">
-                  <!-- <div class="p-restaurant-card__time">
-                    <dl class="c-list-time">
-                      <dt>ランチ</dt><dd>11:00-15:00 (L.O.14:30)</dd>
-                      <dt>ディナー</dt><dd>17:30-22:00 (L.O.21:00)</dd>
-                    </dl>
-                  </div> -->
-                  <a href="" class="c-button-block -yellow -arrow -more p-restaurant-card__more"><span>詳細</span></a>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="p-restaurant-card">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dummy/restaurant2.jpg" alt="">
-              
-              <div class="p-restaurant-card__text">
-                <div class="p-restaurant-card__title">
-                  <h3 class="p-restaurant-card__name"><span class="p-restaurant-card__cat">カフェ・スパイス・雑貨</span>サジロカフェ リンデン</h3>
-                  <div class="p-restaurant-card__logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/dummy/restaurant-logo2.jpg" alt=""></div>
-                </div>
-                <div class="p-restaurant-card__info">
-                  <!-- <div class="p-restaurant-card__time">
-                    <dl class="c-list-time">
-                      <dt>ランチ</dt><dd>11:00-15:00 (L.O.14:30)</dd>
-                      <dt>ディナー</dt><dd>17:30-22:00 (L.O.21:00)</dd>
-                    </dl>
-                  </div> -->
-                  <a href="" class="c-button-block -yellow -arrow -more p-restaurant-card__more"><span>詳細</span></a>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="p-restaurant-card">
-              <div class="p-restaurant-card__wi-fi"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-wi-fi.svg" alt="Wi-fiあり" width="28" height="28"></div>
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dummy/restaurant1.jpg" alt="">
-              
-              <div class="p-restaurant-card__text">
-                <div class="p-restaurant-card__title">
-                  <h3 class="p-restaurant-card__name"><span class="p-restaurant-card__cat">イタリアンレストラン</span>イル・ソーニョ</h3>
-                  <div class="p-restaurant-card__logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/dummy/restaurant-logo1.jpg" alt=""></div>
-                </div>
-                <div class="p-restaurant-card__info">
-                  <!-- <div class="p-restaurant-card__time">
-                    <dl class="c-list-time">
-                      <dt>ランチ</dt><dd>11:00-15:00 (L.O.14:30)</dd>
-                      <dt>ディナー</dt><dd>17:30-22:00 (L.O.21:00)</dd>
-                    </dl>
-                  </div> -->
-                  <a href="" class="c-button-block -yellow -arrow -more p-restaurant-card__more"><span>詳細</span></a>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="p-restaurant-card">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dummy/restaurant2.jpg" alt="">
-              
-              <div class="p-restaurant-card__text">
-                <div class="p-restaurant-card__title">
-                  <h3 class="p-restaurant-card__name"><span class="p-restaurant-card__cat">カフェ・スパイス・雑貨</span>サジロカフェ リンデン</h3>
-                  <div class="p-restaurant-card__logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/dummy/restaurant-logo2.jpg" alt=""></div>
-                </div>
-                <div class="p-restaurant-card__info">
-                  <!-- <div class="p-restaurant-card__time">
-                    <dl class="c-list-time">
-                      <dt>ランチ</dt><dd>11:00-15:00 (L.O.14:30)</dd>
-                      <dt>ディナー</dt><dd>17:30-22:00 (L.O.21:00)</dd>
-                    </dl>
-                  </div> -->
-                  <a href="" class="c-button-block -yellow -arrow -more p-restaurant-card__more"><span>詳細</span></a>
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </article>
-  </div>
-</section>
-
-<section class="l-spacer -medium -both c-border-t">
-  <div class="l-container--primary">
-    <article class="l-contents--left-title">
-      <h2 class="c-title-large -vertical l-contents--left-title__title">リスト</h2>
-      <div class="l-contents--left-title__conts">
-        
-        <div class="l-contents-2column">
-          <div class="l-contents-2column__block -w-1_2--left">
-
-            <h3 class="c-title-medium">UL,OLリスト</h3>
-            <ul class="c-list-dot">
-              <li class="c-list-dot__item">リストリストリストリストリストリスト</li>
-              <li class="c-list-dot__item">リストリストリストリストリストリストリストリストリストリストリストリストリストリストリストリストリストリスト</li>
-              <li class="c-list-dot__item">リストリストリストリストリストリスト</li>
-            </ul>
-
-            <ol class="c-list-num l-spacer -em2">
-              <li class="c-list-num__item">番号リストリストリストリストリストリスト</li>
-              <li class="c-list-num__item">番号リストリストリストリストリストリストリストリストリストリストリストリストリストリストリストリストリストリスト</li>
-              <li class="c-list-num__item">番号リストリストリストリストリストリスト</li>
-            </ol>
-          </div>
-
-          <div class="l-contents-2column__block -w-1_2--right">
-            <h3 class="c-title-medium">DLリスト</h3>
-            <dl class="c-list-dl">
-              <dt>見出し</dt>
-              <dd>テキストテキストテキストテキストテキスト</dd>
-
-              <dt>見出し</dt>
-              <dd>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
-
-              <dt>見出し見出し見出し見出し見出し見出し見出し見出し</dt>
-              <dd>テキストテキストテキストテキストテキスト</dd>
-
-              <dt>見出し</dt>
-              <dd>テキストテキストテキストテキストテキスト</dd>
-            </dl>
-          </div>
-        </div>
       </div>
     </article>
   </div>
