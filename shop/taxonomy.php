@@ -32,7 +32,7 @@
                 </div>
             </div>
             <div class="l-contents--left-title__conts">
-                <?php if ( have_posts() ): ?>
+                <?php if ($the_query->have_posts()): ?>
                 <ul class="p-restaurant-list">
                     <?php while ( have_posts() ): the_post(); ?>
                     <li>
@@ -60,8 +60,8 @@
                     </li>
                     <?php endwhile; ?>
                     </ul>
-                    <?php endif; ?>
-                <?php wp_pagenavi(); ?>
+                    <?php endif; wp_reset_postdata(); ?>
+                <!-- ?php wp_pagenavi(); ? -->
             </div>
         </article>
     </div>

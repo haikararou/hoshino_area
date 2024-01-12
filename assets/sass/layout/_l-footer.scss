@@ -19,7 +19,7 @@ footer
     @include inc.mq(tab) {
       width: 94%;
     }
-    @include inc.mq(lap) {
+    @include inc.mq(vr) {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -32,11 +32,25 @@ footer
     text-align: center;
     margin-left: auto;
     margin-top: 2em;
+    width: 100%;
     @include inc.mq(tab) {
+      //text-align: right;
+    }
+    @include inc.mq(vr) {
+      margin-top: 0;
       text-align: right;
     }
-    @include inc.mq(lap) {
-      margin-top: 0;
+  }
+
+
+  &__logo{
+    display: block;
+    text-align: center;
+    margin: 4rem auto 0;
+    @include inc.sizing(width, tab, 170px, sp, 124px);
+    height: auto;
+    @include inc.mq(vr) {
+      margin: 0;
     }
   }
 }

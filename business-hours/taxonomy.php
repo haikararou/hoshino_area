@@ -18,9 +18,9 @@ echo '</style>';
 		<h1 class="c-title-ex-large">営業時間</h1>
         <nav>
             <ul class="c-list-category">
-                <li><a href="<?php echo home_url(); ?>/opening/" class="c-list-category__item">全期間</a></li>
+                <li><a href="<?php echo home_url(); ?>/business-hours/" class="c-list-category__item">全期間</a></li>
                 <?php
-                $terms = get_terms('opening_cat');
+                $terms = get_terms('business-hours_cat');
                 foreach ( $terms as $term ) {
                 echo '<li><a class="c-list-category__item cat-'.$term-> slug.'" href="'.get_term_link( $term ).'">'.$term->name.'</a></li>';
                 }

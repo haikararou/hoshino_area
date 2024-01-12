@@ -32,11 +32,20 @@
                 </div>
             </div>
             <div class="l-contents--left-title__conts">
-                <?php if ( have_posts() ): ?>
+                <?php
+                $args = array(
+                'post_type' => 'shop',
+                'posts_per_page' => -1,
+                );
+                $the_query = new WP_Query($args);
+                ?>
+                <!-- ?php if ( have_posts() ): ? -->
+                <?php if ($the_query->have_posts()): ?>
                 <ul class="p-restaurant-list">
-                    <?php while ( have_posts() ): the_post(); ?>
+                    <!-- ?php while ( have_posts() ): the_post(); ? -->
+                    <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
                     <li>
-                        <div class="p-restaurant-card">
+                        <a href="<?php the_permalink();?>" class="p-restaurant-card">
                             <?php if( get_field('wi-fi')): ?>
                             <div class="p-restaurant-card__wi-fi">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-wi-fi.svg" alt="Wi-fiあり" width="28" height="28">
@@ -52,16 +61,16 @@
                                     </div>
                                     <?php endif; ?>
                                 </div>
-                                <div class="p-restaurant-card__info">
+                                <!-- <div class="p-restaurant-card__info">
                                     <a href="<?php the_permalink();?>" class="c-button-block -yellow -arrow -more p-restaurant-card__more"><span>詳細</span></a>
-                                </div>
+                                </div> -->
                             </div>
-                        </div>
+                        </a>
                     </li>
                     <?php endwhile; ?>
                     </ul>
-                    <?php endif; ?>
-                <?php wp_pagenavi(); ?>
+                    <?php endif; wp_reset_postdata(); ?>
+                <!-- ?php wp_pagenavi(); ? -->
             </div>
         </article>
     </div>
@@ -77,7 +86,7 @@
                     </div>
                     <div class="l-contents-2column__block -w-1_2">
                         <h2 class="c-title-large"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/logo-halnire.svg" alt="ハルニレテラス"></h2>
-                        <p>「軽井沢の日常」をコンセプトにした、森の中の小さな街。もともと自生していたハルニレ（春楡）の間を縫うように、清流に寄り添って連なる9棟の建物を、ウッドデッキでつないでいます。</p>
+                        <p>「軽井沢の日常」をコンセプトにした、森の中の小さな街。ハルニレの木立の中、湯川の清流沿いに連なる建物を、ウッドデッキでつないでいます。豊かな自然と個性的なお店が、星野エリアでの一日を彩ります。</p>
                         <p><a href="" class="c-button-block -yellow -arrow -more p-restaurant-card__more"><span>もっと見る</span></a></p>
                     </div>
                 </div>

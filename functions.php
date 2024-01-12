@@ -63,8 +63,8 @@ function get_custom_template( $page_template ) {
 	else if(is_singular('event')) {
 	$page_template = dirname( __FILE__ ) . "/event/single.php";
 	}
-	else if(is_singular('opening')) {
-	$page_template = dirname( __FILE__ ) . "/opening/single.php";
+	else if(is_singular('business-hours')) {
+	$page_template = dirname( __FILE__ ) . "/business-hours/single.php";
 	}
 	else if(is_singular('shop')) {
 	$page_template = dirname( __FILE__ ) . "/shop/single.php";
@@ -77,8 +77,8 @@ function get_custom_template( $page_template ) {
 	else if(is_post_type_archive('event')){
 	$page_template = dirname( __FILE__ ) . "/event/archive.php";
 	}
-	else if(is_post_type_archive('opening')){
-	$page_template = dirname( __FILE__ ) . "/opening/archive.php";
+	else if(is_post_type_archive('business-hours')){
+	$page_template = dirname( __FILE__ ) . "/business-hours/archive.php";
 	}
 	else if(is_post_type_archive('shop')){
 	$page_template = dirname( __FILE__ ) . "/shop/archive.php";
@@ -91,8 +91,8 @@ function get_custom_template( $page_template ) {
 	else if(is_tax('event_cat')){
 	$page_template = dirname( __FILE__ ) . "/event/taxonomy.php";
 	}
-	else if(is_tax('opening_cat')){
-	$page_template = dirname( __FILE__ ) . "/opening/taxonomy.php";
+	else if(is_tax('business-hours_cat')){
+	$page_template = dirname( __FILE__ ) . "/business-hours/taxonomy.php";
 	}
 	else if(is_tax('shop_cat')){
 	$page_template = dirname( __FILE__ ) . "/shop/taxonomy.php";

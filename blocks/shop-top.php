@@ -26,7 +26,7 @@
 					<?php
 					$today = date_i18n('Ymd');
 					$args = array(
-					'post_type'=> 'opening',
+					'post_type'=> 'business-hours',
 					'meta_key' => 'opening_start', //ACFのフィールド名
 					'meta_query' => array( // 判定条件…(開始日 >= 今日)or(終了日 >= 今日)
 						'relation' => 'AND',

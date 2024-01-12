@@ -25,16 +25,8 @@
 
   <?php get_template_part('news/list-important'); ?>
 
-  <div class="l-footer-information">
-    <?php get_template_part('inc/today'); ?>
-    <section class="l-footer-pickup">
-      <h2 class="l-footer-pickup__title">Pick up</h2>
-      <a href=""><span class="l-footer-pickup__conts">アンブレラスカイ開催中</span></a>
-    </section>
-  </div>
-
   <nav>
-    <?php 
+    <?php
     $args = ['class' => '-footer'];
     get_template_part('inc/info-menu', null, $args); ?>
   </nav>
@@ -43,7 +35,7 @@
     <nav>
       <?php get_template_part('inc/other-menu', null, $args); ?>
     </nav>
-
+    <a href="<?php echo home_url(); ?>" class="l-footer__logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/logo-en.png" width="170" height="17" alt="Hoshino resorts"></a>
     <p class="l-footer__copyright">Copyright &copy; All rights reserved. Hoshino Resorts Inc.</p>
   </div>
 </footer>

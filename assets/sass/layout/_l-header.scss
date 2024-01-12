@@ -119,7 +119,12 @@
     @include inc.sizing(padding-left, full, 10px, sp, 5px);
     @include inc.sizing(padding-right, full, 10px, sp, 5px);
   }
-  
+  &__lang {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
   &.-fixed {
     @include inc.mq(tab) {
       position: fixed;
@@ -191,7 +196,8 @@
     background: inc.$theme-color-lightyellow;
     @include inc.mq(tab) {
       background: none;
-      width: calc(100% / 3 * 2);
+      //width: calc(100% / 3 * 2);
+      width: 100%;
       border-bottom: 1px solid inc.$theme-color-yellow;
     }
     @include inc.mq(desk) {
@@ -199,20 +205,23 @@
       border-bottom: none;
     }
     @include inc.mq(vr) {
-      width: 50%;
+      //width: 50%;
+      width: 100%;
     }
   }
   
   &__today {
     background: inc.$theme-color-lightyellow;
     border-bottom: 1px solid inc.$theme-color-yellow;
+    padding: 1.5em 0;
     @include inc.mq(tab) {
       width: calc(100% / 3);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: none;
-      border-left: 1px solid inc.$theme-color-yellow;
+      // display: flex;
+      // align-items: center;
+      // justify-content: center;
+      // background: none;
+      // border-left: 1px solid inc.$theme-color-yellow;
+      display: none;
     }
     @include inc.mq(desk) {
       background: none;

@@ -1,11 +1,24 @@
 <?php global $shop_slug; ?>
+<? $today = date_i18n('Ymd'); ?>
 <?php
-$query = new WP_Query(array(
-    'post_type' => "opening",
-    'order' => 'ASC',
-    'orderby' => 'date',
-));
-if($query->have_posts()): while($query->have_posts()): $query->the_post();
+    $args = array(
+        'post_type'=> 'business-hours',
+        'meta_key' => 'opening_end', //ACFのフィールド名
+        'order' => 'ASC',
+        'orderby' => 'date',
+        'meta_query' => array( // 判定条件…(開始日 >= 今日)or(終了日 >= 今日)
+        'relation' => 'AND',
+        array(
+        'key'     => 'opening_end',
+        'value'   => $today,
+        'type'    => 'date',
+        'compare' => '>=',
+        ),
+        ),
+        'posts_per_page' => -1,
+    );
+    $wp_query = new WP_Query( $args );
+    if($wp_query->have_posts()): while($wp_query->have_posts()): $wp_query->the_post();
 ?>
 <?php
     if(have_rows('opening_hoshino')):

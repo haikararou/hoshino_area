@@ -58,16 +58,17 @@ endif;
     <div class="l-header__top" id="js-fixed-header-sp">
       <a href="<?php echo home_url(); ?>"><p class="l-header-logo">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/logo-ja.svg" width="215" height="26" alt="軽井沢星野エリア" class="l-header-logo__ja">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/logo-en.png" width="129" height="12" alt="Hoshino resorts" class="l-header-logo__en">
+        <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/logo-en.png" width="129" height="12" alt="Hoshino resorts" class="l-header-logo__en"> -->
         </p>
       </a>
       
     
       <div class="l-header-menu__tertiary">
-        <ul class="c-gmenu-tertiary">
+        <?php get_template_part('inc/today'); ?>
+        <!-- <ul class="c-gmenu-tertiary">
           <li class="c-gmenu-tertiary__item"><a href="<?php echo home_url('/event'); ?>" class="c-button-arrow">イベント情報</a></li>
           <li class="c-gmenu-tertiary__item"><a href="<?php echo home_url('/news'); ?>" class="c-button-arrow">ニュース</a></li>
-        </ul>
+        </ul> -->
 
         <div class="l-header-menu__lang">
           <?php 
@@ -87,7 +88,7 @@ endif;
       
       <div class="c-gmenu-secondary l-header-menu__secondary">
         <a href="" class="c-button-arrow c-gmenu-secondary__textbtn">施設を探す</a>
-        <a href="<?php echo home_url('/access'); ?>" class="c-button-block -white -icon c-gmenu-secondary__blockbtn"><i class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-access.svg"></i>アクセス</a>
+        <a href="<?php echo home_url('/business-hours'); ?>" class="c-button-block -white -icon c-gmenu-secondary__blockbtn"><i class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-clock.svg"></i>営業時間</a>
         <a href="<?php echo home_url('/parking'); ?>" class="c-button-block -white -icon c-gmenu-secondary__blockbtn"><i class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-parking.svg"></i>駐車場</a>
         </ul>
         <button class="c-button-hamburger c-gmenu-secondary__hamburger" id="js-hamburger">メニュー</button>
@@ -102,9 +103,9 @@ endif;
         <div class="l-header-submenu__today">
         <?php get_template_part('inc/today', null, $args);  ?>
         </div>
-        <div class="l-header-submenu__othermenu">
-        <?php get_template_part('inc/other-menu', null, $args); ?>
-        </div>
+        <!-- <div class="l-header-submenu__othermenu" -->
+        <!-- ?php get_template_part('inc/other-menu', null, $args); ? -->
+        <!-- </div> -->
         <div class="l-header-submenu__lang">
         <?php get_template_part('inc/language', null, $args); ?>
         </div>

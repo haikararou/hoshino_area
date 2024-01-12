@@ -5,15 +5,23 @@ opening
 -----------------------------------------------------*/
 .p-opening {
   &--table {
-    border-top: 1px solid #ccc;
-    border-left: 1px solid #ccc;
     position: relative;
     table-layout: fixed;
+    width: 100%;
     th,td {
-      border-right: 1px solid #ccc;
-      border-bottom: 1px solid #ccc;
+      border-left: 1px solid #E2E2B9;
+      border-bottom: 1px solid #E2E2B9;
       padding: 1rem;
       line-height: 1.6;
+    }
+    th a {
+      position: relative;
+      z-index: 1;
+    }
+    th span {
+      display: block;
+      font-size: 12px;
+      color: inc.$theme-color-gold;
     }
     td span {
       display: block;
@@ -26,8 +34,11 @@ opening
     left: 0;
     z-index: 2;
     color: #fff;
-    background: #333;
+    background: inc.$theme-color-gold;
+    border-bottom: none!important;
+    border-left:none!important;
     min-width: 20vw;
+    font-size: 20px;
     &:before {
       content: "";
       position: absolute;
@@ -35,7 +46,6 @@ opening
       left: -1px;
       width: 100%;
       height: 100%;
-      border-bottom: 1px solid #ccc;
     }
     &:after {
       content: "";
@@ -44,16 +54,15 @@ opening
       right: -1px;
       width: 100%;
       height: 100%;
-      border-right: 1px solid #ccc;
+      border-right: 1px solid #E2E2B9;
     }
   }
   &--fixed02 {
     position: sticky;
     left: 0;
-    color: #fff;
-    background: #333;
     width: 10vw;
     min-width: 10vw;
+    border-left:none!important;
     &:before{
       content: "";
       position: absolute;
@@ -61,7 +70,6 @@ opening
       left: -1px;
       width: 100%;
       height: 100%;
-      border-left: 1px solid #ccc;
     }
   }
   &--fixed03 {
@@ -83,13 +91,15 @@ opening
     position: sticky;
     top: 0;
     left: 0;
-    color: #fff;
-    background: #333;
-    text-align: center;
+    //color: #fff;
+    background: inc.$theme-color-yellow;
+    border-bottom: none!important;
+    //text-align: center;
+    font-size: 24px;
   }
   &--scroll {
     overflow: scroll;
-    height: 80vh;
+    //height: 80vh;
   }
 }
 @media print{

@@ -10,6 +10,8 @@ gallery
   }
   &__img {
     width: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
     //height: inc.size(full, 380px, sp, 176px);
   }
   

@@ -86,7 +86,9 @@
     display: flex;
     justify-content: space-between;
   }
-  
+  &.-best3 + .-best3 {
+    margin-top: 3em;
+  }
   &.-pc-rl {
     @include inc.mq(lap) {
       flex-direction: row-reverse;

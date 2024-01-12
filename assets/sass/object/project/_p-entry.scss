@@ -6,17 +6,27 @@
 post
 -----------------------------------------------------*/
 .p-entry {
+  p {
+    a:not([class]) {
+      text-decoration: underline;
+      text-underline-offset: 0.2em;
+    }
+    // a span.c-text-underline {
+    //   text-decoration: none;
+    //   text-underline-offset: 0.2em;
+    // }
+  }
   .p-news-hero {
     margin-bottom: 5rem;
   }
   .c-border-t {
     margin-top: 6rem;
   }
-  .c-border-t + .c-border-t {
-    padding-top: 0;
-    margin-top: 0rem;
-    border-top: none;
-  }
+  // .c-border-t + .c-border-t {
+  //   padding-top: 0;
+  //   margin-top: 0rem;
+  //   border-top: none;
+  // }
   margin: 0 auto;
   h2.wp-block-heading {
     @include inc.sizingRem(font-size, full, 32px, sp, 20px);
@@ -222,6 +232,11 @@ post
   .wp-block-image + ol,
   .wp-block-image + .wp-block-image {
     margin-top: 2rem;
+  }
+  p + h3.wp-block-heading,
+  section + h3.wp-block-heading,
+  .wp-block-image + h3.wp-block-heading {
+    margin-top: 4rem;
   }
   .and-border + .and-border {
     border-top: 1px solid inc.$theme-color-darkyellow;
