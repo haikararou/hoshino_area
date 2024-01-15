@@ -7,7 +7,16 @@ opening
   &--table {
     position: relative;
     table-layout: fixed;
-    width: 100%;
+    width: 120vw;
+    @include inc.mq(wsp) {
+      width: 100%;
+    }
+    &.-no-scroll {
+      width: 100%;
+      @include inc.mq(wsp) {
+        width: 100%;
+      }
+    }
     th,td {
       border-left: 1px solid #E2E2B9;
       border-bottom: 1px solid #E2E2B9;
@@ -17,15 +26,19 @@ opening
     th a {
       position: relative;
       z-index: 1;
+      @include inc.sizingRem(font-size, full, 16px, sp, 14px);
     }
     th span {
       display: block;
-      font-size: 12px;
+      @include inc.sizingRem(font-size, full, 12px, sp, 10px);
       color: inc.$theme-color-gold;
+    }
+    td {
+      @include inc.sizingRem(font-size, full, 16px, sp, 14px);
     }
     td span {
       display: block;
-      font-size: 14px;
+      @include inc.sizingRem(font-size, full, 14px, sp, 12px);
     }
   }
   &--fixed01 {
@@ -37,8 +50,15 @@ opening
     background: inc.$theme-color-gold;
     border-bottom: none!important;
     border-left:none!important;
-    min-width: 20vw;
-    font-size: 20px;
+    width: 40vw;
+    min-width: 40vw;
+    text-align: center;
+    @include inc.mq(wsp) {
+      width: 20vw;
+      min-width: 20vw;
+      text-align: left;
+    }
+    @include inc.sizingRem(font-size, full, 20px, sp, 14px);
     &:before {
       content: "";
       position: absolute;
@@ -60,9 +80,14 @@ opening
   &--fixed02 {
     position: sticky;
     left: 0;
-    width: 10vw;
-    min-width: 10vw;
+    width: 40vw;
+    min-width: 40vw;
+    @include inc.mq(wsp) {
+      width: 20vw;
+      min-width: 20vw;
+    }
     border-left:none!important;
+    background: inc.$base-color;
     &:before{
       content: "";
       position: absolute;
@@ -71,35 +96,48 @@ opening
       width: 100%;
       height: 100%;
     }
-  }
-  &--fixed03 {
-    position: sticky;
-    left: 10vw;
-    color: #fff;
-    background: #333;
-    &:before{
+    &:after {
       content: "";
       position: absolute;
       top: -1px;
-      left: -1px;
+      right: -1px;
       width: 100%;
       height: 100%;
-      border-left: 1px solid #ccc;
+      border-right: 1px solid #E2E2B9;
+    }
+    padding: 1rem 1rem 1rem 0!important;
+    @include inc.mq(wsp) {
+      padding: 1rem;
     }
   }
   &--fixed04{
     position: sticky;
     top: 0;
     left: 0;
-    //color: #fff;
     background: inc.$theme-color-yellow;
     border-bottom: none!important;
-    //text-align: center;
-    font-size: 24px;
+    @include inc.sizingRem(font-size, full, 24px, sp, 12px);
+    text-align: center;
+    @include inc.mq(wsp) {
+      width: auto;
+      min-width: auto;
+      text-align: left;
+    }
   }
-  &--scroll {
+  &--scroll_01 {
+    //overflow: scroll;
+    @include inc.mq(wsp) {
+      overflow: unset;
+      height: auto;
+    }
+  }
+  &--scroll_02 {
     overflow: scroll;
-    //height: 80vh;
+    height: 60vh;
+    @include inc.mq(wsp) {
+      overflow: unset;
+      height: auto;
+    }
   }
 }
 @media print{

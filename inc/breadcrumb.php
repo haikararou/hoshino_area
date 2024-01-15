@@ -97,7 +97,8 @@
 				
 		/**** その他のページ ****/
 		else{
-			$str.='<li class="c-breadcrumb__item">'. wp_get_document_title('') .'</li>';
+			//$str.='<li class="c-breadcrumb__item">'. wp_get_document_title('').'</li>';
+			$str.='<li class="c-breadcrumb__item">'. post_type_archive_title('',false).'</li>';
 		}
 		$str.='</ul>';
 		echo $str;

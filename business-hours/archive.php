@@ -16,7 +16,7 @@
 
 <section class="l-spacer -medium -both">
 	<div class="l-container--primary">
-        <div class="p-opening--scroll">
+        <div class="p-opening--scroll_01">
         <table class="p-opening--table">
             <tr>
                 <th class="p-opening--fixed01">店名</th>
@@ -85,7 +85,8 @@
 
 <section class="l-spacer -medium -both">
 	<div class="l-container--primary">
-        <div class="p-opening--scroll">
+    ハルニレテラスの施設
+        <div class="p-opening--scroll_02">
         <table class="p-opening--table">
             <tr>
                 <th class="p-opening--fixed01">店名</th>
@@ -254,10 +255,7 @@
         <p>以下の施設の営業時間につきましては、<br>
         それぞれのホームページからご確認ください。</p>
         <div class="p-opening--scroll">
-        <table class="p-opening--table">
-            <tr>
-                <th class="p-opening--fixed01">店名</th>
-            </tr>
+        <table class="p-opening--table -no-scroll">
             <tr>
                 <th class="p-opening--fixed02"><a href="" target="_blank"><div class="c-button-arrow c-button-outerlink">ブレストンコート　ユカワタン</div></th>
             </tr>
@@ -276,7 +274,7 @@
             <tr>
                 <th class="p-opening--fixed02"><a href="" target="_blank"><div class="c-button-arrow c-button-outerlink">星のや軽井沢</div></th>
             </tr>
-            <tr>
+            <!-- <tr>
                 <th class="p-opening--fixed02"><a href="" target="_blank"><div class="c-button-arrow c-button-outerlink">軽井沢ホテルブレストンコート</div></th>
             </tr>
             <tr>
@@ -284,7 +282,7 @@
             </tr>
             <tr>
                 <th class="p-opening--fixed02"><a href="" target="_blank"><div class="c-button-arrow c-button-outerlink">軽井沢 別荘Navi</div></th>
-            </tr>
+            </tr> -->
         </table>
         </div>
     </div>

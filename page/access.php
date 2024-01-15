@@ -21,11 +21,11 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3212.9792666866465!2d138.58612247700245!3d36.361281092316624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601dd3a1cc80e7f1%3A0x98ae4e19525e1b0c!2z6Lu95LqV5rKi5pif6YeO44Ko44Oq44Ki!5e0!3m2!1sja!2sjp!4v1701934750676!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       <div class="l-contents-2column -pc-lr">
-        <div class="l-contents-2column__block -w-1_2">
+        <!-- <div class="l-contents-2column__block -w-1_2">
           <h3 class="c-title-small">軽井沢星野エリア</h3>
-        </div>
+        </div> -->
         <div class="l-contents-2column__block -w-1_3">
-          <a href="" class="c-button-block -yellow -arrow -parking"><span>駐車場</span></a>
+          <a href="" class="c-button-block -yellow -arrow -parking"><span><i class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-parking.svg"></i>駐車場</span></a>
           <a href="" class="c-button-block -yellow -arrow -more"><span>Google Map</span></a>
         </div>
       </div>
