@@ -8,7 +8,7 @@
 
 <section class="l-spacer -medium -both">
   <div class="l-container--primary">
-    <h1 class="c-title-ex-large">営業時間一覧</h1>
+    <h1 class="c-title-ex-large">営業時間</h1>
   </div>
 </section>
 
@@ -85,7 +85,7 @@
 
 <section class="l-spacer -medium -both">
 	<div class="l-container--primary">
-    ハルニレテラスの施設
+    <h2 class="c-title-large">ハルニレテラス</h2>
         <div class="p-opening--scroll_02">
         <table class="p-opening--table">
             <tr>
@@ -252,8 +252,10 @@
 
 <section class="l-spacer -medium -both">
 	<div class="l-container--primary">
+        <section class="l-spacer -medium -both">
         <p>以下の施設の営業時間につきましては、<br>
         それぞれのホームページからご確認ください。</p>
+        </section>
         <div class="p-opening--scroll">
         <table class="p-opening--table -no-scroll">
             <tr>

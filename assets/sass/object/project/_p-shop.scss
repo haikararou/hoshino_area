@@ -75,3 +75,8 @@ post
     }
   }
 }
+
+.logo-halnire {
+  max-width: 270px;
+  @include inc.sizing(width, tab, 270px, sp, 180px);
+}

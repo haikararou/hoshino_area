@@ -21,10 +21,9 @@ get_header(); ?>
 			endforeach;
 			} ?>
 			</span>
-			<?php the_title(); ?>
+			<?php the_title(); ?><?php if(get_field('event_period')): ?><span>開催期間　<?php the_field('event_period'); ?></span><?php endif; ?>
 		</h1>
 		<div class="p-news-date">
-			<div><?php the_time('Y.m.d') ?></div>
 			<ul class="c-list-category -newsDate">
 				<?php
 				$terms = get_the_terms($post->ID, 'event_cat');

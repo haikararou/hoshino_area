@@ -48,9 +48,6 @@
             </dl>
             <?php endif; wp_reset_query(); ?>
         </div>
-        <div class="l-footer-important-news__more">
-        <a href="<?php echo home_url('/news'); ?>/important" class="c-button-block -lightyellow -arrow -more"><span>もっと見る</span></a>
-        </div>
     </div>
 </div>
 

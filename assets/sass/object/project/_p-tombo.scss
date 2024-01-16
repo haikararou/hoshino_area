@@ -3,7 +3,7 @@
 /*
 tombo
 -----------------------------------------------------*/
-body.page-template-tombo {
+.-tombo-bg {
 	background: #E9E5DA;
 	.c-border-t {
 		border-color: inc.$base-color;
@@ -63,6 +63,7 @@ body.page-template-tombo {
 			@include inc.mq(lap) {
 				width: 370px;
 				left: 3%;
+				bottom: 5vh;
 				padding: 1.5em;
 			}
 			h2 {

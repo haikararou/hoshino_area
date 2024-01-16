@@ -37,7 +37,6 @@ $date_end = get_post_meta($post->ID, 'event_end', true);
                                 </div>
                                 <div class="p-post-card__text">
                                     <p class="p-post-card__cat"><?php $terms = get_the_terms($post->ID,'event_cat'); if($terms){echo $terms[0]->name;} ?></p>
-                                    <time class="p-post-card__date"><?php the_time('Y.m.d') ?></time>
                                     <h3 class="p-post-card__title"><?php the_title(); ?></h3>
                                     <?php if(get_field('event_period')): ?>
                                     <?php if(strtotime($today) >= strtotime($date_start) && strtotime($today) <= strtotime($date_end)) : ?>

@@ -53,6 +53,7 @@ $the_query = new WP_Query( $args );
                                         echo $term_name; break; };
                                         ?>
                                     </p>
+                                    <?php if(get_field('event_period')): ?><span>開催期間　<?php the_field('event_period'); ?></span><?php endif; ?>
                                 </div>
                             </article>
                         </a>

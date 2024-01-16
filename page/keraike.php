@@ -2,308 +2,286 @@
 /*Template Name: ケラ池スケートリンク */
 ?>
 <?php get_header(); ?>
-<div class="l-spacer">
-  <div class="l-container--wide">
-    <?php get_template_part('inc/breadcrumb'); ?>
-  </div>
-</div>
 
-<section class="l-spacer -medium -both">
-  <div class="l-container--primary">
-    <h1 class="c-title-ex-large">ケラ池スケートリンク</h1>
-    <div class="">
-      <h2>重要なお知らせ</h2>
-      <p><a href="#">重要なお知らせが入ります。</a></p>
-    </div>
-    <div class="">
-      <a href="#usage-guide"><span>ご利用案内</span></a>
-    </div>
-  </div>
+<section class="-keraike-bg">
+
+	<div class="l-spacer pan">
+		<div class="l-container--wide">
+			<?php get_template_part('inc/breadcrumb'); ?>
+		</div>
+	</div>
+
+	<section class="l-spacer -medium000000000 -both00000  p-keraike__kv">
+		<div class="l-container--primary">
+			<div class="p-keraike__kv__logo">
+				<h1><img src="<?php echo get_template_directory_uri(); ?>/assets/img/keraike/logo.svg" alt="ケラ池スケートリンク"></h1>
+				<a href="#usage-guide"class="c-button-block -lightyellow -arrow"><span>営業案内</span></a>
+			</div>
+			<div class="p-keraike__kv__news">
+				<h2 class="c-title-ex-small"><span>重要なお知らせ</span></h2>
+				<p><a href="#">重要なお知らせが入ります。</a></p>
+			</div>
+		</div>
+	</section>
+
+	<section class="l-spacer -medium0000000000 -both000000000  p-keraike__lead">
+		<div class="l-container--primary">
+			<div class="p-keraike__lead__inner">
+				<h2 class="c-title-ex-small">池が凍ると現れる<br>森の中のスケートリンク</h2>
+				<p>ピッキオの前にある「ケラ池」には、秋の紅葉の時期からスケートリンクが現れます。寒さが増すごとに池一面の氷が厚さを増し、厳冬期には天然氷でのスケートができるようになります。ここは「軽井沢野鳥の森」に隣接しており、多くの野鳥や動物が生息する環境です。<br>池の小さな島をめぐったり、氷に閉じ込められた落ち葉を探したり。軽井沢の森の中で、思い思いに氷上散歩をお楽しみください。</p>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="l-spacer -medium -both  p-keraike__news">
+		<div class="l-container--primary">
+			<h2 class="c-title-ex-small">ケラ池スケートリンク<br>からのお知らせ</h2>
+			<ul>
+				<li>滑走時は必ず手袋とニット帽（またはヘルメット）を着用してください。持っていない方は、手袋（300円）、ニット帽（500円）を現地でご購入いただけます。ヘルメットの無料貸し出しもございます。</li>
+				<li>天候により営業時間の変更や時間短縮、臨時休業になる場合があります。</li>
+				<li>気温などの状況により、滑走できる範囲は異なります。</li>
+				<li>貸靴の対応サイズは15～30㎝です。</li>
+				<li>幼児用の2枚刃スケート靴もご用意しております。（対応サイズ15,16cm)</li>
+				<li>リンク内での事故や怪我、金品等の盗難や紛失についての責任は負いかねます。詳しくは「ご利用に際してのお願い」をご確認ください。</li>
+				<li>その他のスケートリンクに関する詳細は「よくあるご質問」をご覧ください。</li>
+			</ul>
+		</div>
+	</section>
+
+	<!--section class="l-spacer -medium -both">
+		<div class="l-container--primary">
+			<article class="l-contents--left-title">
+				<h2 class="c-title-large -vertical l-contents--left-title__title"><span>現在開催中の</span>イベント情報</h2>
+				<div class="l-contents--left-title__conts">
+					<div class="l-contents-2column">
+						<div class="l-contents-2column__block -w-1_2--left">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/dummy/layout1.jpg">
+						</div>
+						<div class="l-contents-2column__block -w-1_2--right">
+							<h3 class="c-title-small"><span>ピックアップ</span>りんご湯フェア</h3>
+							<dl class="">
+								<dt>⚫︎開催中</dt><dd>期間 : 2023.10.15</dd>
+							</dl>
+							<p>
+								<a href="#" class="c-button-block -lightyellow -arrow"><span>詳しくはこちら</span></a>
+							</p>
+						</div>
+						
+					</div>
+				</div>
+			</article>
+		</div>
+	</section-->
+
+	<section class="l-spacer -medium -both c-border-t">
+		<div class="l-container--primary">
+			<h2 class="c-title-large">氷上に感じる季節の変化</h2>
+			<div class="l-spacer -medium">
+				<article class="l-contents-2column -pc-rl">
+					<div class="l-contents-2column__block -w-1_2">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/keraike/feature01.jpg">
+					</div>
+					<div class="l-contents-2column__block -w-1_2 c-block-conts-center">
+						<div class="c-block-conts-center__inner">
+							<h3 class="c-title-medium">紅葉期</h3>
+							<p>紅葉の時期になると、人工エリアがオープンします。このリンクは、全国で最も早い時期にオープンする屋外アイスリンクです(当社調べ)。もみじの紅葉やカラマツの黄葉を眺めながら、スケートをお楽しみいただけます。</p>
+						</div>
+					</div>
+				</article>
+			</div>
+
+			<div class="l-spacer -medium">
+				<article class="l-contents-2column">
+					<div class="l-contents-2column__block -w-1_2">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/keraike/feature02.jpg">
+					</div>
+					<div class="l-contents-2column__block -w-1_2 c-block-conts-center">
+						<div class="c-block-conts-center__inner">
+							<h3 class="c-title-medium">厳寒期</h3>
+							<p>12月末になると、天然氷エリアが結氷し、池の全面がリンクになります。氷の中には落ち葉が見え隠れ。天然氷ならではの、透明度が高くツルツルした質感をお楽しみください。2 月 20 日頃まで滑ることができます。</p>
+						</div>
+					</div>
+				</article>
+			</div>
+
+			<div class="l-spacer -medium">
+				<article class="l-contents-2column -pc-rl">
+					<div class="l-contents-2column__block -w-1_2">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/keraike/feature03.jpg">
+					</div>
+					<div class="l-contents-2column__block -w-1_2 c-block-conts-center">
+						<div class="c-block-conts-center__inner">
+							<h3 class="c-title-medium">希少な天然氷のリンク</h3>
+							<p>冬がとても寒い軽井沢だからこそ生まれる、天然氷のリンク。今やとても希少な存在です。古くからスケートが盛んだった軽井沢においても、2023年現在、天然氷のスケートができるのはこのリンクだけです。</p>
+						</div>
+					</div>
+				</article>
+			</div>
+		</div>
+	</section>
+
+	<section class="l-contents-block__wrap  p-keraike__notices">
+		<div class="l-contents-block c-bg-border">
+			<div class="l-contents-block__inner">
+				<div class="l-container--primary">
+					<article class="l-contents-2column">
+						<h2 class="c-title-medium">貸出品</h2>
+						<div class="l-contents--left-title__conts">
+							<ul class="c-list-dot">
+								<li class="c-list-dot__item">レンタルスケート靴<br>15cm〜30cmまでサイズを揃えています。また、二枚刃のスケート（15cm、16cmのみ）のご用意もありますので、小さなお子様でも安転ばず安心してスケートを楽しむことができます。</li>
+								<li class="c-list-dot__item">そり<br>スケートに不慣れな方は、そりのついた専用椅子をご利用ください。温かみのある木製の椅子につかまれば、自由に好きな場所へと滑って行くことができます。<br>※利用料無料。数に限りがあるため、譲り合ってご利用ください。</li>
+							</ul>
+						</div>
+					</article>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="c-bg-yellow l-contents-block__wrap">
+		<div class="l-contents-block c-bg-white">
+			<div class="l-contents-block__inner">
+				<div class="l-container--primary">
+					<article class="l-contents--left-title">
+						<h2 class="c-title-large -vertical l-contents--left-title__title">スケートの後は</h2>
+						<div class="l-contents--left-title__conts">
+							<div class="l-contents-2column">
+								<div class="l-contents-2column__block -w-1_2--left">
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/img/keraike/after01.jpg">
+								</div>
+								<div class="l-contents-2column__block -w-1_2--right">
+									<h3 class="c-title-small">イカルカフェでお茶</h3>
+									<p>隣接するカフェでは、森をイメージした 2 種類のホットドリンクを期間限定で販売します。氷上の円形ベンチにテイクアウトすることもできます。</p>
+									<p>
+										<a href="#" class="c-button-block -lightyellow -arrow"><span>もっと見る</span></a>
+									</p>
+								</div>
+							</div>
+						</div>
+					</article>
+
+					<article class="l-contents--left-title">
+						<h2 class="c-title-large -vertical l-contents--left-title__title"></h2>
+						<div class="l-contents-2column">
+							<div class="l-contents-2column__block -w-1_2--left">
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/img/keraike/after02.jpg">
+								</div>
+								<div class="l-contents-2column__block -w-1_2--right">
+									<h3 class="c-title-small">ピッキオのネイチャーツアー</h3>
+									<p>ケラ池の目の前にあるピッキオでは、森の生き物との出会いを楽しむネイチャーツアーが開催されています。ツアー内容は季節によってさまざま。自然をこよなく愛するスタッフが、心躍る動植物との出会いをサポートいたします。</p>
+									<p>
+										<a href="#" class="c-button-block -lightyellow -arrow"><span>もっと見る</span></a>
+									</p>
+								</div>
+							</div>
+						</div>
+					</article>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="usage-guide" class="l-spacer -medium -both c-border-t">
+		<div class="l-container--primary">
+			<article class="l-contents--left-title">
+				<h2 class="c-title-large -vertical l-contents--left-title__title">ご利用案内</h2>
+				<div class="l-contents--left-title__conts">
+					<div class="l-contents-2column">
+						<div class="l-contents-2column__block -w-1_2--left">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/keraike/guide.jpg">
+						</div>
+						<div class="l-contents-2column__block -w-1_2--right">
+							<dl class="c-list-dl">
+								<dt>期間</dt>
+								<dd>2023年10月20日～2024年3月3日<br>＊気象状況により変更または臨時休業になる場合あり</dd>
+								<dt>休業日</dt>
+								<dd>2023年11月28日 / 2024年1月10～12日および15～19日</dd>
+								<dt>時間</dt>
+								<dd>10:00～16:00</dd>
+								<dt>時間制限</dt>
+								<dd>90分<br>＊年末年始、1月と2月の土日祝日のみ</dd>
+								<dt>靴のサイズ</dt>
+								<dd>大人（中学生以上） 1,900円<br>小学生以下 1,300円<br>＊貸し靴料込</dd>
+								<dt>駐車場</dt>
+								<dd>P1駐車場（村民食堂横）＊徒歩約5分</dd>
+								<dt>滑走時の注意</dt>
+								<dd>必ず手袋・ニット帽（またはヘルメット）を着用してください。レンタル＆販売もあります。<ul class="c-list-dot">
+									<li class="c-list-dot__item">手袋（指をすべて覆えるもの。300円で販売）</li>
+									<li class="c-list-dot__item">ニット帽（頭全体を覆えるもので脱げにくいもの。500円で販売）</li>
+									<li class="c-list-dot__item">ヘルメット（無料レンタル）</li>
+								</ul></dd>
+								<dt>その他</dt>
+								<dd><ul class="c-list-dot">
+									<li class="c-list-dot__item">リンク内での事故や怪我、金品等の盗難や紛失についての責任は負いかねます。詳しくは「ご利用に際してのお願い」をご確認ください。</li>
+									<li class="c-list-dot__item">繁忙日（クリスマスや年末年始、土日祝日など）は、安全管理のためご利用人数と時間を制限する場合があります。</li>
+									<li class="c-list-dot__item">気象状況により、滑走できる範囲は予告なく変動します。</li>
+								</ul></dd>
+								<dt>電話番号</dt>
+								<dd>ピッキオ　0267-45-7777</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+			</article>
+		</div>
+	</section>
+
 </section>
 
-<section class="l-spacer -medium -both">
-  <div class="l-container--primary">
-    <h2 class="c-title-ex-small">池が凍ると現れる<br>森を感じるスケートリンク</h1>
-    <p class="">ピッキオの前にある「ケラ池」には、秋の紅葉の時期からスケートリンクが現れます。寒さが増すごとに池一面の氷が厚さを増し、厳冬期には天然氷でのスケートができるようになります。ここは「軽井沢野鳥の森」に隣接しており、多くの野鳥や動物が生息する環境です。
-池の小さな島をめぐったり、氷に閉じ込められた落ち葉を探したり。軽井沢の森の中で、思い思いに氷上散歩をお楽しみください。</p>
-  </div>
-</section>
+<!--section class="l-spacer -medium -both">
+	<div class="l-container--primary">
+		<article class="l-contents--left-title -title-large">
+			<h2 class="c-title-large -vertical l-contents--left-title__title"><span>トンボの湯</span>よくある質問</h2>
+			<div class="l-contents--left-title__conts">
 
-<section class="l-spacer -medium -both">
-  <div class="l-container--primary">
-    <h2 class="c-title-ex-small">ケラ池スケートリンクからのお知らせ</h1>
-    <ul class="">
-      <li>滑走時は必ず手袋とニット帽（またはヘルメット）を着用してください。持っていない方は、手袋（300円）、ニット帽（500円）を現地でご購入いただけます。ヘルメットの無料貸し出しもございます。</li>
-      <li>天候により営業時間の変更や時間短縮、臨時休業になる場合があります。</li>
-      <li>気温などの状況により、滑走できる範囲は異なります。</li>
-      <li>貸靴の対応サイズは15～30㎝です。</li>
-      <li>幼児用の2枚刃スケート靴もご用意しております。（対応サイズ15,16cm)</li>
-      <li>リンク内での事故や怪我、金品等の盗難や紛失についての責任は負いかねます。詳しくは「ご利用に際してのお願い」をご確認ください。</li>
-      <li>その他のスケートリンクに関する詳細は「よくあるご質問」をご覧ください。</li>
-    </ul>
-  </div>
-</section>
-
-<section class="l-spacer -medium -both">
-  <div class="l-container--primary">
-    <article class="l-contents--left-title">
-      <h2 class="c-title-large -vertical l-contents--left-title__title"><span>現在開催中の</span>イベント情報</h2>
-      <div class="l-contents--left-title__conts">
-        <div class="l-contents-2column">
-          <div class="l-contents-2column__block -w-1_2--left">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dummy/layout1.jpg">
-          </div>
-          <div class="l-contents-2column__block -w-1_2--right">
-            <h3 class="c-title-small"><span>ピックアップ</span>りんご湯フェア</h3>
-            <dl class="">
-              <dt>⚫︎開催中</dt><dd>期間 : 2023.10.15</dd>
-            </dl>
-            <p>
-              <a href="#" class="c-button-block -lightyellow -arrow"><span>詳しくはこちら</span></a>
-            </p>
-          </div>
-          
-        </div>
-      </div>
-    </article>
-  </div>
-</section>
-
-<section class="l-spacer -medium -both c-border-t">
-  <div class="l-container--primary">
-    <h2 class="c-title-large">氷上に感じる季節の変化</h2>
-    <div class="l-spacer -medium">
-      <article class="l-contents-2column -pc-rl">
-        <div class="l-contents-2column__block -w-1_2">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dummy/black1.jpg">
-        </div>
-        <div class="l-contents-2column__block -w-1_2 c-block-conts-center">
-          <div class="c-block-conts-center__inner">
-            <h3 class="c-title-medium">紅葉期</h3>
-            <p>紅葉の時期になると、人工エリアがオープンします。このリンクは、全国で最も早い時期にオープンする屋外アイスリンクです(当社調べ)。もみじの紅葉やカラマツの黄葉を眺めながら、スケートをお楽しみいただけます。</p>
-          </div>
-        </div>
-      </article>
-    </div>
-
-     <div class="l-spacer -medium">
-      <article class="l-contents-2column">
-        <div class="l-contents-2column__block -w-1_2">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dummy/black1.jpg">
-        </div>
-        <div class="l-contents-2column__block -w-1_2 c-block-conts-center">
-          <div class="c-block-conts-center__inner">
-            <h3 class="c-title-medium">厳寒期</h3>
-            <p>12月末になると、天然氷エリアが結氷し、池の全面がリンクになります。氷の中には落ち葉が見え隠れ。天然氷ならではの、透明度が高くツルツルした質感をお楽しみください。2 月 20 日頃まで滑ることができます。</p>
-          </div>
-        </div>
-      </article>
-    </div>
-
-   <div class="l-spacer -medium">
-      <article class="l-contents-2column">
-        <div class="l-contents-2column__block -w-1_2">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dummy/black1.jpg">
-        </div>
-        <div class="l-contents-2column__block -w-1_2 c-block-conts-center">
-          <div class="c-block-conts-center__inner">
-            <h3 class="c-title-medium">希少な天然氷のリンク</h3>
-            <p>冬がとても寒い軽井沢だからこそ生まれる、天然氷のリンク。今やとても希少な存在です。古くからスケートが盛んだった軽井沢においても、2023年現在、天然氷のスケートができるのはこのリンクだけです。</p>
-          </div>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="l-spacer -medium -both">
-  <div class="l-container--primary">
-    <article class="l-contents--left-title">
-      <h2 class="c-title-large -vertical l-contents--left-title__title">スケートの後は</h2>
-      <div class="l-contents--left-title__conts">
-        <div class="l-contents-2column">
-          <div class="l-contents-2column__block -w-1_2--left">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dummy/black1.jpg">
-          </div>
-          <div class="l-contents-2column__block -w-1_2--right">
-            <h3 class="c-title-small">イカルカフェでお茶</h3>
-            <p>隣接するカフェでは、森をイメージした 2 種類のホットドリンクを期間限定で販売します。氷上の円形ベンチにテイクアウトすることもできます。</p>
-            <p>
-              <a href="#" class="c-button-block -lightyellow -arrow"><span>もっと見る</span></a>
-            </p>
-          </div>
-        </div>
-
-        <div class="l-contents-2column">
-          <div class="l-contents-2column__block -w-1_2--left">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dummy/black1.jpg">
-          </div>
-          <div class="l-contents-2column__block -w-1_2--right">
-            <h3 class="c-title-small">ピッキオのネイチャーツアー</h3>
-            <p>ケラ池の目の前にあるピッキオでは、森の生き物との出会いを楽しむネイチャーツアーが開催されています。ツアー内容は季節によってさまざま。自然をこよなく愛するスタッフが、心躍る動植物との出会いをサポートいたします。</p>
-            <p>
-              <a href="#" class="c-button-block -lightyellow -arrow"><span>もっと見る</span></a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </article>
-  </div>
-</section>
-
-<section id="usage-guide" class="l-spacer -medium -both">
-  <div class="l-container--primary">
-    <article class="l-contents--left-title">
-      <h2 class="c-title-large -vertical l-contents--left-title__title">ご利用案内</h2>
-      <div class="l-contents--left-title__conts">
-        <div class="l-contents-2column">
-          <div class="l-contents-2column__block -w-1_2--left">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dummy/black1.jpg">
-          </div>
-          <div class="l-contents-2column__block -w-1_2--right">
-            <dl class="c-list-dl">
-              <dt>期間</dt>
-              <dd>2023年10月20日～2024年3月3日<br>＊気象状況により変更または臨時休業になる場合あり</dd>
-              <dt>休業日</dt>
-              <dd>2023年11月28日 / 2024年1月10～12日および15～19日</dd>
-              <dt>時間</dt>
-              <dd>10:00～16:00</dd>
-              <dt>時間制限</dt>
-              <dd>90分<br>＊年末年始、1月と2月の土日祝日のみ</dd>
-              <dt>靴のサイズ</dt>
-              <dd>大人（中学生以上） 1,900円<br>小学生以下 1,300円<br>＊貸し靴料込</dd>
-              <dt>駐車場</dt>
-              <dd>P1駐車場（村民食堂横）＊徒歩約5分</dd>
-              <dt>滑走時の注意</dt>
-              <dd>必ず手袋・ニット帽（またはヘルメット）を着用してください。レンタル＆販売もあります。<ul class="c-list-dot">
-                <li class="c-list-dot__item">手袋（指をすべて覆えるもの。300円で販売）</li>
-                <li class="c-list-dot__item">ニット帽（頭全体を覆えるもので脱げにくいもの。500円で販売）</li>
-                <li class="c-list-dot__item">ヘルメット（無料レンタル）</li>
-              </ul></dd>
-              <dt>その他</dt>
-              <dd><ul class="c-list-dot">
-                <li class="c-list-dot__item">リンク内での事故や怪我、金品等の盗難や紛失についての責任は負いかねます。詳しくは「ご利用に際してのお願い」をご確認ください。</li>
-                <li class="c-list-dot__item">繁忙日（クリスマスや年末年始、土日祝日など）は、安全管理のためご利用人数と時間を制限する場合があります。</li>
-                <li class="c-list-dot__item">気象状況により、滑走できる範囲は予告なく変動します。</li>
-              </ul></dd>
-              <dt>電話番号</dt>
-              <dd>ピッキオ　0267-45-7777</dd>
-            </dl>
-          </div>
-        </div>
-      </div>
-    </article>
-  </div>
-</section>
-
-<section class="l-spacer -medium -both">
-  <div class="l-container--primary">
-    <article class="">
-      <h2 class="">注意事項</h2>
-      <div class="l-contents--left-title__conts">
-        <ul class="c-list-dot">
-          <li class="c-list-dot__item"><strong>乳幼児</strong><br>トンボの湯の内湯は、湯温が高め（41度前後）で浴槽が深い（90cm）ため、ベビーバス、露天風呂のご利用をおすすめいたします。</li>
-          <li class="c-list-dot__item"><strong>お子様の混浴</strong><br>未就学のお子様に限り、保護者と一緒に入ることができます。</li>
-          <li class="c-list-dot__item"><strong>入浴着</strong><br>手術等の傷あとをカバーする入浴着は、ご利用いただけます。貸し出しはございません。</li>
-        </ul>
-      </div>
-    </article>
-  </div>
-</section>
-
-<section class="l-spacer -medium -both">
-  <div class="l-container--primary">
-    <article class="">
-      <h2 class="">禁止事項</h2>
-      <div class="l-contents--left-title__conts">
-        <ul class="c-list-dot">
-          <li class="c-list-dot__item"><strong>電子機器の使用</strong><br>脱衣場以降、浴場内は、携帯電話等の電子機器の使用をご遠慮いただいております。建物内玄関では使用可能です。</li>
-          <li class="c-list-dot__item"><strong>タトゥー、刺繍が見える状態での入浴</strong><br>刺青・タトゥーのある方の入場は原則としてお断りしておりますが、専用シール8枚（1枚10cm×8cm）で隠れるサイズの場合はご入浴いただけます。</li>
-        </ul>
-      </div>
-    </article>
-  </div>
-</section>
-
-
-<section class="l-spacer -medium -both">
-  <div class="l-container--primary">
-    <article class="l-contents--left-title">
-      <h2 class="c-title-large -vertical l-contents--left-title__title">温泉の入り方</h2>
-      <div class="l-contents--left-title__conts">
-        <div class="l-contents-2column">
-          <div class="l-contents-2column__block -w-1_2--left">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dummy/black1.jpg">
-          </div>
-          <div class="l-contents-2column__block -w-1_2--right">
-            <ul class="c-list-dot">
-              <li class="c-list-dot__item">掛け湯をしてからお入りください。</li>
-              <li class="c-list-dot__item">長い髪の毛は結び、湯舟につけないようにしてください。</li>
-              <li class="c-list-dot__item">サウナの後の汗はしっかり流してから、水風呂や湯船にお入りください。</li>
-              <li class="c-list-dot__item">タオルは湯船につけないでください。</li>
-              <li class="c-list-dot__item">カランの場所取りはご遠慮ください。</li>
-              <li class="c-list-dot__item">シャワーやサウナは譲り合ってご利用ください。</li>
-            </ul>
-            <p>それではみなさん心ゆくまで温泉をお楽しみください。</p>
-          </div>
-        </div>
-      </div>
-    </article>
-  </div>
-</section>
-
-<section class="l-spacer -medium -both">
-  <div class="l-container--primary">
-    <article class="l-contents--left-title -title-large">
-      <h2 class="c-title-large -vertical l-contents--left-title__title"><span>トンボの湯</span>よくある質問</h2>
-      <div class="l-contents--left-title__conts">
-
-        <dl class="p-faq-list">
-          <div class="p-faq-list__item">
-            <dt class="p-faq-list__question">犬と一緒に利用できますか？</dt>
-            <dd class="p-faq-list__answer">
-              <p>
-                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-              </p>
-              <p>
-                <a href="#" class="c-button-arrow c-text-underline"><span>詳細はこちら</span></a><br>
-              </p>
-            </dt>
-          </div>
-          <div class="p-faq-list__item">
-            <dt class="p-faq-list__question">天気・気候を教えてください。</dt>
-            <dd class="p-faq-list__answer">
-              <p>
-                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-              </p>
-            </dt>
-          </div>
-          <div class="p-faq-list__item">
-            <dt class="p-faq-list__question">タクシーにはどこで乗ることができますか？</dt>
-            <dd class="p-faq-list__answer">
-              <p>
-                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-              </p>
-              </dt>
-          </div>
-          <div class="p-faq-list__item">
-            <dt class="p-faq-list__question">コインロッカーはありますか？</dt>
-            <dd class="p-faq-list__answer">
-              <p>
-                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-              </p>
-              </dt>
-          </div>
-        </dl>
-      </div>
-    </article>
-  </div>
-</section>
+				<dl class="p-faq-list">
+					<div class="p-faq-list__item">
+						<dt class="p-faq-list__question">犬と一緒に利用できますか？</dt>
+						<dd class="p-faq-list__answer">
+							<p>
+								テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+							</p>
+							<p>
+								<a href="#" class="c-button-arrow c-text-underline"><span>詳細はこちら</span></a><br>
+							</p>
+						</dt>
+					</div>
+					<div class="p-faq-list__item">
+						<dt class="p-faq-list__question">天気・気候を教えてください。</dt>
+						<dd class="p-faq-list__answer">
+							<p>
+								テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+							</p>
+						</dt>
+					</div>
+					<div class="p-faq-list__item">
+						<dt class="p-faq-list__question">タクシーにはどこで乗ることができますか？</dt>
+						<dd class="p-faq-list__answer">
+							<p>
+								テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+							</p>
+							</dt>
+					</div>
+					<div class="p-faq-list__item">
+						<dt class="p-faq-list__question">コインロッカーはありますか？</dt>
+						<dd class="p-faq-list__answer">
+							<p>
+								テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+							</p>
+							</dt>
+					</div>
+				</dl>
+			</div>
+		</article>
+	</div>
+</section-->
 
 <div class="l-spacer">
-  <div class="l-container--wide">
-    <?php get_template_part('inc/breadcrumb'); ?>
-  </div>
+	<div class="l-container--wide">
+		<?php get_template_part('inc/breadcrumb'); ?>
+	</div>
 </div>
 
 <?php get_footer(); ?>

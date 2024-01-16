@@ -26,7 +26,7 @@
                 endforeach;
                 } ?>
                 <time class="p-post-card__date"><?php the_time('Y.m.d') ?></time>
-                <h3 class="p-post-card__title"><?php the_title(); ?></h3>
+                <h3 class="p-post-card__title"><?php the_title(); ?><?php if(get_field('event_period')): ?><span>開催期間　<?php the_field('event_period'); ?></span><?php endif; ?></h3>
                 <p class="p-post-card__info">
                     <?php
                     $terms = get_the_terms($post->ID, 'news_cat');
@@ -35,6 +35,7 @@
                     echo $term_name; break; };
                     ?>
                 </p>
+                
             </div>
         </article>
     </a>
@@ -72,7 +73,7 @@ $the_query = new WP_Query(array(
                 endforeach;
                 } ?>
                 <time class="p-post-card__date"><?php the_time('Y.m.d') ?></time>
-                <h3 class="p-post-card__title"><?php the_title(); ?></h3>
+                <h3 class="p-post-card__title"><?php the_title(); ?><?php if(get_field('event_period')): ?><span>開催期間　<?php the_field('event_period'); ?></span><?php endif; ?></h3>
                 <p class="p-post-card__info">
                     <?php
                     $terms = get_the_terms($post->ID, 'news_cat');

@@ -1,12 +1,3 @@
-<!-- ?php
-if(!is_home()):
-    if(is_post_type_archive('opening') || is_singular('opening') || is_tax('opening_cat')):
-        $userArray = array("elle" => "qwerasdf"
-      );
-      basic_auth($userArray);
-    endif;
-endif;
-? -->
 <?php
 /**
  * ヘッダーテンプレート
@@ -56,19 +47,14 @@ endif;
 <body <?php body_class('l-body'); ?> id="js-body">
   <header class="l-header" id="js-header">
     <div class="l-header__top" id="js-fixed-header-sp">
-      <a href="<?php echo home_url(); ?>"><p class="l-header-logo">
+      <a href="<?php echo home_url(); ?>">
+        <p class="l-header-logo">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/logo-ja.svg" width="215" height="26" alt="軽井沢星野エリア" class="l-header-logo__ja">
-        <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/logo-en.png" width="129" height="12" alt="Hoshino resorts" class="l-header-logo__en"> -->
         </p>
       </a>
-      
     
       <div class="l-header-menu__tertiary">
         <?php get_template_part('inc/today'); ?>
-        <!-- <ul class="c-gmenu-tertiary">
-          <li class="c-gmenu-tertiary__item"><a href="<?php echo home_url('/event'); ?>" class="c-button-arrow">イベント情報</a></li>
-          <li class="c-gmenu-tertiary__item"><a href="<?php echo home_url('/news'); ?>" class="c-button-arrow">ニュース</a></li>
-        </ul> -->
 
         <div class="l-header-menu__lang">
           <?php 
@@ -103,9 +89,6 @@ endif;
         <div class="l-header-submenu__today">
         <?php get_template_part('inc/today', null, $args);  ?>
         </div>
-        <!-- <div class="l-header-submenu__othermenu" -->
-        <!-- ?php get_template_part('inc/other-menu', null, $args); ? -->
-        <!-- </div> -->
         <div class="l-header-submenu__lang">
         <?php get_template_part('inc/language', null, $args); ?>
         </div>
@@ -119,4 +102,9 @@ endif;
       <p class="c-button-areamap__text">Area Map</p>
     </div>
   </a>
-  <main id="js-main00000000" class="l-main">
+
+<?php if(is_archive('shop') || is_page('harunireterrace') || is_page('tombo-no-yu') || is_page('sonmin-shokudo') || is_page('kera-ike-icerink')): ?>
+  <main id="" class="l-main -cxl">
+<?php else: ?>
+  <main id="" class="l-main">
+<?php endif; ?>
