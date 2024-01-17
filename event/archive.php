@@ -10,11 +10,11 @@ $today = date('Ymd');
     </div>
 </div>
 
-<section class="l-spacer -medium -both">
+<section class="l-spacer -pagetitile">
 	<div class="l-container--primary">
 		<h1 class="c-title-ex-large">イベント情報</h1>
         <?php $class= isset($args['class']) ? $args['class'] : ''; ?>
-        <div><?php get_template_part('inc/today'); ?></div>
+        <?php get_template_part('inc/today'); ?>
 	</div>
 </section>
 
@@ -100,7 +100,7 @@ $wp_query = new WP_Query( $args );
                                 <div class="p-post-card__text">
                                     <p class="p-post-card__cat"><?php $terms = get_the_terms($post->ID,'event_cat'); if($terms){echo $terms[0]->name;} ?></p>
                                     <h3 class="p-post-card__title"><?php the_title(); ?></h3>
-                                    <?php if(get_field('event_period')): ?><p class="p-post-card__info">開催予定　<span><?php the_field('event_period'); ?></span></p><?php endif; ?>
+                                    <?php if(get_field('event_period')): ?><p class="p-post-card__info">開催予定 <span><?php the_field('event_period'); ?></span></p><?php endif; ?>
                                 </div>
                             </article>
                         </a>

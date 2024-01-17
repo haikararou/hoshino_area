@@ -45,6 +45,24 @@ function create_post_type() {
 			)
 		)
 	);
+	register_taxonomy(
+		'news_shop', //タクソノミー名
+		'news', //カスタム投稿タイプ
+		array(
+			'hierarchical' => true,
+			'update_count_callback' => '_update_post_term_count',
+			'label' => '関連ショップ',// タクソノミー名（表示名）
+			'singular_label' => '関連ショップ',// タクソノミー名（表示名）
+			'public' => true,
+			'show_ui' => true,
+			'show_in_rest' => true,
+			'rewrite' => array(
+				'slug' => 'news/shop', //書き換え後のスラッグ
+				//'with_front' => false //通常投稿のパーマリンク構造を引き継ぐかどうか (true/false)
+				'hierarchical' => true //階層化したURLを使用可能にする
+			)
+		)
+	);
 
 	//カスタム投稿タイプを追加
 	register_post_type( 'event', // 投稿タイプ名(スラッグ)

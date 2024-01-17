@@ -1449,6 +1449,16 @@ title
   margin-bottom: 12px;
 }
 
+.-pagetitile {
+  margin-bottom: clamp(48px, 3.66vw + 36.3px, 96px);
+}
+.-pagetitile .c-title-ex-large {
+  margin-bottom: 0.3em;
+}
+.-pagetitile .c-title-ex-large span {
+  margin-bottom: 0.5rem;
+}
+
 /*
 block
 -----------------------------------------------------*/
@@ -2487,6 +2497,13 @@ today
   }
 }
 
+.post-type-archive-event .-pagetitile .c-today,
+.page-template-event .-pagetitile .c-today {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
 /*
 language
 -----------------------------------------------------*/
@@ -3473,6 +3490,19 @@ post
   height: clamp(70px, 2.39vw + 61px, 100px);
   background: #FFF;
   border: 1px solid #E8E8D8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .p-shop-title__txt {
   display: -webkit-box;

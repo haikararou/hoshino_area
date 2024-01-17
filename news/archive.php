@@ -5,7 +5,7 @@
     </div>
 </div>
 
-<section class="l-spacer -medium -both">
+<section class="l-spacer -pagetitile">
 	<div class="l-container--primary">
 		<h1 class="c-title-ex-large">ニュース</h1>
         <nav>
@@ -13,7 +13,7 @@
                 <li><a href="<?php echo home_url(); ?>/news/" class="c-list-category__item -act">すべて</a></li>
                 <?php
                 $args = array(
-                    // 'exclude' => array(31), //除外したいタームのIDを指定。
+                    'exclude' => array(31), //除外したいタームのIDを指定。
                     'parent' => 0,
                 );
                 $terms = get_terms('news_cat', $args);

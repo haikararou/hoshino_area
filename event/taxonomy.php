@@ -12,11 +12,11 @@ $date_end = get_post_meta($post->ID, 'event_end', true);
     </div>
 </div>
 
-<section class="l-spacer -medium -both">
+<section class="l-spacer -pagetitile">
 	<div class="l-container--primary">
 		<h1 class="c-title-ex-large">イベント情報</h1>
         <?php $class= isset($args['class']) ? $args['class'] : ''; ?>
-        <div><?php get_template_part('inc/today'); ?></div>
+        <?php get_template_part('inc/today'); ?>
 	</div>
 </section>
 

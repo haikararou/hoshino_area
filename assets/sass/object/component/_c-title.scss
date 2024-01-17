@@ -94,3 +94,13 @@ title
   display: block;
   margin-bottom: 12px;
 }
+
+.-pagetitile {
+  @include inc.sizing(margin-bottom, full, 96px, sps, 48px);
+  .c-title-ex-large {
+    margin-bottom: .3em;
+    span {
+      margin-bottom: .5rem;
+    }
+  }
+}

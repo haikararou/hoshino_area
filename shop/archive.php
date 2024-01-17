@@ -5,20 +5,20 @@
     </div>
 </div>
 
-<section class="l-spacer -medium -both">
+<section class="l-spacer -pagetitile">
     <div class="l-container--primary">
         <h1 class="c-title-ex-large">ショップ＆レストラン</h1>
-        <p>ハルニレテラスを中心に、個性豊かなお店が揃っています。今日の気分に合わせて、食事やお買い物をお楽しみください。</p>
+        <p>ハルニレテラスを中心に、個性豊かなお店が揃っています。<br>今日の気分に合わせて、食事やお買い物をお楽しみください。</p>
     </div>
 </section>
 
-<section class="l-spacer -medium -both c-border-t">
+<section class="l-spacer -mgB-l">
     <div class="l-container--primary">
         <article class="l-contents--left-title -title-large">
             <div class="l-contents--left-title__title">
 
                 <ul class="c-list-std">
-                    <li class="-list-std__item active"><a href="<?php echo home_url(); ?>/shop/">すべて</a></li>
+                    <li class="c-list-std__item active"><a class="all" href="<?php echo home_url(); ?>/shop/"><span class="c-text-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-all.svg" width="40" height="40" class="icon -shopicon">すべて</span></a></li>
                     <?php
 					$terms = get_terms('shop_cat');
 					foreach ($terms as $term ) {
@@ -28,7 +28,7 @@
 					echo $des_list; ?>
                 </ul>
                 <div class="l-spacer -em2">
-                    <a href="" class="c-button-block -yellow -icon"><img class="icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-clock.svg" width="16" height="16">営業時間</a>
+                    <a href="<?php echo home_url('/business-hours'); ?>" class="c-button-block -yellow -icon"><img class="icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-clock.svg" width="16" height="16">営業時間</a>
                 </div>
             </div>
             <div class="l-contents--left-title__conts">
@@ -43,7 +43,7 @@
                 <ul class="p-restaurant-list">
                     <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
                     <li>
-                        <a href="<?php the_permalink();?>" class="p-restaurant-card">
+                        <a href="<?php if( get_field('facility-url')): ?><?php the_field('facility-url'); ?><?php else: ?><?php the_permalink();?><?php endif; ?>"<?php if(get_field('blank')): ?> target="_blank"<?php endif; ?> class="p-restaurant-card">
                             <?php if( get_field('wi-fi')): ?>
                             <div class="p-restaurant-card__wi-fi">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-wi-fi.svg" alt="Wi-fiあり" width="28" height="28">

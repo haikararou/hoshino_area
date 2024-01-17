@@ -6,7 +6,7 @@
   <?php } ?>
 
   <li class="c-info-menu__item"><a href="<?php echo home_url('/event'); ?>" class="c-info-menu__button <?php echo $class; ?>"><i class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-star.svg"></i>イベント</a></li>
-  <li class="c-info-menu__item"><a href="<?php echo home_url('/news'); ?>" class="c-info-menu__button <?php echo $class; ?>"><i class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-info.svg"></i>ニュース</a></li>
+  <li class="c-info-menu__item"><a href="<?php echo home_url('/news'); ?>" class="c-info-menu__button <?php echo $class; ?>"><i class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-megaphone.svg"></i>ニュース</a></li>
   <li class="c-info-menu__item"><a href="<?php echo home_url('/access'); ?>" class="c-info-menu__button <?php echo $class; ?>"><i class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-access.svg"></i>アクセス</a></li>
 
   <!-- <li class="c-info-menu__item"><a href="<?php echo home_url('/parking'); ?>" class="c-info-menu__button <?php echo $class; ?>"><i class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-parking.svg"></i>駐車場のご案内</a></li> -->

@@ -3,14 +3,17 @@
  * 記事ページのテンプレート
  */
 get_header(); ?>
-
 <div class="l-spacer">
 	<div class="l-container--wide">
-		<?php get_template_part('assets/inc/breadcrumb'); ?>
+		<ul class="c-breadcrumb">
+			<li class="c-breadcrumb__item"><a href="<?php echo home_url(); ?>">星野エリア</a></li>
+			<li class="c-breadcrumb__item"><a href="<?php echo home_url('/news'); ?>">ニュース</a></li>
+			<li class="c-breadcrumb__item"><?php the_title(); ?></li>
+		</ul>
 	</div>
 </div>
 
-<section class="l-spacer -medium -both">
+<section class="l-spacer -pagetitile">
 	<div class="l-container--primary c-display-flex -between">
 		<h1 class="c-title-ex-large">
 			<span class="c-title-sub">
@@ -22,7 +25,6 @@ get_header(); ?>
 			} ?>
 			</span>
 			<?php the_title(); ?><?php if(get_field('event_period')): ?><span>開催期間　<?php the_field('event_period'); ?></span><?php endif; ?>
-
 		</h1>
 		<div class="p-news-date">
 			<div><?php the_time('Y.m.d') ?></div>
