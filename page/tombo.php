@@ -5,7 +5,7 @@
 
 <section class="-tombo-bg">
 
-	<div class="l-spacer -pan">
+	<div class="l-spacer pan">
 		<div class="l-container--wide">
 			<?php get_template_part('inc/breadcrumb'); ?>
 		</div>
@@ -41,6 +41,8 @@
 			</ul>
 		</div>
 	</section>
+
+	<?php get_template_part('event/list-3-facility'); ?>
 
 	<section class="l-spacer -medium -both c-border-t  p-tombo__pickup">
 		<div class="l-container--primary">

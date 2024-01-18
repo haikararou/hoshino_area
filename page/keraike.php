@@ -24,6 +24,8 @@
 		</div>
 	</section>
 
+	<?php get_template_part('event/list-3-facility'); ?>
+
 	<section class="l-spacer -medium0000000000 -both000000000  p-keraike__lead">
 		<div class="l-container--primary">
 			<div class="p-keraike__lead__inner">

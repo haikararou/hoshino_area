@@ -43,7 +43,7 @@
                 <ul class="p-restaurant-list">
                     <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
                     <li>
-                        <a href="<?php if( get_field('facility-url')): ?><?php the_field('facility-url'); ?><?php else: ?><?php the_permalink();?><?php endif; ?>"<?php if(get_field('blank')): ?> target="_blank"<?php endif; ?> class="p-restaurant-card">
+                        <a href="<?php if( get_field('facility-url')): ?><?php the_field('facility-url'); ?><?php else: ?><?php the_permalink();?><?php endif; ?>"<?php if(get_field('blank')): ?> target="_blank"<?php endif; ?> class="p-restaurant-card <?php if(get_field('blank')): ?>blank<?php endif; ?>">
                             <?php if( get_field('wi-fi')): ?>
                             <div class="p-restaurant-card__wi-fi">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-wi-fi.svg" alt="Wi-fiあり" width="28" height="28">
@@ -52,7 +52,7 @@
                             <?php if(has_post_thumbnail()): ?><img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post_id)); ?>" alt="<?php the_title(); ?>" /><?php endif; ?>
                             <div class="p-restaurant-card__text">
                                 <div class="p-restaurant-card__title">
-                                    <h3 class="p-restaurant-card__name"><?php if(get_field('sub_title')): ?><span class="p-restaurant-card__cat"><?php the_field('sub_title'); ?></span><?php endif; ?><?php the_title(); ?></h3>
+                                    <h3 class="p-restaurant-card__name"><?php if(get_field('sub_title')): ?><span class="p-restaurant-card__cat"><?php the_field('sub_title'); ?></span><?php endif; ?><em><?php the_title(); ?></em></h3>
                                     <?php if(get_field('logo')): ?>
                                     <div class="p-restaurant-card__logo">
                                         <img src="<?php the_field('logo'); ?>" alt="">

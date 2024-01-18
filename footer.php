@@ -25,6 +25,10 @@
 
   <?php get_template_part('news/list-important'); ?>
 
+  <?php if(!is_archive('event') && !is_singular('event') && !is_page('ended')): ?>
+  <?php get_template_part('event/list-3'); ?>
+  <?php endif; ?>
+
   <nav>
     <?php
     $args = ['class' => '-footer'];

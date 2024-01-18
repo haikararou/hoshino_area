@@ -13,8 +13,8 @@ $today = date('Ymd');
 <section class="l-spacer -pagetitile">
 	<div class="l-container--primary">
 		<h1 class="c-title-ex-large">イベント情報</h1>
-        <?php $class= isset($args['class']) ? $args['class'] : ''; ?>
-        <?php get_template_part('inc/today'); ?>
+        <!-- ?php $class= isset($args['class']) ? $args['class'] : ''; ? -->
+        <!-- ?php get_template_part('inc/today'); ? -->
 	</div>
 </section>
 
@@ -48,6 +48,7 @@ $wp_query = new WP_Query( $args );
             <?php if ( $wp_query->have_posts() ): ?>
             <?php while ( $wp_query->have_posts() ): $wp_query->the_post(); ?>
             <div class="l-contents--left-title__conts">
+            <a href="<?php the_permalink(); ?>">
                 <div class="l-contents-2column">
                     <div class="l-contents-2column__block -w-1_2--left">
                     <?php if(has_post_thumbnail()) : ?>
@@ -57,9 +58,10 @@ $wp_query = new WP_Query( $args );
                     <div class="l-contents-2column__block -w-1_2--right">
                         <h3 class="c-title-small"><span><?php $terms = get_the_terms($post->ID,'event_cat'); if($terms){echo $terms[0]->name;} ?></span><?php the_title(); ?></h3>
                         <?php the_content(); ?>
-                        <?php if(get_field('event_period')): ?><p>⚫︎開催中<span><?php the_field('event_period'); ?></span></p><?php endif; ?>
+                        <?php if(get_field('event_period')): ?><p class="p-post-card__period">⚫︎開催中<span><?php the_field('event_period'); ?></span></p><?php endif; ?>
                     </div>
                 </div>
+                        </a>
             </div>
             <?php endwhile; ?>
             <?php else : ?>
@@ -100,7 +102,7 @@ $wp_query = new WP_Query( $args );
                                 <div class="p-post-card__text">
                                     <p class="p-post-card__cat"><?php $terms = get_the_terms($post->ID,'event_cat'); if($terms){echo $terms[0]->name;} ?></p>
                                     <h3 class="p-post-card__title"><?php the_title(); ?></h3>
-                                    <?php if(get_field('event_period')): ?><p class="p-post-card__info">開催予定 <span><?php the_field('event_period'); ?></span></p><?php endif; ?>
+                                    <?php if(get_field('event_period')): ?><p class="p-post-card__period">開催予定 <span><?php the_field('event_period'); ?></span></p><?php endif; ?>
                                 </div>
                             </article>
                         </a>

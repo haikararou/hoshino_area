@@ -259,6 +259,7 @@ post
     }
   }
   .p-post-list {
+    
     padding: 0;
     li {
       list-style-type: none;
@@ -275,4 +276,8 @@ post
       margin-top: 0;
     }
   }
+  .-break-w {
+    max-width: none;
+  }
 }
+

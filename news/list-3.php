@@ -45,14 +45,15 @@ $the_query = new WP_Query( $args );
                                     } ?>
                                     <time class="p-post-card__date"><?php the_time('Y.m.d') ?></time>
                                     <h3 class="p-post-card__title"><?php the_title(); ?></h3>
-                                    <p class="p-post-card__info">
-                                        <?php
-                                        $terms = get_the_terms($post->ID, 'news_cat');
-                                        foreach($terms as $term){
-                                        $term_name = $term->name;
-                                        echo $term_name; break; };
-                                        ?>
-                                    </p>
+                                    <?php
+									$terms = get_the_terms($post->ID, 'news_cat');
+									foreach($terms as $term){
+									$term_name = $term->name;
+									echo '<p class="p-post-card__info">';
+									echo $term_name;
+									echo '</p>';
+									break; };
+									?>
                                     <?php if(get_field('event_period')): ?><span>開催期間　<?php the_field('event_period'); ?></span><?php endif; ?>
                                 </div>
                             </article>
