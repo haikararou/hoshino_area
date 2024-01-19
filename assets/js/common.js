@@ -172,6 +172,18 @@ $(function() {
       }
     }
   });
+
+
+    // facility-tab
+    $('.js-tab-button').on('click', function() {
+      parent = $(this).parents('.js-tab-parent');
+      
+      parent.find('.js-tab-button').removeClass('-active');
+      $(this).addClass('-active');
+      
+      parent.find('.c-tab-contents').removeClass('-active');
+      $('#'+$(this).data('target')).addClass('-active');
+    });
   
   
   // FAQ
@@ -184,6 +196,17 @@ $(function() {
       $(this).find('.p-faq-list__answer').slideUp();
     }
   });
+
+    // facility
+    $('.facility-acd').on('click', function() {
+      $(this).toggleClass('-open');
+      
+      if($(this).hasClass('-open')) {
+        $(this).next('.p-facility-list__dd').slideDown();
+      } else {
+        $(this).next('.p-facility-list__dd').slideUp();
+      }
+    });
 
   // RECRUIT
   $('.p-recruit-list__item').on('click', function() {

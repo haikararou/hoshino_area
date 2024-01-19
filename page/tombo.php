@@ -11,7 +11,7 @@
 		</div>
 	</div>
 
-	<section class="l-spacer -medium000000000 -both00000  p-tombo__kv">
+	<section class="l-spacer -medium000000000 -both00000 p-tombo__kv">
 		<div class="l-container--primary">
 			<div class="p-tombo__kv__logo">
 				<h1><img src="<?php echo get_template_directory_uri(); ?>/assets/img/tombo/logo.svg" alt="星野温泉トンボの湯"></h1>
@@ -211,6 +211,8 @@
 			</div>
 		</div>
 	</section>
+
+	<?php get_template_part('news/list-3-facility'); ?>
 
 	<section id="usage-guide" class="l-spacer -medium -both c-border-t  p-tombo__guide">
 		<div class="l-container--primary">

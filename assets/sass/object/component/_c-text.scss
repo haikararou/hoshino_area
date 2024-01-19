@@ -20,7 +20,7 @@ text
   @include inc.sizingRem(font-size, full, 14px, sp, 12px);
 }
 .c-text-underline {
-  text-decoration: underline;
+  text-decoration: underline!important;
   text-underline-offset: 0.2em;
 }
 
@@ -40,5 +40,13 @@ text
       width: 40px;
       height: 40px;
     }
+  }
+  .icon2 {
+    display: inline-block;
+    vertical-align: middle;
+    //margin-right: .5em;
+    width: 2.5em;
+    height: 1.5em;
+    object-fit: contain;
   }
 }

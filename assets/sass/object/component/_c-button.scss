@@ -256,3 +256,12 @@ button
 	}
 }
 
+.a-list {
+	a + a {
+		margin-top: .6rem;
+		display: inline-block;
+	}
+}
+p + .a-list {
+	margin-top: 1rem;
+}

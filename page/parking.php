@@ -18,28 +18,41 @@
   <div class="l-container--primary">
     <article class="l-contents-2column">
       <div class="l-contents-2column__block -w-1_2">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dummy/black1.jpg">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/parking/map.svg">
       </div>
       <div class="l-contents-2column__block -w-1_2--left">
-        <div class="">
+
+        <div class="-mgB-m c-border-4">
           <h3 class="c-title-small">満車予測時間帯</h3>
-          <p>中軽井沢駅寄りの駐車場から混み合います。<br>満車の場合は路上で待機せず、［P6］へお進みください。</p>
+          <p class="-mgB-s">中軽井沢駅寄りの駐車場から混み合います。<br>満車の場合は路上で待機せず、［P6］へお進みください。</p>
           <dl class="c-list-dl">
             <dt>平日</dt>
-            <dd>P2 P3 11～14時頃に混み合うことが多いです。</dd>
-            <dd>P1 12～13時頃に混み合うことが多いです。</dd>
+            <dd>
+              <p><span class="c-text-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-parking_02.svg" width="28" height="28" class="icon2"> <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-parking_03.svg" width="28" height="28" class="icon2"> ハルニレテラス付近</span>11～14時頃に混み合うことが多いです。</p>
+              <p><span class="c-text-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-parking_01.svg" width="28" height="28" class="icon2"> トンボの湯・村民食堂付近</span>12～13時頃に混み合うことが多いです。</p>
+            </dd>
             <dt>土日祝</dt>
-            <dd>P2 P3 10～15時頃に混み合うことが多いです。</dd>
-            <dd>P1 11～14時頃に混み合います。</dd>
+            <dd>
+              <p><span class="c-text-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-parking_02.svg" width="28" height="28" class="icon2"> <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-parking_03.svg" width="28" height="28" class="icon2"> ハルニレテラス付近</span></p>
+              <p><span class="c-text-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-parking_01.svg" width="28" height="28" class="icon2"> トンボの湯・村民食堂付近</span>11～14時頃に混み合います。</p>
+            </dd>
           </dl>
         </div>
-        <div class="">
-          <h3 class="c-title-small">バイク・自転車でお越しの方</h3>
-          <p class="">駐輪場　P1、P2、P3（無料）</p>
+
+        <div class="-mgB-m">
+          <h3 class="c-title-small">お車でお越しの方</h3>
+          <p><span class="c-text-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-parking_blu.svg" width="28" height="28" class="icon -bicycle">通常駐車場　P1、P2、P3（有料）</span>
+          <span class="c-text-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-parking_grn.svg" width="28" height="28" class="icon -bicycle">無料駐車場　P6、P7、臨時駐車場（無料）</span></p>
         </div>
+
+        <div class="-mgB-m">
+          <h3 class="c-title-small">バイク・自転車でお越しの方</h3>
+          <p><span class="c-text-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-bicycle.svg" width="28" height="28" class="icon -bicycle">駐輪場　P1、P2、P3（無料）</span></p>
+        </div>
+
         <div class="">
           <h3 class="c-title-small">駐車場概要</h3>
-          <dl class="c-list-dl">
+          <dl class="c-list-dl -mgB-s">
             <dt>駐車料金（P1-P3）</dt>
             <dd>最初の30分　無料<br>以降1時間毎　300円（上限3,000円）</dd>
             <dt>サービス料金</dt>

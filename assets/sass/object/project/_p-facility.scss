@@ -1,0 +1,118 @@
+@charset 'UTF-8';
+@use "../../inc/" as inc;
+/*
+facility
+-----------------------------------------------------*/
+.facility-tab {
+	display: block;
+	@include inc.mq(tab) {
+		display: none;
+
+	}
+}
+
+.facility-flex {
+	display: flex;
+	flex-wrap: wrap;
+	&-img {
+		width: 65%;
+	}
+	&-txt {
+		width: 35%;
+		padding: 4rem 5vw 0;
+	}
+}
+
+
+.p-facility {
+	&-list {
+		&__item {
+			div {
+				border-bottom: 1px solid inc.$border-color-yellow;
+			}
+		}
+		&__dt {
+			a {
+				padding: 1.2rem 1rem 1.2rem 1.5rem;
+				display: block;
+				position: relative;
+				&::after {
+					content: "";
+					width: 0.4em;
+					height: 0.4em;
+					display: block;
+					vertical-align: middle;
+					-webkit-transform: rotate(45deg) translateY(-0.1em);
+					transform: rotate(45deg) translateY(-0.1em);
+					border-top: 1px solid currentColor;
+					border-right: 1px solid currentColor;
+					position: absolute;
+					right: 1rem;
+					top: 50%;
+				}
+			}
+			span {
+				cursor: pointer;
+				padding: 1.2rem 1rem 1.2rem 1.5rem;
+				display: block;
+				position: relative;
+				&::before,
+				&::after {
+					content: '';
+					//@include inc.sizing(width, full, 32px, sp, 16px);
+					width: 12px;
+					height: 1px;
+					position: absolute;
+					top: 50%;
+					right: 0.8rem;
+					margin: auto;
+					display: block;
+					background: inc.$theme-color-darkyellow;
+					transition: transform .3s;
+					// @include inc.mq(lap) {
+					// top: 2.6rem;
+					// right: 1.5rem;
+					// }
+				}
+				&::after {
+					transform: rotate(90deg);
+				}
+			}
+			&.-open {
+				background: inc.$theme-color-lightyellow;
+				span::after {
+						transform: rotate(0);
+					}
+			}
+		}
+
+		&__dd {
+			display: none;
+			padding: 0 0 2rem 3rem;
+			ul {
+				li {
+					a {
+						display: block;
+						padding: .8rem 0;
+						position: relative;
+						&::after {
+							content: "";
+							width: 0.4em;
+							height: 0.4em;
+							display: block;
+							vertical-align: middle;
+							-webkit-transform: rotate(45deg) translateY(-0.1em);
+							transform: rotate(45deg) translateY(-0.1em);
+							border-top: 1px solid currentColor;
+							border-right: 1px solid currentColor;
+							position: absolute;
+							right: 1rem;
+							top: 50%;
+						}
+					}
+				}
+
+			}
+		}
+	}
+}

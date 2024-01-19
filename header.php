@@ -73,7 +73,7 @@
       </ul>
       
       <div class="c-gmenu-secondary l-header-menu__secondary">
-        <a href="" class="c-button-arrow c-gmenu-secondary__textbtn">施設を探す</a>
+        <a href="<?php echo home_url('/facility'); ?>" class="c-button-arrow c-gmenu-secondary__textbtn">施設を探す</a>
         <a href="<?php echo home_url('/business-hours'); ?>" class="c-button-block -white -icon c-gmenu-secondary__blockbtn"><i class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-clock.svg"></i>営業時間</a>
         <a href="<?php echo home_url('/parking'); ?>" class="c-button-block -white -icon c-gmenu-secondary__blockbtn"><i class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-parking.svg"></i>駐車場</a>
         </ul>
@@ -103,7 +103,7 @@
     </div>
   </a>
 
-<?php if(is_archive('shop') || is_page('harunireterrace') || is_page('tombo-no-yu') || is_page('sonmin-shokudo') || is_page('kera-ike-icerink')): ?>
+<?php if(is_archive('shop') || is_page('harunireterrace') || is_page('tombo-no-yu') || is_page('sonmin-shokudo') || is_page('kera-ike-icerink') || is_page('facility')): ?>
   <main id="" class="l-main -cxl">
 <?php else: ?>
   <main id="" class="l-main">

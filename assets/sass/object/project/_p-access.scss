@@ -187,3 +187,96 @@ justify-content: center;
 .div4-4,
 .div4-5,
 .div4-7 { border-bottom: 1px solid black; padding: .5em; }
+
+
+.noriba-map {
+	display: inline-block;
+	margin-top: 1.5rem;
+}
+.-bus-noriba {
+	margin-top: 2rem;
+	a {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
+		i {
+			width: 60px;
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+		div {
+			@include inc.sizingRem(font-size, full, 20px, sp, 16px);
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			span {
+				text-decoration: underline;
+				text-underline-offset: 3px;
+				margin-top: 6px;
+				display: block;
+				@include inc.sizingRem(font-size, full, 16px, sp, 12px);
+				padding-left: 1.3rem;
+				position: relative;
+				&::before {
+					content: "";
+					width: 16px;
+					height: 16px;
+					background: url(../img/common/icon-plus.svg) no-repeat center center / contain;
+					position: absolute;
+					left: 0;
+					top: -1px;
+				}
+			}
+		}
+	}
+}
+
+.senyou_bus {
+	display:flex; flex-direction:column; justify-content:center;
+	ul {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 0 3rem;
+		a {
+			display: block;
+			span {
+				display: block;
+				&::before {
+					content: "";
+					width: 125px;
+					height: 67px;
+					margin: 0 auto .8rem;
+					display: block;
+				}
+				&.hoshinoya {
+					&::before {
+						content: "";
+						background: url(../img/access/logo_hoshinoya.png) no-repeat center center / contain;
+					}
+				}
+				&.hbc {
+					&::before {
+						content: "";
+						background: url(../img/access/logo_hbc.png) no-repeat center center / contain;
+					}
+				}
+			}
+		}
+	}
+}
+
+.-fix {
+	padding-left: 6rem;
+	position: relative;
+	h2.c-title-small {
+		position: relative;
+		span.tag-b {
+			display: block;
+			position: absolute;
+			left: -6rem;
+		}
+	}
+}

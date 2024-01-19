@@ -14,55 +14,83 @@
   </div>
 </section>
 
-<section class="l-contents-block__wrap">
+<!-- <section class="l-contents-block__wrap"> -->
   <div class="l-contents-block">
     <article class="js-tab-parent">
-      <div class="c-tab-control">
+      <div class="c-tab-control facility-tab">
         <button class="c-tab-control__button js-tab-button -active" data-target="tab-list">施設一覧</button>
         <button class="c-tab-control__button js-tab-button" data-target="tab-map">エリアマップ</button>
       </div>
-      <div class="l-contents-block__inner c-bg-white">
+      <div class="l-contents-block__inner000000000 c-bg-white">
 
-        <div class="l-container--primary">
+        <!-- <div class="l-container--primary"> -->
           <div class="c-tab-contents -active" id="tab-list"><!--施設一覧-->
-            <h2 class="c-title-small">施設一覧</h2>
-            <dl class="p-facility-list">
-              <div class="p-facility-list__item">
-                <dt class="p-facility-list__dt">ハルニレテラス</dt>
-                <dd class="p-facility-list__dd">
-                  <ul>
-                    <li><a href="">【イタリアン】イル・ソーニョ</a></li>
-                    <li><a href="">【そば・美酒・料理】川上庵</a></li>
-                    <li><a href="">【中国家庭料理】希須林</a></li>
-                    <li><a href="">【ベーカリー＆レストラン】沢村</a></li>
-                    <li><a href="">【菓子処】和泉屋 傳兵衛</a></li>
-                    <li><a href="">【レストラン＆デリ・ワイン】CERCLE</a></li>
-                    <li><a href="">【ジェラート】PURE MILK GELATO NAGAI FARM</a></li>
-                    <li><a href="">【カフェ＆ブックス】丸山珈琲</a></li>
-                    <li><a href="">【木製品専門店】我蘭憧</a></li>
-                    <li><a href="">【北欧インテリア・手工芸】NATUR</a></li>
-                    <li><a href="">【マテリアルアート＆クラフト】Gallery 樹環 ju-KAN</a></li>
-                    <li><a href="">【農産物・食料品・飲料】Karuizawa Vegetable ココペリ</a></li>
-                    <li><a href="">【ベッド・枕・くらしまわりの小物】TEAM7 軽井沢</a></li>
-                    <li><a href="">【ガーデン＆アウトドアリビング】MORIASOBI</a></li>
-                    <li><a href="">【ヒーリングマッサージ】常世tocoyo</a></li>
-                </dt>
-                <dt class="p-facility-list__dt"><a href="">協会</a></dt>
-                <dt class="p-facility-list__dt"><a href="">ホテル</a></dt>
-                <dt class="p-facility-list__dt"><a href="">星野温泉トンボの湯</a></dt>
-                <dt class="p-facility-list__dt"><a href="">村民食堂</a></dt>
-                <dt class="p-facility-list__dt"><a href="">カフェハングリースポット</a></dt>
-                <dt class="p-facility-list__dt"><a href="">ピッキオ</a></dt>
-                <dt class="p-facility-list__dt"><a href="">ケラ池スケートリンク</a></dt>
-                <dt class="p-facility-list__dt"><a href="">別荘ナビ</a></dt>
-                <dt class="p-facility-list__dt"><a href="">ブレストンコートユカワタン</a></dt>
+            <div class="facility-flex">
+              <div class="facility-flex-img">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/facility/map.png">
               </div>
-            </dl>
+              <div class="facility-flex-txt">
+                <h2 class="c-title-small">施設一覧</h2>
+                <dl class="p-facility-list">
+                  <div class="p-facility-list__item">
+                    <div>
+                      <dt class="p-facility-list__dt"><a href="<?php echo home_url('/tombo-no-yu'); ?>">星野温泉トンボの湯</a></dt>
+                    </div>
+                    <div>
+                      <dt class="p-facility-list__dt"><a href="<?php echo home_url('/sonmin-shokudo'); ?>">村民食堂</a></dt>
+                    </div>
+                    <div>
+                      <dt class="p-facility-list__dt"><a href="<?php echo home_url('/shop/hungryspot'); ?>">カフェハングリースポット</a></dt>
+                    </div>
+                    <div>
+                      <dt class="p-facility-list__dt facility-acd"><span>ハルニレテラス</span></dt>
+                      <dd class="p-facility-list__dd">
+                        <ul>
+                          <li><a href="<?php echo home_url('/shop/izumiya'); ?>">和泉屋 傳兵衛</a></li>
+                          <li><a href="<?php echo home_url('/shop/ilsogno'); ?>">イル・ソーニョ</a></li>
+                          <li><a href="<?php echo home_url('/shop/garandou'); ?>">我蘭憧</a></li>
+                          <li><a href="<?php echo home_url('/shop/kawakamian'); ?>">せきれい橋 川上庵</a></li>
+                          <li><a href="<?php echo home_url('/shop/kisurin'); ?>">希須林</a></li>
+                          <li><a href="<?php echo home_url('/shop/ju-kan'); ?>">ギャラリー樹環</a></li>
+                          <li><a href="<?php echo home_url('/shop/crafyglanta'); ?>">CRAFY・glänta</a></li>
+                          <li><a href="<?php echo home_url('/shop/kokoperi'); ?>">Karuizawa Vegetable ココぺリ</a></li>
+                          <li><a href="<?php echo home_url('/shop/sajilocafe'); ?>">サジロカフェ リンデン</a></li>
+                          <li><a href="<?php echo home_url('/shop/sawamura'); ?>">ベーカリー＆レストラン沢村</a></li>
+                          <li><a href="<?php echo home_url('/shop/cercle'); ?>">CERCLE wine&deli</a></li>
+                          <li><a href="<?php echo home_url('/shop/team7'); ?>">TEAM7 軽井沢</a></li>
+                          <li><a href="<?php echo home_url('/shop/natur'); ?>">NATUR TERRACE</a></li>
+                          <li><a href="<?php echo home_url('/shop/nagaifarm'); ?>">HARVEST NAGAI FARM</a></li>
+                          <li><a href="<?php echo home_url('/shop/maruyamacoffee'); ?>">丸山珈琲</a></li>
+                          <li><a href="<?php echo home_url('/shop/moriasobi'); ?>">モリアソビ</a></li>
+                      </dt>
+                    </div>
+                    <div>
+                      <dt class="p-facility-list__dt"><a href="https://yukawatan.blestoncourt.com/" target="_blank">ブレストンコートユカワタン</a></dt>
+                    </div>
+                    <div>
+                      <dt class="p-facility-list__dt"><a href="https://picchio.co.jp/" target="_blank">ピッキオ</a></dt>
+                    </div>
+                    <div>
+                      <dt class="p-facility-list__dt"><a href="<?php echo home_url('/kera-ike-icerink'); ?>" target="_blank">イカルカフェ</a></dt>
+                    </div>
+                    <div>
+                      <dt class="p-facility-list__dt"><a href="<?php echo home_url('/kera-ike-icerink'); ?>" target="_blank">ケラ池スケートリンク</a></dt>
+                    </div>
+                    <div>
+                      <dt class="p-facility-list__dt"><a href="">教会</a></dt>
+                    </div>
+                    <div>
+                      <dt class="p-facility-list__dt"><a href="">ホテル</a></dt>
+                    </div>
+                  </div>
+                </dl>
+              </div>
+            </div>
           </div>
 
           <div class="c-tab-contents" id="tab-map"><!--エリアマップ-->
             <h2 class="c-title-small">エリアマップ</h2>
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dummy/black1.jpg">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/facility/map.png">
             <ul class="">
               <li><a href="#">ハルニレテラス</a></li>
               <li><a href="#">星野温泉トンボの湯</a></li>
@@ -78,10 +106,10 @@
               <li><a href="#">BEB5</a></li>
             </ul>
           </div>
-        </div>
+        <!-- </div> -->
       </div>
     </article>
   </div>
-</section>
+<!-- </section> -->
 
 <?php get_footer(); ?>

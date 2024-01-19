@@ -185,6 +185,8 @@
 		</div>
 	</section>
 
+	<?php get_template_part('news/list-3-facility'); ?>
+	
 	<section id="usage-guide" class="l-spacer -medium -both c-border-t">
 		<div class="l-container--primary">
 			<article class="l-contents--left-title">

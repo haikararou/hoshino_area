@@ -80,14 +80,14 @@ list
   }
   > dt {
     padding-top: 1em;
-    line-height: 1.4;
+    line-height: 1.6;
     @include inc.mq(tab) {
       padding: 1em 1em 1em 0;
       border-bottom: 1px solid inc.$theme-color-yellow;
     }
   }
   > dd {
-    line-height: 1.4;
+    line-height: 1.6;
     border-bottom: 1px solid inc.$theme-color-yellow;
     padding: .5em 0 1em;
     @include inc.mq(tab) {
