@@ -4,6 +4,12 @@
 /*
 post
 -----------------------------------------------------*/
+// .shopmenu {
+//   width: auto;
+//   @include inc.mq(lap) {
+//     width: 200px;
+//   }
+// }
 .p-shop {
   &-title {
     display: flex;

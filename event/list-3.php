@@ -65,6 +65,7 @@ $wp_query = new WP_Query( $args );
             );
             $wp_query = new WP_Query( $args );
             ?>
+            <?php if(!$count2 == 0): ?>
             <?php if ( $wp_query->have_posts() ): ?>
             <?php while ( $wp_query->have_posts() ): $wp_query->the_post(); ?>
                 <li class="p-post-list__item">
@@ -85,6 +86,7 @@ $wp_query = new WP_Query( $args );
                 </li>
             <?php endwhile; ?>
             <?php else: endif; ?>
+            <?php endif; ?>
             <?php wp_reset_query(); ?>
             </ul>
             <div class="l-spacer -em3 p-post-list__item__more">

@@ -1205,7 +1205,7 @@ footer
 /*
  contents
 -----------------------------------------------------*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 960px) {
   .l-contents--left-title {
     display: -ms-grid;
     display: grid;
@@ -1220,7 +1220,7 @@ footer
     grid-template-columns: 200px minmax(0, 1fr);
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 960px) {
   .l-contents--left-title.-title-large {
     -ms-grid-columns: 24% minmax(0, 1fr);
     grid-template-columns: 24% minmax(0, 1fr);
@@ -1596,6 +1596,7 @@ button
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  min-width: 3rem;
 }
 .c-button-block.-arrow {
   position: relative;
@@ -1887,7 +1888,7 @@ list
      -moz-column-count: 2;
           column-count: 2;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 960px) {
   .c-list-std {
     -webkit-column-count: 1;
        -moz-column-count: 1;
@@ -1896,14 +1897,29 @@ list
 }
 .c-list-std__item {
   line-height: 1.6;
+  padding: 0 1rem;
+  font-size: clamp(0.875rem, 0vw + 0.875rem, 0.875rem);
+}
+.c-list-std__item.active {
+  background: #F8F8F0;
+  border-radius: clamp(5px, 0.4vw + 3.5px, 10px);
 }
 .c-list-std__item:not(:last-child) {
   margin-bottom: 0.8rem;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 960px) {
   .c-list-std__item:not(:last-child) {
     margin-bottom: 1.2rem;
   }
+}
+
+.c-list-std.tab-restaurant .c-list-std__item.restaurant,
+.c-list-std.tab-cafe .c-list-std__item.cafe,
+.c-list-std.tab-shop .c-list-std__item.shop,
+.c-list-std.tab-pet .c-list-std__item.pet,
+.c-list-std.tab-pet-outside .c-list-std__item.pet-outside {
+  background: #F8F8F0;
+  border-radius: clamp(5px, 0.4vw + 3.5px, 10px);
 }
 
 .c-list-dot {
@@ -2915,9 +2931,9 @@ restaurant
   display: -ms-grid;
   display: grid;
   gap: 30px;
-  padding-top: clamp(32px, 7.14vw + 9.2px, 64px);
+  padding-top: clamp(32px, 5vw + 16px, 64px);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 960px) {
   .p-restaurant-list {
     padding-top: 0;
     -ms-grid-columns: (minmax(0, 1fr))[2];

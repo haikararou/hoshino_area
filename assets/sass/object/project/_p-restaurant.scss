@@ -6,8 +6,8 @@ restaurant
 .p-restaurant-list {
   display: grid;
   gap: 30px;
-  @include inc.sizing(padding-top, tab, 64px, sps, 32px);
-  @include inc.mq(tab) {
+  @include inc.sizing(padding-top, lap, 64px, sps, 32px);
+  @include inc.mq(lap) {
     padding-top: 0;
     grid-template-columns: repeat(2, minmax(0,1fr));
   }

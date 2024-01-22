@@ -70,6 +70,14 @@
                 ?>
             </tr>
             <tr>
+                <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/ikarucafe/" target="_blank"><div class="c-button-arrow">カフェ イカルカフェ</a></div></th>
+                <?php
+                    global $shop_slug;
+                    $shop_slug = 'ikarucafe';
+                    get_template_part('inc/opening2');
+                ?>
+            </tr>
+            <tr>
                 <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/kera-ike-icerink/" target="_blank"><div class="c-button-arrow">ケラ池スケートリンク</a></div></th>
                 <?php
                     global $shop_slug;

@@ -27,7 +27,7 @@
 	<section class="l-spacer -medium0000000000 -both000000000  p-tombo__lead">
 		<div class="l-container--primary">
 			<div class="p-tombo__lead__inner">
-				<h2 class="c-title-ex-small">古の湯に身をゆだね<br>明日への時間を養う</h1>
+				<h2 class="c-title-ex-small">古の湯に身をゆだね<br>明日への英気を養う</h1>
 				<p>星野温泉は、1915年の開湯以来、避暑地軽井沢の名湯として愛されてきました。北原白秋や与謝野晶子など、多くの文化人も浸かったといいます。トンボの湯は、そんな星野温泉の歴史を汲む「源泉かけ流し」の立ち寄り湯。森を全身で感じながら、古の湯で心身をほぐし、英気を十分に養うことができます。</p>
 			</h2>
 		</div>

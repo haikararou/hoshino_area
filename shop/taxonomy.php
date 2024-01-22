@@ -8,21 +8,25 @@
 <section class="l-spacer -pagetitile">
     <div class="l-container--primary">
         <h1 class="c-title-ex-large">ショップ＆レストラン</h1>
-        <p>ハルニレテラスを中心に、個性豊かなお店が揃っています。<br>今日の気分に合わせて、食事やお買い物をお楽しみください。</p>
+        <p>ハルニレテラスを中心に、個性豊かなお店が揃っています。今日の気分に合わせて、食事やお買い物をお楽しみください。</p>
     </div>
 </section>
 
 <section class="l-spacer -mgB-l">
     <div class="l-container--primary">
         <article class="l-contents--left-title -title-large">
-            <div class="l-contents--left-title__title">
+            <div class="l-contents--left-title__title shopmenu">
 
-                <ul class="c-list-std tab-<?php echo get_queried_object()->slug; ?>">
-                <li class="c-list-std__item active"><a class="all" href="<?php echo home_url(); ?>/shop/"><span class="c-text-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-all.svg" width="40" height="40" class="icon -shopicon">すべて</span></a></li>
+                <ul class="c-list-std tab-<?php echo $term; ?>">
+                <li class="c-list-std__item"><a class="all" href="<?php echo home_url(); ?>/shop/"><span class="c-text-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-all.svg" width="40" height="40" class="icon -shopicon">すべて</span></a></li>
                     <?php
 					$terms = get_terms('shop_cat');
-					foreach ($terms as $term ) {
-					$des_list .= '<li class="c-list-std__item"><a class="'. $term-> slug .'" href="' . get_term_link( $term ) . '"><span class="c-text-icon"><img src="'.get_template_directory_uri().'/assets/img/common/icon-'. $term-> slug .'.svg" width="40" height="40" class="icon -shopicon">';
+                    $args = array(
+                      'exclude' => array(60), //除外したいタームのIDを指定。
+                    );
+                    $terms = get_terms('shop_cat', $args);
+                    foreach ($terms as $term ) {
+					$des_list .= '<li class="c-list-std__item '. $term-> slug .'"><a class="'. $term-> slug .'" href="' . get_term_link( $term ) . '"><span class="c-text-icon"><img src="'.get_template_directory_uri().'/assets/img/common/icon-'. $term-> slug .'.svg" width="40" height="40" class="icon -shopicon">';
 					$des_list .= $term->name . '</span></a></li>';
 					}
 					echo $des_list; ?>
@@ -32,6 +36,7 @@
                 </div>
             </div>
             <div class="l-contents--left-title__conts">
+                <?php query_posts($query_string .'&orderby=menu_order'.'&order=asc' ); ?>
                 <?php if(have_posts()): ?>
                 <ul class="p-restaurant-list">
                     <?php while(have_posts()): the_post(); ?>

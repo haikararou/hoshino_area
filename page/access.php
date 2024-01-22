@@ -21,8 +21,8 @@
         <iframe class="p-access-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3212.9792666866465!2d138.58612247700245!3d36.361281092316624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601dd3a1cc80e7f1%3A0x98ae4e19525e1b0c!2z6Lu95LqV5rKi5pif6YeO44Ko44Oq44Ki!5e0!3m2!1sja!2sjp!4v1701934750676!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       <div class="p-access-map-btn">
-        <a href="" class="c-button-block -yellow -parking"><i class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-parking.svg"></i><span>駐車場</span></a>
-        <a href="" class="c-button-block -yellow -arrow -more"><span>Google Map</span></a>
+        <a href="<?php echo home_url('/parking'); ?>" class="c-button-block -yellow -parking"><i class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-parking.svg"></i><span>駐車場</span></a>
+        <a href="https://www.google.com/maps?ll=36.361277,138.588697&z=17&t=m&hl=ja&gl=JP&mapclient=embed&cid=11001816810375748364" class="c-button-block -yellow -arrow -more" target="_blank"><span>Google Map</span></a>
       </div>
     </article>
   </div>
@@ -100,8 +100,7 @@
                 <h3 class="c-title-small">JR軽井沢駅北口 1番のりば</h3>
                 <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
                 <div class="a-list">
-                  <a href="https://www.seibubus.co.jp/timetable/dia/timechart/800001_01_1.html" target="_blank" class="c-button-block -yellow -arrow -more"><span>西武観光バスの時刻表</span></a>
-                  <a href="https://www.seibubus.co.jp/timetable/dia/timechart/800001_01_1.html" target="_blank" class="c-button-block -yellow -arrow -more"><span>西武観光バスの時刻表（2023/9/25～秋ダイヤ）</span></a>
+                  <a href="https://www.hoshino-area.jp/contents/uploads/814d3d57541d55ddef37602a5693dd27.pdf" target="_blank" class="c-button-block -yellow -arrow -more"><span>西武観光バスの時刻表（JR軽井沢駅北口発）</span></a>
                 </div>
                 <div class="-bus-noriba">
                   <a href="https://www.google.com/maps/@36.3432916,138.636364,3a,75y,218.54h,75.24t/data=!3m6!1e1!3m4!1sVP-9Bhyi92-5U7U3Wx5GZA!2e0!7i16384!8i8192?authuser=0&entry=ttu" target="_blank">
@@ -121,7 +120,7 @@
                 <h3 class="c-title-small">星野エリア 西武観光バス停</h3>
                 <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
                 <div class="a-list">
-                  <a href="" class="c-button-block -yellow -arrow -more"><span>西武観光バスの時刻表はこちら</span></a>
+                  <a href="https://www.hoshino-area.jp/contents/uploads/814d3d57541d55ddef37602a5693dd27.pdf#page=2" target="_blank" class="c-button-block -yellow -arrow -more"><span>西武観光バスの時刻表(星野温泉トンボの湯)</span></a>
                 </div>
                 <div class="-bus-noriba">
                   <a href="https://www.google.com/maps/@36.3610828,138.5886665,3a,75y,67.12h,90t/data=!3m7!1e1!3m5!1saroWnukiwV4-SX41H_xa4w!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3DaroWnukiwV4-SX41H_xa4w%26cb_client%3Dsearch.revgeo_and_fetch.gps%26w%3D96%26h%3D64%26yaw%3D67.11876%26pitch%3D0%26thumbfov%3D100!7i16384!8i8192?entry=ttu" target="_blank">

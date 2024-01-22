@@ -23,7 +23,7 @@
       </div>
       <div class="l-contents-2column__block -w-1_2--left">
         <div class="p-activity--title">
-          <h3 class="c-title-large">星のや軽井沢</h3>
+          <h3 class="c-title-large">ピッキオ</h3>
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/activity/logo_picchio.svg">
         </div>
         <div class="l-spacer -em2">

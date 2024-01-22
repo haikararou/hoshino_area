@@ -65,7 +65,7 @@
     </div>
     <div class="l-header-menu" id="js-fixed-header-pc">
       <ul class="c-gmenu-primary l-header-menu__primary" id="js-header-menu-primary">
-        <li class="c-gmenu-primary__item"><a href="<?php echo home_url('/tonbo'); ?>" class="c-gmenu-primary__link">温泉</a></li>
+        <li class="c-gmenu-primary__item"><a href="<?php echo home_url('/tombo-no-yu'); ?>" class="c-gmenu-primary__link">温泉</a></li>
         <li class="c-gmenu-primary__item"><a href="<?php echo home_url('/shop'); ?>" class="c-gmenu-primary__link">ショップ&amp;レストラン</a></li>
         <li class="c-gmenu-primary__item"><a href="<?php echo home_url('/activity'); ?>" class="c-gmenu-primary__link">アクティビティ</a></li>
         <li class="c-gmenu-primary__item"><a href="<?php echo home_url('/church'); ?>" class="c-gmenu-primary__link">教会</a></li>

@@ -23,6 +23,9 @@
 	</div>
 </section> -->
 
+
+aaaaaaaaaaaaaaaa
+
 <section class="l-spacer -medium -both">
 	<div class="l-container--primary">
         <div class="p-opening--scroll">
@@ -63,6 +66,14 @@
                 <?php
                     global $shop_slug;
                     $shop_slug = 'hungryspot';
+                    get_template_part('inc/opening2');
+                ?>
+            </tr>
+            <tr>
+                <th class="p-opening--fixed02">カフェ イカルカフェ</th>
+                <?php
+                    global $shop_slug;
+                    $shop_slug = 'ikarucafe';
                     get_template_part('inc/opening2');
                 ?>
             </tr>
