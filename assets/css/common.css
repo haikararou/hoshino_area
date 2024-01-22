@@ -3150,6 +3150,7 @@ p-activity
   margin: 0;
 }
 .p-activity--title img {
+  border: 1px solid #E8E8D8;
   max-width: 100px;
   max-height: 100px;
   width: auto;

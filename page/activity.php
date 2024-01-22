@@ -19,7 +19,7 @@
   <div class="l-container--primary">
     <article class="l-contents-2column">
       <div class="l-contents-2column__block -w-1_2">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dummy/black1.jpg">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/activity/picchio.jpg">
       </div>
       <div class="l-contents-2column__block -w-1_2--left">
         <div class="p-activity--title">
@@ -47,7 +47,7 @@
   <div class="l-container--primary">
     <article class="l-contents-2column">
       <div class="l-contents-2column__block -w-1_2">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dummy/black1.jpg">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/activity/keraike.jpg">
       </div>
       <div class="l-contents-2column__block -w-1_2--left">
         <div class="p-activity--title">
@@ -63,7 +63,7 @@
           </dl>
         </div>
         <div class="l-spacer -em2">
-          <a href="" class="c-button-block -yellow -arrow -more"><span>詳細</span></a>
+          <a href="<?php echo home_url('/kera-ike-icerink'); ?>" class="c-button-block -yellow -arrow -more"><span>詳細</span></a>
         </div>
       </div>
     </article>
@@ -79,6 +79,7 @@
       <div class="l-contents-2column__block -w-1_2--left">
         <div class="p-activity--title">
           <h3 class="c-title-large"><span class="c-title-sub">ハルニレテラス</span>CRAFY・glänta</h3>
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/activity/logo_crafy.jpg">
         </div>
         <div class="l-spacer -em2">
           <p>指輪を手作りできる工房です。初めてでも思い通りの指輪作りができるよう、専任のスタッフが丁寧にサポートします。体験を通して、軽井沢の思い出となるような「豊かな時間」を提供します。</p>
@@ -90,7 +91,7 @@
           </dl>
         </div>
         <div class="l-spacer -em2">
-          <a href="" class="c-button-block -yellow -arrow -more"><span>詳細</span></a>
+          <a href="<?php echo home_url('/shop/cercle/'); ?>" class="c-button-block -yellow -arrow -more"><span>詳細</span></a>
         </div>
       </div>
     </article>

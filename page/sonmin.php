@@ -192,9 +192,9 @@
 									<?php wp_reset_query(); ?>
 								</dd>
 								<dt>電話番号</dt>
-								<dd>0267-44-3571<br>＊お席のご予約は承っておりません。</dd>
+								<dd>0267-44-3571</dd>
 								<dt>席の予約</dt>
-								<dd>席のみのご予約はできません。<br>個室での記念日プランのご予約は<a href="https://urakata.in/new_reserve/courses/hoshinoarea?center_id=832" target="_blank">こちら</a></dd>
+								<dd>席のみのご予約はできません。<br>個室での記念日プランのご予約は<a href="https://urakata.in/new_reserve/courses/hoshinoarea?center_id=832" target="_blank" class="c-text-underline">こちら</a></dd>
 								<dt>ペットの入店</dt>
 								<dd>1席のみ可（順番にご案内します）</dd>
 								<dt>Wi-Fi</dt>

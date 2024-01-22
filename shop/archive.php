@@ -21,7 +21,11 @@
                     <li class="c-list-std__item active"><a class="all" href="<?php echo home_url(); ?>/shop/"><span class="c-text-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-all.svg" width="40" height="40" class="icon -shopicon">すべて</span></a></li>
                     <?php
 					$terms = get_terms('shop_cat');
-					foreach ($terms as $term ) {
+                    $args = array(
+                      'exclude' => array(60), //除外したいタームのIDを指定。
+                    );
+                    $terms = get_terms('shop_cat', $args);
+                    foreach ($terms as $term ) {
 					$des_list .= '<li class="c-list-std__item"><a class="'. $term-> slug .'" href="' . get_term_link( $term ) . '"><span class="c-text-icon"><img src="'.get_template_directory_uri().'/assets/img/common/icon-'. $term-> slug .'.svg" width="40" height="40" class="icon -shopicon">';
 					$des_list .= $term->name . '</span></a></li>';
 					}
