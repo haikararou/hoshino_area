@@ -24,7 +24,7 @@
 		</div>
 	</section>
 
-	<?php get_template_part('event/list-3-facility'); ?>
+	<?php $title ="ケラ池の"; get_template_part('event/list-3-facility'); ?>
 
 	<section class="l-spacer -medium0000000000 -both000000000  p-keraike__lead">
 		<div class="l-container--primary">

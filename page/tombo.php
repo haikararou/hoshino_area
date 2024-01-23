@@ -42,26 +42,7 @@
 		</div>
 	</section>
 
-	<?php get_template_part('event/list-3-facility'); ?>
-
-	<section class="l-spacer -medium -both c-border-t  p-tombo__pickup">
-		<div class="l-container--primary">
-			<article class="l-contents-2column">
-				<div class="l-contents-2column__block -w-2_3">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/tombo/apple.jpg">
-				</div>
-				<div class="l-contents-2column__block -w-1_3 c-block-conts-center">
-					<div class="l-spacer -small -both">
-						<h2 class="c-title-small"><span>ピックアップ</span>りんご湯フェア</h2>
-						<p class="c-text-gold">期間 : 2023.10.14～16</p>
-						<p>
-							<a href="#" class="c-button-block -lightyellow -arrow"><span>詳しくはこちら</span></a>
-						</p>
-					</div>
-				</div>
-			</article>
-		</div>
-	</section>
+	<?php $title ="トンボの湯の"; get_template_part('event/list-3-facility'); ?>
 
 	<section class="l-spacer -medium -both c-border-t  p-tombo__feature">
 		<div class="l-container--primary">
@@ -364,7 +345,7 @@
 
 </section>
 
-<section class="l-spacer -medium -both  p-tombo__faq">
+<!-- <section class="l-spacer -medium -both  p-tombo__faq">
 	<div class="l-container--primary">
 		<article class="l-contents--left-title -title-large">
 			<h2 class="c-title-large -vertical l-contents--left-title__title"><span>トンボの湯</span>よくある質問</h2>
@@ -410,7 +391,7 @@
 			</div>
 		</article>
 	</div>
-</section>
+</section> -->
 
 <div class="l-spacer">
 	<div class="l-container--wide">

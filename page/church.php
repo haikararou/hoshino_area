@@ -15,7 +15,7 @@
   </div>
 </section>
 
-<section class="l-spacer -medium -both">
+<section class="l-spacer -medium -both" id="karuizawachurch/">
   <div class="l-container--primary">
     <article class="l-contents-2column">
       <div class="l-contents-2column__block -w-1_2">
@@ -35,14 +35,14 @@
   </div>
 </section>
 
-<section class="l-spacer -medium -both">
+<section class="l-spacer -medium -both" id="stonechurch">
   <div class="l-container--primary">
     <article class="l-contents-2column">
       <div class="l-contents-2column__block -w-1_2">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dummy/black1.jpg">
       </div>
       <div class="l-contents-2column__block -w-1_2--left">
-        <h3 class="c-title-large">石の教会</h3>
+        <h3 class="c-title-large">石の教会 内村鑑三記念堂</h3>
         <div class="l-spacer -em2">
           <p>キリスト教者・内村鑑三は、形式や制度にとらわれない、日本人のための教会の在り方を説きました。<br>
           彼にとって、教会とは神が創造した世界そのもののことでした。そしてその豪壮たる世界の中におかれているいのちは、ありのままで祈ることができると考えていました。<br>

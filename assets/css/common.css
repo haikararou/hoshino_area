@@ -1573,6 +1573,15 @@ text
      object-fit: contain;
 }
 
+br.sp_a {
+  display: block;
+}
+@media screen and (min-width: 520px) {
+  br.sp_a {
+    display: none;
+  }
+}
+
 /*
 button
 -----------------------------------------------------*/
@@ -2821,6 +2830,79 @@ post
   color: #93936A;
 }
 
+.p-post-tate {
+  display: block;
+}
+@media screen and (min-width: 960px) {
+  .p-post-tate {
+    display: block;
+  }
+}
+.p-post-tate .p-post-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+@media screen and (min-width: 960px) {
+  .p-post-tate .p-post-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    -webkit-box-orient: unset;
+    -webkit-box-direction: unset;
+        -ms-flex-direction: unset;
+            flex-direction: unset;
+    gap: 0 2rem;
+  }
+}
+.p-post-tate .p-post-card__img {
+  width: 100%;
+  max-width: 370px;
+}
+@media screen and (min-width: 960px) {
+  .p-post-tate .p-post-card__img {
+    width: 100%;
+  }
+}
+.p-post-tate .p-post-card__img img {
+  width: 100%;
+  aspect-ratio: 3/2;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.p-post-tate .p-post-card__text {
+  width: auto;
+}
+@media screen and (min-width: 960px) {
+  .p-post-tate .p-post-card__text {
+    width: auto;
+    margin-top: 0.5em;
+  }
+}
+.p-post-tate .p-post-card__title {
+  font-size: clamp(1rem, 0.64vw + 0.85rem, 1.5rem);
+  line-height: 1.7;
+  margin-bottom: 0.5em;
+}
+@media screen and (min-width: 960px) {
+  .p-post-tate .p-post-card__title {
+    margin-top: 0.5em;
+  }
+}
+.p-post-tate .p-post-list__item + .p-post-list__item {
+  margin-top: 4rem;
+}
+
 /*
 faq
 -----------------------------------------------------*/
@@ -3425,6 +3507,9 @@ opening
     min-width: auto;
     text-align: left;
   }
+}
+.p-opening--scroll_01 {
+  overflow: scroll;
 }
 @media screen and (min-width: 520px) {
   .p-opening--scroll_01 {

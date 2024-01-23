@@ -70,7 +70,7 @@
                 ?>
             </tr>
             <tr>
-                <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/ikarucafe/" target="_blank"><div class="c-button-arrow">カフェ イカルカフェ</a></div></th>
+                <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/ikarucafe/" target="_blank"><div class="c-button-arrow">イカルカフェ</a></div></th>
                 <?php
                     global $shop_slug;
                     $shop_slug = 'ikarucafe';
@@ -261,8 +261,7 @@
 <section class="l-spacer -medium -both">
 	<div class="l-container--primary">
         <section class="l-spacer -medium -both">
-        <p>以下の施設の営業時間につきましては、<br>
-        それぞれのホームページからご確認ください。</p>
+        <p>その他の施設の営業時間は、以下の施設サイトでご確認ください。</p>
         </section>
         <div class="p-opening--scroll">
         <table class="p-opening--table -no-scroll">
@@ -281,9 +280,9 @@
             <tr>
                 <th class="p-opening--fixed02"><a href="" target="_blank"><div class="c-button-arrow c-button-outerlink">石の教会 内村鑑三記念堂</div></th>
             </tr>
-            <tr>
+            <!-- <tr>
                 <th class="p-opening--fixed02"><a href="" target="_blank"><div class="c-button-arrow c-button-outerlink">星のや軽井沢</div></th>
-            </tr>
+            </tr> -->
             <!-- <tr>
                 <th class="p-opening--fixed02"><a href="" target="_blank"><div class="c-button-arrow c-button-outerlink">軽井沢ホテルブレストンコート</div></th>
             </tr>

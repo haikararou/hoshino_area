@@ -113,3 +113,54 @@ post
     }
   }
 }
+
+
+.p-post-tate {
+  display: block;
+  @include inc.mq(lap) {
+    display: block;
+  }
+  .p-post-card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    @include inc.mq(lap) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: left;
+      flex-direction: unset;
+      gap: 0 2rem;
+    }
+    &__img {
+      width: 100%;
+      max-width: 370px;
+      @include inc.mq(lap) {
+        width: 100%;
+      }
+      img {
+        width: 100%;
+        //max-width: 370px;
+        aspect-ratio: 3 / 2;
+        object-fit: cover;
+      }
+    }
+    &__text {
+      width: auto;
+      @include inc.mq(lap) {
+        width: auto;
+        margin-top: .5em;
+      }
+    }
+    &__title {
+      @include inc.sizingRem(font-size, full, 24px, sp, 16px);
+      line-height: 1.7;
+      margin-bottom: .5em;
+      @include inc.mq(lap) {
+        margin-top: .5em;
+      }
+    }
+  }
+  .p-post-list__item + .p-post-list__item {
+    margin-top: 4rem;
+  }
+}

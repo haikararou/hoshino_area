@@ -37,15 +37,10 @@
                       <dt class="p-facility-list__dt"><a href="<?php echo home_url('/tombo-no-yu'); ?>">星野温泉トンボの湯</a></dt>
                     </div>
                     <div>
-                      <dt class="p-facility-list__dt"><a href="<?php echo home_url('/sonmin-shokudo'); ?>">村民食堂</a></dt>
-                    </div>
-                    <div>
-                      <dt class="p-facility-list__dt"><a href="<?php echo home_url('/shop/hungryspot'); ?>">カフェハングリースポット</a></dt>
-                    </div>
-                    <div>
                       <dt class="p-facility-list__dt facility-acd"><span>ハルニレテラス</span></dt>
                       <dd class="p-facility-list__dd">
                         <ul>
+                          <li><a href="<?php echo home_url('/harunireterrace'); ?>">ハルニレテラス</a></li>
                           <li><a href="<?php echo home_url('/shop/izumiya'); ?>">和泉屋 傳兵衛</a></li>
                           <li><a href="<?php echo home_url('/shop/ilsogno'); ?>">イル・ソーニョ</a></li>
                           <li><a href="<?php echo home_url('/shop/garandou'); ?>">我蘭憧</a></li>
@@ -62,25 +57,45 @@
                           <li><a href="<?php echo home_url('/shop/nagaifarm'); ?>">HARVEST NAGAI FARM</a></li>
                           <li><a href="<?php echo home_url('/shop/maruyamacoffee'); ?>">丸山珈琲</a></li>
                           <li><a href="<?php echo home_url('/shop/moriasobi'); ?>">モリアソビ</a></li>
+                        </ul>
                       </dt>
                     </div>
                     <div>
-                      <dt class="p-facility-list__dt"><a href="https://yukawatan.blestoncourt.com/" target="_blank">ブレストンコートユカワタン</a></dt>
+                      <dt class="p-facility-list__dt"><a href="<?php echo home_url('/sonmin-shokudo'); ?>">村民食堂</a></dt>
                     </div>
                     <div>
-                      <dt class="p-facility-list__dt"><a href="https://picchio.co.jp/" target="_blank">ピッキオ</a></dt>
-                    </div>
-                    <div>
-                      <dt class="p-facility-list__dt"><a href="<?php echo home_url('/kera-ike-icerink'); ?>" target="_blank">イカルカフェ</a></dt>
+                      <dt class="p-facility-list__dt"><a href="<?php echo home_url('/church#picchio'); ?>" target="_blank">ピッキオ</a></dt>
                     </div>
                     <div>
                       <dt class="p-facility-list__dt"><a href="<?php echo home_url('/kera-ike-icerink'); ?>" target="_blank">ケラ池スケートリンク</a></dt>
                     </div>
                     <div>
-                      <dt class="p-facility-list__dt"><a href="">教会</a></dt>
+                      <dt class="p-facility-list__dt"><a href="<?php echo home_url('/church#karuizawachurch'); ?>">軽井沢高原教会</a></dt>
                     </div>
                     <div>
-                      <dt class="p-facility-list__dt"><a href="">ホテル</a></dt>
+                      <dt class="p-facility-list__dt"><a href="<?php echo home_url('/church#stonechurch'); ?>">石の教会 内村鑑三記念堂</a></dt>
+                    </div>
+                    <div>
+                      <dt class="p-facility-list__dt"><a href="https://yukawatan.blestoncourt.com/" target="_blank">ブレストンコートユカワタン</a></dt>
+                    </div>
+                    <div>
+                      <dt class="p-facility-list__dt"><a href="<?php echo home_url('/shop/hungryspot'); ?>">カフェハングリースポット</a></dt>
+                    </div>
+                    <div>
+                      <dt class="p-facility-list__dt"><a href="<?php echo home_url('/shop/ikarucafe'); ?>" target="_blank">イカルカフェ</a></dt>
+                    </div>
+                    <div>
+                      <dt class="p-facility-list__dt facility-acd"><span>ホテル</span></dt>
+                      <dd class="p-facility-list__dd">
+                        <ul>
+                          <li><a href="<?php echo home_url('/hotel#hoshinoya'); ?>">星のや軽井沢</a></li>
+                          <li><a href="<?php echo home_url('/hotel#hbc'); ?>">軽井沢ホテルブレストンコート</a></li>
+                          <li><a href="<?php echo home_url('/hotel#beb5'); ?>">星野リゾート　BEB5軽井沢</a></li>
+                        </ul>
+                      </dt>
+                    </div>
+                    <div>
+                      <dt class="p-facility-list__dt"><a href="http://www.besso-navi.com/" target="_blank">軽井沢 別荘Navi</a></dt>
                     </div>
                   </div>
                 </dl>

@@ -11,11 +11,11 @@
 <section class="l-spacer -medium -both">
   <div class="l-container--primary">
     <h1 class="c-title-ex-large">ホテル</h1>
-    <p>日が暮れるまで過ごしたら、そのまま星野エリアにお泊りいただけます。コンセプトの異なる３つのホテルが、心を込めてお迎えします。</p>
+    <p>日が暮れるまで過ごしたら、そのまま星野エリアにお泊りいただけます。一日の思い出とともに、ゆったりお過ごしください。</p>
   </div>
 </section>
 
-<section class="l-spacer -medium -both">
+<section class="l-spacer -medium -both" id="hoshinoya">
   <div class="l-container--primary">
     <article class="l-contents-2column">
       <div class="l-contents-2column__block -w-1_2">
@@ -37,7 +37,7 @@
   </div>
 </section>
 
-<section class="l-spacer -medium -both">
+<section class="l-spacer -medium -both" id="hbc">
   <div class="l-container--primary">
     <article class="l-contents-2column">
       <div class="l-contents-2column__block -w-1_2">
@@ -45,7 +45,7 @@
       </div>
       <div class="l-contents-2column__block -w-1_2--left">
         <div class="p-activity--title">
-          <h3 class="c-title-large">軽井沢ホテルブレストンコート</h3>
+          <h3 class="c-title-large">軽井沢<br class="sp_a">ホテルブレストンコート</h3>
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hotel/logo_hbc.jpg">
         </div>
         <div class="l-spacer -em2">
@@ -59,7 +59,7 @@
   </div>
 </section>
 
-<section class="l-spacer -medium -both">
+<section class="l-spacer -medium -both" id="beb5">
   <div class="l-container--primary">
     <article class="l-contents-2column">
       <div class="l-contents-2column__block -w-1_2">

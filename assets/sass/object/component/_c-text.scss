@@ -52,3 +52,11 @@ text
     object-fit: contain;
   }
 }
+
+
+br.sp_a {
+  display: block;
+  @include inc.mq(wsp) {
+    display: none;
+  }
+}

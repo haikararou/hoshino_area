@@ -57,8 +57,7 @@ $wp_query = new WP_Query( $args );
                     </div>
                     <div class="l-contents-2column__block -w-1_2--right">
                         <h3 class="c-title-small"><span><?php $terms = get_the_terms($post->ID,'event_cat'); if($terms){echo $terms[0]->name;} ?></span><?php the_title(); ?></h3>
-                        <?php the_content(); ?>
-                        <?php if(get_field('event_period')): ?><p class="p-post-card__period">⚫︎開催中<span><?php the_field('event_period'); ?></span></p><?php endif; ?>
+                        <?php if(get_field('event_period')): ?><p class="p-post-card__period"><span><?php the_field('event_period'); ?></span></p><?php endif; ?>
                     </div>
                 </div>
                         </a>

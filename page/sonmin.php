@@ -44,7 +44,7 @@
 		</div>
 	</section>
 
-	<?php get_template_part('event/list-3-facility'); ?>
+	<?php $title ="村民食堂の"; get_template_part('event/list-3-facility'); ?>
 
 	<section class="l-spacer -medium -both c-border-t  p-sonmin__pickup">
 		<div class="l-container--primary">
