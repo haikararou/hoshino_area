@@ -12,7 +12,7 @@ $today = date('Ymd');
 
 <section class="l-spacer -pagetitile">
 	<div class="l-container--primary">
-		<h1 class="c-title-ex-large">イベント情報</h1>
+		<h1 class="c-title-ex-large">イベント</h1>
         <!-- ?php $class= isset($args['class']) ? $args['class'] : ''; ? -->
         <!-- ?php get_template_part('inc/today'); ? -->
 	</div>

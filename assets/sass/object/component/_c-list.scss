@@ -11,7 +11,7 @@ list
   &__item {
     line-height: 1.6;
     padding:0 1rem;
-    @include inc.sizingRem(font-size, full, 14px, wsp, 14px);
+    @include inc.sizingRem(font-size, full, 14px, wsp, 12px);
     &.active {
       background: inc.$theme-color-lightyellow;
       border-radius: inc.size(full, 10px, sp, 5px);

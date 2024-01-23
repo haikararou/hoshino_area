@@ -96,7 +96,7 @@
     </div>
   </header>
   
-  <a href="" id="js-areamap">
+  <a href="<?php echo home_url('/facility'); ?>" id="js-areamap">
     <div class="c-button-areamap">
       <img class="c-button-areamap__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/common/areamap.svg" width="71" height="71">
       <p class="c-button-areamap__text">Area Map</p>

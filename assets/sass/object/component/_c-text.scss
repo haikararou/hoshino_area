@@ -37,8 +37,10 @@ text
     height: 1.5em;
     object-fit: contain;
     &.-shopicon {
-      width: 40px;
-      height: 40px;
+      @include inc.sizing(width, full, 40px, sp, 24px);
+      @include inc.sizing(height, full, 40px, sp, 24px);
+      // width: 40px;
+      // height: 40px;
     }
   }
   .icon2 {

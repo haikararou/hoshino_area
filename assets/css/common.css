@@ -1561,8 +1561,8 @@ text
      object-fit: contain;
 }
 .c-text-icon .icon.-shopicon {
-  width: 40px;
-  height: 40px;
+  width: clamp(24px, 1.27vw + 19.3px, 40px);
+  height: clamp(24px, 1.27vw + 19.3px, 40px);
 }
 .c-text-icon .icon2 {
   display: inline-block;
@@ -1898,7 +1898,7 @@ list
 .c-list-std__item {
   line-height: 1.6;
   padding: 0 1rem;
-  font-size: clamp(0.875rem, 0vw + 0.875rem, 0.875rem);
+  font-size: clamp(0.75rem, 0.18vw + 0.69375rem, 0.875rem);
 }
 .c-list-std__item.active {
   background: #F8F8F0;

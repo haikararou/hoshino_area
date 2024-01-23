@@ -89,6 +89,4 @@
     </div>
 </section>
 
-<?php get_template_part('news/list-all'); ?>
-
 <?php get_footer(); ?>

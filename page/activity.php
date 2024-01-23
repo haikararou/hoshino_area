@@ -29,12 +29,6 @@
         <div class="l-spacer -em2">
           <p>ピッキオは、森の生き物との出会いを楽しむ自然観察ツアーを開催しています。<br>自然をこよなく愛するスタッフのサポートで、動植物の様子や自然の仕組みが手に取るように見えてきます。</p>
         </div>
-        <div class="l-spacer -small -s -em2 -both c-border-t c-border-b">
-          <dl class="c-list-dl -noBorder">
-            <dt>営業時間</dt><dd>10:00 - 19:00</dd>
-            <dt>予約方法</dt><dd>各種ツアー公式サイトご確認の上ご予約ください。</dd>
-          </dl>
-        </div>
         <div class="l-spacer -em2">
           <a href="" class="c-button-block -yellow -arrow -more"><span>詳細</span></a>
         </div>
@@ -55,12 +49,6 @@
         </div>
         <div class="l-spacer -em2">
           <p>ケラ池スケートリンクは、「森を感じるスケートリンク」がコンセプト。秋の紅葉の時期からスケートリンクが現れ、寒さが増すごとに池一面の氷が厚さを増し、厳冬期には天然氷でのスケートもができるようになります。森の小鳥の声に軽井沢の自然を感じながら、氷上散歩を楽しんでみませんか。</p>
-        </div>
-        <div class="l-spacer -small -s -em2 -both c-border-t c-border-b">
-          <dl class="c-list-dl -noBorder">
-            <dt>営業時間</dt><dd>10:00 - 19:00</dd>
-            <dt>予約方法</dt><dd>各種ツアー公式サイトご確認の上ご予約ください。</dd>
-          </dl>
         </div>
         <div class="l-spacer -em2">
           <a href="<?php echo home_url('/kera-ike-icerink'); ?>" class="c-button-block -yellow -arrow -more"><span>詳細</span></a>
@@ -83,12 +71,6 @@
         </div>
         <div class="l-spacer -em2">
           <p>指輪を手作りできる工房です。初めてでも思い通りの指輪作りができるよう、専任のスタッフが丁寧にサポートします。体験を通して、軽井沢の思い出となるような「豊かな時間」を提供します。</p>
-        </div>
-        <div class="l-spacer -small -s -em2 -both c-border-t c-border-b">
-          <dl class="c-list-dl -noBorder">
-            <dt>営業時間</dt><dd>10:00 - 19:00</dd>
-            <dt>予約方法</dt><dd>各種ツアー公式サイトご確認の上ご予約ください。</dd>
-          </dl>
         </div>
         <div class="l-spacer -em2">
           <a href="<?php echo home_url('/shop/cercle/'); ?>" class="c-button-block -yellow -arrow -more"><span>詳細</span></a>

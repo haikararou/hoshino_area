@@ -122,7 +122,7 @@
                 <?php
                 endwhile; }
                 if ($post_cnt == $post_ttl && $paged == 1) {
-                    echo '<p class="none">記事はまだありません。</p>';
+                    //echo '<p class="none">記事はまだありません。</p>';
                 }
                 wp_reset_postdata(); ?>
 
