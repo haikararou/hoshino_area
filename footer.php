@@ -36,12 +36,37 @@
   </nav>
 
   <div class="l-footer__bottom">
-    <nav>
-      <?php get_template_part('inc/other-menu', null, $args); ?>
+    <nav class="l-footer__sitemap">
+      <ul>
+        <li><a href="">星野温泉 トンボの湯</a></li>
+        <li><a href="">ハルニレテラス</a></li>
+        <li><a href="">村民食堂</a></li>
+        <li><a href="">ピッキオ</a></li>
+        <li><a href="">ケラ池スケートリンク</a></li>
+        <li><a href="">軽井沢高原教会</a></li>
+        <li><a href="">石の教会 内村鑑三記念堂</a></li>
+        <li><a href="">ブレストンコート　ユカワタン</a></li>
+        <li><a href="">カフェ ハングリースポット</a></li>
+        <li><a href="">イカルカフェ</a></li>
+        <li><a href="">軽井沢 別荘Navi</a></li>
+        <li class="no-arw">　</li>
+        <li><a href="">星のや軽井沢</a></li>
+        <li><a href="">軽井沢ホテルブレストンコート</a></li>
+        <li><a href="">BEB5軽井沢</a></li>
+      </ul>
     </nav>
-    <a href="<?php echo home_url(); ?>" class="l-footer__logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/logo-en.png" width="170" height="17" alt="Hoshino resorts"></a>
-    <p class="l-footer__copyright">Copyright &copy; All rights reserved. Hoshino Resorts Inc.</p>
   </div>
+
+  <div class="c-border-t">
+    <div class="l-footer__bottom">
+      <nav>
+        <?php get_template_part('inc/other-menu', null, $args); ?>
+      </nav>
+      <a href="<?php echo home_url(); ?>" class="l-footer__logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/logo-en.png" width="170" height="17" alt="Hoshino resorts"></a>
+      <p class="l-footer__copyright">Copyright &copy; All rights reserved. Hoshino Resorts Inc.</p>
+    </div>
+  </div>
+
 </footer>
 
 <?php wp_footer(); ?>
