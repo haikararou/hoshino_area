@@ -25,18 +25,20 @@
 				</section>
 
 				<section class="l-spacer -small -both">
-					<h2 class="c-title-medium">注意事項</h2>
+					<h2 class="c-title-medium">軽井沢星野エリアからのお願い</h2>
 					<ul class="c-list-dot">
 						<li class="c-list-dot__item">ゴミのお持ち帰りにご協力ください。</li>
 						<li class="c-list-dot__item">エリア内は禁煙です。喫煙される場合は、喫煙所をご利用ください。</li>
+						<li class="c-list-dot__item">荷物預かりサービスはございません。最寄り駅のコインロッカーをご利用ください。</li>
 						<li class="c-list-dot__item">野生生物への餌やりはご遠慮ください。</li>
+						<li class="c-list-dot__item">エリア外からのお食事の持ち込みは、ご遠慮ください。</li>
 						<li class="c-list-dot__item">他のお客様の迷惑になるような行為はご遠慮ください。</li>
 					</ul>
 				</section>
 
 				<section class="l-spacer -small -both">
 					<h2 class="c-title-medium">バリアフリーのご案内</h2>
-					<p>星野エリア内駐車場のP1～P3には、障がい者等用の駐車区画があります。駐車場から施設まではスロープがあり、車いすでのご移動が可能です。<br>
+					<p>星野エリア内駐車場のP1～P3には、障がい者等用の駐車区画があります。駐車場から施設まではスロープがあり、車いすでのご移動が可能です。なお、車いすの貸出しはございません。<br>
 					ハルニレテラス・村民食堂・トンボの湯には、車いす対応のトイレがあります。ベビーベッド(おむつ交換台)も設置されています。オストメイトはございません。</p>
 				</section>
 
@@ -56,7 +58,7 @@
 						<li class="c-list-dot__item">長時間同じ場所を占拠したり、道を遮ったり、機材を放置するなど、他のお客様のご迷惑になるような行為はご遠慮ください。</li>
 						<li class="c-list-dot__item">営業・商業利用を目的とする、ロケーションフォト撮影・写真・ビデオ・映像等の撮影はお断りしております。</li>
 						<li class="c-list-dot__item">ドローンなどの小型無人機の飛行はご遠慮ください。</li>
-						<li class="c-list-dot__item">報道や取材を目的とする写真・ビデオ・映像等の撮影の場合は、事前に申請が必要となりますので、お問い合わせください。<a href="<?php echo home_url('/contact'); ?>" class="c-text-underline">お問い合わせはこちら</a></li>
+						<li class="c-list-dot__item">報道や取材を目的とする写真・ビデオ・映像等の撮影の場合は、申請が必要となりますので、事前にお問い合わせください。<a href="<?php echo home_url('/contact'); ?>" class="c-text-underline">お問い合わせはこちら</a></li>
 					</ul>
 				</section>
 

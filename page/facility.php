@@ -76,7 +76,7 @@
                       <dt class="p-facility-list__dt"><a href="<?php echo home_url('/church#stonechurch'); ?>">石の教会 内村鑑三記念堂</a></dt>
                     </div>
                     <div>
-                      <dt class="p-facility-list__dt"><a href="https://yukawatan.blestoncourt.com/" target="_blank">ブレストンコートユカワタン</a></dt>
+                      <dt class="p-facility-list__dt"><a href="https://yukawatan.blestoncourt.com/" target="_blank">ブレストンコート ユカワタン</a></dt>
                     </div>
                     <div>
                       <dt class="p-facility-list__dt"><a href="<?php echo home_url('/shop/hungryspot'); ?>">カフェハングリースポット</a></dt>
@@ -88,9 +88,9 @@
                       <dt class="p-facility-list__dt facility-acd"><span>ホテル</span></dt>
                       <dd class="p-facility-list__dd">
                         <ul>
-                          <li><a href="<?php echo home_url('/hotel#hoshinoya'); ?>">星のや軽井沢</a></li>
-                          <li><a href="<?php echo home_url('/hotel#hbc'); ?>">軽井沢ホテルブレストンコート</a></li>
-                          <li><a href="<?php echo home_url('/hotel#beb5'); ?>">星野リゾート　BEB5軽井沢</a></li>
+                          <li><a href="<?php echo home_url('/staying#hoshinoya'); ?>">星のや軽井沢</a></li>
+                          <li><a href="<?php echo home_url('/staying#hbc'); ?>">軽井沢ホテルブレストンコート</a></li>
+                          <li><a href="<?php echo home_url('/staying#beb5'); ?>">星野リゾート　BEB5軽井沢</a></li>
                         </ul>
                       </dt>
                     </div>

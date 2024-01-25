@@ -1382,6 +1382,14 @@ footer
   }
 }
 
+.held {
+  display: block;
+}
+
+.held + .held {
+  margin-top: 3rem;
+}
+
 /*
 main
 -----------------------------------------------------*/
@@ -2211,11 +2219,19 @@ list
 .c-list-form {
   font-size: clamp(0.875rem, 0.18vw + 0.81875rem, 1rem);
 }
-.c-list-form > dt {
+.c-list-form dt {
   margin-bottom: 0.5rem;
 }
-.c-list-form > dd + dt {
+.c-list-form dd span {
+  font-size: clamp(0.75rem, 0.09vw + 0.71875rem, 0.8125rem);
+  display: block;
+}
+.c-list-form dd + dt {
   margin-top: 40px;
+}
+
+[data-class=wpcf7cf_group] {
+  padding-top: 40px;
 }
 
 /*
@@ -4036,6 +4052,7 @@ post
 }
 .p-entry .p-post-list li h3 + p {
   margin-top: 1rem;
+  display: inline;
 }
 .p-entry .p-post-list li + li {
   margin-top: 0;

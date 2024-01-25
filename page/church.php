@@ -11,7 +11,7 @@
 <section class="l-spacer -medium -both">
   <div class="l-container--primary">
     <h1 class="c-title-ex-large">教会</h1>
-    <p>木立を抜けて丘をのぼっていくと、2つの教会に辿り着きます。日常から離れ、木洩れ日に包まれて、ゆっくり深呼吸しませんか。</p>
+    <p>木立を抜けて丘をのぼっていくと、2つの教会に辿り着きます。日常から離れ、木洩れ陽に包まれて、ゆっくり深呼吸しませんか。</p>
   </div>
 </section>
 
@@ -28,7 +28,7 @@
           軽井沢は、1886 年の英国国教会宣教師来訪を機に、教会文化が育まれてきた場所です。「軽井沢高原教会」は1921 年「芸術自由教育講習会」を原点に誕生しました。北原白秋や島崎藤村など、当時の文化人が集った歴史を持ちます。誰もが自由に集い語り合う精神は今なお受け継がれ、世代を越えて親しまれています。</p>
         </div>
         <div class="l-spacer -em2">
-          <a href="https://www.karuizawachurch.org/" target="_blank" class="c-button-block -yellow -arrow -more"><span>詳細</span></a>
+          <a href="https://www.karuizawachurch.org/" target="_blank" class="c-button-block -yellow -arrow -more"><span>施設サイト</span></a>
         </div>
       </div>
     </article>
@@ -44,12 +44,12 @@
       <div class="l-contents-2column__block -w-1_2--left">
         <h3 class="c-title-large">石の教会 内村鑑三記念堂</h3>
         <div class="l-spacer -em2">
-          <p>キリスト教者・内村鑑三は、形式や制度にとらわれない、日本人のための教会の在り方を説きました。<br>
-          彼にとって、教会とは神が創造した世界そのもののことでした。そしてその豪壮たる世界の中におかれているいのちは、ありのままで祈ることができると考えていました。<br>
-          こうした思想が、あらゆる人に開かれた「石の教会 内村鑑三記念堂」の礎となっています。フランク・ロイド・ライトの流れをくむケンドリック・ケロッグは、この土地の個性を感じ取り、彼の思想をオーガニック建築の粋に込めました。光が差して緑が茂り、水が流れるこの教会は、自然との対話の中から生まれた祈りの空間です。</p>
+          <p>キリスト教者・内村鑑三は、形式や制度にとらわれない、教会の在り方を説きました。<br>
+          彼にとって、教会とは神が創造した世界そのもののことでした。そしてその豪壮たる世界の中におかれているいのちは、ありのままで祈ることができると考えていました。こうした思想が、「石の教会 内村鑑三記念堂」の礎となっています。<br>
+          フランク・ロイド・ライトを師と仰ぐケンドリック・ケロッグは、この土地の個性を感じ取り、彼の思想をオーガニック建築で表現しました。堅固な石のアーチ、その間から光が差して緑が茂り、水が流れるこの教会は、自然との対話の中から生まれた祈りの空間です。</p>
         </div>
         <div class="l-spacer -em2">
-          <a href="https://www.stonechurch.jp/" target="_blank" class="c-button-block -yellow -arrow -more"><span>詳細</span></a>
+          <a href="https://www.stonechurch.jp/" target="_blank" class="c-button-block -yellow -arrow -more"><span>施設サイト</span></a>
         </div>
       </div>
     </article>

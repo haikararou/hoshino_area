@@ -24,17 +24,17 @@
 
         <div class="-mgB-m c-border-4">
           <h3 class="c-title-small">満車予測時間帯</h3>
-          <p class="-mgB-s">中軽井沢駅寄りの駐車場から混み合います。<br>満車の場合は路上で待機せず、［P6］へお進みください。</p>
+          <p class="-mgB-s">中軽井沢駅寄りの駐車場から混み合います。<br>満車の場合は路上で待機せず、次の駐車場へお進みください。</p>
           <dl class="c-list-dl">
             <dt>平日</dt>
             <dd>
-              <p><span class="c-text-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-parking_02.svg" width="28" height="28" class="icon2"> <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-parking_03.svg" width="28" height="28" class="icon2"> ハルニレテラス付近</span>11～14時頃に混み合うことが多いです。</p>
-              <p><span class="c-text-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-parking_01.svg" width="28" height="28" class="icon2"> トンボの湯・村民食堂付近</span>12～13時頃に混み合うことが多いです。</p>
+              <p><span class="c-text-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-parking_02.svg" width="28" height="28" class="icon2">（中） <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-parking_03.svg" width="28" height="28" class="icon2">（小） ハルニレテラス付近</span>11～14時頃<br>
+              <span class="c-text-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-parking_01.svg" width="28" height="28" class="icon2">（大） トンボの湯・村民食堂付近</span>12～13時頃</p>
             </dd>
             <dt>土日祝</dt>
             <dd>
-              <p><span class="c-text-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-parking_02.svg" width="28" height="28" class="icon2"> <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-parking_03.svg" width="28" height="28" class="icon2"> ハルニレテラス付近</span></p>
-              <p><span class="c-text-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-parking_01.svg" width="28" height="28" class="icon2"> トンボの湯・村民食堂付近</span>11～14時頃に混み合います。</p>
+              <p><span class="c-text-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-parking_02.svg" width="28" height="28" class="icon2">（中） <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-parking_03.svg" width="28" height="28" class="icon2">（小） ハルニレテラス付近</span>
+              <span class="c-text-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-parking_01.svg" width="28" height="28" class="icon2">（大） トンボの湯・村民食堂付近</span>11～14時頃</p>
             </dd>
           </dl>
         </div>
@@ -56,7 +56,7 @@
             <dt>駐車料金（P1-P3）</dt>
             <dd>最初の30分　無料<br>以降1時間毎　300円（上限3,000円）</dd>
             <dt>サービス料金</dt>
-            <dd>トンボの湯、ピッキオ、村民食堂、ハルニレテラス各店舗で合計2,000円以上ご利用いただくと、</dd>
+            <dd>トンボの湯、ピッキオ、村民食堂、ハルニレテラス各店舗で合計2,000円以上ご利用いただくと、無料駐車時間を2時間まで延長します。</dd>
             <dt>営業時間</dt>
             <dd>時間　7：00～23：00（店舗営業時間に準ずる）</dd>
             <dt>ご案内事項</dt>

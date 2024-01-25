@@ -255,13 +255,20 @@ list
 
 .c-list-form {
   @include inc.sizingRem(font-size, full, 16px, wsp, 14px);
-  > dt {
+  dt {
     margin-bottom: .5rem;
   }
-  > dd {
+  dd {
+    span {
+      @include inc.sizingRem(font-size, full, 13px, wsp, 12px);
+      display: block;
+    }
   }
-  > dd + dt {
+  dd + dt {
     margin-top: 40px;
   }
 }
 
+[data-class="wpcf7cf_group"] {
+  padding-top: 40px;
+}

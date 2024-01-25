@@ -103,7 +103,7 @@
     </div>
   </a>
 
-<?php if(is_archive('shop') || is_page('harunireterrace') || is_page('tombo-no-yu') || is_page('sonmin-shokudo') || is_page('kera-ike-icerink') || is_page('facility')): ?>
+<?php if(is_archive('shop') || is_page('harunireterrace') || is_page('tombo-no-yu') || is_page('sonmin-shokudo') || is_page('kera-ike-icerink') || is_page('facility') || is_page('access')): ?>
   <main id="" class="l-main -cxl">
 <?php else: ?>
   <main id="" class="l-main">

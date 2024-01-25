@@ -199,39 +199,17 @@
   </div>
 </section>
 
-<section class="l-spacer -medium -both">
+<section class="l-spacer -medium -both  p-tombo__faq">
   <div class="l-container--primary">
     <article class="l-contents--left-title -title-large">
       <h2 class="c-title-large -vertical l-contents--left-title__title"><span>アクセス</span>よくある質問</h2>
       <div class="l-contents--left-title__conts">
-
         <dl class="p-faq-list">
           <div class="p-faq-list__item">
             <dt class="p-faq-list__question">コインロッカーはありますか？</dt>
             <dd class="p-faq-list__answer">
-              <p>
-                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-              </p>
-              <p>
-                <a href="#" class="c-button-arrow c-text-underline"><span>詳細はこちら</span></a><br>
-              </p>
+              <p>コインロッカーのご用意はございません。軽井沢駅や中軽井沢駅のコインロッカーをご利用ください。</p>
             </dt>
-          </div>
-          <div class="p-faq-list__item">
-            <dt class="p-faq-list__question">犬と一緒に利用できますか？</dt>
-            <dd class="p-faq-list__answer">
-              <p>
-                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-              </p>
-            </dt>
-          </div>
-          <div class="p-faq-list__item">
-            <dt class="p-faq-list__question">犬と一緒に利用できますか？</dt>
-            <dd class="p-faq-list__answer">
-              <p>
-                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-              </p>
-              </dt>
           </div>
         </dl>
       </div>

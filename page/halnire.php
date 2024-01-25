@@ -26,7 +26,7 @@
 	<section class="l-spacer -medium0000000000 -both000000000  p-harunire__lead">
 		<div class="l-container--primary">
 			<div class="p-harunire__lead__inner">
-				<h2 class="c-title-ex-small">軽井沢の日常を過ごす<br>森の中の小さな街</h1>
+				<h2 class="c-title-ex-small">軽井沢の日常が流れる<br>森の中の小さな街</h1>
 				<p>「軽井沢の日常」をコンセプトにした、森の中の小さな街。ハルニレの木立の中、湯川の清流沿いに連なる建物を、ウッドデッキでつないでいます。豊かな自然と個性的なお店が、星野エリアでの一日を彩ります。</p>
 			</h2>
 		</div>

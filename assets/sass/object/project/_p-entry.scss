@@ -265,6 +265,7 @@ post
       list-style-type: none;
       h3 + p {
         margin-top: 1rem;
+        display: inline;
       }
     }
     li + li {

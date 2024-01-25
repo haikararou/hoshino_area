@@ -46,25 +46,6 @@
 
 	<?php $title ="村民食堂の"; get_template_part('event/list-3-facility'); ?>
 
-	<section class="l-spacer -medium -both c-border-t  p-sonmin__pickup">
-		<div class="l-container--primary">
-			<article class="l-contents-2column">
-				<div class="l-contents-2column__block -w-2_3">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/sonmin/fair.jpg">
-				</div>
-				<div class="l-contents-2column__block -w-1_3 c-block-conts-center">
-					<div class="l-spacer -small -both">
-						<h2 class="c-title-small"><span>イベント情報</span>信州夏うまっ！フェア</h2>
-						<p class="c-text-gold">期間 : 2023.10.15</p>
-						<p>
-							<a href="#" class="c-button-block -lightyellow -arrow"><span>詳しくはこちら</span></a>
-						</p>
-					</div>
-				</div>
-			</article>
-		</div>
-	</section>
-
 	<section class="l-spacer -medium -both c-border-t l-contents--ribbon-title">
 		<div class="l-container--primary">
 			<article class="l-contents--left-title -ribbon">
@@ -215,7 +196,7 @@
 
 </section>
 
-<!--section class="l-spacer -medium -both">
+<section class="l-spacer -medium -both  p-tombo__faq">
 	<div class="l-container--primary">
 		<article class="l-contents--left-title -title-large">
 			<h2 class="c-title-large -vertical l-contents--left-title__title"><span>トンボの湯</span>よくある質問</h2>
@@ -223,45 +204,22 @@
 
 				<dl class="p-faq-list">
 					<div class="p-faq-list__item">
-						<dt class="p-faq-list__question">犬と一緒に利用できますか？</dt>
+						<dt class="p-faq-list__question">アレルギー対応はできますか？</dt>
 						<dd class="p-faq-list__answer">
-							<p>
-								テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-							</p>
-							<p>
-								<a href="#" class="c-button-arrow c-text-underline"><span>詳細はこちら</span></a><br>
-							</p>
+							<p>アレルゲン一覧表をご用意しております。除去の保証は致しかねますことをご承知頂き、ご利用願います。</p>
 						</dt>
 					</div>
 					<div class="p-faq-list__item">
-						<dt class="p-faq-list__question">天気・気候を教えてください。</dt>
+						<dt class="p-faq-list__question">離乳食はありますか？</dt>
 						<dd class="p-faq-list__answer">
-							<p>
-								テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-							</p>
+							<p>離乳食（7ヶ月・9ヶ月・12ヶ月の3種類、各500円）をご用意しております。ご予約不要です。</p>
 						</dt>
-					</div>
-					<div class="p-faq-list__item">
-						<dt class="p-faq-list__question">タクシーにはどこで乗ることができますか？</dt>
-						<dd class="p-faq-list__answer">
-							<p>
-								テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-							</p>
-							</dt>
-					</div>
-					<div class="p-faq-list__item">
-						<dt class="p-faq-list__question">コインロッカーはありますか？</dt>
-						<dd class="p-faq-list__answer">
-							<p>
-								テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-							</p>
-							</dt>
 					</div>
 				</dl>
 			</div>
 		</article>
 	</div>
-</section-->
+</section>
 
 <div class="l-spacer">
 	<div class="l-container--wide">

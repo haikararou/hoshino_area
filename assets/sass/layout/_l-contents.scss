@@ -137,3 +137,10 @@
     
   }
 }
+
+.held {
+  display: block;
+}
+.held + .held {
+  margin-top: 3rem;
+}

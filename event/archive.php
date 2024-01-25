@@ -41,30 +41,31 @@ $args = array(
 );
 $wp_query = new WP_Query( $args );
 ?>
+
 <section class="l-spacer -medium -both">
     <div class="l-container--primary">
         <article class="l-contents--left-title">
             <h2 class="c-title-large -vertical l-contents--left-title__title">開催中のイベント</h2>
             <?php if ( $wp_query->have_posts() ): ?>
-            <?php while ( $wp_query->have_posts() ): $wp_query->the_post(); ?>
             <div class="l-contents--left-title__conts">
-            <a href="<?php the_permalink(); ?>">
-                <div class="l-contents-2column">
-                    <div class="l-contents-2column__block -w-1_2--left">
-                    <?php if(has_post_thumbnail()) : ?>
-                        <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post_id)); ?>" alt="<?php the_title(); ?>" />
-                    <?php endif; ?>
+            <?php while ( $wp_query->have_posts() ): $wp_query->the_post(); ?>
+                <a href="<?php the_permalink(); ?>" class="held">
+                    <div class="l-contents-2column">
+                        <div class="l-contents-2column__block -w-1_2--left">
+                        <?php if(has_post_thumbnail()) : ?>
+                            <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post_id)); ?>" alt="<?php the_title(); ?>" />
+                        <?php endif; ?>
+                        </div>
+                        <div class="l-contents-2column__block -w-1_2--right">
+                            <h3 class="c-title-small"><span><?php $terms = get_the_terms($post->ID,'event_cat'); if($terms){echo $terms[0]->name;} ?></span><?php the_title(); ?></h3>
+                            <?php if(get_field('event_period')): ?><p class="p-post-card__period"><span><?php the_field('event_period'); ?></span></p><?php endif; ?>
+                        </div>
                     </div>
-                    <div class="l-contents-2column__block -w-1_2--right">
-                        <h3 class="c-title-small"><span><?php $terms = get_the_terms($post->ID,'event_cat'); if($terms){echo $terms[0]->name;} ?></span><?php the_title(); ?></h3>
-                        <?php if(get_field('event_period')): ?><p class="p-post-card__period"><span><?php the_field('event_period'); ?></span></p><?php endif; ?>
-                    </div>
-                </div>
-                        </a>
-            </div>
+                </a>
             <?php endwhile; ?>
+            </div>
             <?php else : ?>
-                <p>記事が見つかりませんでした。</p>
+            <p>現在開催中のイベントはございません。</p>
             <?php endif; ?>
             <?php wp_reset_query(); ?>
         </article>
@@ -109,7 +110,7 @@ $wp_query = new WP_Query( $args );
                 <?php endwhile; ?>
                 </ul>
                 <?php else : ?>
-                <p>記事が見つかりませんでした。</p>
+                <p>近日開催予定のイベントはございません。</p>
                 <?php endif; ?>
                 <?php wp_reset_query(); ?>
 

@@ -111,15 +111,15 @@
 				<div class="swiper-wrapper">
 					<div class="swiper-slide p-gallery-slider__slide">
 						<img class="p-gallery-slider__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/tombo/slide01.jpg">
-						<p class="p-gallery-slider__caption">内湯</p>
+						<p class="p-gallery-slider__caption">内湯 7.6mの高い天井と大きな窓が特徴 </p>
 					</div>
 					<div class="swiper-slide p-gallery-slider__slide">
 						<img  class="p-gallery-slider__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/tombo/slide02.jpg">
-						<p class="p-gallery-slider__caption">露天風呂</p>
+						<p class="p-gallery-slider__caption">露天風呂 季節の移り変わりを映す池の修景</p>
 					</div>
 					<div class="swiper-slide p-gallery-slider__slide">
 						<img  class="p-gallery-slider__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/tombo/slide03.jpg">
-						<p class="p-gallery-slider__caption">サウナ</p>
+						<p class="p-gallery-slider__caption">サウナ 静かなBGMが流れるシンプルな空間</p>
 					</div>
 				</div>
 			</div>
@@ -165,9 +165,9 @@
 							<div class="l-contents-2column__block -w-1_2--right  c-block-conts-center">
 								<div>
 									<h3 class="c-title-small">カフェハングリースポット</h3>
-									<p>お風呂上がりは、徒歩０分のカフェ ハングリースポットへ。季節限定ドリンクやクラフトビール、ソフトクリームをお楽しみください。</p>
+									<p>隣接するカフェ ハングリースポットでは、季節限定ドリンクやクラフトビール、ソフトクリームなどをご用意しています。休憩場所としても、お待ち合わせ場所としてもおすすめです。</p>
 									<p>
-										<a href="#" class="c-button-block -lightyellow -arrow"><span>もっと見る</span></a>
+										<a href="<?php echo home_url('/shop/hungryspot'); ?>" class="c-button-block -lightyellow -arrow"><span>もっと見る</span></a>
 									</p>
 								</div>
 							</div>
@@ -345,53 +345,23 @@
 
 </section>
 
-<!-- <section class="l-spacer -medium -both  p-tombo__faq">
+<section class="l-spacer -medium -both  p-tombo__faq">
 	<div class="l-container--primary">
 		<article class="l-contents--left-title -title-large">
 			<h2 class="c-title-large -vertical l-contents--left-title__title"><span>トンボの湯</span>よくある質問</h2>
 			<div class="l-contents--left-title__conts">
-
 				<dl class="p-faq-list">
 					<div class="p-faq-list__item">
-						<dt class="p-faq-list__question">犬と一緒に利用できますか？</dt>
+						<dt class="p-faq-list__question">再入場はできますか？</dt>
 						<dd class="p-faq-list__answer">
-							<p>
-								テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-							</p>
-							<p>
-								<a href="#" class="c-button-arrow c-text-underline"><span>詳細はこちら</span></a><br>
-							</p>
+							<p>当日4時間以内は再入場が可能です。詳細は、トンボの湯受付カウンターにてご案内いたします。</p>
 						</dt>
-					</div>
-					<div class="p-faq-list__item">
-						<dt class="p-faq-list__question">天気・気候を教えてください。</dt>
-						<dd class="p-faq-list__answer">
-							<p>
-								テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-							</p>
-						</dt>
-					</div>
-					<div class="p-faq-list__item">
-						<dt class="p-faq-list__question">タクシーにはどこで乗ることができますか？</dt>
-						<dd class="p-faq-list__answer">
-							<p>
-								テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-							</p>
-							</dt>
-					</div>
-					<div class="p-faq-list__item">
-						<dt class="p-faq-list__question">コインロッカーはありますか？</dt>
-						<dd class="p-faq-list__answer">
-							<p>
-								テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-							</p>
-							</dt>
 					</div>
 				</dl>
 			</div>
 		</article>
 	</div>
-</section> -->
+</section>
 
 <div class="l-spacer">
 	<div class="l-container--wide">

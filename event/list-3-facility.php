@@ -1,7 +1,5 @@
 <?php $today = date('Ymd'); ?>
-
 <?php Global $title; ?>
-
 <?php
 global $post;
 $slug = $post->post_name;
@@ -36,6 +34,7 @@ $args = array(
 );
 $wp_query = new WP_Query( $args );
 ?>
+<?php if ( $wp_query->have_posts() ): ?>
 <section class="l-spacer -medium -both c-border-t">
     <div class="l-container--primary">
         <article class="l-contents">
@@ -111,3 +110,4 @@ $wp_query = new WP_Query( $args );
         </article>
     </div>
 </section>
+<?php endif; ?>
