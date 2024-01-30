@@ -57,66 +57,6 @@
 
 	<?php get_template_part('news/list-3-facility'); ?>
 
-  <section class="l-spacer -medium -both">
-    <div class="l-container--primary">
-      <article class="l-contents--left-title">
-        <h2 class="c-title-large -vertical l-contents--left-title__title"><span>ショップからの</span>ニュース</h2>
-        <div class="l-contents--left-title__conts">
-          <ul class="p-post-list">
-            <li class="p-post-list__item">
-              <a href="">
-                <article class="p-post-card">
-                  <div class="p-post-card__img">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dummy/article1.jpg">
-                  </div>
-                  <div class="p-post-card__text">
-                    <p class="p-post-card__cat">ギャラリー樹環</p>
-                    <time class="p-post-card__date">2023.08.21</time>
-                    <h3 class="p-post-card__title">夏のこもれびワークショップを開催</h3>
-                    <p class="p-post-card__info">期間 : 2023.10.15</p>
-                  </div>
-                </article>
-              </a>
-            </li>
-            <li class="p-post-list__item">
-              <a href="">
-                <article class="p-post-card">
-                  <div class="p-post-card__img">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dummy/article2.jpg">
-                  </div>
-                  <div class="p-post-card__text">
-                    <p class="p-post-card__cat">カフェ ハングリースポット</p>
-                    <time class="p-post-card__date">2023.08.21</time>
-                    <h3 class="p-post-card__title">夏のおすすめドリンク</h3>
-                    <p class="p-post-card__info">期間 : 2023.10.15</p>
-                  </div>
-                </article>
-              </a>
-            </li>
-            <li class="p-post-list__item">
-              <a href="">
-                <article class="p-post-card">
-                  <div class="p-post-card__img">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dummy/article3.jpg">
-                  </div>
-                  <div class="p-post-card__text">
-                    <p class="p-post-card__cat">ピッキオ</p>
-                    <time class="p-post-card__date">2023.08.21</time>
-                    <h3 class="p-post-card__title">小学生の為の日帰りサマーキャンプ「ピッキオこども冒険クラブ」</h3>
-                    <p class="p-post-card__info">期間 : 2023.10.15</p>
-                  </div>
-                </article>
-              </a>
-            </li>
-          </ul>
-          <div class="l-spacer -em3 p-post-list__item__more">
-            <p><a href="#" class="c-button-block -lightyellow -arrow -more"><span>もっと見る</span></a></p>
-          </div>
-        </div>
-      </article>
-    </div>
-  </section>
-
   <section class="l-spacer -medium -both c-border-t">
     <div class="l-container--primary">
       <article class="l-contents--left-title -title-large">

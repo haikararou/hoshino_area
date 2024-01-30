@@ -150,7 +150,20 @@ $(function() {
     $('#'+$(this).data('target')).addClass('-active');
   });
   
-  
+
+
+$(window).on("load resize",function(){
+    if(window.matchMedia("(max-width:768px)").matches){
+    }else{
+      $('.facility-tab .c-tab-control__button.-white').addClass('-active');
+      $('.facility-tab .c-tab-control__button.-green').removeClass('-active');
+      $('#tab-list').addClass('-active');
+      $('#tab-map').removeClass('-active');
+    }
+});//end load resize
+
+
+
   //タブを指定してページを開いた場合
   $(function() {
     var urlHash = location.hash;

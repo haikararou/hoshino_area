@@ -266,19 +266,19 @@
         <div class="p-opening--scroll">
         <table class="p-opening--table -no-scroll">
             <tr>
-                <th class="p-opening--fixed02"><a href="" target="_blank"><div class="c-button-arrow c-button-outerlink">ブレストンコート　ユカワタン</div></th>
+                <th class="p-opening--fixed02"><a href="https://yukawatan.blestoncourt.com/" target="_blank"><div class="c-button-arrow c-button-outerlink">ブレストンコート　ユカワタン</div></th>
             </tr>
             <tr>
-                <th class="p-opening--fixed02"><a href="" target="_blank"><div class="c-button-arrow c-button-outerlink">ピッキオ</div></th>
+                <th class="p-opening--fixed02"><a href="https://picchio.co.jp/" target="_blank"><div class="c-button-arrow c-button-outerlink">ピッキオ</div></th>
             </tr>
             <tr>
-                <th class="p-opening--fixed02"><a href="" target="_blank"><div class="c-button-arrow c-button-outerlink">イカルカフェ</div></th>
+                <th class="p-opening--fixed02"><a href="http://www.besso-navi.com/" target="_blank"><div class="c-button-arrow c-button-outerlink">軽井沢 別荘Navi</div></th>
             </tr>
             <tr>
-                <th class="p-opening--fixed02"><a href="" target="_blank"><div class="c-button-arrow c-button-outerlink">軽井沢高原教会</div></th>
+                <th class="p-opening--fixed02"><a href="https://www.karuizawachurch.org/" target="_blank"><div class="c-button-arrow c-button-outerlink">軽井沢高原教会</div></th>
             </tr>
             <tr>
-                <th class="p-opening--fixed02"><a href="" target="_blank"><div class="c-button-arrow c-button-outerlink">石の教会 内村鑑三記念堂</div></th>
+                <th class="p-opening--fixed02"><a href="https://www.stonechurch.jp/" target="_blank"><div class="c-button-arrow c-button-outerlink">石の教会 内村鑑三記念堂</div></th>
             </tr>
             <!-- <tr>
                 <th class="p-opening--fixed02"><a href="" target="_blank"><div class="c-button-arrow c-button-outerlink">星のや軽井沢</div></th>
@@ -289,9 +289,7 @@
             <tr>
                 <th class="p-opening--fixed02"><a href="" target="_blank"><div class="c-button-arrow c-button-outerlink">星野リゾート　BEB5軽井沢</div></th>
             </tr>
-            <tr>
-                <th class="p-opening--fixed02"><a href="" target="_blank"><div class="c-button-arrow c-button-outerlink">軽井沢 別荘Navi</div></th>
-            </tr> -->
+            -->
         </table>
         </div>
     </div>

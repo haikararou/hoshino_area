@@ -7,7 +7,7 @@
 
 <footer class="l-footer">
   <div class="l-footer__outline">
-    <a href="<?php echo home_url('/facility'); ?>" class="u-transparent">
+    <a href="<?php echo home_url('/areamap'); ?>" class="u-transparent">
       <section class="l-footer-map l-footer-buttonlink">
         <h2 class="l-footer-buttonlink__title"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/ttl-area-map.svg" alt="軽井沢 星野エリアマップ" width="172" height="133"></h2>
         <p class="l-footer-map__text">Karuizawa Hoshino Area Map</p>
@@ -23,11 +23,11 @@
     </a>
   </div>
 
-  <?php get_template_part('news/list-important'); ?>
-
   <?php if(!is_archive('event') && !is_singular('event') && !is_page('ended')): ?>
   <?php get_template_part('event/list-3'); ?>
   <?php endif; ?>
+
+  <?php get_template_part('news/list-important'); ?>
 
   <?php if(is_page('harunireterrace')): ?>
   <?php get_template_part('news/list-3-facility'); ?>
@@ -61,12 +61,17 @@
     </nav>
   </div>
 
-  <div class="c-border-t">
+  <div class="c-border-t l-footer-position">
     <div class="l-footer__bottom">
       <nav>
         <?php get_template_part('inc/other-menu', null, $args); ?>
       </nav>
-      <a href="<?php echo home_url(); ?>" class="l-footer__logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/logo-en.png" width="170" height="17" alt="Hoshino resorts"></a>
+    </div>
+    <div class="l-footer__instagram">
+    <a class="c-text-icon instagram" href="https://www.instagram.com/harunireterrace/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-insta.svg" width="16" height="16" class="icon lazyloaded">Instagram</a>
+    </div>
+    <div class="l-footer__logo">
+      <a href="<?php echo home_url(); ?>" class="logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/logo-en.png" width="170" height="17" alt="Hoshino resorts"></a>
       <p class="l-footer__copyright">Copyright &copy; All rights reserved. Hoshino Resorts Inc.</p>
     </div>
   </div>

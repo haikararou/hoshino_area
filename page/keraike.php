@@ -146,12 +146,12 @@
 		<div class="l-contents-block c-bg-white">
 			<div class="l-contents-block__inner">
 				<div class="l-container--primary">
-					<article class="l-contents--left-title">
+					<article class="l-contents--left-title l-spacer -medium -both">
 						<h2 class="c-title-large -vertical l-contents--left-title__title">スケートの後は</h2>
 						<div class="l-contents--left-title__conts">
 							<div class="l-contents-2column">
 								<div class="l-contents-2column__block -w-1_2--left">
-									<img src="<?php echo get_template_directory_uri(); ?>/assets/img/keraike/after01.jpg">
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/img/keraike/ikarucafe_winter.jpg">
 								</div>
 								<div class="l-contents-2column__block -w-1_2--right">
 									<h3 class="c-title-small">イカルカフェでお茶</h3>
@@ -168,7 +168,7 @@
 						<h2 class="c-title-large -vertical l-contents--left-title__title"></h2>
 						<div class="l-contents-2column">
 							<div class="l-contents-2column__block -w-1_2--left">
-									<img src="<?php echo get_template_directory_uri(); ?>/assets/img/keraike/after02.jpg">
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/img/keraike/picchio_winter.jpg">
 								</div>
 								<div class="l-contents-2column__block -w-1_2--right">
 									<h3 class="c-title-small">ピッキオのネイチャーツアー</h3>

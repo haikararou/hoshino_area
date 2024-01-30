@@ -73,4 +73,30 @@
   </div>
 </section>
 
+<section class="l-spacer -medium -both  p-tombo__faq">
+	<div class="l-container--primary">
+		<article class="l-contents--left-title -title-large">
+			<h2 class="c-title-large -vertical l-contents--left-title__title">よくある質問</h2>
+			<div class="l-contents--left-title__conts">
+				<dl class="p-faq-list">
+					<div class="p-faq-list__item">
+						<dt class="p-faq-list__question">バイクはどこに駐車できますか？</dt>
+						<dd class="p-faq-list__answer">
+							<p>各駐車場付近にある駐輪場に駐車をお願いいたします。P1は村民食堂横、P2・P3は入口付近にございます。</p>
+						</dt>
+					</div>
+				</dl>
+				<dl class="p-faq-list">
+					<div class="p-faq-list__item">
+						<dt class="p-faq-list__question">キャンピングカーは駐車できますか？</dt>
+						<dd class="p-faq-list__answer">
+							<p>積載物又は取付物を含めて全長5.5m、幅2.2m、高さ3.5mを超える車両は、ゲートのある駐車場にはご入場頂けません。お越しの際はP6をご利用ください。</p>
+						</dt>
+					</div>
+				</dl>
+			</div>
+		</article>
+	</div>
+</section>
+
 <?php get_footer(); ?>

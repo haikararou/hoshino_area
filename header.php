@@ -73,7 +73,7 @@
       </ul>
       
       <div class="c-gmenu-secondary l-header-menu__secondary">
-        <a href="<?php echo home_url('/facility'); ?>" class="c-button-arrow c-gmenu-secondary__textbtn">施設を探す</a>
+        <a href="<?php echo home_url('/areamap'); ?>" class="c-button-arrow c-gmenu-secondary__textbtn">施設を探す</a>
         <a href="<?php echo home_url('/business-hours'); ?>" class="c-button-block -white -icon c-gmenu-secondary__blockbtn"><i class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-clock.svg"></i>営業時間</a>
         <a href="<?php echo home_url('/parking'); ?>" class="c-button-block -white -icon c-gmenu-secondary__blockbtn"><i class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-parking.svg"></i>駐車場</a>
         </ul>
@@ -96,14 +96,14 @@
     </div>
   </header>
   
-  <a href="<?php echo home_url('/facility'); ?>" id="js-areamap">
+  <a href="<?php echo home_url('/areamap'); ?>" id="js-areamap">
     <div class="c-button-areamap">
       <img class="c-button-areamap__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/common/areamap.svg" width="71" height="71">
       <p class="c-button-areamap__text">Area Map</p>
     </div>
   </a>
 
-<?php if(is_archive('shop') || is_page('harunireterrace') || is_page('tombo-no-yu') || is_page('sonmin-shokudo') || is_page('kera-ike-icerink') || is_page('facility') || is_page('access')): ?>
+<?php if(is_archive('shop') || is_page('harunireterrace') || is_page('tombo-no-yu') || is_page('sonmin-shokudo') || is_page('kera-ike-icerink') || is_page('areamap') || is_page('access') || is_page('parking')): ?>
   <main id="" class="l-main -cxl">
 <?php else: ?>
   <main id="" class="l-main">

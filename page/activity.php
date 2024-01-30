@@ -62,7 +62,7 @@
   <div class="l-container--primary">
     <article class="l-contents-2column">
       <div class="l-contents-2column__block -w-1_2">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dummy/black1.jpg">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/activity/crafy.jpg">
       </div>
       <div class="l-contents-2column__block -w-1_2--left">
         <div class="p-activity--title">

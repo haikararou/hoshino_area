@@ -39,7 +39,7 @@
   <div class="l-container--primary">
     <article class="l-contents-2column">
       <div class="l-contents-2column__block -w-1_2">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dummy/black1.jpg">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/church/stonechurch.jpg">
       </div>
       <div class="l-contents-2column__block -w-1_2--left">
         <h3 class="c-title-large">石の教会 内村鑑三記念堂</h3>
