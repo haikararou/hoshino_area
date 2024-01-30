@@ -61,6 +61,184 @@ facility
 	}
 }
 
+.home .facility-flex {
+	background: inc.$theme-color-lightyellow;
+	@include inc.mq(tab) {
+		background: none;
+	}
+	display: flex;
+	flex-wrap: wrap;
+	&-img {
+		background: #D7E6AF;
+		padding: 0 0%;
+		width: 100%;
+		display: block;
+		@include inc.mq(tab) {
+			display: block;
+			width: 50%;
+		}
+	}
+	&-txt {
+		@include inc.sizing(width, full, 1470px, sp, 330px);
+		max-width: 90%;
+		margin: 0 auto;
+		padding: 6rem 0 0 0;
+		@include inc.mq(tab) {
+			padding: 0;
+		}
+		border-top: 1px solid #E8E8D6;
+		@include inc.mq(tab) {
+			width: 50%;
+			max-width: auto;
+			padding: 6rem 6vw 0;
+			border-top: none;
+		}
+		.home_txt {
+			padding: 0 0 2rem 0;
+			@include inc.mq(tab) {
+				padding: 0 0 6rem 0;
+			}
+			&_lead {
+				text-align: left;
+				@include inc.mq(tab) {
+					text-align: right;
+				}
+			}
+			.home_flx {
+				display: flex;
+				flex-wrap: wrap;
+				padding: 2rem 0 0 0;
+				@include inc.mq(tab) {
+					display: block;
+					column-count: 2;
+					column-gap: 1.5rem;
+					padding: 0;
+				}
+				figure {
+					display: flex;
+					flex-wrap: wrap;
+					width: 100%;
+					@include inc.mq(tab) {
+						display: block;
+					}
+					div {
+						max-width: 80%;
+						width: 100%;
+						@include inc.mq(tab) {
+							max-width: 100%;
+						}
+						img {
+							margin-bottom: .3rem;
+						}
+					}
+				}
+				figure + figure {
+					@include inc.mq(tab) {
+						margin-top: 1.2rem;
+					}
+					margin-top: 1.5rem;
+				}
+				.c-text-icon .icon {
+					margin-top: 5px;
+				}
+				.no01 {
+					order: 1;
+				}
+				.no02 {
+					order: 2;
+					flex-direction: row-reverse;
+				}
+				.no03 {
+					order: 3;
+				}
+				.no04 {
+					order: 4;
+					flex-direction: row-reverse;
+				}
+				.no05 {
+					order: 5;
+				}
+				.no06 {
+					order: 6;
+					flex-direction: row-reverse;
+				}
+				.no01,
+				.no02,
+				.no03,
+				.no04,
+				.no05,
+				.no06 {
+					figcaption {
+						span {
+							&::before {
+								content: "1";
+								font-family: "Helvetica Neue",sans-serif;
+								color: #BE9424;
+								font-size: 18px;
+								font-weight: 700;
+								margin-right: .5rem;
+							}
+						}
+					}
+				}
+				.no02 {
+					@include inc.mq(tab) {
+						padding-top: 4rem;
+					}
+					figcaption {
+						span {
+							&::before {
+								content: "2";
+							}
+						}
+					}
+				}
+				.no03 {
+					figcaption {
+						span {
+							&::before {
+								content: "3";
+							}
+						}
+					}
+				}
+				.no04 {
+					figcaption {
+						span {
+							&::before {
+								content: "4";
+							}
+						}
+					}
+				}
+				.no05 {
+					figcaption {
+						span {
+							&::before {
+								content: "5";
+							}
+						}
+					}
+				}
+				.no06 {
+					figcaption {
+						span {
+							&::before {
+								content: "6";
+							}
+						}
+					}
+				}
+				figcaption {
+					span {
+						position: relative;
+					}
+				}
+			}
+		}
+	}
+}
+
 
 .p-facility {
 	&-list {
@@ -195,6 +373,12 @@ facility
 				text-decoration: underline;
 				text-underline-offset: 2px;
 			}
+		}
+	}
+	&.-home {
+		display: block;
+		@include inc.mq(tab) {
+			display: none;
 		}
 	}
 }

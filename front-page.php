@@ -142,7 +142,47 @@ $wp_query = new WP_Query( $args );
     </dl>
 <?php /*postSingle：END*/ ?>
 
-<p><br></p>
-<p><br></p>
+
+
+<div class="s_0900000000">
+  <div class="accordion_area">
+    <div class="-block">
+      <div class="accordion_header open">
+        <div>自然との共生</div>
+      </div>
+      <div class="accordion_inner">
+        <div>
+          <figure>
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/accordion01.jpg" alt="">
+          </figure>
+          <p>星野エリアは遥か昔から、豊かな自然と共生してきました。<br>広大な野鳥の森には、年間約80種類の野鳥が見られ、ムササビやニホンカモシカなど、多くの野生動植物が生息しています。浅間山の雪解け水は湯川となり、心地よいせせらぎがエリア全体に響いています。ずっと変わらない森の情景が、訪れる人たちを、優しく包み込みます。</p>
+        </div>
+      </div>
+    </div>
+    <div class="-block -2nd">
+      <div class="accordion_header">
+        <div>今に続く歴史の足跡</div>
+      </div>
+      <div class="accordion_inner">
+        <div>
+          <p>星野エリアは遥か昔から、豊かな自然と共生してきました。<br>広大な野鳥の森には、年間約80種類の野鳥が見られ、ムササビやニホンカモシカなど、多くの野生動植物が生息しています。浅間山の雪解け水は湯川となり、心地よいせせらぎがエリア全体に響いています。ずっと変わらない森の情景が、訪れる人たちを、優しく包み込みます。</p>
+        </div>
+      </div>
+    </div>
+    <div class="-block">
+      <div class="accordion_header">
+        <div>暮らすような滞在</div>
+      </div>
+      <div class="accordion_inner">
+        <div>
+          <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
 
 <?php get_footer(); ?>

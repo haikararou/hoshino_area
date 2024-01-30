@@ -1,0 +1,198 @@
+@charset 'UTF-8';
+@use "../../inc/" as inc;
+/*
+home
+-----------------------------------------------------*/
+.p-home-list {
+  //border-top: 1px solid inc.$theme-color-yellow;
+  display: flex;
+  flex-wrap: wrap;
+  &__item {
+    // border-bottom: 1px solid inc.$theme-color-yellow;
+    // transition: background .3s;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    height: 600px;
+    position: relative;
+    //max-width: calc(100% - (127px * 2));
+    max-width: 80%;
+    display: flex;
+    transition: transform .3s;
+    cursor: pointer;
+    &::before,
+    &::after {
+      content: '';
+      @include inc.sizing(width, full, 32px, sp, 16px);
+      height: 1px;
+      position: absolute;
+      right: 1em;
+      top: 1.6rem;
+      margin: auto;
+      display: block;
+      background: inc.$theme-color-darkyellow;
+      transition: transform .3s;
+      @include inc.mq(lap) {
+        right: unset;
+        left: 45px;
+        top: unset;
+        bottom: 2.6rem;
+      }
+    }
+    &::after {
+      transform: rotate(90deg);
+    }
+    &.-open {
+      //width: calc(100% - (128px * 2));
+      //background: inc.$theme-color-lightyellow;
+      &::after {
+        transform: rotate(0);
+      }
+    }
+    &:nth-child(2) {
+      border-left: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+    }
+  }
+  &__title {
+    @include inc.sizingRem(font-size, full, 16px, sp, 14px);
+    padding: 1em 3em;
+    width: 100%;
+    position: relative;
+    @include inc.mq(lap) {
+      //padding: 2em 5em;
+      width: 126px;
+      width: 10%;
+    }
+  }
+  .-open &__title {
+    width: 124px;
+    width: 10%
+  }
+  &__conts {
+    @include inc.sizingRem(font-size, full, 16px, sp, 14px);
+    line-height: 1.6;
+    padding: 0 1em 1em 3em;
+    position: relative;
+    display: none;
+    width: 0;
+    @include inc.mq(tab) {
+      padding: 0 3em 1em 3em;
+    }
+    // @include inc.mq(lap) {
+    //   padding: 0 5em 2em 5em;
+    // }
+  }
+  .-open &__conts {
+    display: block;
+    width: 100%;
+  }
+}
+
+
+
+
+.accordion_area {
+	max-width: 100%;
+	margin: 0 auto;
+	height: 600px;
+	overflow: hidden;
+  border-top: 1px solid #E0E0D6;
+  border-bottom: 1px solid #E0E0D6;
+}
+.accordion_area .-block .accordion_header {
+	display: flex;
+	align-items: center;
+	width: 126px;
+	height: 600px;
+  @include inc.sizingRem(font-size, full, 32px, sp, 20px);
+	float: left;
+	position: relative;
+	z-index: +1;
+	cursor: pointer;
+	transition-duration: 0.2s;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-feature-settings: initial;
+  padding-top: 5rem;
+  &::before,
+  &::after {
+    content: '';
+    @include inc.sizing(width, full, 32px, sp, 16px);
+    height: 1px;
+    position: absolute;
+    left: 47px;
+    bottom: 2.6rem;
+    margin: auto;
+    display: block;
+    background: inc.$theme-color-darkyellow;
+    transition: transform .3s;
+    @include inc.mq(lap) {
+      left: 47px;
+      bottom: 2.6rem;
+    }
+  }
+  &::after {
+    transform: rotate(90deg);
+  }
+  &.open {
+    &::after {
+      transform: rotate(0);
+    }
+  }
+}
+.accordion_area .-block:nth-child(2) .accordion_header {
+  border-left: 1px solid #E0E0D6;
+}
+.accordion_area .-block:nth-child(3) .accordion_header {
+  border-left: 1px solid #E0E0D6;
+}
+.accordion_area .-block .accordion_header.open + .accordion_inner {
+  display: block;
+}
+.accordion_area .-block .accordion_inner {
+	float: left;
+	width: calc(100% - (126px * 3));
+	height: 600px;
+	overflow: hidden;
+	display: none;
+	//padding: 0;
+	//box-sizing: border-box;
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 3rem;
+    padding: 5rem 5rem 5rem 1rem;
+    img {
+      max-width: 430px;
+      height: auto;
+    }
+    p {
+      max-width: 430px;
+    }
+  
+  }
+}
+// .s_09 .-block .accordion_inner .-box {
+// 	padding: 15px;
+// }
+
+// .s_09 .-block .accordion_inner p.txt_a_ac {
+// 	margin: 0;
+// }
+
+// @media screen and (max-width: 1024px) {
+// 	.s_09 .-block .accordion_header {
+// 		font-size: 18px;
+// 	}
+// 	.s_09 .-block .accordion_header .i_box {
+// 		width: 30px;
+// 		height: 30px;
+// 		margin-top: -15px;
+// 	}
+// }
+// @media screen and (max-width: 767px) {
+// 	.s_09 .-block .accordion_header {
+// 		justify-content: flex-start;
+// 		font-size: 16px;
+// 	}
+// }
