@@ -15,15 +15,15 @@
   </div>
 </section>
 
-<section class="l-spacer -medium -both">
-  <div class="l-container--primary">
+<section class="l-spacer -medium -both" id="picchio">
+ <div class="l-container--primary">
     <article class="l-contents-2column">
       <div class="l-contents-2column__block -w-1_2">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/activity/picchio.jpg">
       </div>
       <div class="l-contents-2column__block -w-1_2--left">
         <div class="p-activity--title">
-          <h3 class="c-title-large">ピッキオ</h3>
+          <h3 class="c-title-large"><span class="c-title-sub">自然体験</span>ピッキオ</h3>
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/activity/logo_picchio.svg">
         </div>
         <div class="l-spacer -em2">
@@ -45,13 +45,13 @@
       </div>
       <div class="l-contents-2column__block -w-1_2--left">
         <div class="p-activity--title">
-          <h3 class="c-title-large">ケラ池スケートリンク</h3>
+          <h3 class="c-title-large"><span class="c-title-sub">アイススケート</span>ケラ池スケートリンク</h3>
         </div>
         <div class="l-spacer -em2">
-          <p>ケラ池スケートリンクは、「森を感じるスケートリンク」がコンセプト。秋の紅葉の時期からスケートリンクが現れ、寒さが増すごとに池一面の氷が厚さを増し、厳冬期には天然氷でのスケートもができるようになります。森の小鳥の声に軽井沢の自然を感じながら、氷上散歩を楽しんでみませんか。</p>
+          <p>「森を感じるスケートリンク」がコンセプト。秋の紅葉の時期からスケートリンクが現れ、寒さが増すごとに池一面の氷が厚さを増し、厳冬期には天然氷でのスケートもができるようになります。森の小鳥の声に軽井沢の自然を感じながら、氷上散歩を楽しんでみませんか。</p>
         </div>
         <div class="l-spacer -em2">
-          <a href="<?php echo home_url('/kera-ike-icerink'); ?>" class="c-button-block -yellow -arrow -more"><span>施設サイト</span></a>
+          <a href="<?php echo home_url('/kera-ike-icerink'); ?>" class="c-button-block -yellow -arrow -more"><span>もっと見る</span></a>
         </div>
       </div>
     </article>
@@ -66,14 +66,14 @@
       </div>
       <div class="l-contents-2column__block -w-1_2--left">
         <div class="p-activity--title">
-          <h3 class="c-title-large"><span class="c-title-sub">ハルニレテラス</span>CRAFY・glänta</h3>
+          <h3 class="c-title-large"><span class="c-title-sub">手作り指輪工房</span>CRAFY・glänta</h3>
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/activity/logo_crafy.jpg">
         </div>
         <div class="l-spacer -em2">
           <p>指輪を手作りできる工房です。初めてでも思い通りの指輪作りができるよう、専任のスタッフが丁寧にサポートします。体験を通して、軽井沢の思い出となるような「豊かな時間」を提供します。</p>
         </div>
         <div class="l-spacer -em2">
-          <a href="<?php echo home_url('/shop/cercle/'); ?>" class="c-button-block -yellow -arrow -more"><span>施設サイト</span></a>
+          <a href="<?php echo home_url('/shop/cercle/'); ?>" class="c-button-block -yellow -arrow -more"><span>もっと見る</span></a>
         </div>
       </div>
     </article>

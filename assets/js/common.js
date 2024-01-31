@@ -211,28 +211,16 @@ $(window).on("load resize",function(){
   });
 
 
-  // HOMEアコーディオン
-  $(function(){
-    //p-home-list__itemの中の.accordion_headerがクリックされたら
-    $('.p-home-list__item').click(function(){
-      $(this).animate({width:'100%'});
-      $(this).addClass("-open");
-      $('.p-home-list__item').not($(this)).animate({width:'126px'});
-      $('.p-home-list__item').not($(this)).removeClass("-open");
-    });
+  // facility
+  $('.facility-acd').on('click', function() {
+    $(this).toggleClass('-open');
+    
+    if($(this).hasClass('-open')) {
+      $(this).next('.p-facility-list__dd').slideDown();
+    } else {
+      $(this).next('.p-facility-list__dd').slideUp();
+    }
   });
-
-
-    // facility
-    $('.facility-acd').on('click', function() {
-      $(this).toggleClass('-open');
-      
-      if($(this).hasClass('-open')) {
-        $(this).next('.p-facility-list__dd').slideDown();
-      } else {
-        $(this).next('.p-facility-list__dd').slideUp();
-      }
-    });
 
   // RECRUIT
   $('.p-recruit-list__item').on('click', function() {
@@ -270,15 +258,24 @@ $(window).on("load resize",function(){
 
 
 
-// .s_09 .-block
-$(function(){
-  //.-blockの中の.accordion_headerがクリックされたら
-  $('.accordion_area .-block .accordion_header').click(function(){
-    //クリックされた.-blockの中の.accordion_headerに隣接する.accordion_innerの横幅を開いたり閉じたりする。
-    $(this).next().animate({width:'toggle'});
-    $(this).toggleClass("open");
-    //クリックされた.-blockの中の.accordion_header以外の.-blockの中の.accordion_headerに隣接する.-blockの中の.accordion_innerを閉じる
-    $('.accordion_area .-block .accordion_header').not($(this)).next().animate({width:'hide'});
-    $('.accordion_area .-block .accordion_header').not($(this)).removeClass("open");
-  });
-});
+$(window).on("load resize",function(){
+  if(window.matchMedia("(max-width:768px)").matches){
+    $('.accordion_area .-block .accordion_header').on('click', function() {
+      $(this).next().animate({height:'toggle'});
+      $(this).toggleClass("open");
+      $('.accordion_area .-block .accordion_header').not($(this)).next().animate({height:'hide'});
+      $('.accordion_area .-block .accordion_header').not($(this)).removeClass("open");
+    });
+  }else{
+    $(function(){
+      $('.accordion_area .-block .accordion_header').click(function(){
+        $(this).next().animate({width:'toggle'});
+        $(this).toggleClass("open");
+        $('.accordion_area .-block .accordion_header').not($(this)).next().animate({width:'hide'});
+        $('.accordion_area .-block .accordion_header').not($(this)).removeClass("open");
+      });
+    });
+  }
+});//end load resize
+
+

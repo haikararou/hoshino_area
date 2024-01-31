@@ -15,7 +15,7 @@
   </div>
 </section>
 
-<section class="l-spacer -medium -both" id="karuizawachurch/">
+<section class="l-spacer -medium -both" id="karuizawachurch">
   <div class="l-container--primary">
     <article class="l-contents-2column">
       <div class="l-contents-2column__block -w-1_2">

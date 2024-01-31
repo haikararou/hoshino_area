@@ -30,7 +30,7 @@
       <div class="home_txt">
         <div class="home_txt_lead">
           <h2 class="c-title-large">星野の森を、散策しよう。</h2>
-          <p>森の中を歩きながら、<br>思うままに、お過ごしください。</p>
+          <p>エリア全体をつなぐ、森の中の遊歩道。<br>川の流れに沿うように、文化人の歌碑が点在しています。<br>いつもよりも歩調をゆるめて、思うままに、お過ごしください。</p>
         </div>
         <div class="home_flx">
           <figure class="no01">

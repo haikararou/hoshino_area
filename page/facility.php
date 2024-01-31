@@ -68,7 +68,7 @@
                       <dt class="p-facility-list__dt"><a href="<?php echo home_url('/sonmin-shokudo'); ?>">村民食堂</a></dt>
                     </div>
                     <div>
-                      <dt class="p-facility-list__dt"><a href="<?php echo home_url('/church#picchio'); ?>" target="_blank">ピッキオ</a></dt>
+                      <dt class="p-facility-list__dt"><a href="<?php echo home_url('/activity#picchio'); ?>" target="_blank">ピッキオ</a></dt>
                     </div>
                     <div>
                       <dt class="p-facility-list__dt"><a href="<?php echo home_url('/kera-ike-icerink'); ?>">ケラ池スケートリンク</a></dt>
@@ -114,7 +114,7 @@
               <li><a href="<?php echo home_url('/tombo-no-yu'); ?>">星野温泉トンボの湯</a></li>
               <li><a href="<?php echo home_url('/sonmin-shokudo'); ?>">村民食堂</a></li>
               <li><a href="<?php echo home_url('/shop/hungryspot'); ?>">カフェハングリースポット</a></li>
-              <li><a href="<?php echo home_url('/church#picchio'); ?>">ピッキオ</a><br><a href="<?php echo home_url('/shop/ikarucafe'); ?>">イカルカフェ</a><br><a href="<?php echo home_url('/kera-ike-icerink'); ?>">ケラ池スケートリンク</li>
+              <li><a href="<?php echo home_url('/activity#picchio'); ?>">ピッキオ</a><br><a href="<?php echo home_url('/shop/ikarucafe'); ?>">イカルカフェ</a><br><a href="<?php echo home_url('/kera-ike-icerink'); ?>">ケラ池スケートリンク</li>
               <li><a href="<?php echo home_url('/staying#hoshinoya'); ?>">星のや軽井沢</a></li>
               <li><a href="http://www.besso-navi.com/" target="_blank">軽井沢別荘Navi</a></li>
               <li><a href="https://yukawatan.blestoncourt.com/" target="_blank">ブレストンコートユカワタン</a></li>

@@ -10,7 +10,74 @@
     </div>
   </div>
 
-  <section class="l-spacer -medium000000000 -both00000 p-harunire__kv">
+  <div id="key_wrap">
+  <div id="keyVisual">
+    <div class="videoBox">
+      <video playsinline autoplay muted preload="none" poster="./img/poster.jpg" loop class="pc-video" id="js-video-pc" src="" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/video/harunire_pc.mp4"></video>
+      <video playsinline autoplay muted preload="none" poster="./img/poster-sp.jpg" loop class="sp-video" id="js-video-sp" src="" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/video/harunire_sp.mp4"></video>
+      <div class="p-harunire__kv__logo">
+      <h1><img src="<?php echo get_template_directory_uri(); ?>/assets/img/harunire/logo.svg" alt="ハルニレテラス"></h1>
+		<a href="#usage-guide"class="c-button-block -lightyellow -arrow"><span>営業案内</span></a>
+		</div>
+      <div class="p-harunire__kv__news">
+        <h2 class="c-title-ex-small"><span>重要なお知らせ</span></h2>
+        <p><a href="#">重要なお知らせが入ります。</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+.sp-video {
+  display: block;
+}
+.pc-video {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .sp-video {
+    display: none;
+  }
+  .pc-video {
+    display: block;
+  }
+}
+</style>
+<script>
+const videoPc = document.querySelector("#js-video-pc"); //pc版のビデオタグ
+const videPcSrc = videoPc.getAttribute("data-src"); //pc版のビデオタグのdata-src
+
+const videoSp = document.querySelector("#js-video-sp"); //sp版のビデオタグ
+const videoSpSrc = videoSp.getAttribute("data-src"); //sp版のビデオタグのdata-src
+
+let pcVideoBool = false;
+let spVideoBool = false;
+
+if (768 <= window.innerWidth) {
+  //画面幅768pxより大きければpc版読み込み
+  videoPc.src = videPcSrc;
+  pcVideoBool = true;
+} else {
+  //それ以外の場合sp版読み込み
+  videoSp.src = videoSpSrc;
+  spVideoBool = true;
+}
+window.addEventListener("resize", () => {
+  //画面をresize時
+  if (768 <= window.innerWidth && !pcVideoBool) {
+    //画面幅768pxより大きいかつ、pc版の動画をまだ読み込んでいない場合
+    videoPc.src = videPcSrc;
+    pcVideoBool = true;
+  }
+
+  if (768 > window.innerWidth && !spVideoBool) {
+    //画面幅768px未満かつ、sp版の動画をまだ読み込んでいない場合
+    videoSp.src = videoSpSrc;
+    spVideoBool = true;
+  }
+});
+</script>
+
+  <!-- <section class="l-spacer -medium000000000 -both00000 p-harunire__kv">
 		<div class="l-container--primary">
 			<div class="p-harunire__kv__logo">
 				<h1><img src="<?php echo get_template_directory_uri(); ?>/assets/img/harunire/logo.svg" alt="ハルニレテラス"></h1>
@@ -21,7 +88,7 @@
 				<p><a href="#">重要なお知らせが入ります。</a></p>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 	<section class="l-spacer -medium0000000000 -both000000000  p-harunire__lead">
 		<div class="l-container--primary">
