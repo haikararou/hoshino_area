@@ -101,7 +101,7 @@ window.addEventListener("resize", () => {
 
   <?php get_template_part('event/list-3-facility'); ?>
 
-  <section class="l-spacer -medium -both">
+  <!-- <section class="l-spacer -medium -both">
     <div class="l-container--primary">
       <article class="l-contents--left-title">
         <h2 class="c-title-large -vertical l-contents--left-title__title"><span>現在開催中の</span>イベント情報</h2>
@@ -120,7 +120,7 @@ window.addEventListener("resize", () => {
         </div>
       </article>
     </div>
-  </section>
+  </section> -->
 
 	<?php get_template_part('news/list-3-facility'); ?>
 

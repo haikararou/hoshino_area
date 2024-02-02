@@ -82,6 +82,7 @@ list
       margin-left: -1.5em;
       display: inline-block;
       width: 1.5em;
+      @include inc.sizingRem(font-size, full, 12px, wsp, 10px);
     }
     &:not(:last-child) {
       margin-bottom: 1.2em;
@@ -257,6 +258,20 @@ list
   @include inc.sizingRem(font-size, full, 16px, wsp, 14px);
   dt {
     margin-bottom: .5rem;
+    .reqd {
+      position: relative;
+      &::after {
+        content: "必須";
+        @include inc.sizingRem(font-size, full, 12px, wsp, 10px);
+        color: #f00;
+        border: 1px solid red;
+        border-radius: .2rem;
+        display: inline-block;
+        margin: 0 0 0 .5rem;
+        line-height: 1;
+        padding: .1rem .2rem .2rem;
+      }
+    }
   }
   dd {
     span {

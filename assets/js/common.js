@@ -265,14 +265,17 @@ $(window).on("load resize",function(){
       $(this).toggleClass("open");
       $('.accordion_area .-block .accordion_header').not($(this)).next().animate({height:'hide'});
       $('.accordion_area .-block .accordion_header').not($(this)).removeClass("open");
+      $('.accordion_area .-block .accordion_header').not($(this)).next().removeClass("fade");
     });
   }else{
     $(function(){
       $('.accordion_area .-block .accordion_header').click(function(){
         $(this).next().animate({width:'toggle'});
         $(this).toggleClass("open");
+        $(this).next().toggleClass("fade");
         $('.accordion_area .-block .accordion_header').not($(this)).next().animate({width:'hide'});
         $('.accordion_area .-block .accordion_header').not($(this)).removeClass("open");
+        $('.accordion_area .-block .accordion_header').not($(this)).next().removeClass("fade");
       });
     });
   }

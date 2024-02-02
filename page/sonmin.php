@@ -58,7 +58,7 @@
 							<img src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/2024/01/sonmin_menu01.jpg">
 						</div>
 						<div class="l-contents-2column__block -w-1_2--left2">
-							<h3 class="c-title-medium"><span class="c-title-gothic c-color-Dylw">いちおし 1</span>信州彩り御膳</h3>
+							<h3 class="c-title-medium">信州彩り御膳</h3>
 							<p>旬の食材を使った、村民食堂の看板メニュー。メインの牛すき鍋や信州サーモン、季節ごとに変わる天ぷらや小鉢で、村民食堂自慢の味を少しずつ楽しむことができます。</p>
 						</div>
 					</section>
@@ -68,7 +68,7 @@
 								<img src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/2024/01/sonmin_menu02.jpg">
 							</div>
 							<div class="l-contents-2column__block -w-1_2--left2">
-								<h3 class="c-title-medium"><span class="c-title-gothic c-color-Dylw">いちおし 2</span>和牛のよくばりひつまぶし</h3>
+								<h3 class="c-title-medium">和牛のよくばりひつまぶし</h3>
 								<p>和牛のたたきとしぐれ煮の贅沢な2色の丼に、3種の薬味を添えて。〆にはかつお出汁と牛のごま和えでお茶漬け風にして、最後まで飽きずに楽しめます。</p>
 							</div>
 						</section>
@@ -79,7 +79,7 @@
 								<img src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/2024/01/sonmin_menu03.jpg">
 							</div>
 							<div class="l-contents-2column__block -w-1_2--left2">
-								<h3 class="c-title-medium"><span class="c-title-gothic c-color-Dylw">いちおし 3</span>シャキッとレタスのシーザーサラダ</h3>
+								<h3 class="c-title-medium">シャキッとレタスのシーザーサラダ</h3>
 								<p>旬のレタスを半玉まるごと使用した、見た目にも楽しいシーザーサラダ。ザクザクと豪快にカットして、特製ドレッシングをかけてお楽しみください。</p>
 							</div>
 						</section>
@@ -117,7 +117,7 @@
 	<section id="usage-guide" class="l-spacer -medium -both">
 		<div class="l-container--primary">
 			<article class="l-contents--left-title">
-				<h2 class="c-title-large -vertical l-contents--left-title__title">ご利用案内</h2>
+				<h2 class="c-title-large -vertical l-contents--left-title__title">営業案内</h2>
 				<div class="l-contents--left-title__conts">
 					<div class="l-contents-2column">
 						<div class="l-contents-2column__block -w-1_2--left">
@@ -184,7 +184,7 @@
 								<dd>あり</dd>
 								<dt>店内トイレ</dt>
 								<dd>あり</dd>
-								<dt>離乳食</dt>
+								<dt>備考</dt>
 								<dd>離乳食（7ヶ月・9ヶ月・12ヶ月）各500円</dd>
 							</dl>
 						</div>

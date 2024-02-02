@@ -82,7 +82,6 @@
       <li class="c-gmenu-primary__item"><a href="<?php echo home_url('/staying'); ?>" class="c-gmenu-primary__link">ホテル</a></li>
     </ul>
   </div>
-
 <?php else: ?>
 <footer class="l-footer">
   <div class="l-footer__outline">
@@ -96,7 +95,7 @@
     <a href="" class="u-transparent">
       <section class="l-footer-concept l-footer-buttonlink">
         <h2 class="l-footer-buttonlink__title"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/txt-copy-white.svg" alt="森が、居場所になる一日。" width="168" height="159"></h2>
-        <p class="l-footer-concept__text">ゆれる木漏れ日、川のせせらぎ、鳥のさえずり。豊かな自然に包まれて、暮らすように一日を。</p>
+        <p class="l-footer-concept__text">ゆれる木洩れ陽、川のせせらぎ、鳥のさえずり。豊かな自然に包まれて、暮らすように一日を。</p>
         <button class="c-button-block -white -arrow l-footer-buttonlink__button">星野エリアで過ごす</button>
       </section>
     </a>
@@ -107,7 +106,10 @@
   <?php get_template_part('event/list-3'); ?>
   <?php endif; ?>
 
+  <?php if(is_home() || is_front_page()): ?>
+  <?php else: ?>
   <?php get_template_part('news/list-important'); ?>
+  <?php endif; ?>
 
   <?php if(is_page('harunireterrace')): ?>
   <?php get_template_part('news/list-3-facility'); ?>
@@ -115,6 +117,7 @@
 
   <?php if(is_home() || is_front_page()): ?>
   <?php get_template_part('news/list-3'); ?>
+  <?php get_template_part('news/list-important'); ?>
   <?php endif; ?>
 
 

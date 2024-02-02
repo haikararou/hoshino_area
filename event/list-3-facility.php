@@ -85,7 +85,7 @@ $wp_query = new WP_Query( $args );
             ?>
             <?php if ( $wp_query->have_posts() ): ?>
             <?php while ( $wp_query->have_posts() ): $wp_query->the_post(); ?>
-                <li class="p-post-list__item">
+                <li class="p-post-tate__item">
                     <a href="<?php the_permalink(); ?>">
                         <article class="p-post-card">
                             <div class="p-post-card__img">

@@ -1,4 +1,10 @@
 @charset "UTF-8";
+/* =====================================================
+  0.0 - Foundation
+===================================================== */
+/*
+index
+-----------------------------------------------------*/
 /*
 i-functions
 -----------------------------------------------------*/
@@ -7,7 +13,8 @@ i-setting
 -----------------------------------------------------*/
 /*
 i-mixin
------------------------------------------------------*/ /* ------------------------- 使い方 ----------------------------------------------------------
+-----------------------------------------------------*/
+/* ------------------------- 使い方 ----------------------------------------------------------
 
     @include sizing(width, wide, 365px, sp, 276px);
     ==> width: clamp(276px, 7.46vw + 248px, 365px);
@@ -25,9 +32,6 @@ i-mixin
     ※scssファイル上での読みやすさ重視のため、mixinの引数に単位[px]が必要な仕様にしてあります。
 
 // ---------------------------------------------------------------------------------------- */
-/*
-index
------------------------------------------------------*/
 /*
   Base
 -----------------------------------------------------*/
@@ -376,6 +380,12 @@ a[href^="tel:"] {
           box-sizing: border-box;
 }
 
+/* =====================================================
+  1.0 - inc
+===================================================== */
+/* =====================================================
+  2.0 - Layout
+===================================================== */
 /*
 spacer
 -----------------------------------------------------*/
@@ -1478,6 +1488,12 @@ main {
   padding-bottom: 0;
 }
 
+/* =====================================================
+  3.0 - Object
+===================================================== */
+/*
+  3.1 - Component
+-----------------------------------------------------*/
 /*
 title
 -----------------------------------------------------*/
@@ -2101,6 +2117,7 @@ list
   margin-left: -1.5em;
   display: inline-block;
   width: 1.5em;
+  font-size: clamp(0.625rem, 0.18vw + 0.56875rem, 0.75rem);
 }
 .c-list-kome__item:not(:last-child) {
   margin-bottom: 1.2em;
@@ -2285,6 +2302,20 @@ list
 }
 .c-list-form dt {
   margin-bottom: 0.5rem;
+}
+.c-list-form dt .reqd {
+  position: relative;
+}
+.c-list-form dt .reqd::after {
+  content: "必須";
+  font-size: clamp(0.625rem, 0.18vw + 0.56875rem, 0.75rem);
+  color: #f00;
+  border: 1px solid red;
+  border-radius: 0.2rem;
+  display: inline-block;
+  margin: 0 0 0 0.5rem;
+  line-height: 1;
+  padding: 0.1rem 0.2rem 0.2rem;
 }
 .c-list-form dd span {
   font-size: clamp(0.75rem, 0.09vw + 0.71875rem, 0.8125rem);
@@ -2910,6 +2941,9 @@ display
 }
 
 /*
+  3.2 - Project
+-----------------------------------------------------*/
+/*
 post
 -----------------------------------------------------*/
 .p-post-list {
@@ -3105,7 +3139,31 @@ post
   }
 }
 .p-post-tate .p-post-list__item + .p-post-list__item {
-  margin-top: 4rem;
+  margin-top: 1rem;
+}
+@media screen and (min-width: 960px) {
+  .p-post-tate .p-post-list__item + .p-post-list__item {
+    margin-top: 2rem;
+  }
+}
+
+.p-post-tate__item + .p-post-tate__item {
+  margin-top: 1rem;
+}
+@media screen and (min-width: 960px) {
+  .p-post-tate__item + .p-post-tate__item {
+    margin-top: 2rem;
+  }
+}
+
+.youtube {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+.youtube iframe {
+  width: 100%;
+  height: 100%;
 }
 
 /*
@@ -4026,6 +4084,12 @@ post
     max-width: 670px;
     width: 100%;
   }
+}
+.p-entry .has-text-align-center p {
+  width: 100%;
+}
+.p-entry .c-border p {
+  width: 100%;
 }
 .p-entry ul {
   padding-left: 1.3em;
@@ -6805,7 +6869,22 @@ home
   .accordion_area .-block .accordion_inner .-box div {
     max-width: calc(100% - (430px + 3rem));
   }
+  .accordion_area .-block .accordion_inner .-fade {
+    opacity: 0;
+    -webkit-transition-delay: 600ms;
+            transition-delay: 600ms;
+    -webkit-transition: -webkit-transform 0.8s;
+    transition: -webkit-transform 0.8s;
+    transition: transform 0.8s;
+    transition: transform 0.8s, -webkit-transform 0.8s;
+  }
+  .accordion_area .-block .accordion_inner.fade .-fade {
+    opacity: 1;
+  }
 }
+/*
+  3.3 - Utility
+-----------------------------------------------------*/
 /*
 common
 -----------------------------------------------------*/
@@ -6835,26 +6914,4 @@ common
   width: 1px;
   overflow: hidden;
 }
-
-/* =====================================================
-  0.0 - Foundation
-===================================================== */
-/* =====================================================
-  1.0 - inc
-===================================================== */
-/* =====================================================
-  2.0 - Layout
-===================================================== */
-/* =====================================================
-  3.0 - Object
-===================================================== */
-/*
-  3.1 - Component
------------------------------------------------------*/
-/*
-  3.2 - Project
------------------------------------------------------*/
-/*
-  3.3 - Utility
------------------------------------------------------*/
 /*# sourceMappingURL=common.css.map */

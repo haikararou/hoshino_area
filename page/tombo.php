@@ -231,7 +231,7 @@ window.addEventListener("resize", () => {
 							</div>
 							<div class="l-contents-2column__block -w-1_2--right  c-block-conts-center">
 								<div>
-									<h3 class="c-title-small">カフェハングリースポット</h3>
+									<h3 class="c-title-small">カフェ ハングリースポット</h3>
 									<p>隣接するカフェ ハングリースポットでは、季節限定ドリンクやクラフトビール、ソフトクリームなどをご用意しています。休憩場所としても、お待ち合わせ場所としてもおすすめです。</p>
 									<p>
 										<a href="<?php echo home_url('/shop/hungryspot'); ?>" class="c-button-block -lightyellow -arrow"><span>もっと見る</span></a>
@@ -351,7 +351,7 @@ window.addEventListener("resize", () => {
 						<div class="l-contents--left-title__conts">
 							<ul class="c-list-dot">
 								<li class="c-list-dot__item">乳幼児<br>トンボの湯の内湯は、湯温が高め（41度前後）で浴槽が深い（90cm）ため、ベビーバス、露天風呂のご利用をおすすめいたします。</li>
-								<li class="c-list-dot__item">お子様の混浴<br>未就学のお子様に限り、保護者と一緒に入ることができます。</li>
+								<li class="c-list-dot__item">お子様の混浴<br>6歳以下のお子様に限り、保護者と一緒に入ることができます。</li>
 								<li class="c-list-dot__item">入浴着<br>手術等の傷あとをカバーする入浴着は、ご利用いただけます。貸し出しはございません。</li>
 							</ul>
 						</div>
@@ -369,7 +369,7 @@ window.addEventListener("resize", () => {
 						<h2 class="c-title-medium">禁止事項</h2>
 						<div class="l-contents--left-title__conts">
 							<ul class="c-list-dot">
-								<li class="c-list-dot__item">電子機器の使用<br>脱衣場以降、浴場内は、携帯電話等の電子機器の使用をご遠慮いただいております。建物内玄関では使用可能です。</li>
+								<li class="c-list-dot__item">電子機器の使用<br>脱衣場から先、浴場内は、携帯電話等の電子機器の使用をご遠慮いただいております。建物内玄関では使用可能です。</li>
 								<li class="c-list-dot__item">タトゥー、刺繍が見える状態での入浴<br>刺青・タトゥーのある方の入場は原則としてお断りしておりますが、専用シール8枚（1枚10cm×8cm）で隠れるサイズの場合はご入浴いただけます。</li>
 							</ul>
 						</div>
@@ -387,7 +387,9 @@ window.addEventListener("resize", () => {
 						<h2 class="c-title-large -vertical l-contents--left-title__title">温泉の入り方</h2>
 						<div class="l-contents-2column">
 							<div class="l-contents-2column__block -w-1_2--left">
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/tombo/movie.jpg">
+								<div class="youtube">
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/xhPbVbRsNDE?si=O0X0kjbruJOakDoR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+								</div>
 							</div>
 							<div class="l-contents-2column__block -w-1_2--right">
 								<div>

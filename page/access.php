@@ -138,8 +138,8 @@
               </div>
               <div class="l-contents-2column__block -w-1_2 senyou_bus">
                 <ul>
-                  <li><a href=""><span class="hoshinoya">星のや軽井沢にご宿泊の方</span></a></li>
-                  <li><a href=""><span class="hbc">ブレストンコートにご宿泊の方</span></a></li>
+                  <li><a href="https://hoshinoresorts.com/ja/hotels/hoshinoyakaruizawa/access/" target="_blank"><span class="hoshinoya">星のや軽井沢にご宿泊の方</span></a></li>
+                  <li><a href="https://www.blestoncourt.com/access/shuttlebus/" target="_blank"><span class="hbc">ブレストンコートにご宿泊の方</span></a></li>
                 </ul>
               </div>
             </div>
@@ -167,7 +167,7 @@
               <div class="l-contents-2column__block -w-1_2  -fix">
                 <h2 class="c-title-small"><span class="tag-b">電車</span>JR軽井沢駅から1駅の中軽井沢駅下車。</h2>
                 <p>JR軽井沢駅から中軽井沢駅まではしなの鉄道をご利用ください。しなの鉄道時刻表はこちら</p>
-                <p><a href="#"><span class="c-button-arrow c-button-outerlink c-text-underline">しなの鉄道時刻表</span></a></p>
+                <p><a href="https://www.shinanorailway.co.jp/rail-info/time-table/index.php" target="_blank"><span class="c-button-arrow c-button-outerlink c-text-underline">しなの鉄道時刻表</span></a></p>
               </div>
               <div class="l-contents-2column__block -w-1_2  -fix">
                 <h2 class="c-title-small"><span class="tag-b">タクシー</span>近隣のタクシー会社に直接ご連絡いただきご予約ください。</h2>
@@ -199,7 +199,7 @@
   </div>
 </section>
 
-<section class="l-spacer -medium -both  p-tombo__faq">
+<!-- <section class="l-spacer -medium -both  p-tombo__faq">
   <div class="l-container--primary">
     <article class="l-contents--left-title -title-large">
       <h2 class="c-title-large -vertical l-contents--left-title__title"><span>アクセス</span>よくある質問</h2>
@@ -215,6 +215,6 @@
       </div>
     </article>
   </div>
-</section>
+</section> -->
 
 <?php get_footer(); ?>

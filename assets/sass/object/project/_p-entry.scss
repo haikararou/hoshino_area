@@ -94,6 +94,12 @@ post
     margin-left: auto;
     margin-right: auto;
   }
+  .has-text-align-center p {
+    width: 100%;
+  }
+  .c-border p {
+    width: 100%;
+  }
   ul {
     padding-left: 1.3em;
     @include inc.sizing(width, tab, 670px, sp, 330px);

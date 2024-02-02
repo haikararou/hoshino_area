@@ -390,5 +390,16 @@ home
       //   max-width: 430px;
       // }
     }
+    .-fade {
+      //display: none;
+      opacity: 0;
+      transition-delay: 600ms;
+      transition: transform .8s;
+    }
+    &.fade {
+      .-fade {
+        opacity: 1;
+      }
+    }
   }
 }

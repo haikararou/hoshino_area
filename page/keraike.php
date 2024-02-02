@@ -257,7 +257,7 @@ window.addEventListener("resize", () => {
 	<section id="usage-guide" class="l-spacer -medium -both c-border-t">
 		<div class="l-container--primary">
 			<article class="l-contents--left-title">
-				<h2 class="c-title-large -vertical l-contents--left-title__title">ご利用案内</h2>
+				<h2 class="c-title-large -vertical l-contents--left-title__title">営業案内</h2>
 				<div class="l-contents--left-title__conts">
 					<div class="l-contents-2column">
 						<div class="l-contents-2column__block -w-1_2--left">
