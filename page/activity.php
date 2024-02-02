@@ -74,7 +74,7 @@
           <p>指輪を手作りできる工房です。初めてでも思い通りの指輪作りができるよう、専任のスタッフが丁寧にサポートします。体験を通して、軽井沢の思い出となるような「豊かな時間」を提供します。</p>
         </div>
         <div class="l-spacer -em2">
-          <a href="<?php echo home_url('/shop/cercle/'); ?>" class="c-button-block -yellow -arrow -more"><span>もっと見る</span></a>
+          <a href="<?php echo home_url('/shop/crafyglanta/'); ?>" class="c-button-block -yellow -arrow -more"><span>もっと見る</span></a>
         </div>
       </div>
     </article>

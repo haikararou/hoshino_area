@@ -92,9 +92,9 @@
                       <dt class="p-facility-list__dt facility-acd"><span>ホテル</span></dt>
                       <dd class="p-facility-list__dd">
                         <ul>
-                          <li><a href="<?php echo home_url('/staying#hoshinoya'); ?>">星のや軽井沢</a></li>
-                          <li><a href="<?php echo home_url('/staying#hbc'); ?>">軽井沢ホテルブレストンコート</a></li>
-                          <li><a href="<?php echo home_url('/staying#beb5'); ?>">星野リゾート　BEB5軽井沢</a></li>
+                          <li><a href="<?php echo home_url('/hotel#hoshinoya'); ?>">星のや軽井沢</a></li>
+                          <li><a href="<?php echo home_url('/hotel#hbc'); ?>">軽井沢ホテルブレストンコート</a></li>
+                          <li><a href="<?php echo home_url('/hotel#beb5'); ?>">星野リゾート　BEB5軽井沢</a></li>
                         </ul>
                       </dt>
                     </div>
@@ -115,13 +115,13 @@
               <li><a href="<?php echo home_url('/sonmin-shokudo'); ?>">村民食堂</a></li>
               <li><a href="<?php echo home_url('/shop/hungryspot'); ?>">カフェハングリースポット</a></li>
               <li><a href="<?php echo home_url('/activity#picchio'); ?>">ピッキオ</a><br><a href="<?php echo home_url('/shop/ikarucafe'); ?>">イカルカフェ</a><br><a href="<?php echo home_url('/kera-ike-icerink'); ?>">ケラ池スケートリンク</li>
-              <li><a href="<?php echo home_url('/staying#hoshinoya'); ?>">星のや軽井沢</a></li>
+              <li><a href="<?php echo home_url('/hotel#hoshinoya'); ?>">星のや軽井沢</a></li>
               <li><a href="http://www.besso-navi.com/" target="_blank">軽井沢別荘Navi</a></li>
               <li><a href="https://yukawatan.blestoncourt.com/" target="_blank">ブレストンコートユカワタン</a></li>
               <li><a href="<?php echo home_url('/church#stonechurch'); ?>">石の教会 内村鑑三記念堂</a></li>
               <li><a href="<?php echo home_url('/church#karuizawachurch'); ?>">軽井沢高原教会</a></li>
-              <li><a href="<?php echo home_url('/staying#hbc'); ?>">軽井沢ホテルブレストンコート</a></li>
-              <li><a href="<?php echo home_url('/staying#beb5'); ?>">星野リゾート BEB5軽井沢</a></li>
+              <li><a href="<?php echo home_url('/hotel#hbc'); ?>">軽井沢ホテルブレストンコート</a></li>
+              <li><a href="<?php echo home_url('/hotel#beb5'); ?>">星野リゾート BEB5軽井沢</a></li>
             </ul>
           </div>
         <!-- </div> -->

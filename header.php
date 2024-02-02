@@ -69,7 +69,7 @@
         <li class="c-gmenu-primary__item"><a href="<?php echo home_url('/shop'); ?>" class="c-gmenu-primary__link">ショップ&amp;レストラン</a></li>
         <li class="c-gmenu-primary__item"><a href="<?php echo home_url('/activity'); ?>" class="c-gmenu-primary__link">アクティビティ</a></li>
         <li class="c-gmenu-primary__item"><a href="<?php echo home_url('/church'); ?>" class="c-gmenu-primary__link">教会</a></li>
-        <li class="c-gmenu-primary__item"><a href="<?php echo home_url('/staying'); ?>" class="c-gmenu-primary__link">ホテル</a></li>
+        <li class="c-gmenu-primary__item"><a href="<?php echo home_url('/hotel'); ?>" class="c-gmenu-primary__link">ホテル</a></li>
       </ul>
       
       <div class="c-gmenu-secondary l-header-menu__secondary">
@@ -95,13 +95,14 @@
       </div>
     </div>
   </header>
-  
+  <?php if(!is_page('areamap')): ?>
   <a href="<?php echo home_url('/areamap'); ?>" id="js-areamap">
     <div class="c-button-areamap">
       <img class="c-button-areamap__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/common/areamap.svg" width="71" height="71">
       <p class="c-button-areamap__text">Area Map</p>
     </div>
   </a>
+  <?php endif; ?>
 
 <?php if(is_archive('shop') || is_page('harunireterrace') || is_page('tombo-no-yu') || is_page('sonmin-shokudo') || is_page('kera-ike-icerink') || is_page('areamap') || is_page('access') || is_page('parking')): ?>
   <main id="" class="l-main -cxl">

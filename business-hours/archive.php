@@ -19,7 +19,7 @@
         <div class="p-opening--scroll_01">
         <table class="p-opening--table">
             <tr>
-                <th class="p-opening--fixed01">店名</th>
+                <th class="p-opening--fixed01"></th>
                 <?php
                     $args = array(
                         'post_type'=> 'business-hours',
@@ -97,7 +97,7 @@
         <div class="p-opening--scroll_02">
         <table class="p-opening--table">
             <tr>
-                <th class="p-opening--fixed01">店名</th>
+                <th class="p-opening--fixed01"></th>
                 <?php
                     $args = array(
                         'post_type'=> 'business-hours',
@@ -133,7 +133,7 @@
                 ?>
             </tr>
             <tr>
-                <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/ilsogno/" target="_blank"><div class="c-button-arrow">イル・ソーニョ</a><span>イタリアンレストラン</span></div></th>
+                <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/ilsogno/" target="_blank"><div class="c-button-arrow">イル・ソーニョ</a><span>イタリアン</span></div></th>
                 <?php
                     global $shop_slug;
                     $shop_slug = 'ilsogno';
@@ -149,7 +149,7 @@
                 ?>
             </tr>
             <tr>
-                <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/kawakamian/" target="_blank"><div class="c-button-arrow">せきれい橋 川上庵</a><span>蕎麦</span></div></th>
+                <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/kawakamian/" target="_blank"><div class="c-button-arrow">せきれい橋 川上庵</a><span>そば・美酒・一品料理</span></div></th>
                 <?php
                     global $shop_slug;
                     $shop_slug = 'kawakamian';
@@ -205,7 +205,7 @@
                 ?>
             </tr>
             <tr>
-                <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/cercle/" target="_blank"><div class="c-button-arrow">CERCLE wine&deli</a><span>デリカテッセン / 自然派ワインストア＆バー / フレンチレストラン</span></div></th>
+                <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/cercle/" target="_blank"><div class="c-button-arrow">CERCLE wine&deli</a><span>ストラン＆デリ・ワイン</span></div></th>
                 <?php
                     global $shop_slug;
                     $shop_slug = 'cercle';

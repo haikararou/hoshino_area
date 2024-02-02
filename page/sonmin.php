@@ -199,7 +199,7 @@
 <section class="l-spacer -medium -both  p-tombo__faq">
 	<div class="l-container--primary">
 		<article class="l-contents--left-title -title-large">
-			<h2 class="c-title-large -vertical l-contents--left-title__title"><span>トンボの湯</span>よくある質問</h2>
+			<h2 class="c-title-large -vertical l-contents--left-title__title"><span>村民食堂</span>よくある質問</h2>
 			<div class="l-contents--left-title__conts">
 
 				<dl class="p-faq-list">
@@ -207,12 +207,6 @@
 						<dt class="p-faq-list__question">アレルギー対応はできますか？</dt>
 						<dd class="p-faq-list__answer">
 							<p>アレルゲン一覧表をご用意しております。除去の保証は致しかねますことをご承知頂き、ご利用願います。</p>
-						</dt>
-					</div>
-					<div class="p-faq-list__item">
-						<dt class="p-faq-list__question">離乳食はありますか？</dt>
-						<dd class="p-faq-list__answer">
-							<p>離乳食（7ヶ月・9ヶ月・12ヶ月の3種類、各500円）をご用意しております。ご予約不要です。</p>
 						</dt>
 					</div>
 				</dl>

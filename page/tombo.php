@@ -122,7 +122,7 @@ window.addEventListener("resize", () => {
 					<div class="l-contents-2column__block -w-1_2 c-block-conts-center">
 						<div class="c-block-conts-center__inner">
 							<h3 class="c-title-medium">源泉かけ流し</h3>
-							<p>トンボの湯の全ての浴槽は、源泉かけ流しです。湯舟には星野温泉の源泉が良質なまま溢れ、その軟らかいお湯は「美肌の湯」といわれています。新鮮な温泉である証として、飲泉用の蛇口もご用意。循環・加水はせず、毎日換水しています。</p>
+							<p>トンボの湯の全ての浴槽は、源泉かけ流しです。<br>湯船には星野温泉の源泉が良質なまま溢れ、その軟らかいお湯は「美肌の湯」といわれています。<br>新鮮な温泉である証として、飲泉用の蛇口もご用意。循環・加水はせず、毎日換水しています。</p>
 						</div>
 					</div>
 				</article>
@@ -135,8 +135,8 @@ window.addEventListener("resize", () => {
 					</div>
 					<div class="l-contents-2column__block -w-1_2 c-block-conts-center">
 						<div class="c-block-conts-center__inner">
-							<h3 class="c-title-medium">自然と溶け込むくつろぎの空間</h3>
-							<p>内湯と露天風呂は、樹林に向かって池を囲うように配置されています。池は移りゆく自然の景色を映し出し、広い露天風呂とつながるような一体感を生み出しています。<br>自然素材にもこだわり、内湯の内装と湯縁はヒノキ、壁や床、露天には天然石を使用。湯船は肩までゆったりと浸かれるよう、深め（男湯90センチ、女湯85センチ）につくっています。<br>自然の存在を五感で感じながら、ゆっくりくつろげる空間です。</p>
+							<h3 class="c-title-medium">自然に溶け込むくつろぎの空間</h3>
+							<p>内湯、露天風呂、池がひと続きに連なり、移りゆく時間と季節が水面に映し出します。<br>内装は自然素材にこだわり、ヒノキや天然石を ふんだんに使用。内湯の湯船は肩までゆったり浸かれる深さ（男湯90センチ、女湯85センチ）です。<br>周囲の樹林と一体になった空間で、自然に包まれる心地よさをお楽しみください。</p>
 						</div>
 					</div>
 				</article>
@@ -150,7 +150,7 @@ window.addEventListener("resize", () => {
 					<div class="l-contents-2column__block -w-1_2 c-block-conts-center">
 						<div class="c-block-conts-center__inner">
 							<h3 class="c-title-medium">サウナ</h3>
-							<p>温度は約 80~90 度。20 分に一度のオートロウリュを採用しています。BGM の JAZZ を聞きながら、窓から季節の景色を眺めることができます。水風呂には野鳥の森の湧き水が使われ、通年約 13 度と安定した水温を保っています。十分汗をかいたら、軽井沢の澄んだ空気の中で外気浴するのもおすすめです。</p>
+							<p>温度は約80~90度。20分に一度のオートロウリュを採用しています。<br>BGMのジャズを聞きながら、窓から季節の景色を眺めることができます。<br>水風呂には野鳥の森の湧き水が使われ、通年約13度と安定した水温を保っています。<br>十分汗をかいたら、軽井沢の澄んだ空気の中で外気浴するのもおすすめです。</p>
 						</div>
 					</div>
 				</article>
@@ -164,7 +164,8 @@ window.addEventListener("resize", () => {
 					<div class="l-contents-2column__block -w-1_2 c-block-conts-center">
 						<div class="c-block-conts-center__inner">
 							<h3 class="c-title-medium">季節の移ろい</h3>
-							<p>四季折々の自然を、存分に感じることができます。端午の節句のしょうぶ湯、秋のりんご湯、冬至のゆず湯など、季節に合わせて季節湯を開催しています。<br>男湯と女湯の入り口には、周囲の自然を紹介する「森羅百撰」を掲示。季節によって入れ替えているため、訪れる時期によって異なる書画を見ることができます。</p>
+							<p>春は桜や芽吹き、夏は深緑、秋は紅葉、冬は雪と季節の移ろいを存分にお楽しみいただけます。また、秋のりんご湯、冬至のゆず湯などの季節湯を開催。<br>
+							男湯と女湯それぞれの入り口には、「森羅百撰」があります。トンボの湯を取り巻く自然の豊かさを伝える書画で、季節によって入れ替わります。</p>
 						</div>
 					</div>
 				</article>
@@ -186,7 +187,7 @@ window.addEventListener("resize", () => {
 					</div>
 					<div class="swiper-slide p-gallery-slider__slide">
 						<img  class="p-gallery-slider__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/tombo/slide03.jpg">
-						<p class="p-gallery-slider__caption">サウナ 静かなBGMが流れるシンプルな空間</p>
+						<p class="p-gallery-slider__caption">野鳥の森の湧き水が引かれた水風呂。軒下のベンチで外気浴ができる</p>
 					</div>
 				</div>
 			</div>
@@ -229,7 +230,7 @@ window.addEventListener("resize", () => {
 							<div class="l-contents-2column__block -w-1_2--left">
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/tombo/after01.jpg">
 							</div>
-							<div class="l-contents-2column__block -w-1_2--right  c-block-conts-center">
+							<div class="l-contents-2column__block -w-1_2--right">
 								<div>
 									<h3 class="c-title-small">カフェ ハングリースポット</h3>
 									<p>隣接するカフェ ハングリースポットでは、季節限定ドリンクやクラフトビール、ソフトクリームなどをご用意しています。休憩場所としても、お待ち合わせ場所としてもおすすめです。</p>
@@ -247,7 +248,7 @@ window.addEventListener("resize", () => {
 							<div class="l-contents-2column__block -w-1_2--left">
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/tombo/after02.jpg">
 							</div>
-							<div class="l-contents-2column__block -w-1_2--right  c-block-conts-center">
+							<div class="l-contents-2column__block -w-1_2--right">
 								<div>
 									<h3 class="c-title-small">天然の湯上がり処</h3>
 									<p>お風呂上がりは木陰のベンチに座り、高原の風を感じながら一息つきませんか。</p>
@@ -327,7 +328,7 @@ window.addEventListener("resize", () => {
 								<dt>浴場内施設</dt>
 								<dd>内湯、露天風呂、サウナ、水風呂、飲泉</dd>
 								<dt>備品</dt>
-								<dd>ボディソープ、シャンプー、コンディショナー、化粧水、乳液、クレンジングウォッシュ（女湯）、ドライヤー、タオル<br>貸しタオルセット 350円<br>浴用タオル販売 200円</dd>
+								<dd>ボディソープ、シャンプー、コンディショナー、化粧水、乳液、クレンジングウォッシュ（女湯）、ドライヤー、タオル（貸しタオルセット 350円、浴用タオル販売 200円）、ベビーバス</dd>
 								<dt>利用の目安</dt>
 								<dd><!--10:00〜15:00は比較的ゆっくりお過ごし頂けます。-->
 									<img src="<?php echo get_template_directory_uri(); ?>/assets/img/tombo/graph01.png">
@@ -370,7 +371,8 @@ window.addEventListener("resize", () => {
 						<div class="l-contents--left-title__conts">
 							<ul class="c-list-dot">
 								<li class="c-list-dot__item">電子機器の使用<br>脱衣場から先、浴場内は、携帯電話等の電子機器の使用をご遠慮いただいております。建物内玄関では使用可能です。</li>
-								<li class="c-list-dot__item">タトゥー、刺繍が見える状態での入浴<br>刺青・タトゥーのある方の入場は原則としてお断りしておりますが、専用シール8枚（1枚10cm×8cm）で隠れるサイズの場合はご入浴いただけます。</li>
+								<li class="c-list-dot__item">タトゥー、刺青が見える状態での入浴<br>刺青・タトゥーのある方の入場は原則としてお断りしておりますが、当館規定のシール8枚（1枚10cm×8cm）で隠れるサイズの場合はご入浴いただけます。</li>
+								<li class="c-list-dot__item">酩酊されている方のご入浴はご遠慮ください</li>
 							</ul>
 						</div>
 					</article>
@@ -394,12 +396,11 @@ window.addEventListener("resize", () => {
 							<div class="l-contents-2column__block -w-1_2--right">
 								<div>
 									<ul class="c-list-dot">
-										<li class="c-list-dot__item">掛け湯をしてからお入りください。</li>
-										<li class="c-list-dot__item">長い髪の毛は結び、湯舟につけないようにしてください。</li>
+										<li class="c-list-dot__item">体を洗ってからお入りください。</li>
+										<li class="c-list-dot__item">長い髪の毛は結び、湯船につけないようにしてください。</li>
 										<li class="c-list-dot__item">サウナの後の汗はしっかり流してから、水風呂や湯船にお入りください。</li>
 										<li class="c-list-dot__item">タオルは湯船につけないでください。</li>
-										<li class="c-list-dot__item">カランの場所取りはご遠慮ください。</li>
-										<li class="c-list-dot__item">シャワーやサウナは譲り合ってご利用ください。</li>
+										<li class="c-list-dot__item">シャワーやサウナの場所取りはご遠慮ください。</li>
 									</ul>
 									<br><br>
 									<p>それではみなさん心ゆくまで温泉をお楽しみください。</p>

@@ -16,13 +16,13 @@
           <li><a href="<?php echo home_url('/sonmin-shokudo'); ?>">村民食堂</a></li>
           <li><a href="<?php echo home_url('/shop/hungryspot'); ?>">カフェハングリースポット</a></li>
           <li><a href="<?php echo home_url('/church#picchio'); ?>">ピッキオ</a><br><a href="<?php echo home_url('/shop/ikarucafe'); ?>">イカルカフェ</a><br><a href="<?php echo home_url('/kera-ike-icerink'); ?>">ケラ池スケートリンク</li>
-          <li><a href="<?php echo home_url('/staying#hoshinoya'); ?>">星のや軽井沢</a></li>
+          <li><a href="<?php echo home_url('/hotel#hoshinoya'); ?>">星のや軽井沢</a></li>
           <li><a href="http://www.besso-navi.com/" target="_blank">軽井沢別荘Navi</a></li>
           <li><a href="https://yukawatan.blestoncourt.com/" target="_blank">ブレストンコートユカワタン</a></li>
           <li><a href="<?php echo home_url('/church#stonechurch'); ?>">石の教会 内村鑑三記念堂</a></li>
           <li><a href="<?php echo home_url('/church#karuizawachurch'); ?>">軽井沢高原教会</a></li>
-          <li><a href="<?php echo home_url('/staying#hbc'); ?>">軽井沢ホテルブレストンコート</a></li>
-          <li><a href="<?php echo home_url('/staying#beb5'); ?>">星野リゾート BEB5軽井沢</a></li>
+          <li><a href="<?php echo home_url('/hotel#hbc'); ?>">軽井沢ホテルブレストンコート</a></li>
+          <li><a href="<?php echo home_url('/hotel#beb5'); ?>">星野リゾート BEB5軽井沢</a></li>
         </ul>
       </div>
     </div>
@@ -70,6 +70,18 @@
             </div>
           </figure>
         </div>
+        <div class="monument-list c-border-t">
+          <ul>
+            <li class="c-text-icon"><img class="icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-monument.svg" alt=""><span>北原白秋の文学碑</span></li>
+            <li class="c-text-icon"><img class="icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-monument.svg" alt=""><span>六川水声の句碑</span></li>
+            <li class="c-text-icon"><img class="icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-monument.svg" alt=""><span>与謝野寛・明子 鴛鴦の歌碑</span></li>
+            <li class="c-text-icon"><img class="icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-monument.svg" alt=""><span>中西悟堂の歌碑</span></li>
+            <li class="c-text-icon"><img class="icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-monument.svg" alt=""><span>沖野岩三郎の歌碑</span></li>
+          </ul>
+        </div>
+        <p>
+          <a href="<?php echo get_template_directory_uri(); ?>/assets/img/areamap/areamap_2306image.pdf" target="_blank" class="c-button-block -lightyellow -arrow"><span>星野エリア ガイドマップ（PDF）</span></a>
+        </p>
       </div>
     </div>
   </div>
@@ -79,7 +91,7 @@
       <li class="c-gmenu-primary__item"><a href="<?php echo home_url('/shop'); ?>" class="c-gmenu-primary__link">ショップ&amp;レストラン</a></li>
       <li class="c-gmenu-primary__item"><a href="<?php echo home_url('/activity'); ?>" class="c-gmenu-primary__link">アクティビティ</a></li>
       <li class="c-gmenu-primary__item"><a href="<?php echo home_url('/church'); ?>" class="c-gmenu-primary__link">教会</a></li>
-      <li class="c-gmenu-primary__item"><a href="<?php echo home_url('/staying'); ?>" class="c-gmenu-primary__link">ホテル</a></li>
+      <li class="c-gmenu-primary__item"><a href="<?php echo home_url('/hotel'); ?>" class="c-gmenu-primary__link">ホテル</a></li>
     </ul>
   </div>
 <?php else: ?>

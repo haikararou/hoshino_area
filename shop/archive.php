@@ -85,7 +85,7 @@
                     <div class="l-contents-2column__block -w-1_2">
                         <h2 class="c-title-large"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/logo-halnire.svg" alt="ハルニレテラス" class="logo-halnire"></h2>
                         <p>「軽井沢の日常」をコンセプトにした、森の中の小さな街。ハルニレの木立の中、湯川の清流沿いに連なる建物を、ウッドデッキでつないでいます。豊かな自然と個性的なお店が、星野エリアでの一日を彩ります。</p>
-                        <p><a href="" class="c-button-block -yellow -arrow -more p-restaurant-card__more"><span>もっと見る</span></a></p>
+                        <p><a href="<?php echo home_url('/harunireterrace'); ?>" class="c-button-block -yellow -arrow -more p-restaurant-card__more"><span>もっと見る</span></a></p>
                     </div>
                 </div>
             </div>

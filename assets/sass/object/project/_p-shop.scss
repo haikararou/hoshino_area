@@ -84,6 +84,10 @@ post
 }
 
 .logo-halnire {
+  margin: 0 auto;
+  @include inc.mq(tab) {
+    margin: 0;
+  }
   max-width: 270px;
   @include inc.sizing(width, tab, 270px, sp, 180px);
 }

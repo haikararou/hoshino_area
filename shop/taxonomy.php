@@ -52,7 +52,7 @@
                                 <div class="p-restaurant-card__text">
                                     <div class="p-restaurant-card__title">
                                         <h3 class="p-restaurant-card__name"><?php if(get_field('sub_title')): ?><span class="p-restaurant-card__cat"><?php the_field('sub_title'); ?></span><?php endif; ?><?php the_title(); ?></h3>
-                                        <?php if(get_field('sub_title')): ?>
+                                        <?php if(get_field('logo')): ?>
                                         <div class="p-restaurant-card__logo">
                                             <img src="<?php the_field('logo'); ?>" alt="">
                                         </div>
