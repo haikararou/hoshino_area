@@ -37,8 +37,8 @@ $wp_query = new WP_Query( $args );
 <?php if ( $wp_query->have_posts() ): ?>
 <section class="l-spacer -medium -both c-border-t">
     <div class="l-container--primary">
-        <article class="l-contents">
-            <h2 class="c-title-large l-contents--left-title__title"><?php echo $title; ?>イベント</h2>
+        <article class="l-contents--left-title">
+            <h2 class="c-title-large -vertical l-contents--left-title__title"><span><?php echo $title; ?></span>イベント</h2>
             <div class="l-contents--left-title__conts">
             <ul class="p-post-tate">
             <?php if ( $wp_query->have_posts() ): ?>
@@ -111,3 +111,5 @@ $wp_query = new WP_Query( $args );
     </div>
 </section>
 <?php endif; ?>
+
+

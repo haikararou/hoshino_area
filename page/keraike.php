@@ -22,7 +22,30 @@
 		</div>
       <div class="p-keraike__kv__news">
         <h2 class="c-title-ex-small"><span>重要なお知らせ</span></h2>
-        <p><a href="#">重要なお知らせが入ります。</a></p>
+        <div class="endress">
+          <div class="loop_wrap">
+            <?php
+            $args = array (
+                'post_type' => 'news',
+                'posts_per_page' => 3,
+                'tax_query' => array(
+                    array(
+                        'taxonomy' => 'news_cat',
+                        'field' => 'slug',
+                        'terms' => 'important-news',
+                        'operator' => 'IN'
+                    ),
+                )
+            );
+            $news = new WP_Query( $args );
+            if ($news -> have_posts()):
+            ?>
+            <?php while ($news -> have_posts()): $news -> the_post(); ?>
+            <div><a href="<?php the_permalink();?>"><span><?php the_time('Y.m.d') ?></span><?php the_title(); ?></a>　</div>
+            <?php endwhile; ?>
+            </div>
+            <?php endif; wp_reset_postdata(); ?>
+          </div>
       </div>
     </div>
   </div>

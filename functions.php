@@ -29,12 +29,14 @@ function register_files() {
 	wp_register_style( 'swiper', get_template_directory_uri().'/assets/css/swiper.min.css');
 	wp_register_style( 'wpadminbar', get_template_directory_uri().'/assets/css/wpadminbar.css', array(), filemtime( get_template_directory().'/assets/css/wpadminbar.css') );
 	wp_register_style( 'theme-common', get_template_directory_uri().'/assets/css/common.css', array(), filemtime( get_template_directory().'/assets/css/common.css') );
+	//wp_register_style( 'endlesscss', get_template_directory_uri().'/assets/css/endless-river.css');
 
 	wp_deregister_script('jquery');
 	wp_enqueue_script( 'jquery', '//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js');
 	wp_register_script( 'swiper', get_template_directory_uri() . '/assets/js/swiper.min.js');
 	wp_register_script( 'function', get_template_directory_uri() . '/assets/js/common.js', array(), filemtime( get_template_directory().'/assets/js/common.js') );
 	wp_register_script( 'weather', get_template_directory_uri() . '/assets/js/weather.js');
+	//wp_register_script( 'endless', get_template_directory_uri() . '/assets/js/endless-river.js');
 }
 function my_enqueue_files() {
     register_files();
@@ -43,9 +45,11 @@ function my_enqueue_files() {
 	wp_enqueue_style( 'swiper' );
 	wp_enqueue_style( 'wpadminbar' );
 	wp_enqueue_style( 'theme-common' );
+	//wp_enqueue_style( 'endlesscss' );
 	wp_enqueue_script( 'swiper' );
 	wp_enqueue_script( 'function' );
 	wp_enqueue_script( 'weather' );
+	//wp_enqueue_script( 'endless' );
 }
 add_action( 'wp_enqueue_scripts', 'my_enqueue_files' );
 

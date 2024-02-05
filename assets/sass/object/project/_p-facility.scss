@@ -29,7 +29,11 @@ facility
 	display: flex;
 	flex-wrap: wrap;
 	&-img {
-		background: #D7E6AF;
+		background-image: url(../img/facility/base.jpg);
+		background-color: #D7E6AF;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
 		padding: 0 5%;
 		display: none;
 		@include inc.mq(tab) {
@@ -69,7 +73,11 @@ facility
 	display: flex;
 	flex-wrap: wrap;
 	&-img {
-		background: #D7E6AF;
+		// background-image: url(../img/facility/base.jpg);
+		// background-color: #D7E6AF;
+		// background-position: center center;
+		// background-repeat: no-repeat;
+		// background-size: cover;
 		padding: 0 0%;
 		width: 100%;
 		display: block;

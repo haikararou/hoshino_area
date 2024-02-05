@@ -33,12 +33,51 @@
         <div class="l-spacer -em2">
           <a href="" class="c-button-block -yellow -arrow -more"><span>施設サイト</span></a>
         </div>
+
+
+
+<div class="c-small-news">
+<h2 class="c-title-medium">ニュース</h2>
+<?php
+$page = get_post( get_the_ID() );
+$slug = $page->post_name;
+$args = array(
+'post_type' => 'news',
+'posts_per_page' => 3,
+'ignore_sticky_posts' => 1,
+'tax_query' => array(
+array(
+'taxonomy' => 'news_shop', //タクソノミーを指定
+'field' => 'slug', //ターム名をスラッグで指定する
+'terms' => 'picchio', //表示したいタームをスラッグで指定
+'operator' => 'IN'
+),
+)
+);
+$the_query = new WP_Query( $args );
+?>
+<?php if ($the_query->have_posts()): ?>
+<dl class="c-list-news">
+<?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+<div class="c-list-news__item">
+<dt class="c-list-news__date"><?php the_time('Y.m.d') ?></dt>
+<dt class="c-list-news__conts"><a href="<?php the_permalink();?>"><?php the_title(); ?></a></dt>
+</a>
+</div>
+<?php endwhile; ?>
+</dl>
+<?php endif; wp_reset_postdata(); ?>
+</div>
+
+
+
+
       </div>
     </article>
   </div>
 </section>
 
-<section class="l-spacer -medium -both">
+<section class="l-spacer -medium -both" id="keraike">
   <div class="l-container--primary">
     <article class="l-contents-2column">
       <div class="l-contents-2column__block -w-1_2">
@@ -52,7 +91,7 @@
           <p>「森を感じるスケートリンク」がコンセプト。秋の紅葉の時期からスケートリンクが現れ、寒さが増すごとに池一面の氷が厚さを増し、厳冬期には天然氷でのスケートもができるようになります。森の小鳥の声に軽井沢の自然を感じながら、氷上散歩を楽しんでみませんか。</p>
         </div>
         <div class="l-spacer -em2">
-          <a href="<?php echo home_url('/kera-ike-icerink'); ?>" class="c-button-block -yellow -arrow -more"><span>もっと見る</span></a>
+          <a href="<?php echo home_url('/kera-ike-icerink'); ?>" class="c-button-block -yellow -arrow -more"><span>詳細</span></a>
         </div>
       </div>
     </article>
@@ -74,7 +113,7 @@
           <p>指輪を手作りできる工房です。初めてでも思い通りの指輪作りができるよう、専任のスタッフが丁寧にサポートします。体験を通して、軽井沢の思い出となるような「豊かな時間」を提供します。</p>
         </div>
         <div class="l-spacer -em2">
-          <a href="<?php echo home_url('/shop/crafyglanta/'); ?>" class="c-button-block -yellow -arrow -more"><span>もっと見る</span></a>
+          <a href="<?php echo home_url('/shop/crafyglanta/'); ?>" class="c-button-block -yellow -arrow -more"><span>詳細</span></a>
         </div>
       </div>
     </article>

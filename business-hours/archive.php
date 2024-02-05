@@ -205,7 +205,7 @@
                 ?>
             </tr>
             <tr>
-                <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/cercle/" target="_blank"><div class="c-button-arrow">CERCLE wine&deli</a><span>ストラン＆デリ・ワイン</span></div></th>
+                <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/cercle/" target="_blank"><div class="c-button-arrow">CERCLE wine&deli</a><span>レストラン＆デリ・ワイン</span></div></th>
                 <?php
                     global $shop_slug;
                     $shop_slug = 'cercle';

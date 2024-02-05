@@ -31,7 +31,7 @@
             <div class="facility-flex">
               <div class="facility-flex-img">
                 <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/img/facility/map.png"> -->
-                <?php get_template_part('inc/areamap'); ?>
+                <?php get_template_part('inc/areamap2'); ?>
               </div>
               <div class="facility-flex-txt">
                 <h2 class="c-title-small">施設一覧</h2>
@@ -41,7 +41,8 @@
                       <dt class="p-facility-list__dt"><a href="<?php echo home_url('/tombo-no-yu'); ?>">星野温泉トンボの湯</a></dt>
                     </div>
                     <div>
-                      <dt class="p-facility-list__dt facility-acd"><span>ハルニレテラス</span></dt>
+                      <dt class="p-facility-list__dt"><a href="<?php echo home_url('/harunireterrace'); ?>">ハルニレテラス</a></dt>
+                      <!-- <dt class="p-facility-list__dt facility-acd"><span>ハルニレテラス</span></dt>
                       <dd class="p-facility-list__dd">
                         <ul>
                           <li><a href="<?php echo home_url('/harunireterrace'); ?>">ハルニレテラス</a></li>
@@ -62,7 +63,7 @@
                           <li><a href="<?php echo home_url('/shop/maruyamacoffee'); ?>">丸山珈琲</a></li>
                           <li><a href="<?php echo home_url('/shop/moriasobi'); ?>">モリアソビ</a></li>
                         </ul>
-                      </dt>
+                      </dd> -->
                     </div>
                     <div>
                       <dt class="p-facility-list__dt"><a href="<?php echo home_url('/sonmin-shokudo'); ?>">村民食堂</a></dt>

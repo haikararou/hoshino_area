@@ -161,7 +161,7 @@ list
   &__item {
     
     & + & {
-      margin-top: 2.4em;
+      margin-top: 1.6em;
     }
     
     @include inc.mq(tab) {
@@ -179,6 +179,7 @@ list
   
   a {
     text-decoration: underline;
+    line-height: 1.6;
   }
 }
 
@@ -286,4 +287,12 @@ list
 
 [data-class="wpcf7cf_group"] {
   padding-top: 40px;
+}
+
+
+.c-small-news {
+  padding-top: 2rem;
+  @include inc.mq(tab) {
+    padding-top: 3rem;
+  }
 }
