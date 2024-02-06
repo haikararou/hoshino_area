@@ -1,6 +1,6 @@
 <?php
-$page = get_post( get_the_ID() );
-$slug = $page->post_name;
+global $post;
+$slug = $post->post_name;
 $args = array(
     'post_type' => 'news',
     'posts_per_page' => 3,
@@ -14,16 +14,16 @@ $args = array(
         ),
     )
 );
-$the_query = new WP_Query( $args );
+$news_query = new WP_Query( $args );
 ?>
-<?php if ($the_query->have_posts()): ?>
+<?php if ($news_query->have_posts()): ?>
 <section class="l-spacer -medium -both c-border-t">
 	<div class="l-container--primary">
 		<article class="l-contents--left-title">
 			<h2 class="c-title-large -vertical l-contents--left-title__title">ニュース</h2>
 			<div class="l-contents--left-title__conts">
 				<ul class="p-post-list">
-				<?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+				<?php while ($news_query->have_posts()) : $news_query->the_post(); ?>
                 <li class="p-post-list__item">
                     <a href="<?php the_permalink();?>">
                         <article class="p-post-card">
@@ -68,3 +68,4 @@ $the_query = new WP_Query( $args );
 	</div>
 </section>
 <?php endif; wp_reset_postdata(); ?>
+<?php wp_reset_postdata(); ?>

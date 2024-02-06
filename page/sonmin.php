@@ -11,7 +11,97 @@
 		</div>
 	</div>
 
-	<section class="l-spacer -medium000000000 -both00000  p-sonmin__kv">
+	<div id="key_wrap">
+		<div id="keyVisual">
+			<div class="videoBox">
+			<video playsinline autoplay muted preload="none" poster="./img/poster.jpg" loop class="pc-video" id="js-video-pc" src="" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/video/sonmin_pc.mp4"></video>
+			<video playsinline autoplay muted preload="none" poster="./img/poster-sp.jpg" loop class="sp-video" id="js-video-sp" src="" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/video/sonmin_sp.mp4"></video>
+			<div class="p-sonmin__kv__logo">
+				<h1><img src="<?php echo get_template_directory_uri(); ?>/assets/img/sonmin/logo.svg" alt="村民食堂"></h1>
+				<a href="#usage-guide"class="c-button-block -lightyellow -arrow"><span>営業案内</span></a>
+				</div>
+			<div class="p-sonmin__kv__news">
+				<h2 class="c-title-ex-small"><span>重要なお知らせ</span></h2>
+				<div class="endress">
+				<div class="loop_wrap">
+				<?php
+				$args = array (
+					'post_type' => 'news',
+					'posts_per_page' => 3,
+					'tax_query' => array(
+						array(
+							'taxonomy' => 'news_cat',
+							'field' => 'slug',
+							'terms' => 'important-news',
+							'operator' => 'IN'
+						),
+					)
+				);
+				$news = new WP_Query( $args );
+				if ($news -> have_posts()):
+				?>
+				<?php while ($news -> have_posts()): $news -> the_post(); ?>
+				<div><a href="<?php the_permalink();?>"><span><?php the_time('Y.m.d') ?></span><?php the_title(); ?></a>　</div>
+				<?php endwhile; ?>
+				</div>
+				<?php endif; wp_reset_postdata(); ?>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+<style>
+.sp-video {
+  display: block;
+}
+.pc-video {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .sp-video {
+    display: none;
+  }
+  .pc-video {
+    display: block;
+  }
+}
+</style>
+<script>
+const videoPc = document.querySelector("#js-video-pc"); //pc版のビデオタグ
+const videPcSrc = videoPc.getAttribute("data-src"); //pc版のビデオタグのdata-src
+
+const videoSp = document.querySelector("#js-video-sp"); //sp版のビデオタグ
+const videoSpSrc = videoSp.getAttribute("data-src"); //sp版のビデオタグのdata-src
+
+let pcVideoBool = false;
+let spVideoBool = false;
+
+if (768 <= window.innerWidth) {
+  //画面幅768pxより大きければpc版読み込み
+  videoPc.src = videPcSrc;
+  pcVideoBool = true;
+} else {
+  //それ以外の場合sp版読み込み
+  videoSp.src = videoSpSrc;
+  spVideoBool = true;
+}
+window.addEventListener("resize", () => {
+  //画面をresize時
+  if (768 <= window.innerWidth && !pcVideoBool) {
+    //画面幅768pxより大きいかつ、pc版の動画をまだ読み込んでいない場合
+    videoPc.src = videPcSrc;
+    pcVideoBool = true;
+  }
+
+  if (768 > window.innerWidth && !spVideoBool) {
+    //画面幅768px未満かつ、sp版の動画をまだ読み込んでいない場合
+    videoSp.src = videoSpSrc;
+    spVideoBool = true;
+  }
+});
+</script>
+
+	<!-- <section class="l-spacer -medium000000000 -both00000  p-sonmin__kv">
 		<div class="l-container--primary">
 			<div class="p-sonmin__kv__logo">
 				<h1><img src="<?php echo get_template_directory_uri(); ?>/assets/img/sonmin/logo.svg" alt="村民食堂"></h1>
@@ -45,7 +135,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 	<section class="l-spacer -medium0000000000 -both000000000  p-sonmin__lead">
 		<div class="l-container--primary">
@@ -143,6 +233,10 @@
 		</div>
 	</section>
 
+	<?php
+	$page = get_post( get_the_ID() );
+	$slug = $page->post_name;
+	?>
 	<?php get_template_part('news/list-3-facility'); ?>
 
 	<section id="usage-guide" class="l-spacer -medium -both">
@@ -160,8 +254,8 @@
 								<dd>
 									<?php
 										$today = date_i18n('Ymd');
-										$page = get_post(get_the_ID());
-										$slug = $page->post_name;
+										// $page = get_post(get_the_ID());
+										// $slug = $page->post_name;
 										$args = array(
 											'post_type'=> 'business-hours',
 											'meta_key' => 'opening_start', //ACFのフィールド名

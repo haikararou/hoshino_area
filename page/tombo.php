@@ -284,6 +284,10 @@ window.addEventListener("resize", () => {
 		</div>
 	</section>
 
+	<?php
+	$page = get_post( get_the_ID() );
+	$slug = $page->post_name;
+	?>
 	<?php get_template_part('news/list-3-facility'); ?>
 
 	<section id="usage-guide" class="l-spacer -medium -both c-border-t  p-tombo__guide">
@@ -301,8 +305,8 @@ window.addEventListener("resize", () => {
 								<dd>
 									<?php
 										$today = date_i18n('Ymd');
-										$page = get_post(get_the_ID());
-										$slug = $page->post_name;
+										// $page = get_post(get_the_ID());
+										// $slug = $page->post_name;
 										$args = array(
 											'post_type'=> 'business-hours',
 											'meta_key' => 'opening_start', //ACFのフィールド名

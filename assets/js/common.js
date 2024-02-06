@@ -258,27 +258,41 @@ $(window).on("load resize",function(){
 
 
 
+
 $(window).on("load resize",function(){
   if(window.matchMedia("(max-width:768px)").matches){
-    $('.accordion_area .-block .accordion_header').on('click', function() {
+    $('.accordion_area .-block .-body').css({display:'none',width:'90%',height:'auto'});
+    $('.accordion_area .-block .-header.-open + .-body').css({display:'block'});
+    $('.accordion_area .-block .-header').on('click', function() {
       $(this).next().animate({height:'toggle'});
-      $(this).toggleClass("open");
-      $('.accordion_area .-block .accordion_header').not($(this)).next().animate({height:'hide'});
-      $('.accordion_area .-block .accordion_header').not($(this)).removeClass("open");
-      $('.accordion_area .-block .accordion_header').not($(this)).next().removeClass("fade");
+      $(this).toggleClass("-open");
+      $('.accordion_area .-block .-header').not($(this)).next().animate({height:'hide'});
+      $('.accordion_area .-block .-header').not($(this)).removeClass("-open");
     });
   }else{
     $(function(){
-      $('.accordion_area .-block .accordion_header').click(function(){
-        $(this).next().animate({width:'toggle'});
-        $(this).toggleClass("open");
-        $(this).next().toggleClass("fade");
-        $('.accordion_area .-block .accordion_header').not($(this)).next().animate({width:'hide'});
-        $('.accordion_area .-block .accordion_header').not($(this)).removeClass("open");
-        $('.accordion_area .-block .accordion_header').not($(this)).next().removeClass("fade");
+      $('.accordion_area .-block .-body').css({display:'block',width:'calc(100% - (126px * 1))',height:'600px'});
+      $('.accordion_area .-block1 .-header').click(function(){
+        $('.accordion_area .-block1 .-header').addClass('-open');
+        $('.accordion_area .-block2 .-header').removeClass('-open');
+        $('.accordion_area .-block3 .-header').removeClass('-open');
+        $('.accordion_area .-block2').css({left:'calc(100% - 252px)'});
+        $('.accordion_area .-block3').css({left:'calc(100% - 126px)'});
+      });
+      $('.accordion_area .-block2 .-header').click(function(){
+        $('.accordion_area .-block1 .-header').removeClass('-open');
+        $('.accordion_area .-block2 .-header').addClass('-open');
+        $('.accordion_area .-block3 .-header').removeClass('-open');
+        $('.accordion_area .-block2').css({left:'126px'});
+        $('.accordion_area .-block3').css({left:'calc(100% - 126px)'});
+      });
+      $('.accordion_area .-block3 .-header').click(function(){
+        $('.accordion_area .-block1 .-header').removeClass('-open');
+        $('.accordion_area .-block2 .-header').removeClass('-open');
+        $('.accordion_area .-block3 .-header').addClass('-open');
+        $('.accordion_area .-block2').css({left:'126px'});
+        $('.accordion_area .-block3').css({left:'252px'});
       });
     });
   }
-});//end load resize
-
-
+});

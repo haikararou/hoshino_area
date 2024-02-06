@@ -36,7 +36,7 @@ get_header(); ?>
 				echo '<li><a href="./category/'. $term-> slug .'" class="c-list-category__item -act">';
 				echo $term_name;
 				echo '</a></li>';
-				break; };
+				};
 				?>
 			</ul>
 		</div>

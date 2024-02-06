@@ -138,6 +138,13 @@
   }
 }
 
+.l-contents-2column + .l-contents-2column {
+  margin-top: 1rem;
+  @include inc.mq(lap) {
+    margin-top: 2rem;
+  }
+}
+
 .held {
   display: block;
 }

@@ -135,7 +135,7 @@ window.addEventListener("resize", () => {
 				<li>気温などの状況により、滑走できる範囲は異なります。</li>
 				<li>貸靴の対応サイズは15～30㎝です。</li>
 				<li>幼児用の2枚刃スケート靴もご用意しております。（対応サイズ15,16cm)</li>
-				<li>リンク内での事故や怪我、金品等の盗難や紛失についての責任は負いかねます。詳しくは「<a href="https://picchio.co.jp/facility/kera/" target="_blank">ご利用に際してのお願い</a>」をご確認ください。</li>
+				<li>リンク内での事故や怪我、金品等の盗難や紛失についての責任は負いかねます。詳しくは「<a href="https://picchio.co.jp/facility/kera/" target="_blank" class="c-text-underline">ご利用に際してのお願い</a>」をご確認ください。</li>
 				<li>その他のスケートリンクに関する詳細は「よくあるご質問」をご覧ください。</li>
 			</ul>
 		</div>
@@ -236,7 +236,7 @@ window.addEventListener("resize", () => {
 		<div class="l-contents-block c-bg-white">
 			<div class="l-contents-block__inner">
 				<div class="l-container--primary">
-					<article class="l-contents--left-title l-spacer -medium -both">
+					<article class="l-contents--left-title l-spacer">
 						<h2 class="c-title-large -vertical l-contents--left-title__title">スケートの後は</h2>
 						<div class="l-contents--left-title__conts">
 							<div class="l-contents-2column">
@@ -251,13 +251,8 @@ window.addEventListener("resize", () => {
 									</p>
 								</div>
 							</div>
-						</div>
-					</article>
-
-					<article class="l-contents--left-title">
-						<h2 class="c-title-large -vertical l-contents--left-title__title"></h2>
-						<div class="l-contents-2column">
-							<div class="l-contents-2column__block -w-1_2--left">
+							<div class="l-contents-2column">
+								<div class="l-contents-2column__block -w-1_2--left">
 									<img src="<?php echo get_template_directory_uri(); ?>/assets/img/keraike/picchio_winter.jpg">
 								</div>
 								<div class="l-contents-2column__block -w-1_2--right">
@@ -308,7 +303,7 @@ window.addEventListener("resize", () => {
 								</ul></dd>
 								<dt>その他</dt>
 								<dd><ul class="c-list-dot">
-									<li class="c-list-dot__item">リンク内での事故や怪我、金品等の盗難や紛失についての責任は負いかねます。詳しくは「ご利用に際してのお願い」をご確認ください。</li>
+									<li class="c-list-dot__item">リンク内での事故や怪我、金品等の盗難や紛失についての責任は負いかねます。詳しくは「<a href="https://picchio.co.jp/facility/kera/" target="_blank" class="c-text-underline">ご利用に際してのお願い</a>」をご確認ください。</li>
 									<li class="c-list-dot__item">繁忙日（クリスマスや年末年始、土日祝日など）は、安全管理のためご利用人数と時間を制限する場合があります。</li>
 									<li class="c-list-dot__item">気象状況により、滑走できる範囲は予告なく変動します。</li>
 								</ul></dd>

@@ -52,12 +52,14 @@
                                 <h3 class="p-post-card__title"><?php the_title(); ?><?php if(get_field('event_period')): ?><span>開催期間　<?php the_field('event_period'); ?></span><?php endif; ?></h3>
                                 <?php
                                 $terms = get_the_terms($post->ID, 'news_cat');
+                                echo '<ul>';
                                 foreach($terms as $term){
                                 $term_name = $term->name;
-                                echo '<p class="p-post-card__info">';
+                                echo '<li class="p-post-card__info">';
                                 echo $term_name;
-                                echo '</p>';
-                                break; };
+                                echo '</li>';
+                                };
+                                echo '</ul>';
                                 ?>
                             </div>
                         </article>
@@ -108,12 +110,14 @@
                                 <h3 class="p-post-card__title"><?php the_title(); ?><?php if(get_field('event_period')): ?><span>開催期間　<?php the_field('event_period'); ?></span><?php endif; ?></h3>
                                 <?php
                                 $terms = get_the_terms($post->ID, 'news_cat');
+                                echo '<ul>';
                                 foreach($terms as $term){
                                 $term_name = $term->name;
-                                echo '<p class="p-post-card__info">';
+                                echo '<li class="p-post-card__info">';
                                 echo $term_name;
-                                echo '</p>';
-                                break; };
+                                echo '</li>';
+                                };
+                                echo '</ul>';
                                 ?>
                             </div>
                         </article>

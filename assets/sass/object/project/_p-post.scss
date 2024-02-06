@@ -54,6 +54,10 @@ post
       width: 100%;
       margin-top: .5em;
     }
+    ul {
+      display: flex;
+      gap: .5rem .2rem;
+    }
   }
   
   &__cat {
@@ -94,7 +98,7 @@ post
     }
   }
   &__info {
-    @include inc.sizingRem(font-size, full, 14px, sp, 12px);
+    @include inc.sizingRem(font-size, full, 13px, sp, 11px);
     color: inc.$base-color;
     background: inc.$theme-color-gold;;
     display: inline-block;
@@ -103,7 +107,7 @@ post
     padding: 0.3em 0.8rem;
   }
   &__period {
-    @include inc.sizingRem(font-size, full, 14px, sp, 12px);
+    @include inc.sizingRem(font-size, full, 13px, sp, 11px);
     display: inline-block;
     line-height: 1;
     //border-radius: 0.8rem;

@@ -36,13 +36,13 @@
           <figure class="no01">
             <div>
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/around01.jpg" alt="">
-              <figcaption class="c-text-icon"><img class="icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-around.svg" alt=""><span>川沿いの遊歩道</span></figcaption>
+              <figcaption class="c-text-icon"><img class="icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-around.svg" alt=""><span>木陰の湯上り処（夏季）</span></figcaption>
             </div>
           </figure>
           <figure class="no03">
             <div>
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/around03.jpg" alt="">
-              <figcaption class="c-text-icon"><img class="icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-around.svg" alt=""><span>天然の湯上がり処（夏季限定）</span></figcaption>
+              <figcaption class="c-text-icon"><img class="icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-around.svg" alt=""><span>太鼓橋</span></figcaption>
             </div>
           </figure>
           <figure class="no05">
@@ -54,19 +54,19 @@
           <figure class="no02">
             <div>
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/around02.jpg" alt="">
-              <figcaption class="c-text-icon"><img class="icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-around.svg" alt=""><span>遊歩道 太鼓橋</span></figcaption>
+              <figcaption class="c-text-icon"><img class="icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-around.svg" alt=""><span>川床のテラス</span></figcaption>
             </div>
           </figure>
           <figure class="no04">
             <div>
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/around04.jpg" alt="">
-              <figcaption class="c-text-icon"><img class="icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-around.svg" alt=""><span>川のせせらぎを感じるベンチ</span></figcaption>
+              <figcaption class="c-text-icon"><img class="icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-around.svg" alt=""><span>カフェテラスのベンチ</span></figcaption>
             </div>
           </figure>
           <figure class="no06">
             <div>
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/around06.jpg" alt="">
-              <figcaption class="c-text-icon"><img class="icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-around.svg" alt=""><span>川床のテラス</span></figcaption>
+              <figcaption class="c-text-icon"><img class="icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-around.svg" alt=""><span>川辺のベンチ</span></figcaption>
             </div>
           </figure>
         </div>
