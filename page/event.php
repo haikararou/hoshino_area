@@ -49,7 +49,16 @@ $wp_query = new WP_Query( $args );
                                 <?php endif; ?>
                                 </div>
                                 <div class="p-post-card__text">
-                                    <p class="p-post-card__cat"><?php $terms = get_the_terms($post->ID,'event_cat'); if($terms){echo $terms[0]->name;} ?></p>
+                                    <?php
+                                    $terms = get_the_terms($post->ID,'event_place');
+                                    if($terms):
+                                    echo '<p class="p-post-card__cat">';
+                                    foreach($terms as $term):
+                                    echo '<span>'.$term->name.'</span>';
+                                    endforeach;
+                                    echo '</p>';
+                                    endif;
+                                    ?>
                                     <h3 class="p-post-card__title"><?php the_title(); ?></h3>
                                     <?php if(get_field('event_period')): ?><p class="p-post-card__period">終了 <span><?php the_field('event_period'); ?></span></p><?php endif; ?>
                                 </div>

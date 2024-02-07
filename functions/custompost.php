@@ -102,18 +102,18 @@ function create_post_type() {
 		)
 	);
 	register_taxonomy(
-		'event_status', //タクソノミー名
+		'event_place', //タクソノミー名
 		'event', //カスタム投稿タイプ
 		array(
 			'hierarchical' => true,
 			'update_count_callback' => '_update_post_term_count',
-			'label' => 'イベントステータス',// タクソノミー名（表示名）
-			'singular_label' => 'イベントステータス',// タクソノミー名（表示名）
+			'label' => '関連施設',// タクソノミー名（表示名）
+			'singular_label' => '関連施設',// タクソノミー名（表示名）
 			'public' => true,
 			'show_ui' => true,
 			'show_in_rest' => true,
 			'rewrite' => array(
-				'slug' => 'event/status', //書き換え後のスラッグ
+				'slug' => 'event/place', //書き換え後のスラッグ
 				//'with_front' => false //通常投稿のパーマリンク構造を引き継ぐかどうか (true/false)
 				'hierarchical' => true //階層化したURLを使用可能にする
 			)

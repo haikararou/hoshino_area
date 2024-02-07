@@ -258,7 +258,7 @@ $(window).on("load resize",function(){
 
 
 
-
+//トップページアコーディオン
 $(window).on("load resize",function(){
   if(window.matchMedia("(max-width:768px)").matches){
     $('.accordion_area .-block .-body').css({display:'none',width:'90%',height:'auto'});
@@ -295,4 +295,91 @@ $(window).on("load resize",function(){
       });
     });
   }
+});
+
+
+
+
+
+//ショップ＆レストラン　絞り込み
+document.addEventListener("DOMContentLoaded", function() {
+  const filterItems = document.querySelectorAll('.c-list-std__item');
+
+  filterItems.forEach(function(filterItem) {
+      filterItem.addEventListener('click', function() {
+          // クリックされたフィルター項目にis-activeクラスを追加し、それ以外の項目からis-activeクラスを削除する
+          filterItems.forEach(function(item) {
+              if (item === filterItem) {
+                  item.classList.add('active');
+              } else {
+                  item.classList.remove('active');
+              }
+          });
+          const filterValue = filterItem.getAttribute('data-filter');
+          const items = document.querySelectorAll('.p-restaurant-list > li');
+          items.forEach(function(item) {
+              if (filterValue === 'all' || item.getAttribute('data-item').includes(filterValue)) {
+                  fadeOut(item, function() {
+                      fadeIn(item);
+                  });
+              } else {
+                  fadeOut(item);
+              }
+          });
+      });
+  });
+
+  function fadeIn(element) {
+      element.style.display = 'block';
+      setTimeout(function() {
+          element.classList.add('fade-in');
+      }, 50);
+  }
+
+  function fadeOut(element, callback) {
+      element.classList.remove('fade-in');
+      setTimeout(function() {
+          element.style.display = 'none';
+          if (typeof callback === 'function') {
+              callback();
+          }
+      }, 500); // タイマーを使用してフェードアウト完了後に非表示にする
+  }
+});
+
+
+//動画表示
+$(function(){
+  const videoPc = document.querySelector("#js-video-pc"); //pc版のビデオタグ
+  const videPcSrc = videoPc.getAttribute("data-src"); //pc版のビデオタグのdata-src
+
+  const videoSp = document.querySelector("#js-video-sp"); //sp版のビデオタグ
+  const videoSpSrc = videoSp.getAttribute("data-src"); //sp版のビデオタグのdata-src
+
+  let pcVideoBool = false;
+  let spVideoBool = false;
+
+  if (768 <= window.innerWidth) {
+    //画面幅768pxより大きければpc版読み込み
+    videoPc.src = videPcSrc;
+    pcVideoBool = true;
+  } else {
+    //それ以外の場合sp版読み込み
+    videoSp.src = videoSpSrc;
+    spVideoBool = true;
+  }
+  window.addEventListener("resize", () => {
+    //画面をresize時
+    if (768 <= window.innerWidth && !pcVideoBool) {
+      //画面幅768pxより大きいかつ、pc版の動画をまだ読み込んでいない場合
+      videoPc.src = videPcSrc;
+      pcVideoBool = true;
+    }
+
+    if (768 > window.innerWidth && !spVideoBool) {
+      //画面幅768px未満かつ、sp版の動画をまだ読み込んでいない場合
+      videoSp.src = videoSpSrc;
+      spVideoBool = true;
+    }
+  });
 });

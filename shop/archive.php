@@ -18,7 +18,7 @@
             <div class="l-contents--left-title__title shopmenu">
 
                 <ul class="c-list-std">
-                    <li class="c-list-std__item active"><a class="all" href="<?php echo home_url(); ?>/shop/"><span class="c-text-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-all.svg" width="40" height="40" class="icon -shopicon">すべて</span></a></li>
+                    <li class="c-list-std__item active" data-filter="all"><span class="c-text-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-all.svg" width="40" height="40" class="icon -shopicon">すべて</span></li>
                     <?php
 					$terms = get_terms('shop_cat');
                     $args = array(
@@ -26,8 +26,8 @@
                     );
                     $terms = get_terms('shop_cat', $args);
                     foreach ($terms as $term ) {
-					$des_list .= '<li class="c-list-std__item"><a class="'. $term-> slug .'" href="' . get_term_link( $term ) . '"><span class="c-text-icon"><img src="'.get_template_directory_uri().'/assets/img/common/icon-'. $term-> slug .'.svg" width="40" height="40" class="icon -shopicon">';
-					$des_list .= $term->name . '</span></a></li>';
+					$des_list .= '<li class="c-list-std__item '. $term-> slug .'" data-filter="'. $term-> slug .'"><span class="c-text-icon"><img src="'.get_template_directory_uri().'/assets/img/common/icon-'. $term-> slug .'.svg" width="40" height="40" class="icon -shopicon">';
+					$des_list .= $term->name . '</span></li>';
 					}
 					echo $des_list; ?>
                 </ul>
@@ -44,9 +44,19 @@
                 $the_query = new WP_Query($args);
                 ?>
                 <?php if ($the_query->have_posts()): ?>
-                <ul class="p-restaurant-list">
+                <ul class="p-restaurant-list filter-item">
                     <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
-                    <li>
+                    <?php
+                    $terms = get_the_terms($post->ID, 'shop_cat');
+                    echo '<li data-item="[';
+                    foreach($terms as $term){
+                    echo "'";
+                    echo $term-> slug;
+                    echo "',";
+                    };
+                    echo ']"';
+                    echo 'class="fade-in">';
+                    ?>
                         <a href="<?php if( get_field('facility-url')): ?><?php the_field('facility-url'); ?><?php else: ?><?php the_permalink();?><?php endif; ?>"<?php if(get_field('blank')): ?> target="_blank"<?php endif; ?> class="p-restaurant-card <?php if(get_field('blank')): ?>blank<?php endif; ?>">
                             <?php if( get_field('wi-fi')): ?>
                             <div class="p-restaurant-card__wi-fi">

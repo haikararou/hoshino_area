@@ -50,188 +50,82 @@
 			</div>
 		</div>
 	</div>
-<style>
-.sp-video {
-  display: block;
-}
-.pc-video {
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  .sp-video {
-    display: none;
-  }
-  .pc-video {
-    display: block;
-  }
-}
-</style>
-<script>
-const videoPc = document.querySelector("#js-video-pc"); //pc版のビデオタグ
-const videPcSrc = videoPc.getAttribute("data-src"); //pc版のビデオタグのdata-src
 
-const videoSp = document.querySelector("#js-video-sp"); //sp版のビデオタグ
-const videoSpSrc = videoSp.getAttribute("data-src"); //sp版のビデオタグのdata-src
 
-let pcVideoBool = false;
-let spVideoBool = false;
-
-if (768 <= window.innerWidth) {
-  //画面幅768pxより大きければpc版読み込み
-  videoPc.src = videPcSrc;
-  pcVideoBool = true;
-} else {
-  //それ以外の場合sp版読み込み
-  videoSp.src = videoSpSrc;
-  spVideoBool = true;
-}
-window.addEventListener("resize", () => {
-  //画面をresize時
-  if (768 <= window.innerWidth && !pcVideoBool) {
-    //画面幅768pxより大きいかつ、pc版の動画をまだ読み込んでいない場合
-    videoPc.src = videPcSrc;
-    pcVideoBool = true;
-  }
-
-  if (768 > window.innerWidth && !spVideoBool) {
-    //画面幅768px未満かつ、sp版の動画をまだ読み込んでいない場合
-    videoSp.src = videoSpSrc;
-    spVideoBool = true;
-  }
-});
-</script>
-
-	<!-- <section class="l-spacer -medium000000000 -both00000  p-sonmin__kv">
-		<div class="l-container--primary">
-			<div class="p-sonmin__kv__logo">
-				<h1><img src="<?php echo get_template_directory_uri(); ?>/assets/img/sonmin/logo.svg" alt="村民食堂"></h1>
-				<a href="#usage-guide"class="c-button-block -lightyellow -arrow"><span>営業案内</span></a>
-			</div>
-			<div class="p-sonmin__kv__news">
-				<h2 class="c-title-ex-small"><span>重要なお知らせ</span></h2>
-				<div class="endress">
-					<div class="loop_wrap">
-					<?php
-					$args = array (
-						'post_type' => 'news',
-						'posts_per_page' => 3,
-						'tax_query' => array(
-							array(
-								'taxonomy' => 'news_cat',
-								'field' => 'slug',
-								'terms' => 'important-news',
-								'operator' => 'IN'
-							),
-						)
-					);
-					$news = new WP_Query( $args );
-					if ($news -> have_posts()):
-					?>
-					<?php while ($news -> have_posts()): $news -> the_post(); ?>
-					<div><a href="<?php the_permalink();?>"><span><?php the_time('Y.m.d') ?></span><?php the_title(); ?></a>　</div>
-					<?php endwhile; ?>
-					</div>
-					<?php endif; wp_reset_postdata(); ?>
-				</div>
-			</div>
-		</div>
-	</section> -->
-
-	<section class="l-spacer -medium0000000000 -both000000000  p-sonmin__lead">
+	<?php $lead = get_field('lead'); ?>
+	<?php if($lead):?>
+	<section class="l-spacer p-sonmin__lead">
 		<div class="l-container--primary">
 			<div class="p-sonmin__lead__inner">
-				<h2 class="c-title-ex-small">美しい村」に集う人々を<br>信州の食でおもてなし</h2>
-				<p>小説家 堀辰雄は、自身の作品の中で軽井沢を「美しい村」と呼びました。<br>村民食堂はその名にちなみ、美しい村・軽井沢を訪れる人々を、おいしくもてなすカジュアルダイニングです。木々の緑と光を取り込む開放的な空間で、信州の郷土料理をベースにしたオリジナルメニューをお楽しみいただけます。散策の合間に、ぜひお気軽にお立ち寄りください。</p>
+				<h2 class="c-title-ex-small"><?php echo $lead['lead_title']; ?></h2>
+				<?php if($lead['lead_txt']):?><p><?php echo $lead['lead_txt']; ?></p><?php endif;?>
 			</div>
 		</div>
 	</section>
+	<?php endif;?>
 
-	<section class="l-spacer -medium -both  p-sonmin__news">
+	<?php if(have_rows('news')): ?>
+	<section class="l-spacer -medium -both p-sonmin__news">
 		<div class="l-container--primary">
 			<h2 class="c-title-ex-small">村民食堂からのお知らせ</h2>
 			<ul>
-				<li>開店の30分前より、入口にて受付番号を発券しております。</li>
-				<li>受付後にご入店をお待ち頂いているお客様が多い場合、ラストオーダーの時間よりも早く受付を終了させて頂くことがございます。</li>
-				<li>ディナーご利用時は18時前にご来店いただくと、比較的お待たせせずにお席にご案内できます。</li>
+			<?php while(have_rows('news')): the_row(); ?>
+				<li><?php the_sub_field('news_conts'); ?></li>
+			<?php endwhile; ?>
 			</ul>
 		</div>
 	</section>
+	<?php endif; ?>
 
 	<?php $title ="村民食堂の"; get_template_part('event/list-3-facility'); ?>
 
+	<?php if(have_rows('menu')): ?>
 	<section class="l-spacer -medium -both c-border-t l-contents--ribbon-title">
 		<div class="l-container--primary">
 			<article class="l-contents--left-title -ribbon">
+				<?php if(get_field('ribbon')): ?>
 				<div class="l-contents--left-title__title">
-					<h2 class="c-title-large -vertical l-contents--ribbon-title__ribbon">おすすめメニュー</h2>
+					<h2 class="c-title-large -vertical l-contents--ribbon-title__ribbon"><?php echo get_field('ribbon'); ?></h2>
 				</div>
+				<?php endif; ?>
 				<div class="l-contents--left-title__conts">
+				<?php while(have_rows('menu')): the_row(); ?>
 					<section class="l-contents-2column -pc-rl">
 						<div class="l-contents-2column__block -w-1_2--right2">
-							<img src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/2024/01/sonmin_menu01.jpg">
+							<?php if(get_sub_field('menu_img')) :?><img src="<?php the_sub_field('menu_img'); ?>"><?php endif; ?>
 						</div>
 						<div class="l-contents-2column__block -w-1_2--left2">
-							<h3 class="c-title-medium">信州彩り御膳</h3>
-							<p>旬の食材を使った、村民食堂の看板メニュー。メインの牛すき鍋や信州サーモン、季節ごとに変わる天ぷらや小鉢で、村民食堂自慢の味を少しずつ楽しむことができます。</p>
+							<?php if(get_sub_field('menu_conts')) :?><h3 class="c-title-medium"><?php if(get_sub_field('menu_subtitle')) :?><span><?php the_sub_field('menu_subtitle'); ?></span><?php endif; ?><?php the_sub_field('menu_title'); ?></h3><?php endif; ?>
+							<?php if(get_sub_field('menu_conts')) :?><p><?php the_sub_field('menu_conts'); ?></p><?php endif; ?>
 						</div>
 					</section>
-					<div class="l-spacer -medium">
-						<section class="l-contents-2column -pc-rl">
-							<div class="l-contents-2column__block -w-1_2--right2">
-								<img src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/2024/01/sonmin_menu02.jpg">
-							</div>
-							<div class="l-contents-2column__block -w-1_2--left2">
-								<h3 class="c-title-medium">和牛のよくばりひつまぶし</h3>
-								<p>和牛のたたきとしぐれ煮の贅沢な2色の丼に、3種の薬味を添えて。〆にはかつお出汁と牛のごま和えでお茶漬け風にして、最後まで飽きずに楽しめます。</p>
-							</div>
-						</section>
-					</div>
-					<div class="l-spacer -medium">
-						<section class="l-contents-2column -pc-rl">
-							<div class="l-contents-2column__block -w-1_2--right2">
-								<img src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/2024/01/sonmin_menu03.jpg">
-							</div>
-							<div class="l-contents-2column__block -w-1_2--left2">
-								<h3 class="c-title-medium">シャキッとレタスのシーザーサラダ</h3>
-								<p>旬のレタスを半玉まるごと使用した、見た目にも楽しいシーザーサラダ。ザクザクと豪快にカットして、特製ドレッシングをかけてお楽しみください。</p>
-							</div>
-						</section>
-					</div>
+				<?php endwhile; ?>
 				</div>
 			</article>
-			<p class="p-sonmin__lnk"><a href="#" class="c-button-block -lightyellow -arrow -pdf"><span>さらにメニューを見る</span></a></p>
+			<?php $menu_pdf = get_field('menu_pdf'); ?>
+			<?php if($menu_pdf['menu_pdf_file']) :?>
+			<p class="p-sonmin__lnk"><a href="<?php echo $menu_pdf['menu_pdf_file']; ?>" class="c-button-block -lightyellow -arrow -pdf" target="_blank"><span><?php echo $menu_pdf['menu_pdf_title']; ?></span></a></p>
+			<?php endif; ?>
 		</div>
 	</section>
+	<?php endif; ?>
 
-
+	<?php if(have_rows('gallery')): ?>
 	<section class="l-spacer -medium -both">
 		<div class="l-container--primary-scroll">
 			<div class="swiper p-gallery-slider js-gallery-slider l-container--primary-scroll__inner">
 				<div class="swiper-wrapper">
+				<?php while(have_rows('gallery')): the_row(); ?>
 					<div class="swiper-slide p-gallery-slider__slide">
-						<img class="p-gallery-slider__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/sonmin/slide01.jpg">
-						<!-- <p class="p-gallery-slider__caption">短いキャプションが入ります。</p> -->
+					<?php if(get_sub_field('gallery_img')) :?><img class="p-gallery-slider__img" src="<?php the_sub_field('gallery_img'); ?>"><?php endif; ?>
+						<?php if(get_sub_field('gallery_caption')) :?><p class="p-gallery-slider__caption"><?php the_sub_field('gallery_caption'); ?></p><?php endif; ?>
 					</div>
-					<div class="swiper-slide p-gallery-slider__slide">
-						<img  class="p-gallery-slider__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/sonmin/slide02.jpg">
-						<!-- <p class="p-gallery-slider__caption">短いキャプションが入ります。</p> -->
-					</div>
-					<div class="swiper-slide p-gallery-slider__slide">
-						<img  class="p-gallery-slider__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/sonmin/slide03.jpg">
-						<!-- <p class="p-gallery-slider__caption">短いキャプションが入ります。</p> -->
-					</div>
-					<div class="swiper-slide p-gallery-slider__slide">
-						<img  class="p-gallery-slider__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/sonmin/slide04.jpg">
-						<!-- <p class="p-gallery-slider__caption">短いキャプションが入ります。</p> -->
-					</div>
-					<div class="swiper-slide p-gallery-slider__slide">
-						<img  class="p-gallery-slider__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/sonmin/slide05.jpg">
-						<!-- <p class="p-gallery-slider__caption">短いキャプションが入ります。</p> -->
-					</div>
+				<?php endwhile; ?>
 				</div>
 			</div>
 		</div>
 	</section>
+	<?php endif; ?>
 
 	<?php
 	$page = get_post( get_the_ID() );
@@ -246,7 +140,7 @@ window.addEventListener("resize", () => {
 				<div class="l-contents--left-title__conts">
 					<div class="l-contents-2column">
 						<div class="l-contents-2column__block -w-1_2--left">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/sonmin/guide.jpg">
+						<?php if(get_field('biz-info_img',117)) :?><img src="<?php the_field('biz-info_img',117); ?>"><?php endif; ?>
 						</div>
 						<div class="l-contents-2column__block -w-1_2--right">
 							<dl class="c-list-dl">
@@ -297,20 +191,12 @@ window.addEventListener("resize", () => {
 									<?php endif; ?>
 									<?php wp_reset_query(); ?>
 								</dd>
-								<dt>電話番号</dt>
-								<dd>0267-44-3571</dd>
-								<dt>席の予約</dt>
-								<dd>席のみのご予約はできません。<br>個室での記念日プランのご予約は<a href="https://urakata.in/new_reserve/courses/hoshinoarea?center_id=832" target="_blank" class="c-text-underline">こちら</a></dd>
-								<dt>ペットの入店</dt>
-								<dd>1席のみ可（順番にご案内します）</dd>
-								<dt>Wi-Fi</dt>
-								<dd>あり</dd>
-								<dt>子供椅子</dt>
-								<dd>あり</dd>
-								<dt>店内トイレ</dt>
-								<dd>あり</dd>
-								<dt>備考</dt>
-								<dd>離乳食（7ヶ月・9ヶ月・12ヶ月）各500円</dd>
+								<?php if(have_rows('biz-info')): ?>
+								<?php while(have_rows('biz-info')): the_row(); ?>
+								<dt><?php the_sub_field('business-info_dt'); ?></dt>
+								<dd><?php the_sub_field('business-info_dd'); ?></dd>
+								<?php endwhile; ?>
+								<?php endif; ?>
 							</dl>
 						</div>
 					</div>
@@ -321,24 +207,25 @@ window.addEventListener("resize", () => {
 
 </section>
 
+<?php if(have_rows('faq')): ?>
 <section class="l-spacer -medium -both  p-tombo__faq">
 	<div class="l-container--primary">
 		<article class="l-contents--left-title -title-large">
 			<h2 class="c-title-large -vertical l-contents--left-title__title"><span>村民食堂</span>よくある質問</h2>
 			<div class="l-contents--left-title__conts">
-
 				<dl class="p-faq-list">
-					<div class="p-faq-list__item">
-						<dt class="p-faq-list__question">アレルギー対応はできますか？</dt>
-						<dd class="p-faq-list__answer">
-							<p>アレルゲン一覧表をご用意しております。除去の保証は致しかねますことをご承知頂き、ご利用願います。</p>
-						</dt>
-					</div>
+				<?php while(have_rows('faq')): the_row(); ?>
+				<div class="p-faq-list__item">
+					<dt class="p-faq-list__question"><?php the_sub_field('faq_q'); ?></dt>
+					<dd class="p-faq-list__answer"><?php the_sub_field('faq_a'); ?></dt>
+				</div>
+				<?php endwhile; ?>
 				</dl>
 			</div>
 		</article>
 	</div>
 </section>
+<?php endif; ?>
 
 <div class="l-spacer">
 	<div class="l-container--wide">

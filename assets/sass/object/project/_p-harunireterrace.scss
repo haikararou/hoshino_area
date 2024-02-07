@@ -3,6 +3,24 @@
 /*
 harunireterrace
 -----------------------------------------------------*/
+
+.sp-video {
+	display: block;
+}
+.pc-video {
+	display: none;
+}
+@media screen and (min-width: 768px) {
+	.sp-video {
+		display: none;
+	}
+	.pc-video {
+		display: block;
+	}
+}
+
+
+
 .-harunire-bg {
 	background: #E9E5DA;
 	.c-border-t {

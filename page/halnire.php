@@ -49,71 +49,9 @@
     </div>
   </div>
 </div>
-<style>
-.sp-video {
-  display: block;
-}
-.pc-video {
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  .sp-video {
-    display: none;
-  }
-  .pc-video {
-    display: block;
-  }
-}
-</style>
-<script>
-const videoPc = document.querySelector("#js-video-pc"); //pc版のビデオタグ
-const videPcSrc = videoPc.getAttribute("data-src"); //pc版のビデオタグのdata-src
 
-const videoSp = document.querySelector("#js-video-sp"); //sp版のビデオタグ
-const videoSpSrc = videoSp.getAttribute("data-src"); //sp版のビデオタグのdata-src
 
-let pcVideoBool = false;
-let spVideoBool = false;
-
-if (768 <= window.innerWidth) {
-  //画面幅768pxより大きければpc版読み込み
-  videoPc.src = videPcSrc;
-  pcVideoBool = true;
-} else {
-  //それ以外の場合sp版読み込み
-  videoSp.src = videoSpSrc;
-  spVideoBool = true;
-}
-window.addEventListener("resize", () => {
-  //画面をresize時
-  if (768 <= window.innerWidth && !pcVideoBool) {
-    //画面幅768pxより大きいかつ、pc版の動画をまだ読み込んでいない場合
-    videoPc.src = videPcSrc;
-    pcVideoBool = true;
-  }
-
-  if (768 > window.innerWidth && !spVideoBool) {
-    //画面幅768px未満かつ、sp版の動画をまだ読み込んでいない場合
-    videoSp.src = videoSpSrc;
-    spVideoBool = true;
-  }
-});
-</script>
-
-  <!-- <section class="l-spacer -medium000000000 -both00000 p-harunire__kv">
-		<div class="l-container--primary">
-			<div class="p-harunire__kv__logo">
-				<h1><img src="<?php echo get_template_directory_uri(); ?>/assets/img/harunire/logo.svg" alt="ハルニレテラス"></h1>
-				<a href="#usage-guide"class="c-button-block -lightyellow -arrow"><span>営業案内</span></a>
-			</div>
-			<div class="p-harunire__kv__news">
-				<h2 class="c-title-ex-small"><span>重要なお知らせ</span></h2>
-				<p><a href="#">重要なお知らせが入ります。</a></p>
-			</div>
-		</div>
-	</section> -->
-
-	<section class="l-spacer -medium0000000000 -both000000000  p-harunire__lead">
+	<section class="l-spacer p-harunire__lead">
 		<div class="l-container--primary">
 			<div class="p-harunire__lead__inner">
 				<h2 class="c-title-ex-small">軽井沢の日常が流れる<br>森の中の小さな街</h1>
@@ -124,27 +62,6 @@ window.addEventListener("resize", () => {
 
   <?php get_template_part('event/list-3-facility'); ?>
 
-  <!-- <section class="l-spacer -medium -both">
-    <div class="l-container--primary">
-      <article class="l-contents--left-title">
-        <h2 class="c-title-large -vertical l-contents--left-title__title"><span>現在開催中の</span>イベント情報</h2>
-        <div class="l-contents--left-title__conts">
-          <div class="l-contents-2column">
-            <div class="l-contents-2column__block -w-1_2--left">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dummy/layout1.jpg">
-            </div>
-            <div class="l-contents-2column__block -w-1_2--right">
-              <h3 class="c-title-small">りんご湯りんご湯りんご湯りんご湯りんご湯りんご湯りんご湯りんご湯りんご湯</h3>
-              <dl class="">
-                <dt>⚫︎開催中</dt><dd>期間 : 2023.10.15</dd>
-              </dl>
-            </div>
-          </div>
-        </div>
-      </article>
-    </div>
-  </section> -->
-
 	<?php get_template_part('news/list-3-facility'); ?>
 
   <section class="l-spacer -medium -both c-border-t">
@@ -152,8 +69,8 @@ window.addEventListener("resize", () => {
       <article class="l-contents--left-title -title-large">
         <div class="l-contents--left-title__title">
           <h2 class="c-title-large -vertical">ショップリスト</h2>
-          <ul class="c-list-std">
-            <li class="c-list-std__item active"><a class="all" href="<?php echo home_url(); ?>/shop/"><span class="c-text-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-all.svg" width="40" height="40" class="icon -shopicon">すべて</span></a></li>
+          <ul class="c-list-std filter-list">
+            <li class="c-list-std__item active" data-filter="all"><span class="c-text-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-all.svg" width="40" height="40" class="icon -shopicon">すべて</span></li>
             <?php
               $terms = get_terms('shop_cat');
               $args = array(
@@ -161,8 +78,8 @@ window.addEventListener("resize", () => {
               );
               $terms = get_terms('shop_cat', $args);
               foreach ($terms as $term ) {
-                $des_list .= '<li class="c-list-std__item"><a class="'. $term-> slug .'" href="' . get_term_link( $term ) . '"><span class="c-text-icon"><img src="'.get_template_directory_uri().'/assets/img/common/icon-'. $term-> slug .'.svg" width="40" height="40" class="icon -shopicon">';
-                $des_list .= $term->name . '</span></a></li>';
+                $des_list .= '<li class="c-list-std__item '. $term-> slug .'" data-filter="'. $term-> slug .'"><span class="c-text-icon"><img src="'.get_template_directory_uri().'/assets/img/common/icon-'. $term-> slug .'.svg" width="40" height="40" class="icon -shopicon">';
+                $des_list .= $term->name . '</span></li>';
               }
               echo $des_list;
             ?>
@@ -188,9 +105,19 @@ window.addEventListener("resize", () => {
           $the_query = new WP_Query($args);
           ?>
           <?php if ($the_query->have_posts()): ?>
-          <ul class="p-restaurant-list">
+          <ul class="p-restaurant-list filter-item">
               <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
-              <li>
+              <?php
+              $terms = get_the_terms($post->ID, 'shop_cat');
+              echo '<li data-item="[';
+              foreach($terms as $term){
+              echo "'";
+              echo $term-> slug;
+              echo "',";
+              };
+              echo ']"';
+              echo 'class="fade-in">';
+              ?>
                   <a href="<?php if( get_field('facility-url')): ?><?php the_field('facility-url'); ?><?php else: ?><?php the_permalink();?><?php endif; ?>"<?php if(get_field('blank')): ?> target="_blank"<?php endif; ?> class="p-restaurant-card <?php if(get_field('blank')): ?>blank<?php endif; ?>">
                       <?php if( get_field('wi-fi')): ?>
                       <div class="p-restaurant-card__wi-fi">
@@ -217,55 +144,6 @@ window.addEventListener("resize", () => {
       </article>
     </div>
   </section>
-
-
-<!-- <section class="l-spacer -medium -both">
-  <div class="l-container--primary">
-    <article class="l-contents--left-title -title-large">
-      <h2 class="c-title-large -vertical l-contents--left-title__title"><span>ハルニレテラス</span>よくある質問</h2>
-      <div class="l-contents--left-title__conts">
-
-        <dl class="p-faq-list">
-          <div class="p-faq-list__item">
-            <dt class="p-faq-list__question">犬と一緒に利用できますか？</dt>
-            <dd class="p-faq-list__answer">
-              <p>
-                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-              </p>
-              <p>
-                <a href="#" class="c-button-arrow c-text-underline"><span>詳細はこちら</span></a><br>
-              </p>
-            </dt>
-          </div>
-          <div class="p-faq-list__item">
-            <dt class="p-faq-list__question">天気・気候を教えてください。</dt>
-            <dd class="p-faq-list__answer">
-              <p>
-                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-              </p>
-            </dt>
-          </div>
-          <div class="p-faq-list__item">
-            <dt class="p-faq-list__question">タクシーにはどこで乗ることができますか？</dt>
-            <dd class="p-faq-list__answer">
-              <p>
-                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-              </p>
-              </dt>
-          </div>
-          <div class="p-faq-list__item">
-            <dt class="p-faq-list__question">コインロッカーはありますか？</dt>
-            <dd class="p-faq-list__answer">
-              <p>
-                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-              </p>
-              </dt>
-          </div>
-        </dl>
-      </div>
-    </article>
-  </div>
-</section> -->
 
 <div class="l-spacer">
   <div class="l-container--wide">

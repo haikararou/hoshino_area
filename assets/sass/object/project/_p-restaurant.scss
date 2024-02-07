@@ -13,6 +13,14 @@ restaurant
   }
 }
 
+.p-restaurant-list > li {
+  opacity: 0; /* 全ての項目を最初から表示 */
+  transition: opacity 0.5s ease-in-out;
+}
+.p-restaurant-list > li.fade-in {
+  opacity: 1;
+}
+
 .p-restaurant-card {
   position: relative;
   &__text {
