@@ -5,36 +5,19 @@ list
 -----------------------------------------------------*/
 .c-list-std {
   column-count: 2;
-  @include inc.mq(lap) {
+  @include inc.mq(tab) {
     column-count: 1;
   }
   &__item {
     line-height: 1.6;
-    padding:0 1rem;
-    @include inc.sizingRem(font-size, full, 14px, wsp, 12px);
-    &.active {
-      background: inc.$theme-color-lightyellow;
-      border-radius: inc.size(full, 10px, sp, 5px);
-    }
   }
   &__item:not(:last-child) {
     margin-bottom: 0.8rem;
-    @include inc.mq(lap) {
+    @include inc.mq(tab) {
       margin-bottom: 1.2rem;
     }
   }
 }
-
-.c-list-std.tab-restaurant .c-list-std__item.restaurant,
-.c-list-std.tab-cafe .c-list-std__item.cafe,
-.c-list-std.tab-shop .c-list-std__item.shop,
-.c-list-std.tab-pet .c-list-std__item.pet,
-.c-list-std.tab-pet-outside .c-list-std__item.pet-outside {
-  background: inc.$theme-color-lightyellow;
-  border-radius: inc.size(full, 10px, sp, 5px);
-}
-
-
 .c-list-dot {
   padding-left: 1.5em;
   position: relative;
@@ -51,7 +34,6 @@ list
     }
   }
 }
-
 
 .c-list-num {
   padding-left: 1.5em;
@@ -82,7 +64,6 @@ list
       margin-left: -1.5em;
       display: inline-block;
       width: 1.5em;
-      @include inc.sizingRem(font-size, full, 12px, wsp, 10px);
     }
     &:not(:last-child) {
       margin-bottom: 1.2em;
@@ -99,14 +80,14 @@ list
   }
   > dt {
     padding-top: 1em;
-    line-height: 1.6;
+    line-height: 1.4;
     @include inc.mq(tab) {
       padding: 1em 1em 1em 0;
       border-bottom: 1px solid inc.$theme-color-yellow;
     }
   }
   > dd {
-    line-height: 1.6;
+    line-height: 1.4;
     border-bottom: 1px solid inc.$theme-color-yellow;
     padding: .5em 0 1em;
     @include inc.mq(tab) {
@@ -161,7 +142,7 @@ list
   &__item {
     
     & + & {
-      margin-top: 1.6em;
+      margin-top: 2.4em;
     }
     
     @include inc.mq(tab) {
@@ -179,7 +160,6 @@ list
   
   a {
     text-decoration: underline;
-    line-height: 1.6;
   }
 }
 
@@ -257,42 +237,13 @@ list
 
 .c-list-form {
   @include inc.sizingRem(font-size, full, 16px, wsp, 14px);
-  dt {
+  > dt {
     margin-bottom: .5rem;
-    .reqd {
-      position: relative;
-      &::after {
-        content: "必須";
-        @include inc.sizingRem(font-size, full, 12px, wsp, 10px);
-        color: #f00;
-        border: 1px solid red;
-        border-radius: .2rem;
-        display: inline-block;
-        margin: 0 0 0 .5rem;
-        line-height: 1;
-        padding: .1rem .2rem .2rem;
-      }
-    }
   }
-  dd {
-    span {
-      @include inc.sizingRem(font-size, full, 13px, wsp, 12px);
-      display: block;
-    }
+  > dd {
   }
-  dd + dt {
+  > dd + dt {
     margin-top: 40px;
   }
 }
 
-[data-class="wpcf7cf_group"] {
-  padding-top: 40px;
-}
-
-
-.c-small-news {
-  padding-top: 2rem;
-  @include inc.mq(tab) {
-    padding-top: 3rem;
-  }
-}
